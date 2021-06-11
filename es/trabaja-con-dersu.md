@@ -17,6 +17,9 @@ Buscamos personas que nos ayuden con la primera implementación del servicio. Ac
 - Una web pública con información tanto comercial como contenido propio (aún sin framework, probablemente Gatsby o similar).
 - Google Cloud, Terraform y Github Actions para la infraestructura necesaria.
 
+# WADUS 
+
+
 Buscamos personas que puedan contribuir en una o varias de las áreas mencionadas, tanto a tiempo completo como colaboraciones puntuales. 
 
 Preferimos personas más motivadas por resolver los problemas de nuestros usuarios que por programar por el mero placer de programar. Personas pragmáticas con preferencia por reducir la incertidumbre a base de pequeñas iteraciones en producción. Personas con experiencia o que por lo menos se quieran involucrar en el ciclo completo de desarrollo de software: investigación, conceptualización, análisis, programación, testing, infraestructura, analítica, observabilidad, etc, etc. 
