@@ -31,15 +31,15 @@ Aunque se valorará experiencia previa, estamos abiertos a personas que están r
 
 Trabajo en remoto mientras haya compatibilidad con GMT+1. 
 
-Flexibilidad de horarios, foco en resultados y objetivos calculados en torno a una semana laboral de 40 horas o menos (estamos abiertos a medias jornadas, 4 días a la semana o similares).
+Inicialmente contrato autónomo, flexibilidad de horarios, foco en resultados y objetivos calculados en torno a una semana laboral de 40 horas o menos (estamos abiertos a medias jornadas, 4 días a la semana o similares).
 
 Respeto por las personas, sus individualidades y su derecho a vida privada fuera del horario laboral. Un equipo pequeño con vocación de ser diverso e inclusivo.
 
 ## ¿Quiénes somos?
 
-Dersu es un servicio que está dando sus primeros pasos y donde está todo por hacer. La incertidumbre sobre cuál es la mejor forma de proveer a practicantes de actividades de montaña de herramientas del mejor de los servicios es sólo comparable a la ilusión de hacerlo. 
+Dersu es un servicio que está dando sus primeros pasos y donde está todo por hacer. La incertidumbre sobre cuál es la mejor forma de proveer a practicantes de actividades de montaña del mejor de los servicios es sólo comparable a la ilusión de hacerlo. 
 
-El equipo fundador está compuesto (por ahora, stay tuned) por [Fernando Errekalde](https://instagram.com/fernando_errekalde) (guía de montaña y producto), [Borja Delgado](https://twitter.com/borjadelgado) (producto, diseño y operaciones) y [Juan Delgado](https://twitter.com/wadus) (producto y tecnología).
+El equipo fundador está compuesto (por ahora) por [Fernando Errekalde](https://instagram.com/fernando_errekalde) (guía de montaña y producto), [Borja Delgado](https://twitter.com/borjadelgado) (producto, diseño y operaciones) y [Juan Delgado](https://twitter.com/wadus) (producto y tecnología).
 
 Si te interesa, quieres saber más o tienes alguna duda por favor no dudes en ponerte en contacto a través de work@dersu.uz.
 
