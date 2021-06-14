@@ -1,0 +1,7 @@
+.header {
+  padding: 80px 0 40px 0;
+
+  @include respond-to(lg) {
+    padding: 222px 0 112px 0;
+  }
+}

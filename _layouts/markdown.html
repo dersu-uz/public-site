@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}">
+<html lang="{{page.lang}}">
 {% include html-head.html %}
 <body>
   {% include common-header.html %}
   <main class="main">
     <div class="wrapper">
-      <article class="content">
+      <article class="markdown-content">
         {{ content }}
       </article>
     </div>
