@@ -5,7 +5,7 @@ title: Trabaja con nosotros
 
 ## ¿Qué es Dersu? 
 
-Dersu es un servicio alrededor de las actividades de montaña enfocado en mejorar la seguridad en actividades de montaña junto con el conocimiento y la autonomía de sus practicantes. Dersu tiene previsto proveer a deportistas y guías de herramientas para la autoevaluación, la mejora progresiva de sus habilidades y el soporte en tiempo real de rutas en la montaña y la naturaleza.
+Dersu es un servicio enfocado en facilitar que las personas consigan tener una relación sana con la montaña. Dersu tiene previsto proveer a deportistas y guías de herramientas para la autoevaluación, la mejora progresiva de sus habilidades y el soporte en tiempo real de rutas en la montaña y la naturaleza.
 
 ## ¿Qué buscamos?
 
@@ -21,9 +21,9 @@ Buscamos personas que nos ayuden con la primera implementación del servicio. Ac
 - Una web pública con información tanto comercial como contenido propio (aún sin framework, probablemente NextJS o similar).
 - Google Cloud, Terraform y Github Actions para la infraestructura necesaria.
 
-Buscamos personas que puedan contribuir en una o varias de las áreas mencionadas, tanto a tiempo completo como colaboraciones puntuales. 
+Buscamos personas que puedan contribuir en una o varias de las áreas mencionadas, tanto a tiempo completo como con colaboraciones puntuales. 
 
-Preferimos personas más motivadas por resolver los problemas de nuestros usuarios que por su especialidad en concreto (llámese diseño, tecnología o lo que se quiera). Personas pragmáticas con preferencia por reducir la incertidumbre a base de pequeñas iteraciones en producción. Personas con experiencia o que por lo menos se quieran involucrar en el ciclo completo de desarrollo de un producto: investigación, conceptualización, estrategia, análisis, programación, diseño, testing, infraestructura, analítica, observabilidad, etc, etc. 
+Preferimos personas más motivadas por resolver los problemas de nuestros usuarios que por su especialidad en concreto (llámese diseño, tecnología o lo que se quiera). Personas pragmáticas con preferencia por reducir la incertidumbre a base de pequeñas iteraciones en producción. Personas quen se quieran involucrar en el ciclo completo de desarrollo de un producto: investigación, conceptualización, estrategia, análisis, programación, diseño, testing, infraestructura, analítica, observabilidad, etc, etc. 
 
 Aunque se valorará experiencia previa, estamos abiertos a personas que están relativamente pronto en su carrera (1 o 2 años de experiencia, dependiendo del caso).
 
