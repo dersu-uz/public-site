@@ -1,0 +1,8 @@
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+
+  @include respond-to(lg) {
+    max-width: 1000px;
+  }
+}

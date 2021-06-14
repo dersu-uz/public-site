@@ -6,9 +6,10 @@ COPY Gemfile.lock Gemfile.lock
 RUN bundle install
 COPY _config.yml _config.yml
 COPY _layouts _layouts
+COPY _includes _includes
 COPY en en
 COPY es es
-COPY index.html index.html
+COPY index.md index.md
 RUN jekyll build
 CMD ["jekyll", "serve", "--watch", "--future", "--host=0.0.0.0"]
 

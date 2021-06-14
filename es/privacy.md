@@ -1,5 +1,6 @@
 ---
-layout: legal
+layout: markdown
+lang: es
 title: Política de Privacidad
 ---
 

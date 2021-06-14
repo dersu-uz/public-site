@@ -1,0 +1,56 @@
+.markdown-content {
+
+  h2 {
+    font-family: $font-open-sans;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 0.9em;
+    margin-bottom: 0.7em;
+
+    @include respond-to(lg) {
+      font-size: 70px;
+    }
+  }
+
+  p {
+    font-family: $font-cormorant;
+    font-size: 26px;
+    line-height: 1.35em;
+    margin-bottom: 1.5em;
+
+    @include respond-to(lg) {
+      font-size: 36px;
+    }
+  }
+
+  ul {
+    font-family: $font-cormorant;
+    font-size: 26px;
+    line-height: 1.35em;
+
+    li {
+      list-style: disc;
+      margin-bottom: 0.2em;
+    }
+
+    @include respond-to(lg) {
+      font-size: 36px;
+    }
+
+  }
+
+  blockquote {
+    p {
+      font-family: $font-cormorant;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 38px;
+      line-height: 0.9em;
+      margin-bottom: 2em;
+
+      @include respond-to(lg) {
+        font-size: 70px;
+      }
+    }
+  }
+}

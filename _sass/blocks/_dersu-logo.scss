@@ -1,0 +1,26 @@
+.dersu-logo {
+  font-family: $font-cormorant;
+  font-weight: 500;
+  font-size: 80px;
+
+  &__quotes {
+    position: absolute;
+    width: 40px;
+    top: 14px;
+    left: -40px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  @include respond-to(lg) {
+    font-size: 150px;
+    &__quotes {
+      position: absolute;
+      width: 100px;
+      top: 28px;
+      left: -110px;
+    }
+  }
+}

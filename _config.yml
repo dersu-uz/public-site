@@ -5,6 +5,10 @@ timezone: Europe/Madrid
 permalink: pretty
 highlighter: rouge
 
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Future multilingual support:
 # https://www.kooslooijesteijn.net/blog/multilingual-website-with-jekyll-collections
 # https://talk.jekyllrb.com/t/making-a-multilingual-website-with-collections/4824/2
