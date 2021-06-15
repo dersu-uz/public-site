@@ -6,7 +6,7 @@ title: Trabaja con nosotros
 
 ## ¿Qué es Dersu?
 
-Dersu es un servicio enfocado en facilitar que las personas consigan tener una relación sana con la montaña. Dersu tiene previsto proveer a deportistas y guías de herramientas para la autoevaluación, la mejora progresiva de sus habilidades y el soporte en tiempo real de rutas en la montaña y la naturaleza.
+Dersu es un servicio enfocado en facilitar que las personas disfruten de una relación sana con las montañas. Queremos crear un conjunto de herramientas que ayuden en la evaluación y mejora progresiva, la formación en una correcta metodología de toma de decisiones y el soporte en tiempo real de rutas en la montaña y la naturaleza.
 
 ## ¿Qué buscamos?
 
