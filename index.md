@@ -2,8 +2,7 @@
 layout: markdown
 ---
 
-> Un punto de enlace entre\
-las personas y las montañas
+> Un punto de enlace entre las personas y las montañas
 
 Dersu nace con la intención de convertirse en un punto de enlace entre las personas y las montañas. Esta relación puede tener muchas formas, pero siempre ha de asentarse en una serie de pilares fundamentales como el respeto, la seguridad y la sostenibilidad.
 
