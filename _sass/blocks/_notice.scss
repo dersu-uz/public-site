@@ -3,11 +3,12 @@
   color: white;
   font-family: 'Poppins';
   font-weight: 500;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 21px;
   padding: 8px 0;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 40px;
 
   span {
     overflow: hidden;
@@ -15,8 +16,9 @@
   }
 
   @include respond-to(lg) {
-    font-size: 24px;
-    line-height: 21px;
+    margin-bottom: 80px;
+    font-size: 12px;
+    line-height: 14px;
     padding: 14px 0;
   }
 
