@@ -1,0 +1,63 @@
+.Footer {
+  font-family: $font-cormorant;
+  font-size: 26px;
+  line-height: 0.9em;
+  margin-bottom: 100px;
+  @include respond-to(lg) {
+    margin-top: 30px;
+  }
+
+  p {
+    margin-bottom: 0.7em;
+    font-weight: bold;
+  }
+
+  &__social-links {
+    display: flex;
+      flex-direction: column;
+
+    li {
+      display: inline-block;
+
+      &::before {
+        content: '❊';
+        font-family: $font-poppins;
+        font-size: 16px;
+        vertical-align: middle;
+        line-height: 0;
+        padding: 0 8px 0 0;
+      }
+
+      a {
+        display: inline-block;
+      }
+
+      @include respond-to(lg) {
+
+        &::before {
+          padding: 0 8px 0 8px;
+        }
+
+        &:first-child {
+          &::before {
+            display: none;
+
+          }
+        }
+
+      }
+
+    }
+
+    @include respond-to(lg) {
+      display: inline-block;
+    }
+  }
+
+
+  @include respond-to(lg) {
+    font-size: 24px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+  }
+}

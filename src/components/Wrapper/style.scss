@@ -1,0 +1,8 @@
+.Wrapper {
+  margin: 0px 30px 20px 50px;
+
+  @include respond-to(lg) {
+    max-width: 700px;
+    margin: 0px 0px 0px 150px;
+  }
+}
