@@ -6,7 +6,7 @@ import MarkdownContent from '@/components/MarkdownContent'
 export const getStaticProps = () => {
   return {
     props: {
-      lang: 'es',
+      locale: 'es',
       description: 'Tu asistente en la montaña',
     },
   }

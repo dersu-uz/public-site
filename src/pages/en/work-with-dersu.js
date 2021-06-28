@@ -4,6 +4,17 @@ import Link from 'next/link'
 import DefaultLayout from '@/components/DefaultLayout'
 import MarkdownContent from '@/components/MarkdownContent'
 
+export const getStaticProps = () => {
+  return {
+    props: {
+      locale: 'en',
+      title: 'Work with Dersu',
+      description:
+        'We are looking for people that can help us with the first implementation of the service and tools',
+    },
+  }
+}
+
 const WorkWithDersuPage = () => {
   return (
     <DefaultLayout>

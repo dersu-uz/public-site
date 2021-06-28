@@ -7,7 +7,7 @@ import MarkdownContent from '@/components/MarkdownContent'
 export const getStaticProps = () => {
   return {
     props: {
-      lang: 'es',
+      locale: 'es',
       title: '404',
       description: 'Página no encontrada',
     },

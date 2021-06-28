@@ -3,13 +3,16 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Script from 'next/script'
 
-const Page = ({ title, description, children }) => {
+import CookieBanner from '@/components/CookieBanner'
+
+const Page = ({ title, description, canonicalUrl, children }) => {
   return (
     <>
       <div className="Page">
         <Head>
           <title>{title ? `${title} | Dersu` : `Dersu | ${description}`}</title>
           <meta name="description" content={description} />
+          {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
@@ -37,6 +40,7 @@ const Page = ({ title, description, children }) => {
           <meta name="theme-color" content="#ffffff" />
         </Head>
         {children}
+        <CookieBanner />
       </div>
       <Script
         async
@@ -51,6 +55,7 @@ const Page = ({ title, description, children }) => {
 Page.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
+  canonicalUrl: PropTypes.string,
   description: PropTypes.string.isRequired,
 }
 

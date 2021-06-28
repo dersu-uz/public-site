@@ -8,9 +8,9 @@ class MyDocument extends Document {
   }
   render() {
     const pageProps = this.props.__NEXT_DATA__.props.pageProps
-    const lang = pageProps.lang || 'es'
+    const locale = pageProps.locale || 'es'
     return (
-      <Html lang={lang}>
+      <Html lang={locale}>
         <Head />
         <body>
           <Main />
