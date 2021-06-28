@@ -1,34 +1,27 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import axios from 'axios'
-
-import { IUBENDA_API_URL } from '@/constants/settings'
 
 import DefaultLayout from '@/components/DefaultLayout'
 import IubendaContent from '@/components/IubendaContent'
+import { useIubendaPrivacy } from '@/hooks/iubendaHooks'
 
 export const getStaticProps = async () => {
-  const privacyPolicyContent = (await axios.get(IUBENDA_API_URL)).data.content
   return {
     props: {
       lang: 'es',
       title: 'Política de privacidad',
       description: 'Política de privacidad de Dersu.uz',
-      privacyPolicyContent,
     },
   }
 }
 
-function PrivacyPage({ privacyPolicyContent }) {
+function PrivacyPage() {
+  const { content } = useIubendaPrivacy()
+
   return (
     <DefaultLayout>
-      <IubendaContent content={privacyPolicyContent} />
+      <IubendaContent content={content} />
     </DefaultLayout>
   )
-}
-
-PrivacyPage.propTypes = {
-  privacyPolicyContent: PropTypes.string.isRequired,
 }
 
 export default PrivacyPage
