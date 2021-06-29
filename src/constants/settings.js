@@ -4,3 +4,5 @@ export const IUBENDA_PRIVACY_LINK = `<a href="https://www.iubenda.com/privacy-po
 
 export const COOKIES_ACCEPT_NAME = 'dersuAcceptCookies'
 export const COOKIES_ACCEPT_EXPIRE_DAYS = 365
+export const COOKIES_PREFERRED_LOCALE_NAME = 'dersuPreferredLocale'
+export const COOKIES_PREFERRED_LOCALE_DAYS = 365

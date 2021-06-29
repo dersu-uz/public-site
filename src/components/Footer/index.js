@@ -1,11 +1,34 @@
 import React, { useContext } from 'react'
 import Link from 'next/link'
-import Wrapper from '@/components/Wrapper'
+import { useRouter } from 'next/router'
+import { useCookie } from 'react-use'
+
+import {
+  COOKIES_PREFERRED_LOCALE_NAME,
+  COOKIES_PREFERRED_LOCALE_DAYS,
+} from '@/constants/settings'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
 
+import Wrapper from '@/components/Wrapper'
+
 const Footer = () => {
   const { t, localeNames, currentLocale } = useContext(TranslationsContext)
+  const router = useRouter()
+
+  const [preferredLocale, updatePreferredLocale] = useCookie(
+    COOKIES_PREFERRED_LOCALE_NAME
+  )
+
+  const handleChangeLocale = newLocale => {
+    if (preferredLocale !== newLocale) {
+      updatePreferredLocale(newLocale, {
+        expires: COOKIES_PREFERRED_LOCALE_DAYS,
+      })
+    }
+    router.push(`/${newLocale}`)
+  }
+
   return (
     <footer className="Footer">
       <Wrapper>
@@ -37,7 +60,7 @@ const Footer = () => {
             .filter(l => l.locale !== currentLocale)
             .map(l => (
               <li key={l.locale}>
-                <Link href={`/${l.locale}`}>{l.name}</Link>
+                <a onClick={() => handleChangeLocale(l.locale)}>{l.name}</a>
               </li>
             ))}
         </ul>

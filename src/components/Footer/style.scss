@@ -12,6 +12,10 @@
     font-weight: bold;
   }
 
+  a {
+    cursor: pointer;
+  }
+
   &__social-links {
     display: flex;
       flex-direction: column;
