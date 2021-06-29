@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
-import { useCookie, useMount } from 'react-use'
+import { useCookie } from 'react-use'
 
 import { COOKIES_PREFERRED_LOCALE_NAME } from '@/constants/settings'
 import ImportedHomePage, {
@@ -21,15 +21,14 @@ export const getStaticProps = args => {
 const HomePage = props => {
   // eslint-disable-next-line react/prop-types
   const { locale } = props
-
   const router = useRouter()
   const [preferredLocale] = useCookie(COOKIES_PREFERRED_LOCALE_NAME)
 
-  useMount(() => {
-    if (locale !== preferredLocale) {
+  useEffect(() => {
+    if (locale && preferredLocale && locale !== preferredLocale) {
       router.push(`/${preferredLocale}`)
     }
-  })
+  }, [locale, preferredLocale, router])
 
   return <ImportedHomePage {...props} />
 }
