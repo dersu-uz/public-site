@@ -33,11 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# custom
-/**/node_modules
-/pipelines
-.env
-
 # dersu
 .terraform
 .terraform.lock.*
