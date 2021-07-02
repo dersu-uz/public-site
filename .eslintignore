@@ -1,0 +1,7 @@
+**/out/*
+**/node_modules/*
+**/.next/*
+**/.storybook/*
+**/storybook-static/*
+**/public/*
+**/*.config.js

@@ -1,0 +1,23 @@
+.BrandNotice {
+  background-color: #EB0000;
+  color: white;
+  font-family: $font-poppins;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 21px;
+  padding: 8px 0;
+  text-align: center;
+  overflow: hidden;
+
+  span {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @include respond-to(lg) {
+
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px 0;
+  }
+}

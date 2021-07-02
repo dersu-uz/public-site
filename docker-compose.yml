@@ -1,10 +1,10 @@
-version: "3.8"
+version: '3.8'
 services:
   site:
-    build:
-      context: .
-      target: builder
+    image: node:lts-slim
+    working_dir: /usr/src/app/dersu-site
+    entrypoint: ['sh', '-c', 'npm install && npm run dev']
     ports:
-      - "4000:4000"
+      - '4000:4000'
     volumes:
-      - ./:/usr/src/app/
+      - ./:/usr/src/app/dersu-site
