@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <Wrapper>
-        <p>Equipo Dersu</p>
+        <p>{t.common.teamDersu}</p>
         <ul className="Footer__social-links">
           <li>
             <Link href={`/${currentLocale}`}>Dersu.uz</Link>

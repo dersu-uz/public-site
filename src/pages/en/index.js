@@ -17,26 +17,26 @@ function HomePage() {
     <DefaultLayout>
       <MarkdownContent>
         <blockquote>
-          <p>A linking point between people and mountains</p>
+          <p>A link between people and mountains</p>
         </blockquote>
         <p>
-          Dersu nace con la intención de convertirse en un punto de enlace entre
-          las personas y las montañas. Esta relación puede tener muchas formas,
-          pero siempre ha de asentarse en una serie de pilares fundamentales
-          como el respeto, la seguridad y la sostenibilidad.
+          Dersu aims to become a link between people and mountains. This
+          relationship can take many shapes and forms, but should always be
+          built on top of fundamentals such as respect, security and
+          sustainability.
         </p>
         <p>
-          Vemos la montaña como una forma (una más) de entender lo que es la
-          vida y aprender a transitar por ella. Nos exige y nos premia, nos
-          protege y amenaza, nos enseña a estar solos y en compañía, nos enseña
-          lo que es el respeto, el esfuerzo, el compañerismo. Nos enseña también
-          cuán grande y pequeño es el ser humano.
+          We understand the mountains as a means (one of many) to understand
+          life and the journey through it. It is demanding and rewarding, it
+          protects and threatens, it teaches us how to be alone and with
+          company, respect, effort, comradeship. It also teaches us how big and
+          how small human beings are.
         </p>
         <p>
-          La relación que cada uno crea con la naturaleza es personal y
-          diferente, cambiante con el tiempo. Dersu pretende convertirse en un
-          compañero para ese viaje; que apoye, descubra, pregunte, advierta. De
-          forma que cada cual encuentre su propio camino.
+          Every one has a different, personal relationship with the mountains
+          that changes over time. Dersu aims to become a partner through that
+          journey; supporting, discovering, asking, warning. So every one can
+          find their own path.
         </p>
       </MarkdownContent>
     </DefaultLayout>

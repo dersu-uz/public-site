@@ -6,6 +6,7 @@ const common = {
   workWithDersuSlug: 'work-with-dersu',
   privacy: 'Privacy',
   privacySlug: 'privacy',
+  teamDersu: 'Team Dersu',
 }
 
 export default common
