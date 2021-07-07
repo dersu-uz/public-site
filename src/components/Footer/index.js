@@ -60,7 +60,15 @@ const Footer = () => {
             .filter(l => l.locale !== currentLocale)
             .map(l => (
               <li key={l.locale}>
-                <a onClick={() => handleChangeLocale(l.locale)}>{l.name}</a>
+                <a
+                  href={`/${l.locale}/`}
+                  onClick={event => {
+                    event.preventDefault()
+                    handleChangeLocale(l.locale)
+                  }}
+                >
+                  {l.name}
+                </a>
               </li>
             ))}
         </ul>
