@@ -13,7 +13,7 @@ export const getStaticProps = args => {
     ...staticProps,
     props: {
       ...staticProps.props,
-      canonicalUrl: '/es',
+      canonicalUrl: 'https://dersu.uz/es/',
     },
   }
 }
