@@ -2,7 +2,11 @@ import React, { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { useCookie } from 'react-use'
 
-import { COOKIES_PREFERRED_LOCALE_NAME } from '@/constants/settings'
+import {
+  BASE_DOMAIN_URL,
+  COOKIES_PREFERRED_LOCALE_NAME,
+} from '@/constants/settings'
+
 import ImportedHomePage, {
   getStaticProps as importedGetStaticProps,
 } from './es'
@@ -13,7 +17,7 @@ export const getStaticProps = args => {
     ...staticProps,
     props: {
       ...staticProps.props,
-      canonicalUrl: 'https://dersu.uz/es/',
+      canonicalUrl: `${BASE_DOMAIN_URL}/es/`,
     },
   }
 }
