@@ -10,6 +10,12 @@ Docker and Make required.
 
 Run `make` at the root folder and head off to http://localhost:4000 or use your IP in the local network to check on devices.
 
+### Local configuration
+
+Public variables can be defined in the `.env` file with default values that will be used in production.
+
+Those values can be overwriten locally with a `.env.local` file (git ignored).
+
 ## Continuous integration and deployment
 
 The Docker image for the Cloud Run service is built and deployed via Terraform on commits to the `main` branch.
