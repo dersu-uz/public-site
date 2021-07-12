@@ -3,6 +3,7 @@ WORKDIR /usr/src/app/dersu-site
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm install
+COPY .env .env
 COPY .babelrc .babelrc
 COPY .eslintignore .eslintignore
 COPY .eslintrc .eslintrc
