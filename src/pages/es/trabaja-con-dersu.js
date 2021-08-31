@@ -48,14 +48,14 @@ function WorkWithDersuPage() {
           </li>
           <li>Una aplicación móvil para Android y iOS en Flutter.</li>
           <li>
-            Un backend con Express + TypeScript que aglutina y da coherencia a
-            distintas fuentes de datos con los que alimentar a la aplicación
-            móvil.
+            Un backend con Express/Nest + TypeScript que aglutina y da
+            coherencia a distintas fuentes de datos con los que alimentar a la
+            aplicación móvil.
           </li>
           <li>Un gestor de contenidos con Strapi.</li>
           <li>
             Una web pública con información tanto comercial como contenido
-            propio (aún sin framework, probablemente NextJS o similar).
+            propio en NextJS.
           </li>
           <li>
             Google Cloud, Terraform y Github Actions para la infraestructura

@@ -68,8 +68,8 @@ function Backend() {
         <p></p>
         <p>
           Aunque hay cierta flexibilidad a la hora de elegir tecnología y
-          framework tenemos preferencia por Express + Typescript, Google Cloud +
-          Terraform y Strapi como CMS.
+          framework tenemos preferencia por Express/Nest + Typescript, Google
+          Cloud + Terraform y Strapi como CMS.
         </p>
 
         <h2>¿Qué ofrecemos?</h2>

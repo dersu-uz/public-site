@@ -22,11 +22,10 @@ const WorkWithDersuPage = () => {
         <h2>What is Dersu?</h2>
 
         <p>
-          Dersu is a service focused on helping people having a healthy
+          Dersu is a service focused on helping people having a lasting, healthy
           relationship with the mountains. We want to create a set of tools to
           help with self-assessment, progressive improvement, methodology,
-          decission making and real time support of expeditions in the
-          mountains.
+          decision making and real time support of expeditions in the mountains.
         </p>
 
         <h2>What are we looking for?</h2>
@@ -47,13 +46,13 @@ const WorkWithDersuPage = () => {
           <li>A brand and comms strategy.</li>
           <li>A mobile app for Android and iOS built in Flutter.</li>
           <li>
-            A backend built in Express + Typescript to bring together different
-            data sources for the mobile app.
+            A backend built in Express/Nest + Typescript to bring together
+            different data sources for the mobile app.
           </li>
           <li>A CMS built with Strapi.</li>
           <li>
-            A public website with commercial information and own content still
-            without a framework (likely NextJS or similar).
+            A public website with commercial information and own content using
+            NextJS.
           </li>
           <li>
             Google Cloud, Terraform and Github Actions for infrastructure.
