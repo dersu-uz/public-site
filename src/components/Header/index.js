@@ -1,4 +1,3 @@
-import React from 'react'
 import DersuLogo from '@/components/DersuLogo'
 import Wrapper from '@/components/Wrapper'
 

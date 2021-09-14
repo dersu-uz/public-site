@@ -10,6 +10,7 @@
     "react-use": "^17.2.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
     "autoprefixer": "^10.2.6",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^7.29.0",

@@ -1,9 +1,9 @@
-import React from 'react'
 import Page from '@/components/Page'
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { getTranslations, localeNames } from '@/translations'
 
 import '@/styles/main.scss'
+import GridOverlay from '@/components/GridOverlay'
 
 /* eslint react/prop-types: 0 */
 function NextApp({ Component, pageProps }) {
@@ -17,6 +17,7 @@ function NextApp({ Component, pageProps }) {
   return (
     <TranslationsContext.Provider value={contextValue}>
       <Page title={title} description={description} canonicalUrl={canonicalUrl}>
+        <GridOverlay />
         <Component {...pageProps} />
       </Page>
     </TranslationsContext.Provider>

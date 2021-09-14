@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
 import DersuQuotes from '../../styles/assets/dersu-quotes.svg'
 import TranslationsContext from '@/contexts/TranslationsContext'

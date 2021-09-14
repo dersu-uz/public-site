@@ -1,5 +1,3 @@
-import React from 'react'
-
 import DefaultLayout from '@/components/DefaultLayout'
 import MarkdownContent from '@/components/MarkdownContent'
 
@@ -16,7 +14,7 @@ function HomePage() {
   return (
     <DefaultLayout>
       <MarkdownContent>
-        <blockquote>
+        <blockquote className="text-red-500">
           <p>A link between people and mountains</p>
         </blockquote>
         <p>
