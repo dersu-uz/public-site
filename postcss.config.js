@@ -3,7 +3,9 @@ module.exports = {
     'postcss-preset-env': {
       browsers: ['defaults'],
     },
-    'autoprefixer': {},
+    'postcss-import': {},
+    'postcss-nested': {},
     'tailwindcss': {},
+    'autoprefixer': {},
   },
 }
