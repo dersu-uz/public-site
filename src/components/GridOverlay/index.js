@@ -15,11 +15,13 @@ const GridOverlay = () => {
         <>
           <div className="GridOverlay fixed top-0 left-0 w-full min-h-screen z-50 pointer-events-none">
             <Container className="min-h-screen">
-              <div className="grid grid-cols-12 gap-2 md:gap-5 min-h-screen">
+              <div className="grid grid-cols-4 gap-6 md:grid-cols-12 md:gap-5 min-h-screen">
                 {columns.map((item, i) => (
                   <div
                     key={i}
-                    className="block bg-pink-400 bg-opacity-20"
+                    className={`bg-pink-400 bg-opacity-20 md:block ${
+                      i > 3 ? 'hidden' : ''
+                    }`}
                   ></div>
                 ))}
               </div>

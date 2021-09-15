@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 const Container = ({ className, children }) => (
-  <div className={`Container xl:container px-6 md:px-10 ${className || ''}`}>
+  <div className={`Container xl:container px-4 md:px-10 ${className || ''}`}>
     {children}
   </div>
 )
