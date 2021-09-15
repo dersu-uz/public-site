@@ -2,7 +2,7 @@ import Page from '@/components/Page'
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { getTranslations, localeNames } from '@/translations'
 
-import '@/styles/main.scss'
+import '@/styles/main.css'
 import GridOverlay from '@/components/GridOverlay'
 
 /* eslint react/prop-types: 0 */

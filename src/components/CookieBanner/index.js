@@ -8,7 +8,7 @@ import {
   COOKIES_ACCEPT_EXPIRE_DAYS,
 } from '@/constants/settings'
 
-import Wrapper from '@/components/Wrapper'
+import Container from '@/components/Container'
 
 const CookieBanner = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
@@ -28,7 +28,7 @@ const CookieBanner = () => {
 
   return showCookieBanner ? (
     <div className="CookieBanner">
-      <Wrapper>
+      <Container>
         <div className="CookieBanner__content">
           <div className="CookieBanner__text">
             {t.common.cookieBanner1}{' '}
@@ -40,7 +40,7 @@ const CookieBanner = () => {
             ✕
           </div>
         </div>
-      </Wrapper>
+      </Container>
     </div>
   ) : (
     <></>

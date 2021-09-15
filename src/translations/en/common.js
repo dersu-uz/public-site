@@ -4,7 +4,7 @@ const common = {
   cookieBanner2: 'privacy policy',
   workWithDersu: 'Work with Dersu',
   workWithDersuSlug: 'work-with-dersu',
-  privacy: 'Privacy',
+  privacy: 'Privacy policy',
   privacySlug: 'privacy',
   teamDersu: 'Team Dersu',
 }

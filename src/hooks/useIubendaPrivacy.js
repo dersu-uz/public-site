@@ -5,7 +5,7 @@ import {
   IUBENDA_PRIVACY_LINK,
 } from '@/constants/settings'
 
-export const useIubendaPrivacy = () => {
+const useIubendaPrivacy = () => {
   const [content, setContent] = useState(IUBENDA_PRIVACY_LINK)
 
   useEffect(() => {
@@ -19,3 +19,5 @@ export const useIubendaPrivacy = () => {
 
   return { content }
 }
+
+export default useIubendaPrivacy

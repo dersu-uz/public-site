@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <DefaultLayout>
       <MarkdownContent>
-        <blockquote className="text-red-500">
+        <blockquote>
           <p>A link between people and mountains</p>
         </blockquote>
         <p>

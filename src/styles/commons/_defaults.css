@@ -1,0 +1,7 @@
+html,
+body {
+  background-color: #f7f2f0;
+  color: #313131;
+
+  @apply font-serif;
+}

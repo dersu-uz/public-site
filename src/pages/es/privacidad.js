@@ -1,6 +1,6 @@
 import DefaultLayout from '@/components/DefaultLayout'
 import IubendaContent from '@/components/IubendaContent'
-import { useIubendaPrivacy } from '@/hooks/useIubendaPrivacy'
+import useIubendaPrivacy from '@/hooks/useIubendaPrivacy'
 
 export const getStaticProps = async () => {
   return {

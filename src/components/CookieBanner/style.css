@@ -1,0 +1,39 @@
+.CookieBanner {
+  @apply font-sans;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+
+  a {
+    color: white
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 0;
+
+    @screen lg {
+      font-size: 18px;
+      line-height: 14px;
+      padding: 14px 0;
+    }
+  }
+
+  &__text {
+    text-align: left;
+    flex-grow: 1;
+    margin-right: 8px;
+  }
+
+  &__close {
+    flex-grow: 0;
+    cursor: pointer;
+  }
+}
