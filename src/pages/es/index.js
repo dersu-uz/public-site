@@ -1,6 +1,8 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
+import ModuleIntro from '@/components/ModuleIntro'
 
 export const getStaticProps = () => {
   return {
@@ -16,6 +18,8 @@ function HomePage() {
     <>
       <Hero imageUrl={`/images/hero/01.png`} />
       <Header />
+      <ModuleIntro />
+      <ModuleBetaAnnouncement />
       <Footer />
     </>
   )

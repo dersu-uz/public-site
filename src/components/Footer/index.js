@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer className="Footer">
       <Container>
-        <div className="font-sans text-sm border-t border-dersu-border border-opacity-50 pb-4 mt-10 md:pb-10">
+        <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
           <div className="md:flex md:items-center">
             <div className="w-2/3 py-10 md:order-2 md:w-2/12 md:mx-auto">
               <ul className="font-bold col-count-2 leading-9">
@@ -43,8 +43,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="text-dersu-gray-light leading-5 md:flex">
-            <ul className="text-dersu-link font-bold mb-3 md:order-2 md:mb-0 md:ml-10 md:flex">
+          <div className="text-dersu-light-gray leading-5 md:flex">
+            <ul className="text-dersu-black font-bold mb-3 md:order-2 md:mb-0 md:ml-10 md:flex">
               <li className="md:mr-3">
                 <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
                   {t.common.privacy}

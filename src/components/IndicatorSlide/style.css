@@ -1,0 +1,14 @@
+.IndicatorSlide {
+  @apply flex flex-col items-center;
+
+  &::after {
+    @apply animate-indicator-slide;
+
+    content: '';
+    display: block;
+    width: 2px;
+    height: 60px;
+    margin-top: 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%)
+  }
+}

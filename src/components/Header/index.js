@@ -27,10 +27,10 @@ const Header = () => {
                 return (
                   <li
                     key={i}
-                    className="font-sans text-dersu-gray-light text-sm pl-2.5 font-bold leading-5 hover:text-dersu-link transition-colors"
+                    className="font-sans text-dersu-light-gray text-sm pl-2.5 font-bold leading-5 hover:text-dersu-black transition-colors"
                   >
                     {isCurrent ? (
-                      <span className="text-dersu-link">{l.name}</span>
+                      <span className="text-dersu-black">{l.name}</span>
                     ) : (
                       <a
                         href={`/${l.locale}/`}
