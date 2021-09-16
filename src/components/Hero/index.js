@@ -22,7 +22,7 @@ const Hero = ({ imageUrl }) => {
             </div>
             <div className="flex-grow flex flex-col justify-center text-center">
               <Fade bottom distance={`24px`}>
-                <p className="text-dersu-white text-dersu-xs leading-dersu-xs md:text-dersu-md md:leading-dersu-md">
+                <p className="text-dersu-white text-dersu-xs md:text-dersu-md">
                   Disfruta de la montaña,
                   <br /> aprendiendo a tu ritmo
                 </p>

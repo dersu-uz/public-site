@@ -4,7 +4,7 @@ const ModuleIntro = () => {
   return (
     <div className="ModuleIntro">
       <Container>
-        <h2 className="text-dersu-lg leading-dersu-lg md:text-dersu-xl md:leading-dersu-xl">
+        <h2 className="text-dersu-lg md:text-dersu-xl">
           Dersu te ayuda a disfrutar de la montaña, aprendiendo a tu ritmo
         </h2>
         <div className="md:flex">

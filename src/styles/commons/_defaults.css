@@ -1,4 +1,6 @@
 html,
 body {
   @apply font-serif bg-dersu-white text-dersu-black;
+
+  letter-spacing: 0.01em;
 }

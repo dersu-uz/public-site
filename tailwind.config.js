@@ -20,26 +20,18 @@ module.exports = {
         serif: ['Recoleta', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
-        'dersu-xl': '66px',
-        'dersu-lg': '32px',
-        'dersu-md': '22px',
-        'dersu-sm': '18px',
-        'dersu-xs': '16px',
-        'dersu-xxs': '8px',
-      },
-      lineHeight: {
-        'dersu-xl': '72px',
-        'dersu-lg': '40px',
-        'dersu-md': '28px',
-        'dersu-sm': '26px',
-        'dersu-xs': '21px',
-        'dersu-xxs': '9px',
+        'dersu-xl': ['66px', '72px'], // [fontSize, letterSpacing]
+        'dersu-lg': ['32px', '40px'],
+        'dersu-md': ['22px', '28px'],
+        'dersu-sm': ['18px', '26px'],
+        'dersu-xs': ['16px', '21px'],
+        'dersu-xxs': ['8px', '9px'],
       },
       colors: {
         gray: colors.trueGray,
         dersu: {
-          'light-gray': '#888888',
           // palette from figma
+          'light-gray': '#888888',
           'black': '#313131',
           'white': '#f7f2f0',
           'dark-green': '#193830',
