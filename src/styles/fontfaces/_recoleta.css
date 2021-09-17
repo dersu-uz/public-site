@@ -1,14 +1,26 @@
 /* stylelint-disable */
+
 @font-face {
   font-display: swap;
   font-family: 'Recoleta';
   font-style: normal;
   font-weight: normal;
-  src: url('/fonts/recoleta-demo/recoleta-demo-500.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/recoleta/Recoleta-Regular/Recoleta-Regular.eot'); /* IE9 Compat Modes */
   src: local(''),
-      /*  url('/fonts/recoleta-demo/recoleta-demo-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/recoleta-demo/recoleta-regulardemo-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/recoleta-demo/recoleta-regulardemo-webfont.woff') format('woff'); /*, /* Modern Browsers */
-      /*  url('/fonts/recoleta-demo/recoleta-demo-500.ttf') format('truetype'), /* Safari, Android, iOS */
-      /*  url('/fonts/recoleta-demo/recoleta-demo-500.svg#Poppins') format('svg'); /* Legacy iOS */
+       url('/fonts/recoleta/Recoleta-Regular/Recoleta-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/recoleta/Recoleta-Regular/Recoleta-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/recoleta/Recoleta-Regular/Recoleta-Regular.woff') format('woff'); /*, /* Modern Browsers */
 }
+
+@font-face {
+  font-display: swap;
+  font-family: 'Recoleta';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/recoleta/Recoleta-Regular/Recoleta-Light.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/fonts/recoleta/Recoleta-Light/Recoleta-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/recoleta/Recoleta-Light/Recoleta-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/recoleta/Recoleta-Light/Recoleta-Regular.woff') format('woff'); /*, /* Modern Browsers */
+}
+
