@@ -1,5 +1,6 @@
 {
   "extends": [
+    "plugin:@next/next/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
