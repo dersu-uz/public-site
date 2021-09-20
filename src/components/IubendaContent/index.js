@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types'
+import MarkdownContent from '../MarkdownContent'
 
 const IubendaContent = ({ content }) => {
-  return (
-    <div
-      className="IubendaContent"
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
-  )
+  return <MarkdownContent dangerouslySetInnerHTML={{ __html: content }} />
 }
 
 IubendaContent.propTypes = {

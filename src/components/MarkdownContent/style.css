@@ -1,56 +1,37 @@
 .MarkdownContent {
-  h2 {
-    font-size: 30px;
-    line-height: 0.9em;
-    margin: 50px 0 30px 0;
+  @apply font-serif font-light py-10;
 
-    @screen lg {
-      font-size: 30px;
-    }
+  h1 {
+    @apply font-normal text-dersu-lg mb-2;
+  }
+
+  h2 {
+    @apply font-normal text-dersu-md mb-2;
+  }
+
+  h3 {
+    @apply font-normal text-dersu-sm mb-2;
+  }
+
+  h4 {
+    @apply font-normal text-dersu-xs mb-2;
   }
 
   p {
-    font-size: 24px;
-    line-height: 1.35em;
-    margin-bottom: 20px;
+    @apply text-dersu-sm mb-5;
+  }
 
-    @screen lg {
-      font-size: 24px;
-    }
+  a {
+    @apply font-normal;
   }
 
   ul {
-    font-size: 24px;
-    line-height: 1.35em;
+    @apply text-dersu-sm pl-5 mb-5;
 
     li {
+      @apply mb-1;
+
       list-style-type: circle;
-      margin: 0 0 0.2em 0;
-    }
-
-    @screen lg {
-      font-size: 24px;
-    }
-  }
-
-  blockquote {
-    max-width: 900px;
-    margin: 0 0 -50px 0;
-
-    @screen lg {
-      max-width: 500px;
-      margin: 30px 0 -50px 0;
-    }
-
-    p {
-      font-style: italic;
-      font-size: 38px;
-      line-height: 0.9em;
-      margin-bottom: 2em;
-
-      @screen lg {
-        font-size: 50px;
-      }
     }
   }
 }

@@ -12,6 +12,5 @@
 
 /* Components */
 @import "../components/CookieBanner/style";
-@import "../components/IubendaContent/style";
 @import "../components/MarkdownContent/style";
 @import "../components/IndicatorSlide/style";
