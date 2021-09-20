@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
+import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import ModuleHighlights, {
   ALIGN_MODES,
   COLOR_SCHEMES,
@@ -60,6 +61,7 @@ function HomePage() {
         separatorName="Waves"
       />
       <ModuleBetaAnnouncement />
+      <ModuleFeaturedPosts />
       <Footer />
     </>
   )

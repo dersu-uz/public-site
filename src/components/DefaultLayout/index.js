@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 
 import Header from '@/components/Header'
 import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
 import Footer from '@/components/Footer'
 
 const DefaultLayout = ({ children }) => {
@@ -9,7 +10,9 @@ const DefaultLayout = ({ children }) => {
     <>
       <Header />
       <main>
-        <Container>{children}</Container>
+        <Container>
+          <Wrapper>{children}</Wrapper>
+        </Container>
       </main>
       <Footer />
     </>
