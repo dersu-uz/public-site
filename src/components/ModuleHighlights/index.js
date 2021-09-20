@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types'
-import Image from 'next/image'
-import Container from '../Container'
+import Fade from 'react-reveal/Fade'
+
+import Container from '@/components/Container'
 
 import HighlightsSeparator01 from '../../styles/assets/highlights-separator-01.svg'
 import HighlightsSeparator02 from '../../styles/assets/highlights-separator-02.svg'
@@ -48,44 +49,47 @@ const ModuleHighlights = ({
     <div className="ModuleHighlights">
       <div className={`${colorSchemeDependantClasses[colorScheme]}`}>
         <Container>
-          <div className="md:flex">
-            <div
-              className={`flex-grow flex flex-col py-16 md:w-6/12 text-center
+          <Fade right>
+            <div className="md:flex">
+              <div
+                className={`flex-grow flex flex-col py-16 md:w-6/12 text-center
                 ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
               `}
-            >
-              <p className="font-sans uppercase pb-5 tracking-widest">
-                {subtitle}
-              </p>
+              >
+                <p className="font-sans font-bold text-dersu-2xs md:text-dersu-xs uppercase pb-5 tracking-widest">
+                  {subtitle}
+                </p>
 
-              <h2
-                className={`text-dersu-lg md:text-dersu-xl px-8
+                <h2
+                  className={`text-dersu-xl md:text-dersu-2xl md:px-8
                   ${
                     alignMode === ALIGN_MODES.LEFT ? 'md:text-left md:pl-0' : ''
                   }
                 `}
-              >
-                {title}
-              </h2>
+                >
+                  {title}
+                </h2>
 
-              <Separator
-                width="100%"
-                className={`flex-grow ${colorSchemeDependantClasses[colorScheme]}`}
-              />
+                <div
+                  className={`h-32 my-6 md:h-auto flex-grow flex items-center ${colorSchemeDependantClasses[colorScheme]}`}
+                >
+                  <Separator width="100%" className="" />
+                </div>
 
-              <p
-                className={`text-dersu-md ${
-                  alignMode === ALIGN_MODES.LEFT ? 'md:pr-16' : ''
-                }`}
-              >
-                {text}
-              </p>
+                <p
+                  className={`text-dersu-md md:px-8 ${
+                    alignMode === ALIGN_MODES.LEFT ? 'md:pr-16 md:pl-0' : ''
+                  }`}
+                >
+                  {text}
+                </p>
+              </div>
+
+              <div className="md:h-[900px] md:w-6/12">
+                <img className="w-full h-full object-cover" src={imageUrl} />
+              </div>
             </div>
-
-            <div className="md:h-[900px]">
-              <img src={imageUrl} />
-            </div>
-          </div>
+          </Fade>
         </Container>
       </div>
     </div>

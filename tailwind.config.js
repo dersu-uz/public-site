@@ -20,12 +20,14 @@ module.exports = {
         serif: ['Recoleta', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
-        'dersu-xl': ['66px', '72px'], // [fontSize, letterSpacing]
+        'dersu-2xl': ['66px', '72px'], // [fontSize, letterSpacing]
+        'dersu-xl': ['36px', '44px'],
         'dersu-lg': ['32px', '40px'],
         'dersu-md': ['22px', '28px'],
         'dersu-sm': ['18px', '26px'],
         'dersu-xs': ['16px', '21px'],
-        'dersu-xxs': ['8px', '9px'],
+        'dersu-2xs': ['14px', '22px'],
+        'dersu-3xs': ['8px', '9px'],
       },
       colors: {
         gray: colors.trueGray,
