@@ -1,6 +1,7 @@
-import Container from '../Container'
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
+
 import Fade from 'react-reveal/Fade'
-import Wrapper from '../Wrapper'
 
 const ModuleBetaAnnouncement = () => (
   <div className="ModuleBetaAnnouncement bg-dersu-cream">

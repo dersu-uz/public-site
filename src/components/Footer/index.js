@@ -5,9 +5,9 @@ import Fade from 'react-reveal/Fade'
 import TranslationsContext from '@/contexts/TranslationsContext'
 
 import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
-import Wrapper from '../Wrapper'
 
 const Footer = () => {
   const { t, currentLocale } = useContext(TranslationsContext)

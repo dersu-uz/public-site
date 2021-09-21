@@ -2,9 +2,11 @@ import Link from 'next/link'
 
 import Container from '@/components/Container'
 import ModuleFeaturedPost from '@/components/ModuleFeaturedPost'
+import Wrapper from '@/components/Wrapper'
+
+import { COLOR_SCHEMES } from '@/constants/theme'
 
 import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
-import Wrapper from '../Wrapper'
 
 const ModuleFeaturedPosts = () => {
   return (
@@ -22,12 +24,13 @@ const ModuleFeaturedPosts = () => {
               </Link>
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-6 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
             <ModuleFeaturedPost
               title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut mauris, elementum ultrices amet, integer eget a id."
               tag="tag del post"
               postDate="12 Sep 2021"
               href="/"
+              colorScheme={COLOR_SCHEMES.BROWN}
             />
             <ModuleFeaturedPost
               title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut mauris, elementum ultrices amet, integer eget a id."
@@ -35,6 +38,7 @@ const ModuleFeaturedPosts = () => {
               date="12 Sep 2021"
               imageUrl="/images/posts/01.jpg"
               href="/"
+              colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}
             />
           </div>
         </Wrapper>

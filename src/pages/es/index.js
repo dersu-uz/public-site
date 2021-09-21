@@ -3,11 +3,10 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import ModuleHighlights, {
-  ALIGN_MODES,
-  COLOR_SCHEMES,
-} from '@/components/ModuleHighlights'
+import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
 import ModuleIntro from '@/components/ModuleIntro'
+
+import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
 export const getStaticProps = () => {
   return {
@@ -31,7 +30,7 @@ function HomePage() {
         imageUrl={`/images/highlights/01.jpg`}
         colorScheme={COLOR_SCHEMES.GREEN}
         alignMode={ALIGN_MODES.CENTER}
-        separatorName="Lines"
+        separator={SEPARATORS.LINES}
       />
       <ModuleHighlights
         title="Preparar bien tus salidas es clave para evitar sorpresas"
@@ -40,7 +39,7 @@ function HomePage() {
         imageUrl={`/images/highlights/02.jpg`}
         colorScheme={COLOR_SCHEMES.YELLOW}
         alignMode={ALIGN_MODES.LEFT}
-        separatorName="ExclamationMark"
+        separator={SEPARATORS.ICONS}
       />
       <ModuleHighlights
         title="Información extra para tomar mejores decisiones"
@@ -49,7 +48,7 @@ function HomePage() {
         imageUrl={`/images/highlights/03.jpg`}
         colorScheme={COLOR_SCHEMES.BROWN}
         alignMode={ALIGN_MODES.CENTER}
-        separatorName="Icons"
+        separator={SEPARATORS.EXCLAMATION_MARK}
       />
       <ModuleHighlights
         title="Evolución, formación y consejo"
@@ -58,7 +57,7 @@ function HomePage() {
         imageUrl={`/images/highlights/04.jpg`}
         colorScheme={COLOR_SCHEMES.PINK}
         alignMode={ALIGN_MODES.LEFT}
-        separatorName="Waves"
+        separator={SEPARATORS.WAVES}
       />
       <ModuleBetaAnnouncement />
       <ModuleFeaturedPosts />

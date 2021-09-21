@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import Fade from 'react-reveal/Fade'
+
 import Container from '@/components/Container'
-import Wrapper from '../Wrapper'
+import Wrapper from '@/components/Wrapper'
 
 const ModuleIntro = () => {
   return (
