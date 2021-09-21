@@ -33,9 +33,9 @@ const ModuleFeaturedPosts = () => {
               colorScheme={COLOR_SCHEMES.BROWN}
             />
             <ModuleFeaturedPost
-              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut mauris, elementum ultrices amet, integer eget a id."
+              title="Lorem ipsum dolor sit amet. Ut ut mauris, elementum ultrices amet, integer eget a id."
               tag="tag del post"
-              date="12 Sep 2021"
+              postDate="10 Sep 2021"
               imageUrl="/images/posts/01.jpg"
               href="/"
               colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}

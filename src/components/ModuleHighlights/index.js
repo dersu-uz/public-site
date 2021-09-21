@@ -29,16 +29,34 @@ const SeparatorComponents = {
   WAVES: HighlightsSeparator04,
 }
 
+const colSpanClass = {
+  1: 'md:col-span-1',
+  2: 'md:col-span-2',
+  3: 'md:col-span-3',
+  4: 'md:col-span-4',
+  5: 'md:col-span-5',
+  6: 'md:col-span-6',
+  7: 'md:col-span-7',
+  8: 'md:col-span-8',
+  9: 'md:col-span-9',
+  10: 'md:col-span-10',
+  11: 'md:col-span-11',
+  12: 'md:col-span-12',
+}
+
 const ModuleHighlights = ({
   title,
   subtitle,
   text,
   imageUrl,
+  columnsForImage,
   alignMode,
   colorScheme,
   separator,
 }) => {
   const SeparatorComponent = SeparatorComponents[separator]
+  const columnsForContent = 12 - columnsForImage
+
   return (
     <div className="ModuleHighlights">
       <div
@@ -46,8 +64,8 @@ const ModuleHighlights = ({
       >
         <Container>
           <Fade right>
-            <div className="md:flex">
-              <div className=" md:w-6/12 flex">
+            <div className="md:grid grid-cols-12">
+              <div className={`${colSpanClass[columnsForContent]} flex`}>
                 <div
                   className={`flex flex-col py-16 text-center
                 ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
@@ -66,7 +84,7 @@ const ModuleHighlights = ({
                   </h2>
 
                   <div
-                    className={`h-32 my-6 md:h-auto flex-grow flex items-center
+                    className={`my-14 md:my-6 md:h-auto flex-grow flex items-center
                     ${colorSchemeClasses[colorScheme].background}
                     ${colorSchemeClasses[colorScheme].color}`}
                   >
@@ -83,7 +101,9 @@ const ModuleHighlights = ({
                 </div>
               </div>
 
-              <div className="md:h-[900px] md:w-6/12 flex items-center">
+              <div
+                className={`${colSpanClass[columnsForImage]} md:h-[900px] flex items-center`}
+              >
                 {Array.isArray(imageUrl) ? (
                   <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-36 md:pl-0 md:pb-0">
                     {imageUrl.map((image, i) => (
@@ -103,6 +123,7 @@ const ModuleHighlights = ({
 }
 
 ModuleHighlights.defaultProps = {
+  columnsForImage: 6,
   colorScheme: COLOR_SCHEMES.BROWN,
   alignMode: ALIGN_MODES.CENTER,
   separator: SEPARATORS.WAVES,
@@ -116,6 +137,7 @@ ModuleHighlights.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
+  columnsForImage: PropTypes.number,
   colorScheme: PropTypes.oneOf(Object.values(COLOR_SCHEMES)),
   alignMode: PropTypes.oneOf(Object.values(ALIGN_MODES)),
   separator: PropTypes.oneOf(Object.values(SEPARATORS)),

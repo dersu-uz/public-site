@@ -17,9 +17,9 @@ const Footer = () => {
       <Container>
         <Wrapper>
           <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
-            <Fade bottom>
-              <div className="md:flex md:items-center">
-                <div className="w-2/3 py-10 md:order-2 md:w-2/12 md:mx-auto">
+            <div className="md:flex md:items-center">
+              <div className="w-2/3 py-10 md:order-2 md:w-2/12 md:mx-auto">
+                <Fade bottom cascade>
                   <ul className="font-bold col-count-2 leading-9">
                     <li>
                       <Link href="https://www.instagram.com/dersu_uz/">
@@ -47,17 +47,17 @@ const Footer = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
-                <div className="py-10 md:order-1 md:w-1/2 md:py-28">
-                  <DersuLogoWithText width="100%" />
-                </div>
+                </Fade>
               </div>
-              <div className="text-dersu-light-gray leading-5 md:flex">
-                <p className="md:order-1">
-                  Todos los derechos reservados. Dersu ® 2021
-                </p>
+              <div className="py-10 md:order-1 md:w-1/2 md:py-28">
+                <DersuLogoWithText width="100%" />
               </div>
-            </Fade>
+            </div>
+            <div className="text-dersu-light-gray leading-5 md:flex">
+              <p className="md:order-1">
+                Todos los derechos reservados. Dersu ® 2021
+              </p>
+            </div>
           </div>
         </Wrapper>
       </Container>
