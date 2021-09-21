@@ -9,6 +9,7 @@ import {
 } from '@/constants/settings'
 
 import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
 
 const CookieBanner = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
@@ -29,17 +30,19 @@ const CookieBanner = () => {
   return showCookieBanner ? (
     <div className="CookieBanner">
       <Container>
-        <div className="CookieBanner__content">
-          <div className="CookieBanner__text">
-            {t.common.cookieBanner1}{' '}
-            <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
-              {t.common.cookieBanner2}
-            </Link>
+        <Wrapper>
+          <div className="CookieBanner__content">
+            <div className="CookieBanner__text">
+              {t.common.cookieBanner1}{' '}
+              <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
+                {t.common.cookieBanner2}
+              </Link>
+            </div>
+            <div onClick={handleAcceptCookies} className="CookieBanner__close">
+              ✕
+            </div>
           </div>
-          <div onClick={handleAcceptCookies} className="CookieBanner__close">
-            ✕
-          </div>
-        </div>
+        </Wrapper>
       </Container>
     </div>
   ) : (

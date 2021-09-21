@@ -7,7 +7,7 @@ import CookieBanner from '@/components/CookieBanner'
 const Page = ({ title, description, canonicalUrl, children }) => {
   return (
     <>
-      <div className="Page">
+      <div className="Page overflow-hidden">
         <Head>
           <title>{title ? `${title} | Dersu` : `Dersu | ${description}`}</title>
           <meta name="description" content={description} />
