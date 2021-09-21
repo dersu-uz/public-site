@@ -83,8 +83,16 @@ const ModuleHighlights = ({
                 </div>
               </div>
 
-              <div className="md:h-[900px] md:w-6/12">
-                <img className="w-full h-full object-cover" src={imageUrl} />
+              <div className="md:h-[900px] md:w-6/12 flex items-center">
+                {Array.isArray(imageUrl) ? (
+                  <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-36 md:pl-0 md:pb-0">
+                    {imageUrl.map((image, i) => (
+                      <img key={i} className="w-full" src={image} />
+                    ))}
+                  </div>
+                ) : (
+                  <img className="w-full h-full object-cover" src={imageUrl} />
+                )}
               </div>
             </div>
           </Fade>
@@ -104,7 +112,10 @@ ModuleHighlights.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
+  imageUrl: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
   colorScheme: PropTypes.oneOf(Object.values(COLOR_SCHEMES)),
   alignMode: PropTypes.oneOf(Object.values(ALIGN_MODES)),
   separator: PropTypes.oneOf(Object.values(SEPARATORS)),

@@ -2,6 +2,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'tailwindcss/variants';
 
 /* Commons */
 @import "commons/_defaults";
@@ -14,3 +15,7 @@
 @import "../components/CookieBanner/style";
 @import "../components/MarkdownContent/style";
 @import "../components/IndicatorSlide/style";
+
+* {
+  /* outline: 1px dashed blue; */
+}

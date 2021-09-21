@@ -9,10 +9,11 @@ module.exports = {
       center: true,
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1440px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     extend: {
       fontFamily: {
@@ -45,10 +46,6 @@ module.exports = {
           'purple': '#7d88be',
           'pink': '#e3b0c2',
         },
-      },
-      screens: {
-        portrait: { raw: '(orientation: portrait)' },
-        landscape: { raw: '(orientation: landscape)' },
       },
       animation: {
         'indicator-slide': 'indicator-slide 1s ease-in-out infinite',

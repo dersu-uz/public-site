@@ -1,9 +1,12 @@
-import Page from '@/components/Page'
+import '@/styles/main.css'
+
 import TranslationsContext from '@/contexts/TranslationsContext'
+import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
+
 import { getTranslations, localeNames } from '@/translations'
 
-import '@/styles/main.css'
-import GridOverlay from '@/components/GridOverlay'
+import Page from '@/components/Page'
+import DeveloperHelpers from '@/components/DeveloperHelpers'
 
 /* eslint react/prop-types: 0 */
 function NextApp({ Component, pageProps }) {
@@ -16,10 +19,16 @@ function NextApp({ Component, pageProps }) {
   }
   return (
     <TranslationsContext.Provider value={contextValue}>
-      <Page title={title} description={description} canonicalUrl={canonicalUrl}>
-        <GridOverlay />
-        <Component {...pageProps} />
-      </Page>
+      <DeveloperContextProvider>
+        <Page
+          title={title}
+          description={description}
+          canonicalUrl={canonicalUrl}
+        >
+          <Component {...pageProps} />
+          <DeveloperHelpers />
+        </Page>
+      </DeveloperContextProvider>
     </TranslationsContext.Provider>
   )
 }

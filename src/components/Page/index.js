@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Script from 'next/script'
 
 import CookieBanner from '@/components/CookieBanner'
-import GridOverlay from '@/components/GridOverlay'
 
 const Page = ({ title, description, canonicalUrl, children }) => {
   return (
@@ -22,7 +21,6 @@ const Page = ({ title, description, canonicalUrl, children }) => {
         </Head>
         {children}
         <CookieBanner />
-        <GridOverlay />
       </div>
       <Script
         async
