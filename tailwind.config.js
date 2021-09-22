@@ -6,7 +6,7 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
     container: {
-      center: true,
+      center: false,
     },
     screens: {
       'sm': '640px',

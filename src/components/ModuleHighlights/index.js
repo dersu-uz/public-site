@@ -71,12 +71,12 @@ const ModuleHighlights = ({
                 ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
               `}
                 >
-                  <p className="font-sans font-bold text-dersu-2xs md:text-dersu-xs uppercase pb-5 px-8 tracking-widest">
+                  <p className="font-sans font-bold text-dersu-2xs md:text-dersu-xs uppercase pb-5 px-10 tracking-widest">
                     {subtitle}
                   </p>
 
                   <h2
-                    className={`text-dersu-xl md:text-dersu-2xl px-8
+                    className={`text-dersu-xl md:text-dersu-2xl px-10
                   ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
                 `}
                   >
@@ -92,7 +92,7 @@ const ModuleHighlights = ({
                   </div>
 
                   <p
-                    className={`text-dersu-md px-8 ${
+                    className={`text-dersu-md px-10 ${
                       alignMode === ALIGN_MODES.LEFT ? 'md:pr-16' : ''
                     }`}
                   >
