@@ -1,4 +1,4 @@
-import { useContext, useMemo, useRef } from 'react'
+import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useWindowScroll } from 'react-use'
 
@@ -18,30 +18,28 @@ const Header = () => {
 
   const { changeLocale } = usePreferredLocale()
 
-  const { isSticky, compensation } = useMemo(() => {
+  const [isSticky, setIsSticky] = useState(false)
+  const [heightCompensation, setHeightCompensation] = useState(0)
+
+  useEffect(() => {
     const offsetTop =
       (headerRef && headerRef.current && headerRef.current.offsetTop) || 0
 
     const distance = scrollTop - offsetTop
-    const isSticky = distance > 0
-    const compensation =
-      (isSticky &&
-        headerContentRef &&
+    setIsSticky(distance > 0)
+    setHeightCompensation(
+      (headerContentRef &&
         headerContentRef.current &&
         headerContentRef.current.getBoundingClientRect().height) ||
-      0
-
-    return {
-      isSticky,
-      compensation,
-    }
+        0
+    )
   }, [scrollTop])
 
   return (
     <header
       className="Header"
       ref={headerRef}
-      style={{ paddingTop: `${compensation}px` }}
+      style={{ paddingTop: `${isSticky ? `${heightCompensation}` : `0`}px` }}
     >
       <div
         ref={headerContentRef}
