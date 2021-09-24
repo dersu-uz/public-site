@@ -1,13 +1,9 @@
-import { useState } from 'react'
 import Fade from 'react-reveal/Fade'
 
 import Container from '@/components/Container'
 import Wrapper from '@/components/Wrapper'
-import MailchimpFormModal from '@/components/MailchimpFormModal'
 
 const ModuleBetaAnnouncement = () => {
-  const [showMailchimpModal, setShowMailchimpModal] = useState(false)
-
   return (
     <>
       <div className="ModuleBetaAnnouncement bg-dersu-cream">
@@ -38,9 +34,6 @@ const ModuleBetaAnnouncement = () => {
           </Wrapper>
         </Container>
       </div>
-      {showMailchimpModal && (
-        <MailchimpFormModal onDismiss={() => setShowMailchimpModal(false)} />
-      )}
     </>
   )
 }
