@@ -26,6 +26,7 @@ function NextApp({ Component, pageProps }) {
           canonicalUrl={canonicalUrl}
         >
           <Component {...pageProps} />
+          <div id="modal-root"></div>
           <DeveloperHelpers />
         </Page>
       </DeveloperContextProvider>
