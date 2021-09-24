@@ -13,8 +13,8 @@ const ModuleBetaAnnouncement = () => {
               <Fade bottom distance={`24px`}>
                 <h2 className="text-dersu-lg mb-10 md:mb-16 md:text-dersu-2xl md:w-9/12">
                   Nuestro plan es sacar una primera versión de prueba de la App
-                  en diciembre de este año (2021); a la que iremos dando acceso
-                  a la gente poco a poco, por invitación.
+                  en diciembre, a la que iremos dando acceso a la gente poco a
+                  poco, por invitación.
                 </h2>
                 <p className="text-dersu-sm md:text-dersu-lg font-light md:w-8/12">
                   Si quieres apuntarte a la beta y suscribirte a nuestra

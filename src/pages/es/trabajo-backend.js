@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import DefaultLayout from '@/components/DefaultLayout'
+import DefaultLayout from '@/layouts/DefaultLayout'
 import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps = () => {

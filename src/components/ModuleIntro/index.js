@@ -11,12 +11,12 @@ const ModuleIntro = () => {
         <Wrapper>
           <div>
             <Fade bottom distance={`24px`}>
-              <h2 className="text-dersu-lg md:text-dersu-2xl text-center py-32 md:py-48">
+              <h2 className="text-dersu-lg md:text-dersu-2xl text-center py-32 md:py-48 xl:py-32 2xl:py-20 2xl:max-w-5xl 2xl:m-auto">
                 Dersu te ayuda a disfrutar de la montaña, aprendiendo a tu ritmo
               </h2>
             </Fade>
             <Fade bottom cascade>
-              <ul className="flex flex-col md:flex-row gap-5">
+              <ul className="flex flex-col md:flex-row gap-5 2xl:w-10/12 2xl:mx-auto">
                 <li className="w-2/4 md:w-3/12">
                   <img className="w-full" src="/images/intro/01.jpg" />
                 </li>

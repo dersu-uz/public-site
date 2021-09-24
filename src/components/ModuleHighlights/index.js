@@ -67,24 +67,36 @@ const ModuleHighlights = ({
             <div className="md:grid grid-cols-12">
               <div className={`${colSpanClass[columnsForContent]} flex`}>
                 <div
-                  className={`flex flex-col py-16 text-center
-                ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
+                  className={`flex flex-col py-16 text-center w-full
+                ${
+                  alignMode === ALIGN_MODES.LEFT
+                    ? 'md:text-left 2xl:text-center'
+                    : ''
+                }
               `}
                 >
-                  <p className="font-sans font-bold text-dersu-2xs md:text-dersu-xs uppercase pb-5 px-10 tracking-widest">
+                  <p
+                    className="font-sans font-bold text-dersu-2xs md:text-dersu-2xs lg:text-dersu-xs uppercase pb-5 px-10 tracking-widest
+                    md:first-letter:ml-0.5 xl:first-letter:ml-0.5"
+                  >
                     {subtitle}
                   </p>
 
                   <h2
-                    className={`text-dersu-xl md:text-dersu-2xl px-10
-                  ${alignMode === ALIGN_MODES.LEFT ? 'md:text-left' : ''}
+                    className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:max-w-3xl xl:mx-auto px-10
+                    md:first-letter:-ml-0.5 xl:first-letter:-ml-1
+                  ${
+                    alignMode === ALIGN_MODES.LEFT
+                      ? 'md:text-left 2xl:text-center'
+                      : ''
+                  }
                 `}
                   >
                     {title}
                   </h2>
 
                   <div
-                    className={`my-14 md:my-6 md:h-auto flex-grow flex items-center
+                    className={`my-14 md:my-16  md:h-auto flex-grow flex items-center
                     ${colorSchemeClasses[colorScheme].background}
                     ${colorSchemeClasses[colorScheme].color}`}
                   >
@@ -92,8 +104,10 @@ const ModuleHighlights = ({
                   </div>
 
                   <p
-                    className={`text-dersu-md px-10 ${
-                      alignMode === ALIGN_MODES.LEFT ? 'md:pr-16' : ''
+                    className={`text-dersu-sm lg:text-dersu-md px-10 xl:mx-auto xl:max-w-3xl ${
+                      alignMode === ALIGN_MODES.LEFT
+                        ? 'md:pr-16 2xl:text-center'
+                        : ''
                     }`}
                   >
                     {text}
@@ -102,16 +116,19 @@ const ModuleHighlights = ({
               </div>
 
               <div
-                className={`${colSpanClass[columnsForImage]} md:h-[900px] flex items-center`}
+                className={`${colSpanClass[columnsForImage]}  flex items-center relative`}
               >
                 {Array.isArray(imageUrl) ? (
-                  <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-36 md:pl-0 md:pb-0">
+                  <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-0 lg:py-36 xl:py-24 md:pl-0 md:pb-0">
                     {imageUrl.map((image, i) => (
                       <img key={i} className="w-full" src={image} />
                     ))}
                   </div>
                 ) : (
-                  <img className="w-full h-full object-cover" src={imageUrl} />
+                  <div
+                    className="h-full w-full flex bg-no-repeat bg-cover bg-center"
+                    style={{ backgroundImage: `url(${imageUrl})` }}
+                  />
                 )}
               </div>
             </div>

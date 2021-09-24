@@ -1,4 +1,4 @@
-import DefaultLayout from '@/components/DefaultLayout'
+import DefaultLayout from '@/layouts/DefaultLayout'
 import IubendaContent from '@/components/IubendaContent'
 import useIubendaPrivacy from '@/hooks/useIubendaPrivacy'
 
