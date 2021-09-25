@@ -34,4 +34,24 @@
       list-style-type: circle;
     }
   }
+
+  ol {
+    @apply text-dersu-sm pl-5 mb-5;
+
+    li {
+      @apply mb-1 list-decimal;
+    }
+  }
+
+  img {
+    @apply w-full;
+  }
+
+  blockquote {
+    @apply pl-5 border-l-4;
+  }
+
+  pre {
+    @apply bg-black text-white p-4;
+  }
 }
