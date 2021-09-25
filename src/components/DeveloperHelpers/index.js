@@ -9,11 +9,11 @@ import BreakpointsHelper from '../BreakpointsHelper'
 const DeveloperHelpers = ({ children }) => {
   const { showGrid, showBreakpoints } = useContext(DeveloperContext)
   return (
-    <>
+    <div className="z-50">
       {children}
       {showGrid && <GridOverlayHelper />}
       {showBreakpoints && <BreakpointsHelper />}
-    </>
+    </div>
   )
 }
 

@@ -4,3 +4,7 @@ body {
 
   letter-spacing: 0.01em;
 }
+
+#__next {
+  @apply overflow-hidden;
+}

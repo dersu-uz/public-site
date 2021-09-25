@@ -6,7 +6,6 @@ import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
 import { getTranslations, localeNames } from '@/translations'
 
 import Page from '@/components/Page'
-import DeveloperHelpers from '@/components/DeveloperHelpers'
 
 /* eslint react/prop-types: 0 */
 function NextApp({ Component, pageProps }) {
@@ -26,8 +25,6 @@ function NextApp({ Component, pageProps }) {
           canonicalUrl={canonicalUrl}
         >
           <Component {...pageProps} />
-          <div id="modal-root"></div>
-          <DeveloperHelpers />
         </Page>
       </DeveloperContextProvider>
     </TranslationsContext.Provider>
