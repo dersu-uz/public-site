@@ -8,9 +8,6 @@ import {
   COOKIES_ACCEPT_EXPIRE_DAYS,
 } from '@/constants/settings'
 
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
-
 const CookieBanner = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
   const [acceptCookies, updateAcceptCookies] = useCookie(COOKIES_ACCEPT_NAME)
@@ -29,21 +26,22 @@ const CookieBanner = () => {
 
   return showCookieBanner ? (
     <div className="CookieBanner">
-      <Container>
-        <Wrapper>
-          <div className="CookieBanner__content">
-            <div className="CookieBanner__text">
-              {t.common.cookieBanner1}{' '}
-              <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
-                {t.common.cookieBanner2}
-              </Link>
-            </div>
-            <div onClick={handleAcceptCookies} className="CookieBanner__close">
-              ✕
-            </div>
+      <div className="fixed px-4 pb-5 bottom-0 left-1/2 transform -translate-x-1/2 w-[fit-content] max-w-[668px]">
+        <div className="p-5 font-sans text-dersu-2xs text-dersu-white bg-dersu-black flex gap-10 rounded">
+          <div className="">
+            {t.common.cookieBanner1}{' '}
+            <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
+              <a className="font-bold">{t.common.cookieBanner2}</a>
+            </Link>
           </div>
-        </Wrapper>
-      </Container>
+          <div
+            onClick={handleAcceptCookies}
+            className="text-dersu-sm cursor-pointer"
+          >
+            ✕
+          </div>
+        </div>
+      </div>
     </div>
   ) : (
     <></>

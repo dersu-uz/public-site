@@ -12,7 +12,6 @@
 @import "fontfaces/_recoleta";
 
 /* Components */
-@import "../components/CookieBanner/style";
 @import "../components/MarkdownContent/style";
 @import "../components/IndicatorSlide/style";
 
