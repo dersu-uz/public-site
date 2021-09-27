@@ -48,13 +48,13 @@ module.exports = {
         },
       },
       animation: {
-        'indicator-slide': 'indicator-slide 1s ease-in-out infinite',
+        'indicator-slide-grow': 'indicator-slide-grow 1s ease-in-out infinite',
       },
       keyframes: {
-        'indicator-slide': {
-          '0%': { opacity: 0, transform: 'scale(1)' },
-          '50%': { opacity: 0.8 },
-          '100%': { opacity: 0, transform: 'translateY(8px)' },
+        'indicator-slide-grow': {
+          '0%': { opacity: 1, height: '0' },
+          '50%': { opacity: 1, height: '100%' },
+          '100%': { opacity: 0, height: '100%' },
         },
       },
     },

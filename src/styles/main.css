@@ -13,7 +13,6 @@
 
 /* Components */
 @import "../components/MarkdownContent/style";
-@import "../components/IndicatorSlide/style";
 
 * {
   /* outline: 1px dashed blue; */
