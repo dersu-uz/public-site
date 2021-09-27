@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade'
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 
 import IndicatorSlide from '@/components/IndicatorSlide'
-import Container from '@/components/Container'
 import Wrapper from '@/components/Wrapper'
 
 const Hero = ({ imageUrl }) => {
@@ -14,7 +13,6 @@ const Hero = ({ imageUrl }) => {
   return (
     <div className="Hero">
       <div className="min-h-screen bg-cover bg-center" style={style}>
-        <Container className="min-h-screen">
           <Wrapper>
             <div className="flex flex-col min-h-screen">
               <div className="text-dersu-yellow pt-10">
@@ -35,7 +33,6 @@ const Hero = ({ imageUrl }) => {
               </div>
             </div>
           </Wrapper>
-        </Container>
       </div>
     </div>
   )

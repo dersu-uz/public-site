@@ -4,7 +4,6 @@ import { useWindowScroll } from 'react-use'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
 import usePreferredLocale from '@/hooks/usePreferredLocale'
-import Container from '@/components/Container'
 import Wrapper from '@/components/Wrapper'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
@@ -45,7 +44,6 @@ const Header = () => {
         ref={headerContentRef}
         className={`${isSticky ? 'fixed top-0 left-0 w-full z-10' : ''}`}
       >
-        <Container>
           <Wrapper>
             <div className="flex py-10 items-center">
               <h1 className="flex-grow">
@@ -84,7 +82,6 @@ const Header = () => {
               </nav>
             </div>
           </Wrapper>
-        </Container>
       </div>
     </header>
   )

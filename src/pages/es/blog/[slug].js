@@ -5,7 +5,6 @@ import ErrorPage from 'next/error'
 import { getPostBySlug, getPostSlugs } from '@/utils/posts'
 
 import BlogPostHero from '@/components/BlogPostHero'
-import Container from '@/components/Container'
 import MarkdownContent from '@/components/MarkdownContent'
 import Wrapper from '@/components/Wrapper'
 import Header from '@/components/Header'
@@ -60,13 +59,11 @@ const BlogPost = ({ slug, post }) => {
           {featuredImage && (
             <BlogPostHero title={title} imageUrl={featuredImage} />
           )}
-          <Container>
-            <Wrapper>
-              <MarkdownContent
-                dangerouslySetInnerHTML={{ __html: htmlContent }}
-              />
-            </Wrapper>
-          </Container>
+          <Wrapper>
+            <MarkdownContent
+              dangerouslySetInnerHTML={{ __html: htmlContent }}
+            />
+          </Wrapper>
           <Footer />
         </>
       )}
