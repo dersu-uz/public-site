@@ -27,7 +27,7 @@ const HomePage = () => (
       subtitle="Perfil de montañista"
       text="En Dersu podrás definir tus objetivos y capacidades (físicas, técnicas, etc.) para que podamos ofrecerte las rutas más adecuadas."
       imageUrl="/images/highlights/01.jpg"
-      columnsForImage={5}
+      columnsForImage={6}
       colorScheme={COLOR_SCHEMES.GREEN}
       alignMode={ALIGN_MODES.CENTER}
       separator={SEPARATORS.LINES}
@@ -47,7 +47,7 @@ const HomePage = () => (
       subtitle="Ayuda en ruta"
       text="Estamos construyendo un sistema de avisos en tiempo real que te ayude a identificar puntos críticos en la ruta y a gestionar mejor la toma las decisiones."
       imageUrl="/images/highlights/03.jpg"
-      columnsForImage={5}
+      columnsForImage={6}
       colorScheme={COLOR_SCHEMES.BROWN}
       alignMode={ALIGN_MODES.CENTER}
       separator={SEPARATORS.ICONS}

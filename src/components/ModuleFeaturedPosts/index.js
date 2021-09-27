@@ -6,8 +6,11 @@ import Wrapper from '@/components/Wrapper'
 import { COLOR_SCHEMES } from '@/constants/theme'
 
 import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
+import TranslationsContext from '@/contexts/TranslationsContext'
+import { useContext } from 'react'
 
 const ModuleFeaturedPosts = () => {
+  const { currentLocale } = useContext(TranslationsContext)
   return (
     <div className="ModuleFeaturedPosts">
       <Wrapper>
@@ -16,7 +19,7 @@ const ModuleFeaturedPosts = () => {
             Historias
           </h2>
           <p className="font-sans text-dersu-2xs md:text-dersu-md font-bold pb-1">
-            <Link href="/">
+            <Link href={`/${currentLocale}/blog`}>
               <a>
                 Ver todas{' '}
                 <IconArrowRight width="16px" className="inline-block ml-2" />

@@ -10,7 +10,7 @@ const ModuleIntro = () => {
         <div>
           <Fade bottom distance={`24px`}>
             <h2 className="text-dersu-lg md:text-dersu-3xl text-center py-32 md:py-48 xl:py-32 2xl:py-20 2xl:max-w-5xl 2xl:m-auto">
-              Dersu te ayuda a disfrutar de la montaña, aprendiendo a tu ritmo
+              Conoce, explora y crece
             </h2>
           </Fade>
           <Fade bottom cascade>

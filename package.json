@@ -28,7 +28,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "junk": "^4.0.0",
     "next": "^11.1.2",
-    "postcss": "^8.3.6",
+    "postcss": "^8.3.8",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^6.7.0",

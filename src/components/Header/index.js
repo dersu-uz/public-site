@@ -34,6 +34,9 @@ const Header = () => {
     )
   }, [scrollTop])
 
+  const navItemClasses =
+    'text-dersu-light-gray text-dersu-2xs mx-2 font-bold leading-5 hover:text-dersu-black transition-colors cursor-pointer'
+
   return (
     <header
       className="Header"
@@ -44,44 +47,50 @@ const Header = () => {
         ref={headerContentRef}
         className={`${isSticky ? 'fixed top-0 left-0 w-full z-10' : ''}`}
       >
-          <Wrapper>
-            <div className="flex py-10 items-center">
-              <h1 className="flex-grow">
-                <Link href={`/${currentLocale}`}>
-                  <a>
-                    <DersuLogoWithText className="h-5 -mt-1.5 md:h-6" />
+        <Wrapper>
+          <div className="flex py-10 items-center">
+            <h1 className="flex-grow">
+              <Link href={`/${currentLocale}`}>
+                <a>
+                  <DersuLogoWithText className="h-5 -mt-1.5 md:h-6" />
+                </a>
+              </Link>
+            </h1>
+            <nav className="flex font-sans">
+              <span>
+                <Link href={`/${currentLocale}/blog`}>
+                  <a className={navItemClasses}>Blog</a>
+                </Link>
+              </span>{' '}
+              /
+              <span>
+                <Link href="http://eepurl.com/hI63hX">
+                  <a target="_blank" className={navItemClasses}>
+                    Newsletter
                   </a>
                 </Link>
-              </h1>
-              <nav>
-                <ul className="flex">
-                  {localeNames.map((l, i) => {
-                    const isCurrent = l.locale === currentLocale
-                    return (
-                      <li
-                        key={i}
-                        className="font-sans text-dersu-light-gray text-sm pl-2.5 font-bold leading-5 hover:text-dersu-black transition-colors"
-                      >
-                        {isCurrent ? (
-                          <span className="text-dersu-black">{l.name}</span>
-                        ) : (
-                          <a
-                            href={`/${l.locale}/`}
-                            onClick={e => {
-                              e.preventDefault()
-                              changeLocale(l.locale)
-                            }}
-                          >
-                            {l.name}
-                          </a>
-                        )}
-                      </li>
-                    )
-                  })}
-                </ul>
-              </nav>
-            </div>
-          </Wrapper>
+              </span>{' '}
+              /
+              {localeNames.map((l, i) => {
+                const isCurrent = l.locale === currentLocale
+                return !isCurrent ? (
+                  <span key={i}>
+                    <a
+                      href={`/${l.locale}/`}
+                      className={navItemClasses}
+                      onClick={e => {
+                        e.preventDefault()
+                        changeLocale(l.locale)
+                      }}
+                    >
+                      {l.name}
+                    </a>
+                  </span>
+                ) : null
+              })}
+            </nav>
+          </div>
+        </Wrapper>
       </div>
     </header>
   )

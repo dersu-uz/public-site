@@ -64,7 +64,7 @@ const ModuleHighlights = ({
           <div className="md:grid grid-cols-12">
             <div className={`${colSpanClass[columnsForContent]} flex`}>
               <div
-                className={`flex flex-col py-16 text-center w-full
+                className={`flex flex-col pt-16 pb-16 md:pb-32 text-center w-full
                 ${
                   alignMode === ALIGN_MODES.LEFT
                     ? 'md:text-left 2xl:text-center'
@@ -80,7 +80,7 @@ const ModuleHighlights = ({
                 </p>
 
                 <h2
-                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-10
+                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-10
                     md:first-letter:-ml-0.5 xl:first-letter:-ml-1
                   ${
                     alignMode === ALIGN_MODES.LEFT
@@ -93,7 +93,7 @@ const ModuleHighlights = ({
                 </h2>
 
                 <div
-                  className={`my-14 md:my-16  md:h-auto flex-grow flex items-center
+                  className={`py-16 md:py-0 md:h-auto flex-grow flex items-center
                     ${colorSchemeClasses[colorScheme].background}
                     ${colorSchemeClasses[colorScheme].color}`}
                 >
@@ -113,7 +113,7 @@ const ModuleHighlights = ({
             </div>
 
             <div
-              className={`${colSpanClass[columnsForImage]} flex items-center relative md:min-h-[600px] lg:min-h-[800px] xl:min-h-[900px]`}
+              className={`${colSpanClass[columnsForImage]} flex items-center relative md:h-[600px] lg:h-[700px] xl:h-[800px]`}
             >
               {Array.isArray(imageUrl) ? (
                 <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-0 lg:py-36 xl:py-24 md:pl-0 md:pb-0">

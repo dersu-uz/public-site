@@ -4,7 +4,7 @@ import ErrorPage from 'next/error'
 
 import { getPostBySlug, getPostSlugs } from '@/utils/posts'
 
-import BlogPostHero from '@/components/BlogPostHero'
+import BlogPostPageHero from '@/components/BlogPostPageHero'
 import MarkdownContent from '@/components/MarkdownContent'
 import Wrapper from '@/components/Wrapper'
 import Header from '@/components/Header'
@@ -41,7 +41,7 @@ export async function getStaticProps({ params }) {
   }
 }
 
-const BlogPost = ({ slug, post }) => {
+const BlogPostPage = ({ slug, post }) => {
   const { isFallback } = useRouter()
   const {
     meta: { title, featuredImage },
@@ -57,7 +57,7 @@ const BlogPost = ({ slug, post }) => {
         <>
           <Header />
           {featuredImage && (
-            <BlogPostHero title={title} imageUrl={featuredImage} />
+            <BlogPostPageHero title={title} imageUrl={featuredImage} />
           )}
           <Wrapper>
             <MarkdownContent
@@ -71,7 +71,7 @@ const BlogPost = ({ slug, post }) => {
   )
 }
 
-BlogPost.propTypes = {
+BlogPostPage.propTypes = {
   slug: PropTypes.string.isRequired,
   post: PropTypes.shape({
     meta: PropTypes.shape({
@@ -82,4 +82,4 @@ BlogPost.propTypes = {
   }),
 }
 
-export default BlogPost
+export default BlogPostPage
