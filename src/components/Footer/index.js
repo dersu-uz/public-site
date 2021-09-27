@@ -49,7 +49,7 @@ const Footer = () => {
                   </ul>
                 </Fade>
               </div>
-              <div className="py-10 md:order-1 md:w-1/2 md:py-28">
+              <div className="py-10 md:order-1 w-4/5 md:w-1/2 md:py-28 max-w-2xl">
                 <DersuLogoWithText width="100%" />
               </div>
             </div>

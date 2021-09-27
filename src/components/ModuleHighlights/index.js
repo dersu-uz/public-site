@@ -83,7 +83,7 @@ const ModuleHighlights = ({
                   </p>
 
                   <h2
-                    className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:max-w-3xl xl:mx-auto px-10
+                    className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-10
                     md:first-letter:-ml-0.5 xl:first-letter:-ml-1
                   ${
                     alignMode === ALIGN_MODES.LEFT
@@ -116,7 +116,7 @@ const ModuleHighlights = ({
               </div>
 
               <div
-                className={`${colSpanClass[columnsForImage]}  flex items-center relative`}
+                className={`${colSpanClass[columnsForImage]} flex items-center relative md:min-h-[600px] lg:min-h-[800px] xl:min-h-[900px]`}
               >
                 {Array.isArray(imageUrl) ? (
                   <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-0 lg:py-36 xl:py-24 md:pl-0 md:pb-0">

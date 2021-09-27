@@ -26,7 +26,7 @@ const ModuleFeaturedPost = ({
 
             <div
               className={`
-                absolute top-0 left-0 w-full h-full p-10 flex flex-col justify-between
+                absolute top-0 left-0 w-full h-full p-5 md:p-10 flex flex-col justify-between
                 md:absolute md:top-0 md:left-0 pointer-events-none
             `}
             >

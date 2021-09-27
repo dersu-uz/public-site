@@ -10,7 +10,7 @@ const BlogPostHero = ({ title, imageUrl }) => {
         className="h-36 bg-cover bg-center flex flex-col content-center justify-center"
         style={style}
       >
-        <h2 className="text-dersu-lg text-dersu-white md:text-dersu-2xl text-center">
+        <h2 className="text-dersu-lg text-dersu-white md:text-dersu-3xl text-center">
           {title}
         </h2>
       </div>
