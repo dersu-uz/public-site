@@ -4,7 +4,7 @@ import ErrorPage from 'next/error'
 
 import { getPostBySlug, getPostSlugs } from '@/utils/posts'
 
-import BlogPostPageHero from '@/components/BlogPostPageHero'
+import BlogPostHero from '@/components/BlogPostHero'
 import MarkdownContent from '@/components/MarkdownContent'
 import Wrapper from '@/components/Wrapper'
 import Header from '@/components/Header'
@@ -57,7 +57,7 @@ const BlogPostPage = ({ slug, post }) => {
         <>
           <Header />
           {featuredImage && (
-            <BlogPostPageHero title={title} imageUrl={featuredImage} />
+            <BlogPostHero title={title} imageUrl={featuredImage} />
           )}
           <Wrapper>
             <MarkdownContent
