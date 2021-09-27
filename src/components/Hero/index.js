@@ -1,45 +1,48 @@
-import PropTypes from 'prop-types'
 import Fade from 'react-reveal/Fade'
 
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
-
 import IndicatorSlide from '@/components/IndicatorSlide'
-import Wrapper from '@/components/Wrapper'
 
-const Hero = ({ imageUrl }) => {
-  const style = {
-    backgroundImage: `url(${imageUrl})`,
-  }
-  return (
-    <div className="Hero">
-      <div className="min-h-screen bg-cover bg-center" style={style}>
-          <Wrapper>
-            <div className="flex flex-col min-h-screen">
-              <div className="text-dersu-yellow pt-10">
-                <Fade bottom distance={`24px`}>
-                  <DersuLogoWithText width="100%" />
-                </Fade>
-              </div>
-              <div className="flex-grow flex flex-col justify-center text-center">
-                <Fade bottom distance={`24px`}>
-                  <p className="text-dersu-white text-dersu-xs md:text-dersu-md">
-                    Disfruta de la montaña,
-                    <br /> aprendiendo a tu ritmo
-                  </p>
-                </Fade>
-              </div>
-              <div className="pb-8 md:pb-10">
-                <IndicatorSlide />
-              </div>
-            </div>
-          </Wrapper>
+import DersuLogoSymbol from '../../styles/assets/dersu-logo-symbol.svg'
+
+const Hero = () => (
+  <div className="Hero">
+    <div className="min-h-screen bg-dersu-black">
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row">
+        <div
+          className="w-full md:w-1/2 min-h-[50vh] md:min-h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url('/images/hero/01.jpg')`,
+          }}
+        ></div>
+
+        <div
+          className="w-full md:w-1/2 min-h-[50vh] md:min-h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url('/images/hero/02.jpg')`,
+          }}
+        ></div>
+      </div>
+
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-dersu-yellow">
+        <Fade bottom distance={`24px`} delay={500}>
+          <DersuLogoSymbol className="w-[95px] md:w-[170px]" />
+        </Fade>
+      </div>
+
+      <div className="absolute top-0 left-0 w-full h-full flex flex-col">
+        <div className="flex-grow flex flex-col items-center justify-between">
+          <Fade bottom distance={`24px`} delay={1000}>
+            <p className="text-dersu-white text-dersu-xs text-center md:text-dersu-md pt-[60px] w-1/2 md:w-auto">
+              Dersu conecta a las personas con las montañas
+            </p>
+          </Fade>
+          <div className="pb-8 md:pb-10">
+            <IndicatorSlide />
+          </div>
+        </div>
       </div>
     </div>
-  )
-}
-
-Hero.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
-}
+  </div>
+)
 
 export default Hero

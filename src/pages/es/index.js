@@ -19,7 +19,7 @@ export const getStaticProps = () => {
 
 const HomePage = () => (
   <>
-    <Hero imageUrl="/images/hero/01.png" />
+    <Hero />
     <Header />
     <ModuleIntro />
     <ModuleHighlights
