@@ -1,5 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import { usePlausible } from 'next-plausible'
 import { useWindowScroll } from 'react-use'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
@@ -19,6 +20,8 @@ const Header = () => {
 
   const [isSticky, setIsSticky] = useState(false)
   const [heightCompensation, setHeightCompensation] = useState(0)
+
+  const plausible = usePlausible()
 
   useEffect(() => {
     const offsetTop =
@@ -65,7 +68,15 @@ const Header = () => {
               /
               <span>
                 <Link href="http://eepurl.com/hI63hX">
-                  <a target="_blank" className={navItemClasses}>
+                  <a
+                    target="_blank"
+                    onClick={() =>
+                      plausible('CTA Newsletter', {
+                        props: { method: 'Header' },
+                      })
+                    }
+                    className={navItemClasses}
+                  >
                     Newsletter
                   </a>
                 </Link>

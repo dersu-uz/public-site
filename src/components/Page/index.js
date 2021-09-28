@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import Head from 'next/head'
-import Script from 'next/script'
 
 import { DEVELOPMENT_HELPERS } from '@/constants/settings'
 
@@ -23,12 +22,6 @@ const Page = ({ title, description, canonicalUrl, children }) => (
       <div id="modal-root"></div>
       {DEVELOPMENT_HELPERS && <DeveloperHelpers />}
     </div>
-    <Script
-      async
-      defer
-      data-domain="dersu.uz"
-      src="https://plausible.io/js/plausible.js"
-    />
   </>
 )
 

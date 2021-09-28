@@ -1,8 +1,11 @@
 import Fade from 'react-reveal/Fade'
 
 import Wrapper from '@/components/Wrapper'
+import { usePlausible } from 'next-plausible'
 
 const ModuleBetaAnnouncement = () => {
+  const plausible = usePlausible()
+
   return (
     <>
       <div className="ModuleBetaAnnouncement bg-dersu-cream">
@@ -22,6 +25,11 @@ const ModuleBetaAnnouncement = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="underline font-normal cursor-pointer"
+                  onClick={() =>
+                    plausible('CTA Newsletter', {
+                      props: { method: 'Home' },
+                    })
+                  }
                 >
                   aquí
                 </a>{' '}
