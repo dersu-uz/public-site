@@ -68,6 +68,7 @@ const HomePage = () => (
       colorScheme={COLOR_SCHEMES.PINK}
       alignMode={ALIGN_MODES.LEFT}
       separator={SEPARATORS.WAVES}
+      framedImage={true}
     />
     <ModuleBetaAnnouncement />
     <ModuleFeaturedPosts />

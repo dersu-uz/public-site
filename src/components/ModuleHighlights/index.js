@@ -27,34 +27,20 @@ const SeparatorComponents = {
   WAVES: HighlightsSeparator04,
 }
 
-const colSpanClass = {
-  1: 'md:col-span-1',
-  2: 'md:col-span-2',
-  3: 'md:col-span-3',
-  4: 'md:col-span-4',
-  5: 'md:col-span-5',
-  6: 'md:col-span-6',
-  7: 'md:col-span-7',
-  8: 'md:col-span-8',
-  9: 'md:col-span-9',
-  10: 'md:col-span-10',
-  11: 'md:col-span-11',
-  12: 'md:col-span-12',
-}
-
 const ModuleHighlights = ({
   title,
   subtitle,
   text,
   imageUrl,
   webpImageUrl,
-  columnsForImage,
+  framedImage,
   alignMode,
   colorScheme,
   separator,
 }) => {
   const SeparatorComponent = SeparatorComponents[separator]
-  const columnsForContent = 12 - columnsForImage
+
+  const singleImage = Array.isArray(imageUrl) === false
 
   return (
     <div className="ModuleHighlights">
@@ -62,30 +48,33 @@ const ModuleHighlights = ({
         className={`${colorSchemeClasses[colorScheme].background} ${colorSchemeClasses[colorScheme].color}`}
       >
         <Fade right>
-          <div className="md:grid grid-cols-12">
-            <div className={`${colSpanClass[columnsForContent]} flex`}>
+          <div className="md:flex">
+            <div
+              className={`flex ${singleImage ? 'md:w-[55%]' : 'md:w-[49%]'}`}
+            >
               <div
-                className={`flex flex-col pt-16 pb-16 md:pb-32 text-center w-full
+                className={`flex flex-col pt-16 pb-16 md:pb-32 w-full
                 ${
                   alignMode === ALIGN_MODES.LEFT
-                    ? 'md:text-left 2xl:text-center'
-                    : ''
+                    ? 'text-left 2xl:text-center'
+                    : 'text-center'
                 }
+                ${framedImage ? 'md:pr-10' : ''}
               `}
               >
                 <p
-                  className="font-sans font-bold text-dersu-2xs md:text-dersu-2xs lg:text-dersu-xs uppercase pb-5 px-10 tracking-widest
+                  className="font-sans font-bold text-dersu-2xs md:text-dersu-2xs lg:text-dersu-xs uppercase pb-5 px-5 md:px-10 tracking-widest
                     md:first-letter:ml-0.5 xl:first-letter:ml-0.5"
                 >
                   {subtitle}
                 </p>
 
                 <h2
-                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-10
+                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-5 md:px-10
                     md:first-letter:-ml-0.5 xl:first-letter:-ml-1
                   ${
                     alignMode === ALIGN_MODES.LEFT
-                      ? 'md:text-left 2xl:text-center'
+                      ? 'text-left 2xl:text-center'
                       : ''
                   }
                 `}
@@ -102,9 +91,9 @@ const ModuleHighlights = ({
                 </div>
 
                 <p
-                  className={`text-dersu-sm lg:text-dersu-md px-10 xl:mx-auto xl:max-w-3xl ${
+                  className={`text-dersu-sm lg:text-dersu-md xl:mx-auto xl:max-w-3xl px-5 md:px-10 ${
                     alignMode === ALIGN_MODES.LEFT
-                      ? 'md:pr-16 2xl:text-center'
+                      ? 'text-left md:pr-16 2xl:text-center'
                       : ''
                   }`}
                 >
@@ -114,9 +103,29 @@ const ModuleHighlights = ({
             </div>
 
             <div
-              className={`${colSpanClass[columnsForImage]} flex items-center relative md:h-[600px] lg:h-[700px] xl:h-[800px]`}
+              className={`${
+                singleImage ? 'md:w-[45%]' : 'md:w-[51%]'
+              } flex items-center relative md:h-[600px] lg:h-[700px] xl:h-[800px]`}
             >
-              {Array.isArray(imageUrl) ? (
+              {singleImage ? (
+                <picture
+                  className={`flex w-full h-full ${
+                    framedImage
+                      ? 'pl-5 pr-5 pb-5 md:pl-0 md:pt-10 md:pr-10 md:pb-10'
+                      : ''
+                  }`}
+                >
+                  {webpImageUrl && (
+                    <source type="image/webp" srcSet={webpImageUrl} />
+                  )}
+                  <source type="image/jpeg" srcSet={imageUrl} />
+                  <img
+                    className="flex-grow object-cover"
+                    src={imageUrl}
+                    alt={title}
+                  />
+                </picture>
+              ) : (
                 <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-0 lg:py-36 xl:py-24 md:pl-0 md:pb-0">
                   {imageUrl.map((image, i) => (
                     <picture key={i} className="flex w-full h-full">
@@ -132,18 +141,6 @@ const ModuleHighlights = ({
                     </picture>
                   ))}
                 </div>
-              ) : (
-                <picture className="flex w-full h-full">
-                  {webpImageUrl && (
-                    <source type="image/webp" srcSet={webpImageUrl} />
-                  )}
-                  <source type="image/jpeg" srcSet={imageUrl} />
-                  <img
-                    className="flex-grow object-cover"
-                    src={imageUrl}
-                    alt={title}
-                  />
-                </picture>
               )}
             </div>
           </div>
@@ -158,6 +155,7 @@ ModuleHighlights.defaultProps = {
   colorScheme: COLOR_SCHEMES.BROWN,
   alignMode: ALIGN_MODES.CENTER,
   separator: SEPARATORS.WAVES,
+  framedImage: false,
 }
 
 ModuleHighlights.propTypes = {
@@ -172,7 +170,7 @@ ModuleHighlights.propTypes = {
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,
-  columnsForImage: PropTypes.number,
+  framedImage: PropTypes.bool,
   colorScheme: PropTypes.oneOf(Object.values(COLOR_SCHEMES)),
   alignMode: PropTypes.oneOf(Object.values(ALIGN_MODES)),
   separator: PropTypes.oneOf(Object.values(SEPARATORS)),
