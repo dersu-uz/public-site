@@ -2,6 +2,8 @@ import '@/styles/main.css'
 
 import PlausibleProvider from 'next-plausible'
 
+import { ENABLE_PLAUSIBLE } from '@/constants/settings'
+
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
 
@@ -19,7 +21,7 @@ function NextApp({ Component, pageProps }) {
     localeNames,
   }
   return (
-    <PlausibleProvider domain="dersu.uz">
+    <PlausibleProvider domain="dersu.uz" enabled={ENABLE_PLAUSIBLE}>
       <TranslationsContext.Provider value={contextValue}>
         <DeveloperContextProvider>
           <Page

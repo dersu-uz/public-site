@@ -29,20 +29,20 @@ const ModuleFeaturedPosts = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
           <ModuleFeaturedPost
-            title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut mauris, elementum ultrices amet, integer eget a id."
-            tag="tag del post"
-            postDate="12 Sep 2021"
-            href="/"
-            colorScheme={COLOR_SCHEMES.BROWN}
+            title="Montañista, el punto de partida"
+            tag="#montaña"
+            postDate="29 Sep 2021"
+            href="/es/blog/montanista-punto-de-partida"
+            colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}
           />
           <ModuleFeaturedPost
-            title="Lorem ipsum dolor sit amet. Ut ut mauris, elementum ultrices amet, integer eget a id."
-            tag="tag del post"
-            postDate="10 Sep 2021"
+            title="Dersu: Un punto de enlace entre las personas y las montañas"
+            tag="#aprender"
+            postDate="28 Sep 2021"
+            href="/es/blog/un-punto-de-enlace"
             imageUrl="/images/posts/01.jpg"
             webpImageUrl="/images/posts/01.webp"
-            href="/"
-            colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}
+            colorScheme={COLOR_SCHEMES.BROWN}
           />
         </div>
       </Wrapper>

@@ -57,6 +57,7 @@ const HomePage = () => (
       colorScheme={COLOR_SCHEMES.BROWN}
       alignMode={ALIGN_MODES.CENTER}
       separator={SEPARATORS.ICONS}
+      overlapsPreviousModule={true}
     />
     <ModuleHighlights
       title="Evolución, formación y consejo"

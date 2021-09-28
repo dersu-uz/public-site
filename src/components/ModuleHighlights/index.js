@@ -37,6 +37,7 @@ const ModuleHighlights = ({
   alignMode,
   colorScheme,
   separator,
+  overlapsPreviousModule,
 }) => {
   const SeparatorComponent = SeparatorComponents[separator]
 
@@ -45,7 +46,13 @@ const ModuleHighlights = ({
   return (
     <div className="ModuleHighlights">
       <div
-        className={`${colorSchemeClasses[colorScheme].background} ${colorSchemeClasses[colorScheme].color}`}
+        className={`
+          ${colorSchemeClasses[colorScheme].background}
+          ${colorSchemeClasses[colorScheme].color}
+          ${
+            overlapsPreviousModule ? 'mt-[-37vw] pt-[37vw] md:mt-0 md:pt-0' : ''
+          }
+        `}
       >
         <Fade right>
           <div className="md:flex">
@@ -156,6 +163,7 @@ ModuleHighlights.defaultProps = {
   alignMode: ALIGN_MODES.CENTER,
   separator: SEPARATORS.WAVES,
   framedImage: false,
+  overlapsPreviousModule: false,
 }
 
 ModuleHighlights.propTypes = {
@@ -174,6 +182,7 @@ ModuleHighlights.propTypes = {
   colorScheme: PropTypes.oneOf(Object.values(COLOR_SCHEMES)),
   alignMode: PropTypes.oneOf(Object.values(ALIGN_MODES)),
   separator: PropTypes.oneOf(Object.values(SEPARATORS)),
+  overlapsPreviousModule: PropTypes.bool,
 }
 
 export default ModuleHighlights

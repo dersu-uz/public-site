@@ -12,3 +12,6 @@ export const COOKIES_PREFERRED_LOCALE_DAYS = 365
 
 export const DEVELOPMENT_HELPERS =
   process.env.NEXT_PUBLIC_DEVELOPMENT_HELPERS === 'true'
+
+export const ENABLE_PLAUSIBLE =
+  process.env.NEXT_PUBLIC_ENABLE_PLAUSIBLE === 'true'
