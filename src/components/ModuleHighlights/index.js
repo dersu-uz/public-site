@@ -47,6 +47,7 @@ const ModuleHighlights = ({
   subtitle,
   text,
   imageUrl,
+  webpImageUrl,
   columnsForImage,
   alignMode,
   colorScheme,
@@ -118,14 +119,31 @@ const ModuleHighlights = ({
               {Array.isArray(imageUrl) ? (
                 <div className="grid grid-cols-2 gap-3 p-4 md:pr-10 md:pt-0 lg:py-36 xl:py-24 md:pl-0 md:pb-0">
                   {imageUrl.map((image, i) => (
-                    <img key={i} className="w-full" src={image} />
+                    <picture key={i} className="flex w-full h-full">
+                      {webpImageUrl && webpImageUrl[i] && (
+                        <source type="image/webp" srcSet={webpImageUrl[i]} />
+                      )}
+                      <source type="image/jpeg" srcSet={imageUrl} />
+                      <img
+                        className="flex-grow object-cover"
+                        src={imageUrl}
+                        alt={title}
+                      />
+                    </picture>
                   ))}
                 </div>
               ) : (
-                <div
-                  className="h-full w-full flex bg-no-repeat bg-cover bg-center"
-                  style={{ backgroundImage: `url(${imageUrl})` }}
-                />
+                <picture className="flex w-full h-full">
+                  {webpImageUrl && (
+                    <source type="image/webp" srcSet={webpImageUrl} />
+                  )}
+                  <source type="image/jpeg" srcSet={imageUrl} />
+                  <img
+                    className="flex-grow object-cover"
+                    src={imageUrl}
+                    alt={title}
+                  />
+                </picture>
               )}
             </div>
           </div>
@@ -147,6 +165,10 @@ ModuleHighlights.propTypes = {
   subtitle: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   imageUrl: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+  webpImageUrl: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.arrayOf(PropTypes.string),
   ]).isRequired,

@@ -2,6 +2,7 @@
 
 /* arimo-regular - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: normal;
   font-weight: 400;
@@ -15,6 +16,7 @@
 }
 /* arimo-700 - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: normal;
   font-weight: 700;
@@ -28,6 +30,7 @@
 }
 /* arimo-600 - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: normal;
   font-weight: bold;
@@ -41,6 +44,7 @@
 }
 /* arimo-italic - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: italic;
   font-weight: 400;
@@ -54,6 +58,7 @@
 }
 /* arimo-600italic - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: italic;
   font-weight: bold;
@@ -67,6 +72,7 @@
 }
 /* arimo-700italic - latin */
 @font-face {
+  font-display: swap;
   font-family: 'Arimo';
   font-style: italic;
   font-weight: 700;

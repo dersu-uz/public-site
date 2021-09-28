@@ -16,13 +16,25 @@ const ModuleIntro = () => {
           <Fade bottom cascade>
             <ul className="flex flex-col md:flex-row gap-5 2xl:w-10/12 2xl:mx-auto">
               <li className="w-2/4 md:w-3/12">
-                <img className="w-full" src="/images/intro/01.jpg" />
+                <picture className="w-full">
+                  <source type="image/webp" srcSet="/images/intro/01.webp" />
+                  <source type="image/jpeg" srcSet="/images/intro/01.jpg" />
+                  <img src="/images/intro/01.jpg" alt="Intro 1" />
+                </picture>
               </li>
               <li className="w-full md:w-6/12">
-                <img className="w-full" src="/images/intro/02.jpg" />
+                <picture className="w-full">
+                  <source type="image/webp" srcSet="/images/intro/02.webp" />
+                  <source type="image/jpeg" srcSet="/images/intro/02.jpg" />
+                  <img src="/images/intro/02.jpg" alt="Intro 2" />
+                </picture>
               </li>
               <li className="w-3/4 md:w-3/12 self-end md:self-auto md:pt-20">
-                <img className="w-full" src="/images/intro/03.jpg" />
+                <picture className="w-full">
+                  <source type="image/webp" srcSet="/images/intro/03.webp" />
+                  <source type="image/jpeg" srcSet="/images/intro/03.jpg" />
+                  <img src="/images/intro/03.jpg" alt="Intro 3" />
+                </picture>
               </li>
             </ul>
           </Fade>

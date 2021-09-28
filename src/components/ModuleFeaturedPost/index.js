@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 
@@ -8,6 +9,7 @@ const ModuleFeaturedPost = ({
   tag,
   postDate,
   imageUrl,
+  webpImageUrl,
   href,
   colorScheme,
 }) => {
@@ -20,10 +22,22 @@ const ModuleFeaturedPost = ({
               className={`
                 absolute top-0 left-0 w-full h-full transition-transform duration-500 transform hover:scale-125
                 ${colorSchemeClasses[colorScheme].background}
-            `}
-              style={imageUrl ? { backgroundImage: `url(${imageUrl})` } : null}
-            ></div>
-
+                `}
+            >
+              {imageUrl && (
+                <picture className="flex w-full h-full">
+                  {webpImageUrl && (
+                    <source type="image/webp" srcSet={webpImageUrl} />
+                  )}
+                  <source type="image/jpeg" srcSet={imageUrl} />
+                  <img
+                    className="flex-grow object-cover"
+                    src={imageUrl}
+                    alt={title}
+                  />
+                </picture>
+              )}
+            </div>
             <div
               className={`
                 absolute top-0 left-0 w-full h-full p-5 md:p-10 flex flex-col justify-between
@@ -60,6 +74,7 @@ ModuleFeaturedPost.propTypes = {
   tag: PropTypes.string,
   postDate: PropTypes.string,
   imageUrl: PropTypes.string,
+  webpImageUrl: PropTypes.string,
   href: PropTypes.string.isRequired,
   colorScheme: PropTypes.oneOf(Object.values(COLOR_SCHEMES)),
 }

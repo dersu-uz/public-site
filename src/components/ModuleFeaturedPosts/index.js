@@ -40,6 +40,7 @@ const ModuleFeaturedPosts = () => {
             tag="tag del post"
             postDate="10 Sep 2021"
             imageUrl="/images/posts/01.jpg"
+            webpImageUrl="/images/posts/01.webp"
             href="/"
             colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}
           />

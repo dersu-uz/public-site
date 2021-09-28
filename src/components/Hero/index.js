@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Fade from 'react-reveal/Fade'
 
 import IndicatorSlide from '@/components/IndicatorSlide'
@@ -8,19 +9,28 @@ const Hero = () => (
   <div className="Hero">
     <div className="min-h-screen bg-dersu-black relative">
       <div className="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row">
-        <div
-          className="w-full md:w-1/2 min-h-[50vh] md:min-h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/hero/01.jpg')`,
-          }}
-        ></div>
-
-        <div
-          className="w-full md:w-1/2 min-h-[50vh] md:min-h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/hero/02.jpg')`,
-          }}
-        ></div>
+        <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-full">
+          <picture className="flex w-full h-full">
+            <source type="image/webp" srcSet="/images/hero/01.webp" />
+            <source type="image/jpeg" srcSet="/images/hero/01.jpg" />
+            <img
+              className="flex-grow object-cover"
+              src="/images/hero/01.jpg"
+              alt="Hero 1"
+            />
+          </picture>
+        </div>
+        <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-full">
+          <picture className="flex w-full h-full">
+            <source type="image/webp" srcSet="/images/hero/02.webp" />
+            <source type="image/jpeg" srcSet="/images/hero/02.jpg" />
+            <img
+              className="flex-grow object-cover"
+              src="/images/hero/02.jpg"
+              alt="Hero 2"
+            />
+          </picture>
+        </div>
       </div>
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
