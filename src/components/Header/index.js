@@ -1,22 +1,23 @@
 import { useContext, useEffect, useRef, useState } from 'react'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 import { usePlausible } from 'next-plausible'
 import { useWindowScroll } from 'react-use'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
-import usePreferredLocale from '@/hooks/usePreferredLocale'
+// import usePreferredLocale from '@/hooks/usePreferredLocale'
 import Wrapper from '@/components/Wrapper'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 
-const Header = () => {
+const Header = ({ negativeColor }) => {
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
 
-  const { localeNames, currentLocale } = useContext(TranslationsContext)
+  const { /*localeNames,*/ currentLocale } = useContext(TranslationsContext)
   const { y: scrollTop } = useWindowScroll()
 
-  const { changeLocale } = usePreferredLocale()
+  // const { changeLocale } = usePreferredLocale()
 
   const [isSticky, setIsSticky] = useState(false)
   const [heightCompensation, setHeightCompensation] = useState(0)
@@ -37,8 +38,9 @@ const Header = () => {
     )
   }, [scrollTop])
 
-  const navItemClasses =
-    'text-dersu-light-gray text-dersu-2xs mx-2 font-bold leading-5 hover:text-dersu-black transition-colors cursor-pointer'
+  const navItemClasses = `${
+    negativeColor ? 'text-dersu-white' : 'text-dersu-black'
+  } text-dersu-2xs pl-[10px] font-bold leading-5 hover:underline transition-colors cursor-pointer`
 
   return (
     <header
@@ -55,56 +57,72 @@ const Header = () => {
             <h1 className="flex-grow">
               <Link href={`/${currentLocale}`}>
                 <a>
-                  <DersuLogoWithText className="h-5 -mt-1.5 md:h-6" />
+                  <DersuLogoWithText
+                    className={`h-5 -mt-1.5 md:h-6 transition-colors ${
+                      negativeColor ? 'text-dersu-white' : 'text-dersu-black'
+                    }`}
+                  />
                 </a>
               </Link>
             </h1>
-            <nav className="flex font-sans">
-              <span>
-                <Link href={`/${currentLocale}/blog`}>
-                  <a className={navItemClasses}>Blog</a>
-                </Link>
-              </span>{' '}
-              /
-              <span>
-                <Link href="http://eepurl.com/hI63hX">
-                  <a
-                    target="_blank"
-                    onClick={() =>
-                      plausible('CTA Newsletter', {
-                        props: { method: 'Header' },
-                      })
-                    }
-                    className={navItemClasses}
-                  >
-                    Newsletter
-                  </a>
-                </Link>
-              </span>{' '}
-              /
-              {localeNames.map((l, i) => {
-                const isCurrent = l.locale === currentLocale
-                return !isCurrent ? (
-                  <span key={i}>
+            <nav>
+              <ul className="flex font-sans">
+                <li className={navItemClasses}>
+                  <Link href={`/${currentLocale}/blog`}>
+                    <a>Blog</a>
+                  </Link>
+                </li>
+
+                <li className={navItemClasses}>
+                  <Link href="http://eepurl.com/hI63hX">
                     <a
-                      href={`/${l.locale}/`}
-                      className={navItemClasses}
-                      onClick={e => {
-                        e.preventDefault()
-                        changeLocale(l.locale)
-                      }}
+                      target="_blank"
+                      onClick={() =>
+                        plausible('CTA Newsletter', {
+                          props: { method: 'Header' },
+                        })
+                      }
                     >
-                      {l.name}
+                      Newsletter
                     </a>
-                  </span>
-                ) : null
-              })}
+                  </Link>
+                </li>
+
+                {/*
+
+                TODO: English version Disabled for now
+
+                {localeNames.map((l, i) => {
+                  const isCurrent = l.locale === currentLocale
+                  return !isCurrent ? (
+                    <li key={i} className={navItemClasses}>
+                      <a
+                        href={`/${l.locale}/`}
+                        onClick={e => {
+                          e.preventDefault()
+                          changeLocale(l.locale)
+                        }}
+                      >
+                        {l.name}
+                      </a>
+                    </li>
+                  ) : null
+                })} */}
+              </ul>
             </nav>
           </div>
         </Wrapper>
       </div>
     </header>
   )
+}
+
+Header.defaultProps = {
+  negativeColor: false,
+}
+
+Header.propTypes = {
+  negativeColor: PropTypes.bool,
 }
 
 export default Header

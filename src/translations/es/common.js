@@ -6,6 +6,7 @@ const common = {
   workWithDersuSlug: 'trabaja-con-dersu',
   privacy: 'Privacidad',
   privacySlug: 'privacidad',
+  allRightsReserved: 'Todos los derechos reservados',
 }
 
 export default common
