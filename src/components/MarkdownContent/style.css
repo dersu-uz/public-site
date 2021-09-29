@@ -1,24 +1,24 @@
 .MarkdownContent {
-  @apply font-serif font-light py-10;
+  @apply font-serif font-light;
 
   h1 {
-    @apply font-normal text-dersu-lg mb-2;
+    @apply text-dersu-2xl md:text-dersu-3xl font-normal mb-[0.3em];
   }
 
   h2 {
-    @apply font-normal text-dersu-md mb-2;
+    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em];
   }
 
   h3 {
-    @apply font-normal text-dersu-sm mb-2;
+    @apply text-dersu-lg md:text-dersu-xl font-normal mb-[0.3em];
   }
 
   h4 {
-    @apply font-normal text-dersu-xs mb-2;
+    @apply text-dersu-md md:text-dersu-lg font-bold mb-[0.3em];
   }
 
   p {
-    @apply text-dersu-sm mb-5;
+    @apply text-dersu-md md:text-dersu-lg mb-[1em];
   }
 
   a {
@@ -26,10 +26,10 @@
   }
 
   ul {
-    @apply text-dersu-sm pl-5 mb-5;
+    @apply text-dersu-md md:text-dersu-lg pl-5 mb-[1em];
 
     li {
-      @apply mb-1;
+      @apply mb-[0.8em];
 
       list-style-type: circle;
     }

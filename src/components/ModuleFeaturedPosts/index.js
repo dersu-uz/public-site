@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types'
 import Link from 'next/link'
+import { useContext } from 'react'
 
-import ModuleFeaturedPost from '@/components/ModuleFeaturedPost'
 import Wrapper from '@/components/Wrapper'
-
-import { COLOR_SCHEMES } from '@/constants/theme'
+import BlogPostsList from '@/components/BlogPostsList'
 
 import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
 import TranslationsContext from '@/contexts/TranslationsContext'
-import { useContext } from 'react'
 
 const ModuleFeaturedPosts = ({ posts }) => {
   const { currentLocale } = useContext(TranslationsContext)
@@ -28,20 +26,7 @@ const ModuleFeaturedPosts = ({ posts }) => {
             </Link>
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-          {posts.map((post, i) => (
-            <ModuleFeaturedPost
-              key={i}
-              title={post.title}
-              tag={post.tag}
-              postDate={post.dateFormatted}
-              href={post.url}
-              imageUrl={post.coverImageUrl}
-              webpImageUrl={post.webpCoverImageUrl}
-              colorScheme={COLOR_SCHEMES[post.colorScheme]}
-            />
-          ))}
-        </div>
+        <BlogPostsList posts={posts} />
       </Wrapper>
     </div>
   )

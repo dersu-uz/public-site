@@ -10,7 +10,7 @@ import Wrapper from '@/components/Wrapper'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 
-const Header = ({ negativeColor }) => {
+const Header = ({ negativeColor, forceSticky, needsCompensation }) => {
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
 
@@ -19,7 +19,7 @@ const Header = ({ negativeColor }) => {
 
   // const { changeLocale } = usePreferredLocale()
 
-  const [isSticky, setIsSticky] = useState(false)
+  const [isSticky, setIsSticky] = useState(forceSticky)
   const [heightCompensation, setHeightCompensation] = useState(0)
 
   const plausible = usePlausible()
@@ -29,14 +29,14 @@ const Header = ({ negativeColor }) => {
       (headerRef && headerRef.current && headerRef.current.offsetTop) || 0
 
     const distance = scrollTop - offsetTop
-    setIsSticky(distance > 0)
+    setIsSticky(distance > 0 || forceSticky)
     setHeightCompensation(
       (headerContentRef &&
         headerContentRef.current &&
         headerContentRef.current.getBoundingClientRect().height) ||
         0
     )
-  }, [scrollTop])
+  }, [scrollTop, forceSticky])
 
   const navItemClasses = `${
     negativeColor ? 'text-dersu-white' : 'text-dersu-black'
@@ -46,7 +46,11 @@ const Header = ({ negativeColor }) => {
     <header
       className="Header"
       ref={headerRef}
-      style={{ paddingTop: `${isSticky ? `${heightCompensation}` : `0`}px` }}
+      style={{
+        paddingTop: `${
+          isSticky && needsCompensation ? `${heightCompensation}` : `0`
+        }px`,
+      }}
     >
       <div
         ref={headerContentRef}
@@ -119,10 +123,14 @@ const Header = ({ negativeColor }) => {
 
 Header.defaultProps = {
   negativeColor: false,
+  forceSticky: false,
+  needsCompensation: true,
 }
 
 Header.propTypes = {
   negativeColor: PropTypes.bool,
+  forceSticky: PropTypes.bool,
+  needsCompensation: PropTypes.bool,
 }
 
 export default Header

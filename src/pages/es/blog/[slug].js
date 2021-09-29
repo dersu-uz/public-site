@@ -2,14 +2,21 @@ import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 
-import { getPostBySlug, getAllPostSlugs } from '@/services/blogService'
+import {
+  getPostBySlug,
+  getAllPostSlugs,
+  getLatestPosts,
+} from '@/services/blogService'
+
+import { COLOR_SCHEMES } from '@/constants/theme'
+
+import markdownToHtml from '@/utils/markdownToHtml'
 
 import BlogPostHero from '@/components/BlogPostHero'
-import MarkdownContent from '@/components/MarkdownContent'
-import Wrapper from '@/components/Wrapper'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import markdownToHtml from '@/utils/markdownToHtml'
+import BlogPostBody from '@/components/BlogPostBody'
+import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 
 export async function getStaticPaths() {
   const slugs = getAllPostSlugs('es')
@@ -28,6 +35,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { slug } = params
   const post = getPostBySlug(slug, 'es')
+  const otherPosts = getLatestPosts('es', 2)
   const {
     title,
     subtitle,
@@ -35,6 +43,7 @@ export async function getStaticProps({ params }) {
     content,
     featuredImageUrl,
     webpFeaturedImageUrl,
+    colorScheme,
   } = post
   const htmlContent = await markdownToHtml(content)
 
@@ -49,6 +58,8 @@ export async function getStaticProps({ params }) {
       htmlContent,
       featuredImageUrl,
       webpFeaturedImageUrl,
+      colorScheme,
+      otherPosts,
     },
   }
 }
@@ -59,7 +70,9 @@ const BlogPostPage = ({
   subtitle,
   featuredImageUrl,
   webpFeaturedImageUrl,
+  colorScheme,
   htmlContent,
+  otherPosts,
 }) => {
   const { isFallback } = useRouter()
 
@@ -71,20 +84,16 @@ const BlogPostPage = ({
         <ErrorPage statusCode={404} />
       ) : (
         <>
-          <Header />
-          {
-            <BlogPostHero
-              title={title}
-              imageUrl={featuredImageUrl}
-              webpImageUrl={webpFeaturedImageUrl}
-            />
-          }
-          <Wrapper>
-            <h1>{subtitle}</h1>
-            <MarkdownContent
-              dangerouslySetInnerHTML={{ __html: htmlContent }}
-            />
-          </Wrapper>
+          <Header forceSticky={true} needsCompensation={false} />
+          <BlogPostHero
+            title={title}
+            imageUrl={featuredImageUrl}
+            webpImageUrl={webpFeaturedImageUrl}
+            colorScheme={colorScheme}
+          />
+          <BlogPostBody subtitle={subtitle} htmlContent={htmlContent} />
+
+          <ModuleFeaturedPosts posts={otherPosts} />
           <Footer />
         </>
       )}
@@ -99,6 +108,8 @@ BlogPostPage.propTypes = {
   featuredImageUrl: PropTypes.string.isRequired,
   webpFeaturedImageUrl: PropTypes.string.isRequired,
   htmlContent: PropTypes.string.isRequired,
+  colorScheme: PropTypes.oneOf(Object.keys(COLOR_SCHEMES)),
+  otherPosts: PropTypes.array,
 }
 
 export default BlogPostPage

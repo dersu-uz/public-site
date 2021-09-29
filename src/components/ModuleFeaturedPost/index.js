@@ -46,7 +46,7 @@ const ModuleFeaturedPost = ({
             >
               <h3
                 className={`
-                  ${colorSchemeClasses[colorScheme].monocromeColor}
+                  ${colorSchemeClasses[colorScheme].monochromeColor}
                   text-dersu-md sm:text-dersu-lg xl:text-dersu-2xl 2xl:text-dersu-3xl
                 `}
               >
@@ -58,7 +58,9 @@ const ModuleFeaturedPost = ({
                 >
                   {tag}
                 </p>
-                <p className="font-sans text-dersu-white text-dersu-xs">
+                <p
+                  className={`font-sans text-dersu-xs ${colorSchemeClasses[colorScheme].monochromeColor}`}
+                >
                   {postDate}
                 </p>
               </div>

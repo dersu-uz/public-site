@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import PropTypes from 'prop-types'
+import { colorSchemeClasses, COLOR_SCHEMES } from '@/constants/theme'
 
-const BlogPostHero = ({ title, imageUrl, webpImageUrl }) => {
+const BlogPostHero = ({ title, imageUrl, webpImageUrl, colorScheme }) => {
   return (
     <div className="BlogPostHero">
       <div className="relative">
@@ -20,10 +21,16 @@ const BlogPostHero = ({ title, imageUrl, webpImageUrl }) => {
             </picture>
           )}
         </div>
-        <div className="relative p-10">
-          <h2 className="text-dersu-lg text-dersu-white md:text-dersu-4xl text-center">
+        <div className="relative px-10 py-[240px] md:py-[278px]">
+          <h1
+            className={`
+              ${colorSchemeClasses[colorScheme].monochromeColor}
+               text-dersu-lg text-dersu-white md:text-dersu-4xl text-center
+               max-w-5xl mx-auto
+              `}
+          >
             {title}
-          </h2>
+          </h1>
         </div>
       </div>
     </div>
@@ -34,6 +41,7 @@ BlogPostHero.propTypes = {
   imageUrl: PropTypes.string.isRequired,
   webpImageUrl: PropTypes.string,
   title: PropTypes.string,
+  colorScheme: PropTypes.oneOf(Object.keys(COLOR_SCHEMES)),
 }
 
 export default BlogPostHero

@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types'
 
+import { getLatestPosts } from '@/services/blogService'
+
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import { getLatestPosts } from '@/services/blogService'
+import Wrapper from '@/components/Wrapper'
+import BlogPostsList from '@/components/BlogPostsList'
 
 export async function getStaticProps() {
   const latestPosts = getLatestPosts('es')
@@ -20,7 +22,17 @@ export async function getStaticProps() {
 const BlogPage = ({ latestPosts }) => (
   <>
     <Header />
-    <ModuleFeaturedPosts posts={latestPosts} />
+
+    <div className="ModuleFeaturedPosts">
+      <Wrapper>
+        <div className="flex items-end justify-between">
+          <h2 className="text-dersu-lg md:text-dersu-3xl lg:text-dersu-4xl mt-16">
+            Blog
+          </h2>
+        </div>
+        <BlogPostsList posts={latestPosts} />
+      </Wrapper>
+    </div>
     <Footer />
   </>
 )

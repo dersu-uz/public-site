@@ -2,6 +2,7 @@
 import Fade from 'react-reveal/Fade'
 
 import Wrapper from '@/components/Wrapper'
+import VerticalDivision from '../VerticalDivision'
 
 const ModuleIntro = () => {
   return (
@@ -50,9 +51,7 @@ const ModuleIntro = () => {
               </li>
             </ul>
           </Fade>
-          <div className="text-center py-14">
-            <span className="inline-block w-0.5 h-32 from-dersu-black to-transparent bg-gradient-to-b"></span>
-          </div>
+          <VerticalDivision />
         </div>
       </Wrapper>
     </div>
