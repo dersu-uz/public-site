@@ -17,7 +17,7 @@ function NextApp({ Component, pageProps }) {
   const translations = getTranslations(locale)
   const contextValue = {
     t: translations,
-    currentLocale: locale,
+    currentLocale: locale || 'es',
     localeNames,
   }
   return (

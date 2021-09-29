@@ -83,12 +83,8 @@ const HomePage = ({ latestPosts }) => (
   </>
 )
 
-HomePage.defaultProps = {
-  latestPosts: [],
-}
-
 HomePage.propTypes = {
-  latestPosts: PropTypes.array,
+  latestPosts: PropTypes.array.isRequired,
 }
 
 export default HomePage
