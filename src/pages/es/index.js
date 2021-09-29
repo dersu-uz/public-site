@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
@@ -6,18 +8,22 @@ import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
 import ModuleIntro from '@/components/ModuleIntro'
 
+import { getLatestPosts } from '@/services/blogService'
+
 import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
+  const latestPosts = getLatestPosts('es', 2)
   return {
     props: {
       locale: 'es',
       description: 'Tu asistente en la montaña',
+      latestPosts,
     },
   }
 }
 
-const HomePage = () => (
+const HomePage = ({ latestPosts }) => (
   <>
     <Hero />
     <Header />
@@ -72,9 +78,17 @@ const HomePage = () => (
       framedImage={true}
     />
     <ModuleBetaAnnouncement />
-    <ModuleFeaturedPosts />
+    <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>
 )
+
+HomePage.defaultProps = {
+  latestPosts: [],
+}
+
+HomePage.propTypes = {
+  latestPosts: PropTypes.array,
+}
 
 export default HomePage

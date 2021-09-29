@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 
 import ModuleFeaturedPost from '@/components/ModuleFeaturedPost'
@@ -9,7 +10,7 @@ import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { useContext } from 'react'
 
-const ModuleFeaturedPosts = () => {
+const ModuleFeaturedPosts = ({ posts }) => {
   const { currentLocale } = useContext(TranslationsContext)
   return (
     <div className="ModuleFeaturedPosts">
@@ -28,28 +29,26 @@ const ModuleFeaturedPosts = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-          <ModuleFeaturedPost
-            title="Montañista, el punto de partida"
-            tag="#montaña"
-            postDate="29 Sep 2021"
-            href="/es/blog/montanista-punto-de-partida"
-            colorScheme={COLOR_SCHEMES.YELLOW_INVERTED}
-          />
-          <ModuleFeaturedPost
-            title="Dersu: Un punto de enlace entre las personas y las montañas"
-            tag="#aprender"
-            postDate="28 Sep 2021"
-            href="/es/blog/un-punto-de-enlace"
-            imageUrl="/images/posts/01.jpg"
-            webpImageUrl="/images/posts/01.webp"
-            colorScheme={COLOR_SCHEMES.BROWN}
-          />
+          {posts.map((post, i) => (
+            <ModuleFeaturedPost
+              key={i}
+              title={post.title}
+              tag={post.tag}
+              postDate={post.dateFormatted}
+              href={post.url}
+              imageUrl={post.coverImageUrl}
+              webpImageUrl={post.webpCoverImageUrl}
+              colorScheme={COLOR_SCHEMES[post.colorScheme]}
+            />
+          ))}
         </div>
       </Wrapper>
     </div>
   )
 }
 
-ModuleFeaturedPosts.propTypes = {}
+ModuleFeaturedPosts.propTypes = {
+  posts: PropTypes.array.isRequired,
+}
 
 export default ModuleFeaturedPosts

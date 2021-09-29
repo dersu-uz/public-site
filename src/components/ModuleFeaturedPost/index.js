@@ -20,9 +20,9 @@ const ModuleFeaturedPost = ({
           <a>
             <div
               className={`
-                absolute top-0 left-0 w-full h-full transition-transform duration-500 transform hover:scale-125
                 ${colorSchemeClasses[colorScheme].background}
-                `}
+                absolute top-0 left-0 w-full h-full transition-transform duration-500 transform hover:scale-125
+              `}
             >
               {imageUrl && (
                 <picture className="flex w-full h-full">
@@ -44,7 +44,12 @@ const ModuleFeaturedPost = ({
                 md:absolute md:top-0 md:left-0 pointer-events-none
             `}
             >
-              <h3 className="text-dersu-md sm:text-dersu-lg xl:text-dersu-3xl 2xl:text-dersu-4xl text-dersu-white">
+              <h3
+                className={`
+                  ${colorSchemeClasses[colorScheme].monocromeColor}
+                  text-dersu-md sm:text-dersu-lg xl:text-dersu-2xl 2xl:text-dersu-3xl
+                `}
+              >
                 {title}
               </h3>
               <div className="flex justify-between">

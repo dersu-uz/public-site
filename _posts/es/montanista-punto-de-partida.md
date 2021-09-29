@@ -1,12 +1,14 @@
 ---
-title: Montañista, el punto de partida
-featuredImage: /images/posts/01.jpg
-date: 20210929
+title: 'Montañista, el punto de partida'
+subtitle: 'Esto es el subtitulo'
+tag: 'Montaña'
+date: '2021-09-29'
+color_scheme: BROWN_INVERTED
 ---
 
 Y esta es la pregunta del millón:
 
-**¿Cuál es mi nivel?**
+## ¿Cuál es mi nivel?
 
 Una pregunta que ronda nuestras cabezas frecuentemente y que no siempre es fácil responder, aunque seamos conscientes de la importancia que tiene.
 
@@ -32,14 +34,16 @@ En Dersu, podrás definir tu nivel valorando conocimientos, situaciones y técni
 *¿Sabes montar un rápel autoasegurado?*
 *¿Has aprendido sobre nudos de unión de cuerdas?*
 
-**Nuestra forma física cambia, se adapta a los momentos.**
+## Nuestra forma física cambia, se adapta a los momentos.
+
 Con este punto de partida, no olvidamos que el nivel es algo dinámico, que va evolucionando y variando con el tiempo.
 
 A veces cambiamos de actividad y estamos mucho tiempo sin practicar una técnica, o al contrario, es temporada alta y no paramos de salir, otras veces tenemos que parar y estamos un tiempo sin enfrentarnos a las alturas o a nuestros miedos.
 
 > *No todo en la montaña es subir. A subir y a asentar el nivel hay que dedicarle su tiempo.*
 
-**Conocer el nivel nos ayuda a marcar dónde estamos en cada momento.**
+## Conocer el nivel nos ayuda a marcar dónde estamos en cada momento.
+
 A partir de aquí, marcaremos nuestros objetivos y el camino que debemos recorrer, ampliando conocimientos, entrenando nuestras habilidades y asentando todo lo aprendido con actividades adecuadas para nuestro nivel.
 
 Analizando las causas de los accidentes en montaña, podemos ver que muchas veces es un cúmulo de errores los que nos llevan a una situación de riesgo. **La primera pregunta, antes de salir, siempre es: ¿debería estar allí o no?**

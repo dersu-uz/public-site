@@ -1,7 +1,9 @@
 ---
 title: 'Dersu: Un punto de enlace entre las personas y las montañas'
-featuredImage: /images/posts/01.jpg
-date: 20210928
+subtitle: 'Esto es el subtitulo'
+tag: 'Aprender'
+date: '2021-09-28'
+color_scheme: BROWN
 ---
 
 Dersu nace con la intención de convertirse en un punto de enlace entre las personas y las montañas. Esta relación puede tener muchas formas, pero siempre ha de asentarse en una serie de pilares fundamentales como el **respeto**, la **seguridad** y la **sostenibilidad**.
