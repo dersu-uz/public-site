@@ -12,7 +12,7 @@ import { getLatestPosts } from '@/services/blogService'
 
 import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
-export async function getStaticProps() {
+export function getStaticProps() {
   const latestPosts = getLatestPosts('es', 2)
   return {
     props: {
