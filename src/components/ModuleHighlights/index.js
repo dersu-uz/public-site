@@ -77,7 +77,7 @@ const ModuleHighlights = ({
                 </p>
 
                 <h2
-                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-2xl xl:text-dersu-3xl xl:max-w-3xl xl:mx-auto px-5 md:px-10
+                  className={`text-dersu-xl md:text-dersu-xl lg:text-dersu-3xl xl:text-dersu-4xl xl:max-w-3xl xl:mx-auto px-5 md:px-10
                     md:first-letter:-ml-0.5 xl:first-letter:-ml-1
                   ${
                     alignMode === ALIGN_MODES.LEFT

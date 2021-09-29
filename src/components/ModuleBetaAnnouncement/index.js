@@ -12,7 +12,7 @@ const ModuleBetaAnnouncement = () => {
         <Wrapper>
           <div className="py-16 md:py-20 lg:py-36">
             <Fade bottom distance={`24px`}>
-              <h2 className="text-dersu-lg mb-10 md:mb-16 md:text-dersu-xl lg:text-dersu-2xl xl:text-dersu-3xl md:w-9/12">
+              <h2 className="text-dersu-lg mb-10 md:mb-16 md:text-dersu-xl lg:text-dersu-3xl xl:text-dersu-4xl md:w-9/12">
                 Nuestro plan es sacar una primera versión de prueba de la App en
                 diciembre, a la que iremos dando acceso a la gente poco a poco,
                 por invitación.

@@ -44,7 +44,7 @@ const ModuleFeaturedPost = ({
                 md:absolute md:top-0 md:left-0 pointer-events-none
             `}
             >
-              <h3 className="text-dersu-md sm:text-dersu-lg xl:text-dersu-2xl 2xl:text-dersu-3xl text-dersu-white">
+              <h3 className="text-dersu-md sm:text-dersu-lg xl:text-dersu-3xl 2xl:text-dersu-4xl text-dersu-white">
                 {title}
               </h3>
               <div className="flex justify-between">

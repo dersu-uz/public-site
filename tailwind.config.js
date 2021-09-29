@@ -21,8 +21,9 @@ module.exports = {
         serif: ['Recoleta', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
-        'dersu-3xl': ['66px', '72px'], // [fontSize, letterSpacing]
-        'dersu-2xl': ['56px', '62px'],
+        'dersu-4xl': ['66px', '72px'], // [fontSize, letterSpacing]
+        'dersu-3xl': ['56px', '62px'],
+        'dersu-2xl': ['42px', '48px'],
         'dersu-xl': ['36px', '44px'],
         'dersu-lg': ['32px', '40px'],
         'dersu-md': ['22px', '28px'],

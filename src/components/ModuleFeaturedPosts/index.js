@@ -15,7 +15,7 @@ const ModuleFeaturedPosts = () => {
     <div className="ModuleFeaturedPosts">
       <Wrapper>
         <div className="flex items-end justify-between">
-          <h2 className="text-dersu-lg md:text-dersu-2xl lg:text-dersu-3xl mt-16">
+          <h2 className="text-dersu-lg md:text-dersu-3xl lg:text-dersu-4xl mt-16">
             Historias
           </h2>
           <p className="font-sans text-dersu-2xs md:text-dersu-md font-bold pb-1">

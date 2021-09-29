@@ -21,7 +21,7 @@ const BlogPostHero = ({ title, imageUrl, webpImageUrl }) => {
           )}
         </div>
         <div className="relative p-10">
-          <h2 className="text-dersu-lg text-dersu-white md:text-dersu-3xl text-center">
+          <h2 className="text-dersu-lg text-dersu-white md:text-dersu-4xl text-center">
             {title}
           </h2>
         </div>
