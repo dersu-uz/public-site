@@ -50,13 +50,13 @@ module.exports = {
         },
       },
       animation: {
-        'indicator-slide-grow': 'indicator-slide-grow 2s ease-in-out infinite',
+        'indicator-slide-grow':
+          'indicator-slide-grow 2s ease alternate infinite',
       },
       keyframes: {
         'indicator-slide-grow': {
-          '0%': { opacity: 1, height: '0' },
-          '50%': { opacity: 1, height: '100%' },
-          '100%': { opacity: 0, height: '100%' },
+          '0%': { opacity: 0, height: '0%' },
+          '100%': { opacity: 1, height: '100%' },
         },
       },
     },
