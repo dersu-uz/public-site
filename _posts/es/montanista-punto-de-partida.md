@@ -1,6 +1,6 @@
 ---
 title: 'Montañista, el punto de partida'
-subtitle: 'Esto es el subtitulo'
+subtitle: 'Conoce tu nivel en montaña, explora y crece con Dersu.'
 tag: 'Montaña'
 date: '2021-09-29'
 color_scheme: BROWN_INVERTED
