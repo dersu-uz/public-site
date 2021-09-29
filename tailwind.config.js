@@ -49,7 +49,7 @@ module.exports = {
         },
       },
       animation: {
-        'indicator-slide-grow': 'indicator-slide-grow 1s ease-in-out infinite',
+        'indicator-slide-grow': 'indicator-slide-grow 2s ease-in-out infinite',
       },
       keyframes: {
         'indicator-slide-grow': {
