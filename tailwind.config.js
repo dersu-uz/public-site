@@ -30,7 +30,7 @@ module.exports = {
         'dersu-sm': ['18px', '26px'],
         'dersu-xs': ['16px', '21px'],
         'dersu-2xs': ['14px', '22px'],
-        'dersu-3xs': ['8px', '9px'],
+        'dersu-3xs': ['10px', '11px'],
       },
       colors: {
         gray: colors.trueGray,

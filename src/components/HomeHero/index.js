@@ -33,6 +33,9 @@ const HomeHero = () => (
         </div>
       </div>
 
+      <div className="absolute top-0 left-0 w-full h-1/4 bg-gradient-to-b from-black/50 to-black/0"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1/4 bg-gradient-to-b from-black/0 to-black/50"></div>
+
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Fade bottom distance={`24px`} delay={500}>
           <DersuLogoSymbol className="w-[95px] md:w-[170px] text-dersu-yellow" />
