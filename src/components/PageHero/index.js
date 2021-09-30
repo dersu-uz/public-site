@@ -2,10 +2,10 @@
 import PropTypes from 'prop-types'
 import { colorSchemeClasses, COLOR_SCHEMES } from '@/constants/theme'
 
-const BlogPostHero = ({ title, imageUrl, webpImageUrl, colorScheme }) => {
+const PageHero = ({ title, imageUrl, webpImageUrl, colorScheme }) => {
   return (
-    <div className="BlogPostHero">
-      <div className="relative">
+    <div className="PageHero">
+      <div className={`relative ${colorSchemeClasses[colorScheme].background}`}>
         <div className="absolute top-0 left-0 w-full h-full">
           {imageUrl && (
             <picture className="flex w-full h-full">
@@ -24,8 +24,12 @@ const BlogPostHero = ({ title, imageUrl, webpImageUrl, colorScheme }) => {
         <div className="relative px-10 py-[240px] md:py-[278px]">
           <h1
             className={`
-              ${colorSchemeClasses[colorScheme].monochromeColor}
-               text-dersu-lg text-dersu-white md:text-dersu-4xl text-center
+              ${
+                imageUrl
+                  ? colorSchemeClasses[colorScheme].monochromeColor
+                  : colorSchemeClasses[colorScheme].color
+              }
+               text-dersu-lg  md:text-dersu-4xl text-center
                max-w-5xl mx-auto
               `}
           >
@@ -37,11 +41,11 @@ const BlogPostHero = ({ title, imageUrl, webpImageUrl, colorScheme }) => {
   )
 }
 
-BlogPostHero.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
+PageHero.propTypes = {
+  imageUrl: PropTypes.string,
   webpImageUrl: PropTypes.string,
   title: PropTypes.string,
   colorScheme: PropTypes.oneOf(Object.keys(COLOR_SCHEMES)),
 }
 
-export default BlogPostHero
+export default PageHero

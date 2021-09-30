@@ -10,8 +10,8 @@ export const getStaticProps = () => {
   }
 }
 
-const HomePage = () => (
-  <DefaultLayout>
+const HomePage = props => (
+  <DefaultLayout {...props}>
     <MarkdownContent>
       <blockquote>
         <p>A link between people and mountains</p>

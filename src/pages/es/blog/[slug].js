@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
+import { NextSeo } from 'next-seo'
 
 import {
   getPostBySlug,
@@ -9,16 +10,15 @@ import {
 } from '@/services/blogService'
 
 import { COLOR_SCHEMES } from '@/constants/theme'
+import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 import markdownToHtml from '@/utils/markdownToHtml'
 
-import BlogPostHero from '@/components/BlogPostHero'
+import PageHero from '@/components/PageHero'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogPostBody from '@/components/BlogPostBody'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import { NextSeo } from 'next-seo'
-import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 export async function getStaticPaths() {
   const slugs = getAllPostSlugs('es')
@@ -89,14 +89,13 @@ const BlogPostPage = ({
             }}
           />
           <Header forceSticky={true} needsCompensation={false} />
-          <BlogPostHero
+          <PageHero
             title={title}
             imageUrl={featuredImageUrl}
             webpImageUrl={webpFeaturedImageUrl}
             colorScheme={colorScheme}
           />
           <BlogPostBody subtitle={subtitle} htmlContent={htmlContent} />
-
           <ModuleFeaturedPosts posts={otherPosts} />
           <Footer />
         </>

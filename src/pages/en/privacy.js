@@ -12,10 +12,10 @@ export const getStaticProps = async () => {
   }
 }
 
-function PrivacyPage() {
+const PrivacyPage = props => {
   const { content } = useIubendaPrivacy()
   return (
-    <DefaultLayout>
+    <DefaultLayout {...props}>
       <IubendaContent content={content} />
     </DefaultLayout>
   )
