@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 
 import { DEVELOPMENT_HELPERS } from '@/constants/settings'
 
@@ -9,14 +9,29 @@ import DeveloperHelpers from '@/components/DeveloperHelpers'
 const Page = ({ title, description, canonicalUrl, children }) => (
   <>
     <div className="Page">
-      <Head>
-        <title>{title ? `${title} | Dersu` : `Dersu | ${description}`}</title>
-        <meta name="description" content={description} />
-        {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-      </Head>
+      <NextSeo
+        title={title ? `${title} | Dersu` : `Dersu | ${description}`}
+        description={description}
+        canonical={canonicalUrl}
+        additionalLinkTags={[
+          {
+            rel: 'icon',
+            type: 'image/svg+xml',
+            href: '/favicon.svg',
+          },
+          {
+            rel: 'icon',
+            type: 'image/png',
+            href: '/favicon.png',
+          },
+        ]}
+        additionalMetaTags={[
+          {
+            name: 'viewport',
+            content: 'initial-scale=1.0, width=device-width',
+          },
+        ]}
+      />
       {children}
       <CookieBanner />
       <div id="modal-root"></div>

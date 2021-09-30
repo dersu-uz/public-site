@@ -17,6 +17,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogPostBody from '@/components/BlogPostBody'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
+import { NextSeo } from 'next-seo'
+import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 export async function getStaticPaths() {
   const slugs = getAllPostSlugs('es')
@@ -36,38 +38,25 @@ export async function getStaticProps({ params }) {
   const { slug } = params
   const post = getPostBySlug(slug, 'es')
   const otherPosts = getLatestPosts('es', 2)
-  const {
-    title,
-    subtitle,
-    tag,
-    content,
-    featuredImageUrl,
-    webpFeaturedImageUrl,
-    colorScheme,
-  } = post
+  const { subtitle, content } = post
   const htmlContent = await markdownToHtml(content)
 
   return {
     props: {
-      slug,
-      locale: 'es',
-      title,
+      ...post,
       description: subtitle,
-      subtitle,
-      tag,
       htmlContent,
-      featuredImageUrl,
-      webpFeaturedImageUrl,
-      colorScheme,
       otherPosts,
     },
   }
 }
 
 const BlogPostPage = ({
+  url,
   slug,
   title,
   subtitle,
+  tag,
   featuredImageUrl,
   webpFeaturedImageUrl,
   colorScheme,
@@ -84,6 +73,21 @@ const BlogPostPage = ({
         <ErrorPage statusCode={404} />
       ) : (
         <>
+          <NextSeo
+            openGraph={{
+              description: subtitle,
+              url,
+              type: 'article',
+              article: {
+                tags: [tag],
+              },
+              images: [
+                {
+                  url: `${BASE_DOMAIN_URL}${featuredImageUrl}`,
+                },
+              ],
+            }}
+          />
           <Header forceSticky={true} needsCompensation={false} />
           <BlogPostHero
             title={title}
@@ -102,9 +106,11 @@ const BlogPostPage = ({
 }
 
 BlogPostPage.propTypes = {
+  url: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
   featuredImageUrl: PropTypes.string.isRequired,
   webpFeaturedImageUrl: PropTypes.string.isRequired,
   htmlContent: PropTypes.string.isRequired,

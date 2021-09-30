@@ -4,6 +4,7 @@ import matter from 'gray-matter'
 import { isNotJunk } from 'junk'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
+import { BASE_DOMAIN_URL } from '@/constants/settings'
 /* global process */
 
 const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts')
@@ -53,7 +54,8 @@ function preparePost(slug, locale, data, content) {
 
   return {
     slug: slug,
-    url: `/${locale}/blog/${slug}`,
+    url: `${BASE_DOMAIN_URL}/${locale}/blog/${slug}/`,
+    locale,
     title: data.title,
     subtitle: data.subtitle,
     tag: data.tag,
