@@ -17,7 +17,7 @@ export function getStaticProps() {
   return {
     props: {
       locale: 'es',
-      description: 'Tu asistente en la montaña',
+      description: 'Conecta a las personas con las montañas',
       latestPosts,
     },
   }

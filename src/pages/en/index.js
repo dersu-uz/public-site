@@ -5,7 +5,7 @@ export const getStaticProps = () => {
   return {
     props: {
       locale: 'en',
-      description: 'Your assistant in the mountain',
+      description: 'Linking people and mountains',
     },
   }
 }
