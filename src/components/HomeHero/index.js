@@ -38,7 +38,7 @@ const HomeHero = () => (
 
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <Fade bottom distance={`24px`} delay={500}>
-          <DersuLogoSymbol className="w-[95px] md:w-[170px] text-dersu-yellow" />
+          <DersuLogoSymbol className="w-[95px] md:w-[170px] text-dersu-white drop-shadow-lg" />
         </Fade>
       </div>
 
