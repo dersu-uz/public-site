@@ -1,0 +1,57 @@
+.MarkdownContent {
+  @apply font-serif font-light;
+
+  h1 {
+    @apply text-dersu-2xl md:text-dersu-3xl font-normal mb-[0.3em];
+  }
+
+  h2 {
+    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em];
+  }
+
+  h3 {
+    @apply text-dersu-lg md:text-dersu-xl font-normal mb-[0.3em];
+  }
+
+  h4 {
+    @apply text-dersu-md md:text-dersu-lg font-bold mb-[0.3em];
+  }
+
+  p {
+    @apply text-dersu-md md:text-dersu-lg mb-[1em];
+  }
+
+  a {
+    @apply font-normal;
+  }
+
+  ul {
+    @apply text-dersu-md md:text-dersu-lg pl-5 mb-[1em];
+
+    li {
+      @apply mb-[0.8em];
+
+      list-style-type: circle;
+    }
+  }
+
+  ol {
+    @apply text-dersu-sm pl-5 mb-5;
+
+    li {
+      @apply mb-1 list-decimal;
+    }
+  }
+
+  img {
+    @apply w-full;
+  }
+
+  blockquote {
+    @apply pl-5 border-l-4;
+  }
+
+  pre {
+    @apply bg-black text-white p-4;
+  }
+}

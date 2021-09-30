@@ -1,46 +1,90 @@
-import React from 'react'
+import PropTypes from 'prop-types'
 
-import DefaultLayout from '@/components/DefaultLayout'
-import MarkdownContent from '@/components/MarkdownContent'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
+import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
+import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
+import ModuleIntro from '@/components/ModuleIntro'
 
-export const getStaticProps = () => {
+import { getLatestPosts } from '@/services/blogService'
+
+import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
+
+export function getStaticProps() {
+  const latestPosts = getLatestPosts('es', 2)
   return {
     props: {
       locale: 'es',
-      description: 'Tu asistente en la montaña',
+      description: 'Conecta a las personas con las montañas',
+      latestPosts,
     },
   }
 }
 
-function HomePage() {
-  return (
-    <DefaultLayout>
-      <MarkdownContent>
-        <blockquote>
-          <p>Un punto de enlace entre las personas y las montañas</p>
-        </blockquote>
-        <p>
-          Dersu nace con la intención de convertirse en un punto de enlace entre
-          las personas y las montañas. Esta relación puede tener muchas formas,
-          pero siempre ha de asentarse en una serie de pilares fundamentales
-          como el respeto, la seguridad y la sostenibilidad.
-        </p>
-        <p>
-          Vemos la montaña como una forma (una más) de entender lo que es la
-          vida y aprender a transitar por ella. Nos exige y nos premia, nos
-          protege y amenaza, nos enseña a estar solos y en compañía, nos enseña
-          lo que es el respeto, el esfuerzo, el compañerismo. Nos enseña también
-          cuán grande y pequeño es el ser humano.
-        </p>
-        <p>
-          La relación que cada uno crea con la naturaleza es personal y
-          diferente, cambiante con el tiempo. Dersu pretende convertirse en un
-          compañero para ese viaje; que apoye, descubra, pregunte, advierta. De
-          forma que cada cual encuentre su propio camino.
-        </p>
-      </MarkdownContent>
-    </DefaultLayout>
-  )
+const HomePage = ({ latestPosts }) => (
+  <>
+    <Hero />
+    <Header />
+    <ModuleIntro />
+    <ModuleHighlights
+      title="Rutas para diferentes niveles y momentos"
+      subtitle="Perfil de montañista"
+      text="En Dersu podrás definir tus objetivos y capacidades (físicas, técnicas, etc.) para que podamos ofrecerte las rutas más adecuadas."
+      imageUrl="/images/highlights/01.jpg"
+      webpImageUrl="/images/highlights/01.webp"
+      columnsForImage={6}
+      colorScheme={COLOR_SCHEMES.GREEN}
+      alignMode={ALIGN_MODES.CENTER}
+      separator={SEPARATORS.LINES}
+    />
+    <ModuleHighlights
+      title="Preparar bien tus salidas es clave para evitar sorpresas"
+      subtitle="Planificador"
+      text="Queremos que los planes salgan bien: consultar la meteorología de la zona, los puntos críticos de la ruta, el material que necesitas y, por supuesto, compartirlo con tu grupo."
+      imageUrl={['/images/highlights/02-a.jpg', '/images/highlights/02-b.jpg']}
+      webpImageUrl={[
+        '/images/highlights/02-a.webp',
+        '/images/highlights/02-b.webp',
+      ]}
+      columnsForImage={6}
+      colorScheme={COLOR_SCHEMES.YELLOW}
+      alignMode={ALIGN_MODES.LEFT}
+      separator={SEPARATORS.EXCLAMATION_MARK}
+    />
+    <ModuleHighlights
+      title="Información extra para tomar mejores decisiones"
+      subtitle="Ayuda en ruta"
+      text="Estamos construyendo un sistema de avisos en tiempo real que te ayude a identificar puntos críticos en la ruta y a gestionar mejor la toma las decisiones."
+      imageUrl="/images/highlights/03.jpg"
+      webpImageUrl="/images/highlights/03.webp"
+      columnsForImage={6}
+      colorScheme={COLOR_SCHEMES.BROWN}
+      alignMode={ALIGN_MODES.CENTER}
+      separator={SEPARATORS.ICONS}
+      overlapsPreviousModule={true}
+    />
+    <ModuleHighlights
+      title="Evolución, formación y consejo"
+      subtitle="Aprende de montaña"
+      text="En montaña, siempre hay algo que aprender. Por eso, estamos preparando diferentes opciones de formación guiada por profesionales, con la que podrás progresar a tu ritmo."
+      imageUrl="/images/highlights/04.jpg"
+      webpImageUrl="/images/highlights/04.webp"
+      columnsForImage={6}
+      colorScheme={COLOR_SCHEMES.PINK}
+      alignMode={ALIGN_MODES.LEFT}
+      separator={SEPARATORS.WAVES}
+      framedImage={true}
+    />
+    <ModuleBetaAnnouncement />
+    <ModuleFeaturedPosts posts={latestPosts} />
+    <Footer />
+  </>
+)
+
+HomePage.propTypes = {
+  latestPosts: PropTypes.array.isRequired,
 }
 
 export default HomePage

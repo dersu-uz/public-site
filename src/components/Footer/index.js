@@ -1,77 +1,112 @@
-import React, { useContext } from 'react'
+import { useContext } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useCookie } from 'react-use'
-
-import {
-  COOKIES_PREFERRED_LOCALE_NAME,
-  COOKIES_PREFERRED_LOCALE_DAYS,
-} from '@/constants/settings'
+import { usePlausible } from 'next-plausible'
+import Fade from 'react-reveal/Fade'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
 
 import Wrapper from '@/components/Wrapper'
 
+import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
+
 const Footer = () => {
-  const { t, localeNames, currentLocale } = useContext(TranslationsContext)
-  const router = useRouter()
-
-  const [preferredLocale, updatePreferredLocale] = useCookie(
-    COOKIES_PREFERRED_LOCALE_NAME
-  )
-
-  const handleChangeLocale = newLocale => {
-    if (preferredLocale !== newLocale) {
-      updatePreferredLocale(newLocale, {
-        expires: COOKIES_PREFERRED_LOCALE_DAYS,
-      })
-    }
-    router.push(`/${newLocale}`)
-  }
+  const { t, currentLocale } = useContext(TranslationsContext)
+  const plausible = usePlausible()
 
   return (
     <footer className="Footer">
       <Wrapper>
-        <p>{t.common.teamDersu}</p>
-        <ul className="Footer__social-links">
-          <li>
-            <Link href={`/${currentLocale}`}>Dersu.uz</Link>
-          </li>
-          <li>
-            <Link href="https://www.linkedin.com/company/dersu">LinkedIn</Link>
-          </li>
-          <li>
-            <Link href="https://twitter.com/dersu_uz">Twitter</Link>
-          </li>
-          <li>
-            <Link href="https://www.instagram.com/dersu_uz/">Instagram</Link>
-          </li>
-          <li>
-            <Link href={`/${currentLocale}/${t.common.workWithDersuSlug}`}>
-              {t.common.workWithDersu}
-            </Link>
-          </li>
-          <li>
-            <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
-              {t.common.privacy}
-            </Link>
-          </li>
-          {localeNames
-            .filter(l => l.locale !== currentLocale)
-            .map(l => (
-              <li key={l.locale}>
-                <a
-                  href={`/${l.locale}/`}
-                  onClick={event => {
-                    event.preventDefault()
-                    handleChangeLocale(l.locale)
-                  }}
-                >
-                  {l.name}
-                </a>
-              </li>
-            ))}
-        </ul>
+        <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
+          <div className="md:flex md:items-center">
+            <div className="py-10 md:order-2 md:mx-auto">
+              <Fade bottom cascade>
+                <ul className="w-2/3 md:w-auto font-bold col-count-2 col-gap-9 md:col-gap-11 leading-9">
+                  <li>
+                    <Link href={`/${currentLocale}/blog`}>Blog</Link>
+                  </li>
+                  <li>
+                    <Link href="http://eepurl.com/hI63hX">
+                      <a
+                        target="_blank"
+                        onClick={() =>
+                          plausible('CTA Newsletter', {
+                            props: { method: 'Footer' },
+                          })
+                        }
+                      >
+                        Newsletter
+                      </a>
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link
+                      href={`/${currentLocale}/${t.common.workWithDersuSlug}`}
+                    >
+                      {t.common.workWithDersu}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
+                      {t.common.privacy}
+                    </Link>
+                  </li>
+
+                  <li>
+                    <Link href="https://www.instagram.com/dersu_uz/">
+                      <a
+                        target="_blank"
+                        onClick={() =>
+                          plausible('CTA Instagram', {
+                            props: { method: 'Footer' },
+                          })
+                        }
+                      >
+                        Instagram
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://www.linkedin.com/company/dersu">
+                      <a
+                        target="_blank"
+                        onClick={() =>
+                          plausible('CTA LinkedIn', {
+                            props: { method: 'Footer' },
+                          })
+                        }
+                      >
+                        LinkedIn
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://twitter.com/dersu_uz">
+                      <a
+                        target="_blank"
+                        onClick={() =>
+                          plausible('CTA Twitter', {
+                            props: { method: 'Footer' },
+                          })
+                        }
+                      >
+                        Twitter
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </Fade>
+            </div>
+            <div className="py-10 md:order-1 w-4/5 md:w-1/2 md:py-28 max-w-2xl">
+              <DersuLogoWithText width="100%" />
+            </div>
+          </div>
+          <div className="text-dersu-light-gray leading-5 md:flex">
+            <p className="md:order-1">
+              {t.common.allRightsReserved}. Dersu ® 2021
+            </p>
+          </div>
+        </div>
       </Wrapper>
     </footer>
   )

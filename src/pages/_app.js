@@ -1,9 +1,15 @@
-import React from 'react'
-import Page from '@/components/Page'
+import '@/styles/main.css'
+
+import PlausibleProvider from 'next-plausible'
+
+import { ENABLE_PLAUSIBLE } from '@/constants/settings'
+
 import TranslationsContext from '@/contexts/TranslationsContext'
+import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
+
 import { getTranslations, localeNames } from '@/translations'
 
-import '@/styles/main.scss'
+import Page from '@/components/Page'
 
 /* eslint react/prop-types: 0 */
 function NextApp({ Component, pageProps }) {
@@ -11,15 +17,23 @@ function NextApp({ Component, pageProps }) {
   const translations = getTranslations(locale)
   const contextValue = {
     t: translations,
-    currentLocale: locale,
+    currentLocale: locale || 'es',
     localeNames,
   }
   return (
-    <TranslationsContext.Provider value={contextValue}>
-      <Page title={title} description={description} canonicalUrl={canonicalUrl}>
-        <Component {...pageProps} />
-      </Page>
-    </TranslationsContext.Provider>
+    <PlausibleProvider domain="dersu.uz" enabled={ENABLE_PLAUSIBLE}>
+      <TranslationsContext.Provider value={contextValue}>
+        <DeveloperContextProvider>
+          <Page
+            title={title}
+            description={description}
+            canonicalUrl={canonicalUrl}
+          >
+            <Component {...pageProps} />
+          </Page>
+        </DeveloperContextProvider>
+      </TranslationsContext.Provider>
+    </PlausibleProvider>
   )
 }
 

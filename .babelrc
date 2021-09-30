@@ -9,6 +9,10 @@
             {
               "name": "removeViewBox",
               "active": false
+            },
+            {
+              "name": "cleanupIDs",
+              "active": false
             }
           ]
         }

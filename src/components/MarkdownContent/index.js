@@ -1,8 +1,11 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
-const MarkdownContent = ({ children }) => {
-  return <article className="MarkdownContent">{children}</article>
+const MarkdownContent = props => {
+  return (
+    <article className="MarkdownContent" {...props}>
+      {props.children}
+    </article>
+  )
 }
 
 MarkdownContent.propTypes = {

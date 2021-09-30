@@ -1,5 +1,11 @@
 module.exports = {
   plugins: {
-    autoprefixer: {},
+    'postcss-preset-env': {
+      browsers: ['defaults'],
+    },
+    'postcss-import': {},
+    'postcss-nested': {},
+    'tailwindcss': {},
+    'autoprefixer': {},
   },
 }

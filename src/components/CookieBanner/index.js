@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useCookie } from 'react-use'
 
@@ -7,8 +7,6 @@ import {
   COOKIES_ACCEPT_NAME,
   COOKIES_ACCEPT_EXPIRE_DAYS,
 } from '@/constants/settings'
-
-import Wrapper from '@/components/Wrapper'
 
 const CookieBanner = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
@@ -28,19 +26,24 @@ const CookieBanner = () => {
 
   return showCookieBanner ? (
     <div className="CookieBanner">
-      <Wrapper>
-        <div className="CookieBanner__content">
-          <div className="CookieBanner__text">
+      <div className="fixed px-4 pb-5 bottom-0 left-1/2 transform -translate-x-1/2 w-[fit-content] max-w-[668px]">
+        <div className="p-5 font-sans text-dersu-2xs text-dersu-white bg-dersu-black flex gap-10 rounded">
+          <div>
             {t.common.cookieBanner1}{' '}
             <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
-              {t.common.cookieBanner2}
+              <a className="font-bold hover:underline">
+                {t.common.cookieBanner2}
+              </a>
             </Link>
           </div>
-          <div onClick={handleAcceptCookies} className="CookieBanner__close">
+          <div
+            onClick={handleAcceptCookies}
+            className="text-dersu-sm cursor-pointer"
+          >
             ✕
           </div>
         </div>
-      </Wrapper>
+      </div>
     </div>
   ) : (
     <></>

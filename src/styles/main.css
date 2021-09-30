@@ -1,0 +1,19 @@
+/* Include Tailwind modules */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/variants';
+
+/* Commons */
+@import "commons/_defaults";
+
+/* Fonts */
+@import "fontfaces/_arimo";
+@import "fontfaces/_recoleta";
+
+/* Components */
+@import "../components/MarkdownContent/style";
+
+* {
+  /* outline: 1px dashed blue;  */
+}

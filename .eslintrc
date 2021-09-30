@@ -1,9 +1,9 @@
 {
   "extends": [
+    "plugin:@next/next/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    // always put prettier at last
     "prettier"
   ],
   "plugins": [
@@ -26,8 +26,9 @@
     "browser": true
   },
   "rules": {
-    // disable rules from base configurations
     "no-console": 1,
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }
