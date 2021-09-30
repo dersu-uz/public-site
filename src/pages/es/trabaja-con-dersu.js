@@ -14,9 +14,9 @@ export const getStaticProps = () => {
   }
 }
 
-function WorkWithDersuPage() {
+const WorkWithDersuPage = props => {
   return (
-    <DefaultLayout>
+    <DefaultLayout {...props}>
       <MarkdownContent>
         <h2>¿Qué es Dersu?</h2>
         <p>

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
+import HomeHero from '@/components/HomeHero'
 import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
@@ -25,7 +25,7 @@ export function getStaticProps() {
 
 const HomePage = ({ latestPosts }) => (
   <>
-    <Hero />
+    <HomeHero />
     <Header />
     <ModuleIntro />
     <ModuleHighlights

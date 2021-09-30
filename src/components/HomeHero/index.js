@@ -5,8 +5,8 @@ import IndicatorSlide from '@/components/IndicatorSlide'
 
 import DersuLogoSymbol from '../../styles/assets/dersu-logo-symbol.svg'
 
-const Hero = () => (
-  <div className="Hero">
+const HomeHero = () => (
+  <div className="HomeHero">
     <div className="min-h-screen bg-dersu-black relative">
       <div className="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row">
         <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-full">
@@ -56,4 +56,4 @@ const Hero = () => (
   </div>
 )
 
-export default Hero
+export default HomeHero

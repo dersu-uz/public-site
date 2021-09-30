@@ -6,7 +6,7 @@ import MarkdownContent from '@/components/MarkdownContent'
 export const getStaticProps = () => {
   return {
     props: {
-      locale: 'es',
+      locale: 'en',
       title: 'Work with Dersu',
       description:
         'We are looking for someone focused on backend and infrastructure work.',
@@ -14,9 +14,9 @@ export const getStaticProps = () => {
   }
 }
 
-function Backend() {
+const Backend = props => {
   return (
-    <DefaultLayout>
+    <DefaultLayout {...props}>
       <MarkdownContent>
         <h2>What is Dersu?</h2>
         <p>
