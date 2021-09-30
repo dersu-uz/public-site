@@ -1,5 +1,5 @@
 ---
-title: 'Dersu: Un punto de enlace entre las personas y las montañas'
+title: 'Dersu conecta a las personas con las montañas'
 subtitle: 'Buscamos una relación sana y duradera con las montañas'
 tag: 'Aprender'
 date: '2021-09-28'
