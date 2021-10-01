@@ -12,7 +12,7 @@ Y esta es la pregunta del millón:
 
 Una pregunta que ronda nuestras cabezas frecuentemente y que no siempre es fácil responder, aunque seamos conscientes de la importancia que tiene.
 
-Este el punto de partida, una vez definido nuestro nivel, podremos elegir la próxima actividad o definir el próximo reto.
+Este será el punto de partida, una vez definido nuestro nivel, podremos elegir la próxima actividad o definir el próximo reto.
 
 Para fijar nuestro nivel en montaña, habitualmente nos fijamos en diferentes parámetros:
 
