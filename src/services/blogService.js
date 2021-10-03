@@ -4,14 +4,19 @@ import matter from 'gray-matter'
 import { isNotJunk } from 'junk'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
+import { Feed } from 'feed'
+
 import { BASE_DOMAIN_URL } from '@/constants/settings'
-/* global process */
+import markdownToHtml from '@/utils/markdownToHtml'
+
+/* global process, Promise */
 
 const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts')
 
-export function getPostBySlug(slug, locale) {
+export async function getPostBySlug(slug, locale) {
   const { data, content } = readPostBySlug(slug, locale)
-  return preparePost(slug, locale, data, content)
+  const post = await preparePost(slug, locale, data, content)
+  return post
 }
 
 export function getAllPostSlugs(locale) {
@@ -22,8 +27,8 @@ export function getAllPostSlugs(locale) {
   return postSlugs
 }
 
-export function getLatestPosts(locale, limit = 10) {
-  return (
+export async function getLatestPosts(locale, limit = 10) {
+  const posts = await Promise.all(
     getAllPostSlugs(locale)
       .map(slug => readPostBySlug(slug, locale))
       // sort posts by date in descending order
@@ -31,8 +36,16 @@ export function getLatestPosts(locale, limit = 10) {
         compareDesc(parseISO(post1.data.date), parseISO(post2.data.date))
       )
       .slice(0, limit)
-      .map(post => preparePost(post.slug, post.locale, post.data, post.content))
+      .map(async post => {
+        return await preparePost(
+          post.slug,
+          post.locale,
+          post.data,
+          post.content
+        )
+      })
   )
+  return posts
 }
 
 // private
@@ -47,11 +60,10 @@ function readPostBySlug(slug, locale) {
   }
 }
 
-function preparePost(slug, locale, data, content) {
+async function preparePost(slug, locale, data, content) {
   const imagesPath = `/images/posts/${slug}`
-  const date = parseISO(data.date)
-  const dateFormatted = format(date, 'PP', { locale: es })
-
+  const dateFormatted = format(parseISO(data.date), 'PP', { locale: es })
+  const htmlContent = await markdownToHtml(content)
   return {
     slug: slug,
     url: `${BASE_DOMAIN_URL}/${locale}/blog/${slug}/`,
@@ -59,6 +71,7 @@ function preparePost(slug, locale, data, content) {
     title: data.title,
     subtitle: data.subtitle,
     tag: data.tag,
+    date: data.date,
     dateFormatted,
     colorScheme: data.color_scheme || null,
     coverImageUrl: `${imagesPath}/cover.jpg`,
@@ -66,5 +79,6 @@ function preparePost(slug, locale, data, content) {
     featuredImageUrl: `${imagesPath}/featured.jpg`,
     webpFeaturedImageUrl: `${imagesPath}/featured.webp`,
     content,
+    htmlContent,
   }
 }

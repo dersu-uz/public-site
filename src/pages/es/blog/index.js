@@ -8,7 +8,7 @@ import Wrapper from '@/components/Wrapper'
 import BlogPostsList from '@/components/BlogPostsList'
 
 export async function getStaticProps() {
-  const latestPosts = getLatestPosts('es')
+  const latestPosts = await getLatestPosts('es')
   return {
     props: {
       locale: 'es',

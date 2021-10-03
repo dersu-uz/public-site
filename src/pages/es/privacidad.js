@@ -2,7 +2,7 @@ import DefaultLayout from '@/layouts/DefaultLayout'
 import IubendaContent from '@/components/IubendaContent'
 import useIubendaPrivacy from '@/hooks/useIubendaPrivacy'
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
   return {
     props: {
       locale: 'es',
