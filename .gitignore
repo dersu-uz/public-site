@@ -38,3 +38,8 @@ yarn-error.log*
 .terraform.lock.*
 terraform.tfstate
 terraform.tfstate.*
+
+# public build files
+public/feed/*/atom.xml
+public/feed/*/feed.json
+public/feed/*/feed.xml

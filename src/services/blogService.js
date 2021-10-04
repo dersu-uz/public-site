@@ -4,7 +4,6 @@ import matter from 'gray-matter'
 import { isNotJunk } from 'junk'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
-import { Feed } from 'feed'
 
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 import markdownToHtml from '@/utils/markdownToHtml'
@@ -14,8 +13,8 @@ import markdownToHtml from '@/utils/markdownToHtml'
 const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts')
 
 export async function getPostBySlug(slug, locale) {
-  const { data, content } = readPostBySlug(slug, locale)
-  const post = await preparePost(slug, locale, data, content)
+  const { data, content } = _readPostBySlug(slug, locale)
+  const post = await _preparePost(slug, locale, data, content)
   return post
 }
 
@@ -23,6 +22,7 @@ export function getAllPostSlugs(locale) {
   const postSlugs = fs
     .readdirSync(path.join(CONTENT_POSTS_PATH, locale))
     .filter(isNotJunk)
+    .filter(f => f !== '.gitkeep')
     .map(name => name.replace(/\.md$/, ''))
   return postSlugs
 }
@@ -30,14 +30,14 @@ export function getAllPostSlugs(locale) {
 export async function getLatestPosts(locale, limit = 10) {
   const posts = await Promise.all(
     getAllPostSlugs(locale)
-      .map(slug => readPostBySlug(slug, locale))
+      .map(slug => _readPostBySlug(slug, locale))
       // sort posts by date in descending order
       .sort((post1, post2) =>
         compareDesc(parseISO(post1.data.date), parseISO(post2.data.date))
       )
       .slice(0, limit)
       .map(async post => {
-        return await preparePost(
+        return await _preparePost(
           post.slug,
           post.locale,
           post.data,
@@ -50,7 +50,7 @@ export async function getLatestPosts(locale, limit = 10) {
 
 // private
 
-function readPostBySlug(slug, locale) {
+function _readPostBySlug(slug, locale) {
   const fullPath = path.join(CONTENT_POSTS_PATH, locale, `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   return {
@@ -60,7 +60,7 @@ function readPostBySlug(slug, locale) {
   }
 }
 
-async function preparePost(slug, locale, data, content) {
+async function _preparePost(slug, locale, data, content) {
   const imagesPath = `/images/posts/${slug}`
   const dateFormatted = format(parseISO(data.date), 'PP', { locale: es })
   const htmlContent = await markdownToHtml(content)

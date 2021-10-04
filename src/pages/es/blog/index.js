@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 
 import { getLatestPosts } from '@/services/blogService'
+import { generateRSSFeed } from '@/utils/generateRSSFeed'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -9,6 +10,7 @@ import BlogPostsList from '@/components/BlogPostsList'
 
 export async function getStaticProps() {
   const latestPosts = await getLatestPosts('es')
+  generateRSSFeed('es')
   return {
     props: {
       locale: 'es',
