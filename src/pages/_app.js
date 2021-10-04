@@ -28,6 +28,7 @@ function NextApp({ Component, pageProps }) {
             title={title}
             description={description}
             canonicalUrl={canonicalUrl}
+            locale={locale}
           >
             <Component {...pageProps} />
           </Page>

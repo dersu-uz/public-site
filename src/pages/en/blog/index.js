@@ -1,6 +1,8 @@
 import DefaultLayout from '@/layouts/DefaultLayout'
+import { generateRSSFeed } from '@/utils/generateRSSFeed'
 
 export async function getStaticProps() {
+  generateRSSFeed('en')
   return {
     props: {
       locale: 'en',

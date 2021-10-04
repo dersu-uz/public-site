@@ -5,8 +5,9 @@ import { BASE_DOMAIN_URL, DEVELOPMENT_HELPERS } from '@/constants/settings'
 
 import CookieBanner from '@/components/CookieBanner'
 import DeveloperHelpers from '@/components/DeveloperHelpers'
+import { localeNames } from '@/translations'
 
-const Page = ({ title, description, canonicalUrl, children }) => (
+const Page = ({ title, description, canonicalUrl, locale, children }) => (
   <>
     <div className="Page">
       <NextSeo
@@ -23,6 +24,21 @@ const Page = ({ title, description, canonicalUrl, children }) => (
             rel: 'icon',
             type: 'image/png',
             href: '/favicon.png',
+          },
+          {
+            rel: 'alternate',
+            type: 'application/rss+xml',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.xml`,
+          },
+          {
+            rel: 'alternate',
+            type: 'application/json',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.json`,
+          },
+          {
+            rel: 'alternate',
+            type: 'application/atom+xml',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/atom.xml`,
           },
         ]}
         additionalMetaTags={[
@@ -52,6 +68,7 @@ Page.propTypes = {
   children: PropTypes.node.isRequired,
   title: PropTypes.string,
   canonicalUrl: PropTypes.string,
+  locale: PropTypes.oneOf(localeNames.map(l => l.locale)),
   description: PropTypes.string.isRequired,
 }
 

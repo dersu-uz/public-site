@@ -45,10 +45,10 @@ const HomeHero = () => (
       <div className="absolute top-0 left-0 w-full h-full flex flex-col">
         <div className="flex-grow flex flex-col items-center justify-between">
           <Fade bottom distance={`24px`} delay={1000} ssrReveal={true}>
-            <p className="text-dersu-white text-dersu-sm text-center md:text-dersu-md pt-[60px]">
+            <h1 className="text-dersu-white text-dersu-sm text-center md:text-dersu-md pt-[60px]">
               Dersu conecta a las personas
               <br /> con las montañas
-            </p>
+            </h1>
           </Fade>
           <div className="pb-8 md:pb-10">
             <IndicatorSlide />
