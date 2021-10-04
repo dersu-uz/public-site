@@ -12,8 +12,8 @@ import ImportedHomePage, {
   getStaticProps as importedGetStaticProps,
 } from './es'
 
-export const getStaticProps = args => {
-  const staticProps = importedGetStaticProps(args)
+export async function getStaticProps(args) {
+  const staticProps = await importedGetStaticProps(args)
   return {
     ...staticProps,
     props: {

@@ -12,8 +12,8 @@ import { getLatestPosts } from '@/services/blogService'
 
 import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
-export function getStaticProps() {
-  const latestPosts = getLatestPosts('es', 2)
+export async function getStaticProps() {
+  const latestPosts = await getLatestPosts('es', 2)
   return {
     props: {
       locale: 'es',

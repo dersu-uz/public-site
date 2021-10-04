@@ -2,7 +2,7 @@ import '@/styles/main.css'
 
 import PlausibleProvider from 'next-plausible'
 
-import { ENABLE_PLAUSIBLE } from '@/constants/settings'
+import { ENABLE_PLAUSIBLE, PLAUSIBLE_DOMAIN } from '@/constants/settings'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
@@ -17,11 +17,11 @@ function NextApp({ Component, pageProps }) {
   const translations = getTranslations(locale)
   const contextValue = {
     t: translations,
-    currentLocale: locale || 'es',
+    currentLocale: locale,
     localeNames,
   }
   return (
-    <PlausibleProvider domain="dersu.uz" enabled={ENABLE_PLAUSIBLE}>
+    <PlausibleProvider domain={PLAUSIBLE_DOMAIN} enabled={ENABLE_PLAUSIBLE}>
       <TranslationsContext.Provider value={contextValue}>
         <DeveloperContextProvider>
           <Page

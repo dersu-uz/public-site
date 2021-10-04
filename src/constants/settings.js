@@ -15,3 +15,5 @@ export const DEVELOPMENT_HELPERS =
 
 export const ENABLE_PLAUSIBLE =
   process.env.NEXT_PUBLIC_ENABLE_PLAUSIBLE === 'true'
+
+export const PLAUSIBLE_DOMAIN = 'dersu.uz'

@@ -12,8 +12,6 @@ import {
 import { COLOR_SCHEMES } from '@/constants/theme'
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 
-import markdownToHtml from '@/utils/markdownToHtml'
-
 import PageHero from '@/components/PageHero'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -36,11 +34,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const { slug } = params
-  const post = getPostBySlug(slug, 'es')
-  const otherPosts = getLatestPosts('es', 2)
-  const { subtitle, content } = post
-  const htmlContent = await markdownToHtml(content)
-
+  const post = await getPostBySlug(slug, 'es')
+  const otherPosts = await getLatestPosts('es', 2)
+  const { subtitle, htmlContent } = post
   return {
     props: {
       ...post,
@@ -51,18 +47,19 @@ export async function getStaticProps({ params }) {
   }
 }
 
-const BlogPostPage = ({
-  url,
-  slug,
-  title,
-  subtitle,
-  tag,
-  featuredImageUrl,
-  webpFeaturedImageUrl,
-  colorScheme,
-  htmlContent,
-  otherPosts,
-}) => {
+const BlogPostPage = props => {
+  const {
+    url,
+    slug,
+    title,
+    subtitle,
+    tag,
+    featuredImageUrl,
+    webpFeaturedImageUrl,
+    colorScheme,
+    htmlContent,
+    otherPosts,
+  } = props
   const { isFallback } = useRouter()
 
   return (

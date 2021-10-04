@@ -1,6 +1,6 @@
 import DefaultLayout from '@/layouts/DefaultLayout'
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
   return {
     props: {
       locale: 'en',

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import { NextSeo } from 'next-seo'
 
-import { DEVELOPMENT_HELPERS } from '@/constants/settings'
+import { BASE_DOMAIN_URL, DEVELOPMENT_HELPERS } from '@/constants/settings'
 
 import CookieBanner from '@/components/CookieBanner'
 import DeveloperHelpers from '@/components/DeveloperHelpers'
@@ -31,6 +31,14 @@ const Page = ({ title, description, canonicalUrl, children }) => (
             content: 'initial-scale=1.0, width=device-width',
           },
         ]}
+        openGraph={{
+          description,
+          images: [
+            {
+              url: `${BASE_DOMAIN_URL}/opengraph-banner.jpg`,
+            },
+          ],
+        }}
       />
       {children}
       <CookieBanner />

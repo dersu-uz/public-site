@@ -3,7 +3,7 @@ import Link from 'next/link'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import MarkdownContent from '@/components/MarkdownContent'
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
   return {
     props: {
       locale: 'en',
