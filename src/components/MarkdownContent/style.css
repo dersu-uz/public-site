@@ -6,11 +6,11 @@
   }
 
   h2 {
-    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em];
+    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em] mt-[1em] uppercase;
   }
 
   h3 {
-    @apply text-dersu-lg md:text-dersu-xl font-normal mb-[0.3em];
+    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em] mt-[1em];
   }
 
   h4 {
@@ -23,6 +23,7 @@
 
   a {
     @apply font-normal;
+    @apply hover:underline;
   }
 
   ul {
@@ -36,7 +37,7 @@
   }
 
   ol {
-    @apply text-dersu-sm pl-5 mb-5;
+    @apply text-dersu-md md:text-dersu-lg pl-14 mb-[1em];
 
     li {
       @apply mb-1 list-decimal;
@@ -48,7 +49,22 @@
   }
 
   blockquote {
-    @apply pl-5 border-l-4;
+    @apply pl-10 border-l-4 border-dersu-blue italic;
+
+    p {
+      &::before {
+        content: '“';
+      }
+
+      &::after {
+        content: '”';
+      }
+
+      &::after,
+      &::before {
+        display: inline;
+      }
+    }
   }
 
   pre {
