@@ -10,13 +10,11 @@ Tanto si conoces a Dersú Uzalá como si no habías oído este nombre antes, es 
 
 Dersú Uzalá fue un cazador siberiano, de la etnia Heznen (Nanai) que pasó una gran parte de su vida en la región del río Ussuri, en la Taiga Siberiana.
 
-La vida y personalidad de Dersú fue descubierta y relatada por primera vez en 1923, en las crónicas del capitán Vladimir Arséniev sobre sus expediciones por la zona, mientras realizaba sus misiones de cartografía en zonas desconocidas.
+La vida y personalidad de Dersú fue descubierta y relatada por primera vez en 1923, en las crónicas del capitán Vladimir Arséniev sobre sus expediciones por la zona, mientras realizaba misiones de cartografía de áreas desconocidas.
 
 **En el libro 'Dersú Uzalá'**, Arséniev relata el día a día de esas misiones, describe al detalle los terrenos desconocidos que se encuentra, y sobre todo, habla de la amistad que forja con Dersú Uzalá, un anciano sabio que vive en la zona y que le acompaña en sus decisiones durante la exploración.
 
-El retrato de Dersú que nos muestra Arséniev en sus diarios es el de un hombre noble y hábil que vive en armonía con la naturaleza. Arséniev es un gran explorador, un capitán cualificado y con gran experiencia en planificación; Dersu tiene el instinto y un profundo conocimiento de los misterios de la naturaleza, se integra en el terreno e interpreta sus señales sintiéndose un elemento más del ecosistema.
-
-**En 1975, esta aventura fue llevada al cine por Akira Kurosawa**, en la película Dersú Uzalá (El cazador) que le llevó a ganar un Oscar a la mejor película de habla no inglesa y otros premios.  tras una etapa difícil de su vida y que hoy en día es película de culto.
+El retrato de Dersú que nos muestra Arséniev en sus diarios es el de un hombre noble y hábil que vive en armonía con la naturaleza. Arséniev es un gran explorador, un capitán cualificado y con gran experiencia en planificación; Dersú tiene el instinto y un profundo conocimiento de los misterios de la naturaleza, se integra en el terreno e interpreta sus señales sintiéndose un elemento más del ecosistema. 
 
 Akira Kurosawa llevó esta aventura al cine en 1975, tras una etapa complicada de su vida y con una fuerte apuesta de producción. La película Dersú Uzalá (El cazador) le llevó a ganar un Oscar a la mejor película de habla no inglesa y otros premios y hoy en día es película de culto.
 
@@ -34,7 +32,7 @@ Es conocida la relación y admiración que existe entre George Lucas y Kurosawa.
 
 ### 2. El casting de Kurosawa
 
-Cuenta Yuriy Solomin (actor que interpreta a Arseniev) que, cuando Maxim Maxinovich Munzuk entró al casting para la película Dersú Uzala (El Cazador), Kurowa exclamó:
+Cuenta Yuriy Solomin (actor que interpreta a Arseniev) que, cuando Maxim Maxinovich Munzuk entró al casting para la película Dersú Uzala (El Cazador), Kurosawa exclamó: 
 
 > ¡Oh! ¡Dersú!
 
