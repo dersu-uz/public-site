@@ -13,9 +13,9 @@ export const getStaticProps = () => {
   }
 }
 
-function Page404() {
+function Page404(props) {
   return (
-    <DefaultLayout>
+    <DefaultLayout {...props}>
       <MarkdownContent>
         <h2>Página no encontrada / Page not found</h2>
         <p>No encontramos la página que buscas.</p>

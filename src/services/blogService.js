@@ -11,6 +11,7 @@ import markdownToHtml from '@/utils/markdownToHtml'
 /* global process, Promise */
 
 const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts')
+const PUBLIC_PATH = path.join(process.cwd(), 'public')
 
 export async function getPostBySlug(slug, locale) {
   const { data, content } = _readPostBySlug(slug, locale)
@@ -64,6 +65,12 @@ async function _preparePost(slug, locale, data, content) {
   const imagesPath = `/images/posts/${slug}`
   const dateFormatted = format(parseISO(data.date), 'PP', { locale: es })
   const htmlContent = await markdownToHtml(content)
+
+  const coverImageUrl = `${imagesPath}/cover.jpg`
+  const webpCoverImageUrl = `${imagesPath}/cover.webp`
+  const featuredImageUrl = `${imagesPath}/featured.jpg`
+  const webpFeaturedImageUrl = `${imagesPath}/featured.webp`
+
   return {
     slug: slug,
     url: `${BASE_DOMAIN_URL}/${locale}/blog/${slug}/`,
@@ -74,10 +81,20 @@ async function _preparePost(slug, locale, data, content) {
     date: data.date,
     dateFormatted,
     colorScheme: data.color_scheme || null,
-    coverImageUrl: `${imagesPath}/cover.jpg`,
-    webpCoverImageUrl: `${imagesPath}/cover.webp`,
-    featuredImageUrl: `${imagesPath}/featured.jpg`,
-    webpFeaturedImageUrl: `${imagesPath}/featured.webp`,
+    coverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, coverImageUrl))
+      ? coverImageUrl
+      : null,
+    webpCoverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, webpCoverImageUrl))
+      ? webpCoverImageUrl
+      : null,
+    featuredImageUrl: fs.existsSync(path.join(PUBLIC_PATH, featuredImageUrl))
+      ? featuredImageUrl
+      : null,
+    webpFeaturedImageUrl: fs.existsSync(
+      path.join(PUBLIC_PATH, webpFeaturedImageUrl)
+    )
+      ? webpFeaturedImageUrl
+      : null,
     content,
     htmlContent,
   }
