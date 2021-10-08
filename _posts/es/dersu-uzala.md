@@ -20,7 +20,7 @@ Akira Kurosawa llevó esta aventura al cine en 1975, tras una etapa complicada d
 
 Tanto en la película como en el libro, **la naturaleza es la tercera protagonista de la historia**. Las imágenes de la Taiga y su terreno cambiante, los animales que lo habitan y las condiciones meteorológicas extremas, condicionan la expedición y articulan las decisiones del grupo.
 
-Con la ayuda de Dersu, el capitán Arseniev y su equipo libran grandes peligros, aprenden a interpretar señales de la naturaleza y conocen la cultura del entorno acercándose a las experiencias vitales de alguien que ha vivido en condiciones muy diferentes a ellos.
+Con la ayuda de Dersú, el capitán Arséniev y su equipo libran grandes peligros, aprenden a interpretar señales de la naturaleza y conocen la cultura del entorno acercándose a las experiencias vitales de alguien que ha vivido en condiciones muy diferentes a ellos.
 
 La historia de Dersú ha servido de inspiración a todo tipo de gente. Quien ha conocido a Dersú sabe que una hormiga, un río, el fuego o una montaña también son gente.
 
@@ -32,7 +32,7 @@ Es conocida la relación y admiración que existe entre George Lucas y Kurosawa.
 
 ### 2. El casting de Kurosawa
 
-Cuenta Yuriy Solomin (actor que interpreta a Arseniev) que, cuando Maxim Maxinovich Munzuk entró al casting para la película Dersú Uzala (El Cazador), Kurosawa exclamó: 
+Cuenta Yuriy Solomin (actor que interpreta a Arséniev) que, cuando Maxim Maxinovich Munzuk entró al casting para la película Dersú Uzalá (El Cazador), Kurosawa exclamó:
 
 > ¡Oh! ¡Dersú!
 
@@ -44,7 +44,7 @@ Antes de conocer a Munzuk, pasó por el casting Kola Beldy, auténtico descendie
 
 ### 4. Rutas en el Ussuri
 
-Montañistas de diferentes lugares han trazado las rutas tras los pasos de Dersú y Arseniev, siguiendo el camino que se describe en sus crónicas. Con esta idea, Andrea Rodés y Cristian Segura, iniciaron su ["Viaje al Ussuri"](https://www.todostuslibros.com/libros/viaje-al-ussuri_978-84-941052-4-1#synopsis) del que también nació un libro en 2014.
+Montañistas de diferentes lugares han trazado las rutas tras los pasos de Dersú y Arséniev, siguiendo el camino que se describe en sus crónicas. Con esta idea, Andrea Rodés y Cristian Segura, iniciaron su ["Viaje al Ussuri"](https://www.todostuslibros.com/libros/viaje-al-ussuri_978-84-941052-4-1#synopsis) del que también nació un libro en 2014.
 
 ### 5. Dersú Uzalá, un clásico de la literatura
 
@@ -56,10 +56,10 @@ Montañistas de diferentes lugares han trazado las rutas tras los pasos de Ders�
 
 Sergio Hernández Ranera, en el prólogo de su traducción al libro Dersú Uzalá (Akal, 2011) nos regala la siguiente reflexión:
 
-> En las ciudades de la antigua URSS, Dersu Uzala aparece a menudo en los estantes de literatura infantil de las librerías; en Moscú, por ejemplo. A simple vista, parece una rebaja de su categoría, un menoscabo a su calidad literaria o la presentación de un género menor. Nada más lejos; más bien, tal vez sea un intento de inculcar a los pequeños lectores pautas filantrópicas y ecológicas que luego son muy difíciles de instaurar en gobiernos y adultos que no sean el capitán Arséniev y su guía Dersú.
+> En las ciudades de la antigua URSS, Dersú Uzalá aparece a menudo en los estantes de literatura infantil de las librerías; en Moscú, por ejemplo. A simple vista, parece una rebaja de su categoría, un menoscabo a su calidad literaria o la presentación de un género menor. Nada más lejos; más bien, tal vez sea un intento de inculcar a los pequeños lectores pautas filantrópicas y ecológicas que luego son muy difíciles de instaurar en gobiernos y adultos que no sean el capitán Arséniev y su guía Dersú.
 
 ### 6. Dersú en el mundo digital
 
 Bajo la inspiración de Dersú Uzalá, el conocimiento de guías con amplia experiencia y pensando en montañistas de todos los niveles, en 2021 nace [Dersu.uz](http://dersu.uz), el servicio digital que conecta a las personas con las montañas.
 
-Para nosotros, Dersu es un homenaje a la figura de guía. No sólo como profesional, también como conector con la naturaleza,  contexto y protagonista de ese viaje que nos permite conocernos mejor y conocer a quienes nos acompañan.
+Para nosotros, Dersú es un homenaje a la figura de guía. No sólo como profesional, también como conector con la naturaleza,  contexto y protagonista de ese viaje que nos permite conocernos mejor y conocer a quienes nos acompañan.
