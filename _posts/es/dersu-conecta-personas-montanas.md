@@ -2,6 +2,7 @@
 title: 'Dersu conecta a las personas con las montañas'
 subtitle: 'Buscamos una relación sana y duradera con las montañas'
 tag: 'Montaña'
+author: 'Amalia Calvo'
 date: '2021-09-28'
 color_scheme: BROWN_INVERTED
 ---

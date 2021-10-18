@@ -3,7 +3,7 @@ import Wrapper from '../Wrapper'
 import MarkdownContent from '../MarkdownContent'
 import VerticalDivision from '../VerticalDivision'
 
-const BlogPostBody = ({ subtitle, htmlContent }) => {
+const BlogPostBody = ({ subtitle, author, dateFormatted, htmlContent }) => {
   return (
     <div className="BlogPostBody">
       <div className="bg-dersu-cream">
@@ -13,6 +13,14 @@ const BlogPostBody = ({ subtitle, htmlContent }) => {
               {subtitle}
             </h2>
             <VerticalDivision />
+            <div className="pb-6">
+              <p>
+                <span className="text-dersu-xs font-bold pb-1">{author}</span> |{' '}
+                <span className="text-dersu-2xs uppercase">
+                  {dateFormatted}
+                </span>
+              </p>
+            </div>
             <MarkdownContent
               dangerouslySetInnerHTML={{ __html: htmlContent }}
             />

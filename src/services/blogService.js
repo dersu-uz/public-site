@@ -78,6 +78,7 @@ async function _preparePost(slug, locale, data, content) {
     title: data.title,
     subtitle: data.subtitle,
     tag: data.tag,
+    author: data.author,
     date: data.date,
     dateFormatted,
     colorScheme: data.color_scheme || null,
