@@ -33,6 +33,8 @@ const BlogPostBody = ({ subtitle, author, dateFormatted, htmlContent }) => {
 
 BlogPostBody.propTypes = {
   subtitle: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  dateFormatted: PropTypes.string.isRequired,
   htmlContent: PropTypes.string.isRequired,
 }
 

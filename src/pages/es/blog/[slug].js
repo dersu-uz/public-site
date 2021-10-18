@@ -114,6 +114,8 @@ BlogPostPage.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  dateFormatted: PropTypes.string.isRequired,
   featuredImageUrl: PropTypes.string,
   webpFeaturedImageUrl: PropTypes.string,
   htmlContent: PropTypes.string.isRequired,
