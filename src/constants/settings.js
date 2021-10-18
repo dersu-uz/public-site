@@ -17,3 +17,6 @@ export const ENABLE_PLAUSIBLE =
   process.env.NEXT_PUBLIC_ENABLE_PLAUSIBLE === 'true'
 
 export const PLAUSIBLE_DOMAIN = 'dersu.uz'
+
+export const MAILCHIMP_SUBSCRIBE_URL =
+  'https://Dersu.us5.list-manage.com/subscribe/post?u=09aa1f83820733bb99bd70605&id=85e6d8b7c4'
