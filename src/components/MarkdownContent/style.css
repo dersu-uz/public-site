@@ -6,19 +6,19 @@
   }
 
   h2 {
-    @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em] mt-[1em] uppercase;
-  }
-
-  h3 {
     @apply text-dersu-xl md:text-dersu-2xl font-normal mb-[0.3em] mt-[1em];
   }
 
+  h3 {
+    @apply text-dersu-lg md:text-dersu-xl font-normal mb-[0.3em] mt-[1em];
+  }
+
   h4 {
-    @apply text-dersu-md md:text-dersu-lg font-bold mb-[0.3em];
+    @apply text-dersu-sm md:text-dersu-md font-bold mb-[0.3em];
   }
 
   p {
-    @apply text-dersu-md md:text-dersu-lg mb-[1em];
+    @apply text-dersu-sm md:text-dersu-md mb-[1em];
   }
 
   a {
@@ -27,7 +27,7 @@
   }
 
   ul {
-    @apply text-dersu-md md:text-dersu-lg pl-5 mb-[1em];
+    @apply text-dersu-sm md:text-dersu-md pl-5 mb-[1em];
 
     li {
       @apply mb-[0.8em];
@@ -37,7 +37,7 @@
   }
 
   ol {
-    @apply text-dersu-md md:text-dersu-lg pl-14 mb-[1em];
+    @apply text-dersu-sm md:text-dersu-md pl-14 mb-[1em];
 
     li {
       @apply mb-1 list-decimal;

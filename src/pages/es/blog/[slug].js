@@ -54,6 +54,8 @@ const BlogPostPage = props => {
     title,
     subtitle,
     tag,
+    author,
+    dateFormatted,
     featuredImageUrl,
     webpFeaturedImageUrl,
     colorScheme,
@@ -92,7 +94,12 @@ const BlogPostPage = props => {
             webpImageUrl={webpFeaturedImageUrl}
             colorScheme={colorScheme}
           />
-          <BlogPostBody subtitle={subtitle} htmlContent={htmlContent} />
+          <BlogPostBody
+            subtitle={subtitle}
+            author={author}
+            dateFormatted={dateFormatted}
+            htmlContent={htmlContent}
+          />
           <ModuleFeaturedPosts posts={otherPosts} />
           <Footer />
         </>

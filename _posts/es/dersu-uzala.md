@@ -2,6 +2,7 @@
 title: 'Quién es Dersú Uzalá'
 subtitle: 'El hombre que nos dio nombre'
 tag: 'Inspiración'
+author: 'Amalia Calvo'
 date: '2021-10-08'
 color_scheme: PINK
 ---
@@ -14,7 +15,7 @@ La vida y personalidad de Dersú fue descubierta y relatada por primera vez en 1
 
 **En el libro 'Dersú Uzalá'**, Arséniev relata el día a día de esas misiones, describe al detalle los terrenos desconocidos que se encuentra, y sobre todo, habla de la amistad que forja con Dersú Uzalá, un anciano sabio que vive en la zona y que le acompaña en sus decisiones durante la exploración.
 
-El retrato de Dersú que nos muestra Arséniev en sus diarios es el de un hombre noble y hábil que vive en armonía con la naturaleza. Arséniev es un gran explorador, un capitán cualificado y con gran experiencia en planificación; Dersú tiene el instinto y un profundo conocimiento de los misterios de la naturaleza, se integra en el terreno e interpreta sus señales sintiéndose un elemento más del ecosistema. 
+El retrato de Dersú que nos muestra Arséniev en sus diarios es el de un hombre noble y hábil que vive en armonía con la naturaleza. Arséniev es un gran explorador, un capitán cualificado y con gran experiencia en planificación; Dersú tiene el instinto y un profundo conocimiento de los misterios de la naturaleza, se integra en el terreno e interpreta sus señales sintiéndose un elemento más del ecosistema.
 
 Akira Kurosawa llevó esta aventura al cine en 1975, tras una etapa complicada de su vida y con una fuerte apuesta de producción. La película Dersú Uzalá (El cazador) le llevó a ganar un Oscar a la mejor película de habla no inglesa y otros premios y hoy en día es película de culto.
 
