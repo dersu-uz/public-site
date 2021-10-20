@@ -5,7 +5,7 @@ const Button = ({ type, disabled, onClick, children }) => (
     type={type}
     disabled={disabled}
     onClick={onClick}
-    className="bg-dersu-dark-green text-dersu-light-green text-dersu-lg px-6 py-2 rounded-md"
+    className="bg-dersu-dark-green text-dersu-light-green text-dersu-sm px-6 py-2 rounded-md"
   >
     {children}
   </button>

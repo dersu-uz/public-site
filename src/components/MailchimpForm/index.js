@@ -10,7 +10,11 @@ export const MailchimpForm = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
 
   return (
-    <form action={MAILCHIMP_SUBSCRIBE_URL} method="post">
+    <form
+      action={MAILCHIMP_SUBSCRIBE_URL}
+      method="post"
+      className="w-full md:w-6/12 md:max-w-[500px]"
+    >
       <div className="flex flex-col md:flex-row gap-5">
         <input
           type="email"
@@ -18,20 +22,20 @@ export const MailchimpForm = () => {
           placeholder="Email"
           required={true}
           defaultValue=""
-          className="text-dersu-lg p-2"
+          className="text-dersu-sm p-2 flex-grow"
         />
-        <Button type="submit">Suscribirme</Button>
+        <Button type="submit">Me apunto</Button>
       </div>
-      <p className="mt-3">
+      <p className="mt-3 flex">
         <input
-          className="mr-2"
+          className="mr-2 mt-1"
           type="checkbox"
           id="gdpr_28962"
           name="gdpr[28962]"
           value="Y"
           required={true}
         />
-        <label htmlFor="accept-privacy">
+        <label htmlFor="accept-privacy" className="flex-grow">
           Para poder enviarte el newsletter has de aceptar nuestra{' '}
           <a
             href={`/${currentLocale}/${t.common.privacySlug}`}
