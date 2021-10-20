@@ -15,7 +15,7 @@ export const MailchimpForm = () => {
       method="post"
       className="w-full md:w-6/12 md:max-w-[500px]"
     >
-      <div className="flex flex-col md:flex-row gap-5">
+      <div className="flex gap-5">
         <input
           type="email"
           name="EMAIL"
