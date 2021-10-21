@@ -15,18 +15,17 @@ export const MailchimpForm = () => {
       method="post"
       className="w-full md:w-6/12 md:max-w-[500px]"
     >
-      <div className="flex gap-5">
+      <div className="mb-3">
         <input
           type="email"
           name="EMAIL"
           placeholder="Email"
           required={true}
           defaultValue=""
-          className="text-dersu-sm p-2 flex-grow"
+          className="text-dersu-sm p-2 w-full rounded-sm"
         />
-        <Button type="submit">Me apunto</Button>
       </div>
-      <p className="mt-3 flex">
+      <div className="mb-3">
         <input
           className="mr-2 mt-1"
           type="checkbox"
@@ -36,7 +35,7 @@ export const MailchimpForm = () => {
           required={true}
         />
         <label htmlFor="accept-privacy" className="flex-grow">
-          Para poder enviarte el newsletter has de aceptar nuestra{' '}
+          Acepto la{' '}
           <a
             href={`/${currentLocale}/${t.common.privacySlug}`}
             rel="noreferrer"
@@ -46,20 +45,23 @@ export const MailchimpForm = () => {
             política de privacidad
           </a>
         </label>
-        <div
-          style={{
-            position: 'absolute',
-            left: '-5000px',
-          }}
-        >
-          <input
-            type="text"
-            name="b_09aa1f83820733bb99bd70605_85e6d8b7c4"
-            tabIndex={-1}
-            defaultValue=""
-          />
-        </div>
-      </p>
+      </div>
+      <div className="mb-3">
+        <Button type="submit">Me apunto</Button>
+      </div>
+      <div
+        style={{
+          position: 'absolute',
+          left: '-5000px',
+        }}
+      >
+        <input
+          type="text"
+          name="b_09aa1f83820733bb99bd70605_85e6d8b7c4"
+          tabIndex={-1}
+          defaultValue=""
+        />
+      </div>
     </form>
   )
 }
