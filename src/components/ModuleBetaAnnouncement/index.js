@@ -1,12 +1,9 @@
 import Fade from 'react-reveal/Fade'
 
 import Wrapper from '@/components/Wrapper'
-import { usePlausible } from 'next-plausible'
 import MailchimpForm from '@/components/MailchimpForm'
 
 const ModuleBetaAnnouncement = () => {
-  const plausible = usePlausible()
-
   return (
     <>
       <div className="ModuleBetaAnnouncement bg-dersu-cream">
@@ -20,21 +17,7 @@ const ModuleBetaAnnouncement = () => {
               </h2>
               <p className="text-dersu-sm mb-6 md:mb-8 md:text-dersu-md xl:text-dersu-lg font-light md:w-8/12">
                 Si quieres apuntarte a la beta y suscribirte a nuestra
-                newsletter, déjanos{' '}
-                <a
-                  href="http://eepurl.com/hI63hX"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline font-normal cursor-pointer"
-                  onClick={() =>
-                    plausible('CTA Newsletter', {
-                      props: { method: 'Home' },
-                    })
-                  }
-                >
-                  aquí
-                </a>{' '}
-                tu email y te mantendremos al tanto.
+                newsletter, déjanos aquí tu email y te mantendremos al tanto.
               </p>
             </Fade>
             <MailchimpForm />
