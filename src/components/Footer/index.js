@@ -66,6 +66,22 @@ const Footer = () => {
                       </a>
                     </Link>
                   </li>
+
+                  <li>
+                    <Link href="https://www.facebook.com/Dersu-106372685179035">
+                      <a
+                        target="_blank"
+                        onClick={() =>
+                          plausible('CTA Facebook', {
+                            props: { method: 'Footer' },
+                          })
+                        }
+                      >
+                        Facebook
+                      </a>
+                    </Link>
+                  </li>
+
                   <li>
                     <Link href="https://www.linkedin.com/company/dersu">
                       <a
