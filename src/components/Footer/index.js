@@ -19,7 +19,7 @@ const Footer = () => {
         <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
           <div className="md:flex md:items-center">
             <div className="py-10 md:order-2 md:mx-auto">
-              <Fade bottom cascade>
+              <Fade bottom>
                 <ul className="w-2/3 md:w-auto font-bold col-count-2 col-gap-9 md:col-gap-11 leading-9">
                   <li>
                     <Link href={`/${currentLocale}/blog`}>Blog</Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <Link href="https://www.facebook.com/Dersu-106372685179035">
+                    <Link href="https://www.facebook.com/DersuMendia/">
                       <a
                         target="_blank"
                         onClick={() =>
