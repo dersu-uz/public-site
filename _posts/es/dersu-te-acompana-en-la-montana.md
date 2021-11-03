@@ -39,14 +39,14 @@ Conocemos la montaña y sabemos qué factores hay que considerar en las diferent
 
 ## Dersu quiere que te apetezca repetir.
 
-Por eso, lo primero es partir de tu perfil de montañista, conocer tu nivel. Definir tus capacidades y habilidades será el primer paso para definir tus próximos planes, para construir tu relación con la montaña y evolucionar en tus actividades de forma consciente.
+Por eso, lo primero es partir de tu perfil de montañista, conocer tu nivel. Definir tus capacidades y habilidades será el primer paso para elegir tus próximos planes, construir tu relación con la montaña y evolucionar en tus actividades de forma consciente.
 
-Conocemos el método y entendemos que cada persona lleva su ritmo y tiene sus intereses. Si quieres evolucionar o simplemente quieres salir, te ayudamos a elegir las actividades más recomendables para ti en cada momento.
+Entendemos que cada persona lleva un ritmo y tiene sus intereses. Si quieres evolucionar o simplemente quieres salir, te ayudamos a elegir las actividades más recomendables para ti en cada momento.
 
 ## Dersu te ayuda a encontrar las rutas más adecuadas.
 
 Por supuesto, también te ayudaremos a encontrar lugares y rutas. Y a planificarlas. Y a hacer el seguimiento de tu camino. Que lo guardes y lo compartas con tu grupo.
 
-Conocemos el método y sabemos cómo utilizar la tecnología para que funcione. Contamos con guías analizando el terreno y con un equipo de tecnología que lo adapta al medio digital. Trabajamos para que puedas mirar a la montaña sin despistarte con la pantalla y que la pantalla te ayude cuando quieras saber qué está pasando en la montaña.
+Conocemos el método y sabemos cómo utilizar la tecnología para que funcione. Contamos con guías analizando el terreno y lo adaptamos al medio digital para que todo funcione. Trabajamos para que puedas mirar a la montaña sin despistarte con la pantalla y que la pantalla te ayude cuando quieras saber qué está pasando en la montaña.
 
 Porque ir a la montaña es más que hacer una ruta, en Dersu estamos trabajando para que tu relación con la naturaleza sea consciente, sana y duradera.
