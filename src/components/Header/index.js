@@ -5,7 +5,7 @@ import { usePlausible } from 'next-plausible'
 import { useWindowScroll } from 'react-use'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
-// import usePreferredLocale from '@/hooks/usePreferredLocale'
+import usePreferredLocale from '@/hooks/usePreferredLocale'
 import Wrapper from '@/components/Wrapper'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
@@ -14,10 +14,10 @@ const Header = ({ negativeColor, forceSticky, needsCompensation }) => {
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
 
-  const { /*localeNames,*/ currentLocale } = useContext(TranslationsContext)
+  const { localeNames, currentLocale } = useContext(TranslationsContext)
   const { y: scrollTop } = useWindowScroll()
 
-  // const { changeLocale } = usePreferredLocale()
+  const { changeLocale } = usePreferredLocale()
 
   const [isSticky, setIsSticky] = useState(forceSticky)
   const [heightCompensation, setHeightCompensation] = useState(0)
@@ -92,10 +92,6 @@ const Header = ({ negativeColor, forceSticky, needsCompensation }) => {
                   </Link>
                 </li>
 
-                {/*
-
-                TODO: English version Disabled for now
-
                 {localeNames.map((l, i) => {
                   const isCurrent = l.locale === currentLocale
                   return !isCurrent ? (
@@ -111,7 +107,7 @@ const Header = ({ negativeColor, forceSticky, needsCompensation }) => {
                       </a>
                     </li>
                   ) : null
-                })} */}
+                })}
               </ul>
             </nav>
           </div>

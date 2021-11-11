@@ -25,9 +25,16 @@ export async function getStaticProps() {
 
 const HomePage = ({ latestPosts }) => (
   <>
-    <HomeHero />
+    <HomeHero
+      tagline={
+        <>
+          Dersu conecta a las personas
+          <br /> con las montañas
+        </>
+      }
+    />
     <Header />
-    <ModuleIntro />
+    <ModuleIntro tagline="Conoce, explora y crece" />
     <ModuleHighlights
       title="Rutas para diferentes niveles y momentos"
       subtitle="Perfil de montañista"
@@ -77,7 +84,13 @@ const HomePage = ({ latestPosts }) => (
       separator={SEPARATORS.WAVES}
       framedImage={true}
     />
-    <ModuleBetaAnnouncement />
+    <ModuleBetaAnnouncement
+      title="Nuestro plan es sacar una primera versión de prueba de la App en
+                diciembre, a la que iremos dando acceso a la gente poco a poco,
+                por invitación."
+      subtitle="Si quieres apuntarte a la beta y suscribirte a nuestra
+                newsletter, déjanos aquí tu email y te mantendremos al tanto."
+    />
     <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>

@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types'
 
+import { COLOR_SCHEMES } from '@/constants/theme'
+
 import Header from '@/components/Header'
 import Wrapper from '@/components/Wrapper'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
-import { COLOR_SCHEMES } from '@/constants/theme'
 
 const DefaultLayout = props => {
   const { title, heroImageUrl, webpHeroImageUrl, heroColorScheme, children } =
@@ -33,7 +34,7 @@ DefaultLayout.defaultProps = {
 }
 
 DefaultLayout.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   heroImageUrl: PropTypes.string,
   webpHeroImageUrl: PropTypes.string,
   heroColorScheme: PropTypes.oneOf(Object.keys(COLOR_SCHEMES)),

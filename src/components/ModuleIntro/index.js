@@ -1,17 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
+import PropTypes from 'prop-types'
 import Fade from 'react-reveal/Fade'
 
 import Wrapper from '@/components/Wrapper'
-import VerticalDivision from '../VerticalDivision'
+import VerticalDivision from '@/components/VerticalDivision'
 
-const ModuleIntro = () => {
+const ModuleIntro = ({ tagline }) => {
   return (
     <div className="ModuleIntro">
       <Wrapper>
         <div>
           <Fade bottom distance={`24px`}>
             <h2 className="text-dersu-lg md:text-dersu-4xl text-center py-32 md:py-48 xl:py-32 2xl:py-20 2xl:max-w-5xl 2xl:m-auto">
-              Conoce, explora y crece
+              {tagline}
             </h2>
           </Fade>
           <Fade bottom cascade>
@@ -56,6 +57,10 @@ const ModuleIntro = () => {
       </Wrapper>
     </div>
   )
+}
+
+ModuleIntro.propTypes = {
+  tagline: PropTypes.string,
 }
 
 export default ModuleIntro
