@@ -35,19 +35,19 @@ export const MailchimpForm = () => {
           required={true}
         />
         <label htmlFor="accept-privacy" className="flex-grow">
-          Acepto la{' '}
+          {t.common.acceptThe}{' '}
           <a
             href={`/${currentLocale}/${t.common.privacySlug}`}
             rel="noreferrer"
             target="_blank"
             className="underline"
           >
-            política de privacidad
+            {t.common.privacyPolicy}
           </a>
         </label>
       </div>
       <div className="mb-3">
-        <Button type="submit">Me apunto</Button>
+        <Button type="submit">{t.common.subscribeMe}</Button>
       </div>
       <div
         style={{

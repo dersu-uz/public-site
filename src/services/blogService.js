@@ -46,7 +46,7 @@ export async function getLatestPosts(locale, limit = 10) {
         )
       })
   )
-  return posts
+  return posts || []
 }
 
 // private

@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import PropTypes from 'prop-types'
 import Fade from 'react-reveal/Fade'
 
 import IndicatorSlide from '@/components/IndicatorSlide'
 
 import DersuLogoSymbol from '../../styles/assets/dersu-logo-symbol.svg'
 
-const HomeHero = () => (
+const HomeHero = ({ tagline }) => (
   <div className="HomeHero">
     <div className="min-h-screen bg-dersu-black relative">
       <div className="absolute top-0 left-0 w-full h-full flex flex-col md:flex-row">
@@ -46,8 +47,7 @@ const HomeHero = () => (
         <div className="flex-grow flex flex-col items-center justify-between">
           <Fade bottom distance={`24px`} delay={1000} ssrReveal={true}>
             <h1 className="text-dersu-white text-dersu-sm text-center md:text-dersu-md pt-[60px]">
-              Dersu conecta a las personas
-              <br /> con las montañas
+              {tagline}
             </h1>
           </Fade>
           <div className="pb-8 md:pb-10">
@@ -58,5 +58,9 @@ const HomeHero = () => (
     </div>
   </div>
 )
+
+HomeHero.propTypes = {
+  tagline: PropTypes.string.isRequired,
+}
 
 export default HomeHero

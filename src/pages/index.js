@@ -1,11 +1,10 @@
-/*
 import { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useRouter } from 'next/router'
 import { useCookie } from 'react-use'
-*/
 import {
   BASE_DOMAIN_URL,
-  /*COOKIES_PREFERRED_LOCALE_NAME,*/
+  COOKIES_PREFERRED_LOCALE_NAME,
 } from '@/constants/settings'
 
 import ImportedHomePage, {
@@ -24,11 +23,6 @@ export async function getStaticProps(args) {
 }
 
 const HomePage = props => {
-  // eslint-disable-next-line react/prop-types
-
-  /*
-  TODO: English redirect disabled for now
-
   const { locale } = props
   const router = useRouter()
   const [preferredLocale] = useCookie(COOKIES_PREFERRED_LOCALE_NAME)
@@ -39,9 +33,11 @@ const HomePage = props => {
     }
   }, [locale, preferredLocale, router])
 
-  */
-
   return <ImportedHomePage {...props} />
+}
+
+HomePage.propTypes = {
+  locale: PropTypes.string,
 }
 
 export default HomePage
