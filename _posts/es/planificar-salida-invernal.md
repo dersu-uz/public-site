@@ -25,7 +25,7 @@ Con esta información bajo control, es el momento de elegir la ruta o itinerario
 ## El grupo: ¿Con quién vas, cómo están?
 
 Conocer el nivel de quienes te acompañan y adaptar la actividad a sus necesidades será la mejor decisión que tomes para que todo vaya bien.
-*¿Han estado un tiempo en barbecho? ¿han pasado el verano entrenando? ¿Esa persona que no conoces mucho tiene vértigo? ¿Seréis capaces de superar ese punto crítico?* *¿Cuál es su experiencia sobre nive y hielo?*
+*¿Han estado un tiempo en barbecho? ¿han pasado el verano entrenando? ¿Esa persona que no conoces mucho tiene vértigo? ¿Seréis capaces de superar ese punto crítico?* *¿Cuál es su experiencia sobre nieve y hielo?*
 
 Habla y pregunta, comparte la ruta y sus condiciones. Descubre sus habilidades y sus preocupaciones, conoce su nivel técnico. Porque siempre relacionamos la nieve con las avalanchas y sus peligros, pero la mayoría de los accidentes invernales de dan por caídas y golpes a causa de la nieve y el hielo.
 
@@ -61,4 +61,3 @@ En definitiva, debemos planificar por seguridad.
 Con un buen plan, cualquier actividad saldrá mejor.
 
 Si te gusta salir a la montaña en invierno (o en verano) y quieres que te invitemos a probar nuestra app, apúntate y te iremos informando de todo: https://tinyurl.com/invitamealabeta
-
