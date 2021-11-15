@@ -3,7 +3,7 @@ title: 'Planes de montaña con nieve'
 subtitle: 'Cómo planificar una salida invernal'
 tag: 'Aprender'
 author: 'Marta Gozálbez'
-date: '2021-11-12'
+date: '2021-11-15'
 color_scheme: PINK
 ---
 
