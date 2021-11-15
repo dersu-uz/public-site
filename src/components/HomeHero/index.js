@@ -60,7 +60,7 @@ const HomeHero = ({ tagline }) => (
 )
 
 HomeHero.propTypes = {
-  tagline: PropTypes.string.isRequired,
+  tagline: PropTypes.oneOfType(PropTypes.string, PropTypes.node).isRequired,
 }
 
 export default HomeHero
