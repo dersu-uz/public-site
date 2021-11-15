@@ -27,7 +27,7 @@ Con esta información bajo control, es el momento de elegir la ruta o itinerario
 Conocer el nivel de quienes te acompañan y adaptar la actividad a sus necesidades será la mejor decisión que tomes para que todo vaya bien.
 *¿Han estado un tiempo en barbecho? ¿han pasado el verano entrenando? ¿Esa persona que no conoces mucho tiene vértigo? ¿Seréis capaces de superar ese punto crítico?* *¿Cuál es su experiencia sobre nieve y hielo?*
 
-Habla y pregunta, comparte la ruta y sus condiciones. Descubre sus habilidades y sus preocupaciones, conoce su nivel técnico. Porque siempre relacionamos la nieve con las avalanchas y sus peligros, pero la mayoría de los accidentes invernales de dan por caídas y golpes a causa de la nieve y el hielo.
+Habla y pregunta, comparte la ruta y sus condiciones. Descubre sus habilidades y sus preocupaciones, conoce su nivel técnico. Porque siempre relacionamos la nieve con las avalanchas y sus peligros, pero la mayoría de los accidentes invernales se dan por caídas y golpes a causa de la nieve y el hielo.
 
 Este punto será crucial para mantener vuestros horarios y objetivos y también será la clave para que el grupo completo quiera repetir sin haber sufrido sustos, accidentes o malos ratos.
 Avisa antes de salir: deja todos los datos sobre la ruta y los horarios previstos a alguien de tu confianza que se haya quedado en casa.
