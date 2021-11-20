@@ -1,7 +1,7 @@
 /* global process*/
 
 export const BASE_DOMAIN_URL = process.env.VERCEL_URL
-  ? `https//${process.env.VERCEL_URL}`
+  ? `https://${process.env.VERCEL_URL}`
   : process.env.NEXT_PUBLIC_BASE_DOMAIN_URL
 export const IUBENDA_ID = `82963742`
 export const IUBENDA_PRIVACY_API_URL = `https://www.iubenda.com/api/privacy-policy/${IUBENDA_ID}/no-markup`
