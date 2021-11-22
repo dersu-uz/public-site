@@ -9,9 +9,9 @@ color_scheme: BROWN
 
 Se acerca el día de salir al campo. Empezamos a pensar qué llevarnos y qué no, queremos pasarlo bien y tener lo necesario, pero tampoco queremos cargar demasiado. No vamos a renunciar a ese exquisito bocado con vistas espectaculares, ni vamos a mojarnos si llueve, ni a quedarnos sin batería...
 
-Si nos pasamos de carga en la mochila *“por si acaso”* se traduce en más cansancio, pero aligerarla demasiado puede hacernos pasar un mal rato.
+El peso de la mochila afecta a nuestra actividad. A veces, por previsión, metemos muchas cosas y la carga acelera el cansancio, cuando tratamos de aligerarla demasiado, podemos pasar un mal rato.
 
-Como sabemos que no es tarea fácil, os damos algunas claves sobre cómo optimizar nuestra mochila para, sin pasarnos, aproximarnos a la carga justa.Aquí tenéis una lista de material imprescindible, cómo cargarla y cómo ajustarla para que sea más cómoda, con la esperanza convertir a tu mochila en una gran compañera para tus excursiones.
+Como sabemos que no es tarea fácil, os damos algunas claves sobre cómo optimizar nuestra mochila para, sin pasarnos, aproximarnos a la carga justa. Aquí tenéis una lista de material imprescindible, cómo cargarla y cómo ajustarla para que sea más cómoda, con la esperanza convertir a tu mochila en una gran compañera para tus excursiones.
 
 Antes de mirar dentro de la mochila, queremos recordarte la importancia de llevar un calzado cómodo y adecuado para la actividad, no te olvides de revisar que esté en buen estado. Pronto os hablaremos de cómo equiparnos, de la ropa y el calzado.
 
@@ -27,9 +27,9 @@ Independientemente de la actividad que hagamos y de la estación del año en la 
 
 **Protección**
 
-- Ropa de abrigo y ropa impermeable. La montaña es un medio donde puede el tiempo puede cambiar de repente, llevar un extra de abrigo y una chaqueta impermeable son siempre imprescindibles.
+- Ropa de abrigo y ropa impermeable. La montaña es un medio donde el tiempo puede cambiar de repente, llevar un extra de abrigo y una chaqueta impermeable son siempre imprescindibles.
 - Guantes: finos en verano y un par de guantes extras en invierno.
-- Braga o Buff: es una prenda polivalente que sirve para protegernos del frío y también del calor.
+- Cuello o *Buff*: es una prenda polivalente que sirve para protegernos del frío y también del calor.
 - Gafas de sol, protector solar y protector labial.
 - Agua y comida. En invierno, puedes llevar un termo con bebida caliente, que nos ayuda a mantener la temperatura corporal.
 - Para días de lluvia, mete los objetos de la mochila dentro de bolsas de plástico o bolsas impermeables para evitar que se mojen cosas importantes como la ropa de abrigo o el botiquín. Hazlo aunque tu mochila tenga funda impermeable.
