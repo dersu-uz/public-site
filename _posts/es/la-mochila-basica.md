@@ -3,7 +3,7 @@ title: 'La mochila básica '
 subtitle: 'Consejos para llevar una mochila perfecta'
 tag: 'Montaña'
 author: 'Marta Gonzálbez'
-date: '2021-11-19'
+date: '2021-11-22'
 color_scheme: BROWN
 ---
 
