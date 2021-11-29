@@ -1,6 +1,8 @@
+import { useContext } from 'react'
+import TranslationsContext from '@/contexts/TranslationsContext'
+import useIubendaContent from '@/hooks/useIubendaContent'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import IubendaContent from '@/components/IubendaContent'
-import useIubendaPrivacy from '@/hooks/useIubendaPrivacy'
 
 export async function getStaticProps() {
   return {
@@ -13,7 +15,12 @@ export async function getStaticProps() {
 }
 
 const PrivacyPage = props => {
-  const { content } = useIubendaPrivacy()
+  const { t } = useContext(TranslationsContext)
+  const { content } = useIubendaContent(
+    'Privacy Policy',
+    t.common.privacyIubendaPageUrl,
+    t.common.privacyIubendaApiUrl
+  )
   return (
     <DefaultLayout {...props}>
       <IubendaContent content={content} />
