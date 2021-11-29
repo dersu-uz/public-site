@@ -7,21 +7,20 @@ import IubendaContent from '@/components/IubendaContent'
 export async function getStaticProps() {
   return {
     props: {
-      locale: 'es',
-      title: 'Política de privacidad',
-      description: 'Política de privacidad de Dersu.uz',
+      locale: 'en',
+      title: 'Terms and Conditions',
+      description: 'Terms and Conditions of Dersu.uz',
     },
   }
 }
 
-const PrivacyPage = props => {
+const TermsPage = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
-    'Política de privacidad',
-    t.common.privacyIubendaPageUrl,
-    t.common.privacyIubendaApiUrl
+    'Terms and Conditions',
+    t.common.termsIubendaPageUrl,
+    t.common.termsIubendaApiUrl
   )
-
   return (
     <DefaultLayout {...props}>
       <IubendaContent content={content} />
@@ -29,4 +28,4 @@ const PrivacyPage = props => {
   )
 }
 
-export default PrivacyPage
+export default TermsPage
