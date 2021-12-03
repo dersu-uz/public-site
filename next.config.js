@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
   webpack5: true,
+  swcMinify: true,
   trailingSlash: true,
   purge: ['./src/**/*.js'],
   // purge: false,
