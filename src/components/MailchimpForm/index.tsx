@@ -37,7 +37,7 @@ const MailchimpForm: FC = () => {
         <label htmlFor="accept-privacy" className="flex-grow">
           {t.common.acceptThe}{' '}
           <a
-            href={`/${currentLocale}/${t.common.privacySlug}`}
+            href={`/${currentLocale}/${t.common.privacySlug}/`}
             rel="noreferrer"
             target="_blank"
             className="underline"
