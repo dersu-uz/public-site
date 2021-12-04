@@ -1,6 +1,9 @@
 const path = require('path')
 
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ **/
+const nextConfig = {
   webpack5: true,
   swcMinify: true,
   trailingSlash: true,
@@ -26,3 +29,5 @@ module.exports = {
     return config
   },
 }
+
+module.exports = nextConfig
