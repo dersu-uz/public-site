@@ -11,10 +11,14 @@ import ImportedHomePage, {
   getStaticProps as importedGetStaticProps,
 } from './es'
 
-export const getStaticProps: GetStaticProps = async args => {
-  const staticProps = await importedGetStaticProps(args)
+export const getStaticProps: GetStaticProps = async ctx => {
+  const staticProps = await importedGetStaticProps(ctx)
   return {
     ...staticProps,
+    props: {
+      ...(staticProps['props'] || {}),
+      canonicalUrl: '/es/',
+    },
   }
 }
 
