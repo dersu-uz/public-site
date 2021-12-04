@@ -5,7 +5,10 @@ import { useCookie } from 'react-use'
 
 import type { LocaleShortCode } from '@/translations'
 
-import { COOKIES_PREFERRED_LOCALE_NAME } from '@/constants/settings'
+import {
+  BASE_DOMAIN_URL,
+  COOKIES_PREFERRED_LOCALE_NAME,
+} from '@/constants/settings'
 
 import ImportedHomePage, {
   getStaticProps as importedGetStaticProps,
@@ -17,7 +20,7 @@ export const getStaticProps: GetStaticProps = async ctx => {
     ...staticProps,
     props: {
       ...(staticProps['props'] || {}),
-      canonicalUrl: '/es/',
+      canonicalUrl: `${BASE_DOMAIN_URL}/es/`,
     },
   }
 }
