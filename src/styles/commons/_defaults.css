@@ -4,12 +4,15 @@ body {
 
   letter-spacing: 0.01em;
   min-height: 100vh;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
   min-height: -webkit-fill-available;
 }
 
+/* stylelint-disable-next-line selector-id-pattern */
 #__next {
   @apply overflow-hidden;
 
   min-height: 100vh;
+  /* stylelint-disable-next-line value-no-vendor-prefix */
   min-height: -webkit-fill-available;
 }

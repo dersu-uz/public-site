@@ -4,10 +4,10 @@ COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm install
 COPY .env .env
-COPY .babelrc .babelrc
 COPY .eslintignore .eslintignore
-COPY .eslintrc .eslintrc
-COPY jsconfig.json jsconfig.json
+COPY .eslintrc.js .eslintrc.js
+COPY tsconfig.json tsconfig.json
+COPY next-env.d.ts next-env.d.ts
 COPY next.config.js next.config.js
 COPY postcss.config.js postcss.config.js
 COPY prettier.config.js prettier.config.js
