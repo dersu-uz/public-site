@@ -5,6 +5,9 @@ import { MAILCHIMP_SUBSCRIBE_URL } from '@/constants/settings'
 import TranslationsContext from '@/contexts/TranslationsContext'
 
 import Button from '@/components/Button'
+import InputText from '@/components/InputText'
+import InputCheck from '@/components/InputCheck'
+import InputSelect from '@/components/InputSelect'
 
 const MailchimpForm: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
@@ -15,39 +18,61 @@ const MailchimpForm: FC = () => {
       method="post"
       className="w-full md:w-6/12 md:max-w-[500px]"
     >
-      <div className="mb-3">
-        <input
+      <div className="mb-5">
+        <InputText
           type="email"
           name="EMAIL"
-          placeholder="Email"
           required={true}
           defaultValue=""
-          className="text-dersu-sm p-2 w-full rounded-sm"
+          placeholder={t.mailchimpForm.emailPlaceholder}
         />
       </div>
-      <div className="mb-3">
-        <input
-          className="mr-2 mt-1"
-          type="checkbox"
+
+      <div className="mb-5">
+        <InputSelect
+          id="mce-OCCUPATION"
+          name="OCCUPATION"
+          labelText={t.mailchimpForm.occupationLabel}
+          options={[
+            {
+              label: t.mailchimpForm.occupationOptionNotPro,
+              value: t.mailchimpForm.occupationOptionNotPro,
+            },
+            {
+              label: t.mailchimpForm.occupationOptionMountainGuide,
+              value: t.mailchimpForm.occupationOptionMountainGuide,
+            },
+            {
+              label: t.mailchimpForm.occupationOptionMedia,
+              value: t.mailchimpForm.occupationOptionMedia,
+            },
+          ]}
+        />
+      </div>
+
+      <div className="mb-8">
+        <Button type="submit">{t.mailchimpForm.subscribeMe}</Button>
+      </div>
+      <div className="mb-5">
+        <InputCheck
           id="gdpr_28962"
           name="gdpr[28962]"
           value="Y"
           required={true}
+          labelText={
+            <span className="text-dersu-blue font-sans font-semibold">
+              {t.mailchimpForm.acceptThe}{' '}
+              <a
+                href={`/${currentLocale}/${t.common.privacySlug}/`}
+                rel="noreferrer"
+                target="_blank"
+                className="underline"
+              >
+                {t.mailchimpForm.privacyPolicy}
+              </a>
+            </span>
+          }
         />
-        <label htmlFor="accept-privacy" className="flex-grow">
-          {t.common.acceptThe}{' '}
-          <a
-            href={`/${currentLocale}/${t.common.privacySlug}/`}
-            rel="noreferrer"
-            target="_blank"
-            className="underline"
-          >
-            {t.common.privacyPolicy}
-          </a>
-        </label>
-      </div>
-      <div className="mb-3">
-        <Button type="submit">{t.common.subscribeMe}</Button>
       </div>
       <div
         style={{
