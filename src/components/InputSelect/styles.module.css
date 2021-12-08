@@ -1,0 +1,14 @@
+.component {
+  position: relative;
+
+  select {
+    @apply font-sans text-lg px-4 py-3.5 rounded-md w-full bg-white text-black cursor-pointer appearance-none;
+  }
+
+  &_downArrow {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+  }
+}

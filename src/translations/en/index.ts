@@ -3,10 +3,6 @@ import { TranslationStrings } from '@/translations'
 const translations: TranslationStrings = {
   common: {
     slide: 'Slide',
-    email: 'Email',
-    subscribeMe: 'Subscribe',
-    acceptThe: "I'm agree with the ",
-    privacyPolicy: 'privacy policy',
     articles: 'Articles',
     checkOutAll: 'Check out all',
     cookieBanner1: 'This site use cookies. Check our ',
@@ -24,6 +20,16 @@ const translations: TranslationStrings = {
     termsIubendaApiUrl:
       'https://www.iubenda.com/api/terms-and-conditions/82963742/no-markup',
     allRightsReserved: 'All rights reserved',
+  },
+  mailchimpForm: {
+    emailPlaceholder: 'Enter your email...',
+    occupationLabel: 'Are you a professional?',
+    occupationOptionNotPro: "No, I'm not a professional",
+    occupationOptionMountainGuide: "I'm mountain guide",
+    occupationOptionMedia: 'I work for media',
+    subscribeMe: 'Subscribe',
+    acceptThe: "I'm agree with the ",
+    privacyPolicy: 'privacy policy',
   },
 }
 

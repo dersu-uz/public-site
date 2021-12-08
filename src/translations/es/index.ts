@@ -3,10 +3,6 @@ import { TranslationStrings } from '@/translations'
 const translations: TranslationStrings = {
   common: {
     slide: 'Desliza',
-    email: 'Email',
-    subscribeMe: 'Me apunto',
-    acceptThe: 'Acepto la ',
-    privacyPolicy: 'politica de privacidad',
     articles: 'Historias',
     checkOutAll: 'Ver todas',
     cookieBanner1:
@@ -24,6 +20,16 @@ const translations: TranslationStrings = {
     termsIubendaApiUrl:
       'https://www.iubenda.com/api/condiciones-de-uso/58677763/no-markup',
     allRightsReserved: 'Todos los derechos reservados',
+  },
+  mailchimpForm: {
+    emailPlaceholder: 'Introduce tu email...',
+    occupationLabel: '¿Eres profesional?',
+    occupationOptionNotPro: 'No, no soy profesional',
+    occupationOptionMountainGuide: 'Soy guía de montaña',
+    occupationOptionMedia: 'Trabajo en un medio de comunicación',
+    subscribeMe: 'Me apunto',
+    acceptThe: 'Acepto la ',
+    privacyPolicy: 'politica de privacidad',
   },
 }
 

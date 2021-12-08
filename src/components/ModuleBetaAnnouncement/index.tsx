@@ -6,22 +6,18 @@ import MailchimpForm from '@/components/MailchimpForm'
 
 type Props = {
   title: string
-  subtitle: string
 }
 
-const ModuleBetaAnnouncement: FC<Props> = ({ title, subtitle }) => {
+const ModuleBetaAnnouncement: FC<Props> = ({ title }) => {
   return (
     <>
-      <div className="ModuleBetaAnnouncement bg-dersu-cream">
+      <div className="ModuleBetaAnnouncement bg-dersu-brown">
         <Wrapper>
-          <div className="py-16 md:py-20 lg:py-36">
+          <div className="py-16 md:py-20">
             <Fade bottom distance={`24px`}>
-              <h2 className="text-dersu-lg mb-6 md:mb-8 md:text-dersu-xl lg:text-dersu-3xl xl:text-dersu-4xl md:w-9/12">
+              <h2 className="text-dersu-blue text-dersu-lg mb-8 md:text-dersu-lg xl:text-dersu-xl md:w-10/12">
                 {title}
               </h2>
-              <p className="text-dersu-sm mb-6 md:mb-8 md:text-dersu-md xl:text-dersu-lg font-light md:w-8/12">
-                {subtitle}
-              </p>
             </Fade>
             <MailchimpForm />
           </div>
