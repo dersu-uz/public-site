@@ -14,7 +14,7 @@ type Props = {
 }
 
 const InputCheck: FC<Props> = ({ id, name, value, required, labelText }) => {
-  const [isChecked, setIsChecked] = useState(true)
+  const [isChecked, setIsChecked] = useState(false)
   return (
     <div className={styles.component}>
       <label htmlFor={id} className={styles.component_label}>
