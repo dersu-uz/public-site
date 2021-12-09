@@ -35,16 +35,16 @@ const MailchimpForm: FC = () => {
           labelText={t.mailchimpForm.occupationLabel}
           options={[
             {
-              label: t.mailchimpForm.occupationOptionNotPro,
-              value: t.mailchimpForm.occupationOptionNotPro,
-            },
-            {
               label: t.mailchimpForm.occupationOptionMountainGuide,
               value: t.mailchimpForm.occupationOptionMountainGuide,
             },
             {
               label: t.mailchimpForm.occupationOptionMedia,
               value: t.mailchimpForm.occupationOptionMedia,
+            },
+            {
+              label: t.mailchimpForm.occupationOptionNotPro,
+              value: t.mailchimpForm.occupationOptionNotPro,
             },
           ]}
         />
