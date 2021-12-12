@@ -4,7 +4,6 @@ subtitle: 'Una relación más allá de la ruta'
 tag: 'Aprender'
 author: 'Amalia Calvo'
 date: '2021-11-03'
-color_scheme: BROWN
 ---
 
 Estamos felices. Cada vez hay más gente que visita la montaña.

@@ -56,4 +56,8 @@ const PageHero: FC<Props> = ({
   )
 }
 
+PageHero.defaultProps = {
+  colorScheme: COLOR_SCHEMES.BROWN_INVERTED,
+}
+
 export default PageHero

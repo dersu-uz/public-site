@@ -1,5 +1,3 @@
-import { COLOR_SCHEMES } from '@/constants/theme'
-
 type BlogPost = {
   slug: string
   url: string
@@ -10,7 +8,6 @@ type BlogPost = {
   author: string
   date: Date
   dateFormatted: string
-  colorScheme: keyof typeof COLOR_SCHEMES
   coverImageUrl: string
   webpCoverImageUrl: string
   featuredImageUrl: string

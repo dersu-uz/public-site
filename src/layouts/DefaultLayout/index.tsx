@@ -35,8 +35,4 @@ const DefaultLayout: FC<Props> = ({
   )
 }
 
-DefaultLayout.defaultProps = {
-  heroColorScheme: COLOR_SCHEMES.BROWN_INVERTED,
-}
-
 export default DefaultLayout

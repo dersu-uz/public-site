@@ -1,8 +1,6 @@
 import { FC } from 'react'
 import { GetStaticProps } from 'next'
 
-import { BlogPost } from '@/types/common'
-
 import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
 import { getLatestPosts } from '@/services/blogService'
