@@ -48,29 +48,25 @@ const ModuleFeaturedPost: FC<Props> = ({
                 </picture>
               )}
             </div>
+            {imageUrl && (
+              <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
+            )}
             <div
               className={`
                 absolute top-0 left-0 w-full h-full p-5 md:p-10 flex flex-col justify-between
                 md:absolute md:top-0 md:left-0 pointer-events-none
             `}
             >
-              <h3
-                className={`
-                  ${colorSchemeClasses[colorScheme].monochromeColor}
-                  text-dersu-md sm:text-dersu-lg xl:text-dersu-2xl 2xl:text-dersu-3xl
-                `}
-              >
+              <h3 className="text-dersu-white text-dersu-md sm:text-dersu-lg xl:text-dersu-2xl 2xl:text-dersu-3xl">
                 {title}
               </h3>
               <div className="flex justify-between">
                 <p
-                  className={`font-sans font-bold text-dersu-xs uppercase ${colorSchemeClasses[colorScheme].color}`}
+                  className={`font-sans font-bold text-dersu-xs text-dersu-white uppercase`}
                 >
                   {tag}
                 </p>
-                <p
-                  className={`font-sans text-dersu-xs ${colorSchemeClasses[colorScheme].monochromeColor}`}
-                >
+                <p className={`font-sans text-dersu-xs text-dersu-white`}>
                   {postDate}
                 </p>
               </div>
