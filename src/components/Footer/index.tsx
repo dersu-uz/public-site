@@ -20,7 +20,7 @@ const Footer: FC = () => {
           <div className="md:flex md:items-center">
             <div className="py-10 md:order-2 md:mx-auto">
               <Fade bottom>
-                <ul className="w-2/3 md:w-auto font-bold col-count-2 col-gap-9 md:col-gap-11 leading-9">
+                <ul className="w-2/3 md:w-auto font-bold columns-2 gap-9 md:gap-11 leading-9">
                   <li>
                     <Link href={`/${currentLocale}/blog`}>Blog</Link>
                   </li>

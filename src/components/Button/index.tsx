@@ -1,7 +1,5 @@
 import { FC } from 'react'
 
-import styles from './styles.module.css'
-
 type Props = {
   type: 'button' | 'submit' | 'reset'
   disabled?: boolean
@@ -13,7 +11,7 @@ const Button: FC<Props> = ({ type, disabled, onClick, children }) => (
     type={type}
     disabled={disabled}
     onClick={onClick}
-    className={styles.component}
+    className="font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold py-4 px-16 rounded-md whitespace-nowrap hover:bg-dersu-cream"
   >
     {children}
   </button>

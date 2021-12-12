@@ -1,9 +1,7 @@
-const colors = require('tailwindcss/colors')
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx,vue}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,vue}'],
   theme: {
     container: {
       center: false,
@@ -33,7 +31,6 @@ module.exports = {
         'dersu-3xs': ['10px', '11px'],
       },
       colors: {
-        gray: colors.trueGray,
         dersu: {
           // palette from figma
           'light-gray': '#888888',
@@ -61,6 +58,4 @@ module.exports = {
       },
     },
   },
-  variants: {},
-  plugins: [require('tailwindcss-multi-column')()],
 }

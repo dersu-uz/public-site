@@ -1,8 +1,0 @@
-.component {
-  @apply font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold;
-  @apply py-4 px-16 rounded-md whitespace-nowrap;
-
-  &:hover {
-    @apply bg-dersu-cream;
-  }
-}
