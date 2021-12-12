@@ -86,7 +86,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       separator={SEPARATORS.WAVES}
       framedImage={true}
     />
-    <ModuleBetaAnnouncement title="To sign up for our beta, leave your email here. We'll keep you updated." />
+    <ModuleBetaAnnouncement />
     <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>
