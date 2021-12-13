@@ -36,7 +36,11 @@ const BetaLandingPage: FC = () => {
               escala en hielo.
             </p>
             <p className="flex justify-center my-16 lg:hidden">
-              <img src="/images/beta/picture-01a.png" alt="Dersu App" />
+              <img
+                src="/images/beta/picture-01a.png"
+                srcSet="/images/beta/picture-01a@2x.png 2x"
+                alt="Dersu App"
+              />
             </p>
             <p className="mb-8">En esta versión, podrás hacer cosas como:</p>
             <ul className="mb-8">
@@ -61,11 +65,19 @@ const BetaLandingPage: FC = () => {
               contarnos cómo podemos mejorar.
             </p>
             <p className="flex justify-center my-16 lg:hidden">
-              <img src="/images/beta/picture-01b.png" alt="Dersu App" />
+              <img
+                src="/images/beta/picture-01b.png"
+                srcSet="/images/beta/picture-01b@2x.png 2x"
+                alt="Dersu App"
+              />
             </p>
           </div>
           <div className="hidden lg:block lg:w-6/12">
-            <img src="/images/beta/picture-01.png" alt="Dersu App" />
+            <img
+              src="/images/beta/picture-01.png"
+              srcSet="/images/beta/picture-01@2x.png 2x"
+              alt="Dersu App"
+            />
           </div>
         </div>
       </Wrapper>
