@@ -58,18 +58,14 @@ const BetaLandingPage: FC = () => {
             </ul>
             <p>
               Solo tienes que apuntarte, recibir la invitación y si quieres,
-              contarnos cómo podemos mejorar.{' '}
+              contarnos cómo podemos mejorar.
             </p>
             <p className="flex justify-center my-16 lg:hidden">
               <img src="/images/beta/picture-01b.png" alt="Dersu App" />
             </p>
           </div>
           <div className="hidden lg:block lg:w-6/12">
-            <img
-              src="/images/beta/picture-01.png"
-              alt="Dersu App"
-              width="100%"
-            />
+            <img src="/images/beta/picture-01.png" alt="Dersu App" />
           </div>
         </div>
       </Wrapper>
