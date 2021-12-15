@@ -7,7 +7,6 @@ import Wrapper from '@/components/Wrapper'
 import BlogPostsList from '@/components/BlogPostsList'
 
 import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
-import { BlogPost } from '@/types/common'
 
 type Props = {
   posts: Array<BlogPost>

@@ -3,7 +3,6 @@ import { FC } from 'react'
 import { COLOR_SCHEMES } from '@/constants/theme'
 
 import Header from '@/components/Header'
-import Wrapper from '@/components/Wrapper'
 import Footer from '@/components/Footer'
 import PageHero from '@/components/PageHero'
 
@@ -30,18 +29,10 @@ const DefaultLayout: FC<Props> = ({
         webpImageUrl={webpHeroImageUrl}
         colorScheme={heroColorScheme}
       />
-      <main>
-        <Wrapper>
-          <div className="max-w-4xl mx-auto py-10 md:py-24">{children}</div>
-        </Wrapper>
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   )
-}
-
-DefaultLayout.defaultProps = {
-  heroColorScheme: COLOR_SCHEMES.BROWN_INVERTED,
 }
 
 export default DefaultLayout

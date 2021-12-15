@@ -21,6 +21,10 @@ const translations: TranslationStrings = {
       'https://www.iubenda.com/api/terms-and-conditions/82963742/no-markup',
     allRightsReserved: 'All rights reserved',
   },
+  moduleBetaAnnouncement: {
+    title:
+      "To sign up for our beta, leave your email here. We'll keep you updated.",
+  },
   mailchimpForm: {
     emailPlaceholder: 'Enter your email...',
     occupationLabel: 'Are you a professional?',

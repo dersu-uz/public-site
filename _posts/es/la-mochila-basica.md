@@ -4,7 +4,6 @@ subtitle: 'Consejos para llevar una mochila perfecta'
 tag: 'Montaña'
 author: 'Marta Gonzálbez'
 date: '2021-11-22'
-color_scheme: BROWN
 ---
 
 Se acerca el día de salir al campo. Empezamos a pensar qué llevarnos y qué no, queremos pasarlo bien y tener lo necesario, pero tampoco queremos cargar demasiado. No vamos a renunciar a ese exquisito bocado con vistas espectaculares, ni vamos a mojarnos si llueve, ni a quedarnos sin batería...

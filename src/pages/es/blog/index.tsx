@@ -1,8 +1,6 @@
 import { FC } from 'react'
 import { GetStaticProps } from 'next'
 
-import { BlogPost } from '@/types/common'
-
 import { getLatestPosts } from '@/services/blogService'
 
 import { generateRSSFeed } from '@/utils/generateRSSFeed'

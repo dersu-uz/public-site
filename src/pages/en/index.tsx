@@ -12,7 +12,6 @@ import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
 import ModuleIntro from '@/components/ModuleIntro'
-import { BlogPost } from '@/types/common'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('en', 2)
@@ -86,7 +85,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       separator={SEPARATORS.WAVES}
       framedImage={true}
     />
-    <ModuleBetaAnnouncement title="To sign up for our beta, leave your email here. We'll keep you updated." />
+    <ModuleBetaAnnouncement />
     <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>

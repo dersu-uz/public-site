@@ -1,6 +1,4 @@
 import { FC } from 'react'
-import { BlogPost } from '@/types/common'
-import { COLOR_SCHEMES } from '@/constants/theme'
 
 import ModuleFeaturedPost from '@/components/ModuleFeaturedPost'
 
@@ -21,7 +19,6 @@ const BlogPostsList: FC<Props> = ({ posts }) => {
             href={post.url}
             imageUrl={post.coverImageUrl}
             webpImageUrl={post.webpCoverImageUrl}
-            colorScheme={COLOR_SCHEMES[post.colorScheme]}
           />
         ))}
       </div>

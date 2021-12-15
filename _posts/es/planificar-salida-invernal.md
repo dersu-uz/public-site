@@ -4,7 +4,6 @@ subtitle: 'Cómo planificar una salida invernal'
 tag: 'Aprender'
 author: 'Marta Gonzálbez'
 date: '2021-11-15'
-color_scheme: PINK
 ---
 
 Hemos visto las primeras nieves y ya estamos revisando nuestros esquís, raquetas, piolets y crampones. Estamos impacientes por salir. Mientras llega el momento, miramos fotos, mapas y datos meteorológicos que nos ayudan a imaginarnos cómo está la montaña en cada momento.

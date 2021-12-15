@@ -4,7 +4,6 @@ subtitle: 'El hombre que nos dio nombre'
 tag: 'Inspiración'
 author: 'Amalia Calvo'
 date: '2021-10-08'
-color_scheme: PINK
 ---
 
 Tanto si conoces a Dersú Uzalá como si no habías oído este nombre antes, es muy probable que, después de haber leído esto, quieras saber más, buscar más información sobre el personaje, la película o el libro que llevan su nombre.

@@ -33,12 +33,15 @@ const PageHero: FC<Props> = ({
             </picture>
           )}
         </div>
+        {imageUrl && (
+          <div className="absolute top-0 left-0 w-full h-full bg-white/60" />
+        )}
         <div className="relative px-10 py-[240px] md:py-[278px]">
           <h1
             className={`
               ${
                 imageUrl
-                  ? colorSchemeClasses[colorScheme].monochromeColor
+                  ? 'text-dersu-black'
                   : colorSchemeClasses[colorScheme].color
               }
                text-dersu-lg  md:text-dersu-4xl text-center
@@ -51,6 +54,10 @@ const PageHero: FC<Props> = ({
       </div>
     </div>
   )
+}
+
+PageHero.defaultProps = {
+  colorScheme: COLOR_SCHEMES.BROWN_INVERTED,
 }
 
 export default PageHero

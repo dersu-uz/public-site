@@ -6,7 +6,6 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
 
 import type { LocaleShortCode } from '@/translations'
-import { BlogPost } from '@/types/common'
 
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 
@@ -52,7 +51,6 @@ async function _preparePost(
     author: data.author,
     date: data.date,
     dateFormatted,
-    colorScheme: data.color_scheme || null,
     coverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, coverImageUrl))
       ? coverImageUrl
       : null,

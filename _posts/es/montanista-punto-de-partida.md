@@ -4,7 +4,6 @@ subtitle: 'Conoce tu nivel en montaña, explora y crece con Dersu.'
 tag: 'Aprender'
 author: 'Amalia Calvo'
 date: '2021-09-29'
-color_scheme: BROWN
 ---
 
 Y esta es la pregunta del millón:

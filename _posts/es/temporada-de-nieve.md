@@ -4,7 +4,6 @@ subtitle: 'Avalanchas: atención y decisión'
 tag: 'Nieve'
 author: 'Fernando Errekalde'
 date: '2021-12-03'
-color_scheme: PINK
 ---
 
 Al fin. Ya hemos podido disfrutar de la primera buena nevada de la temporada.

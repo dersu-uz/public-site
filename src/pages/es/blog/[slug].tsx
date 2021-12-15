@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import { NextSeo } from 'next-seo'
@@ -8,7 +9,6 @@ import {
   getLatestPosts,
 } from '@/services/blogService'
 
-import { COLOR_SCHEMES } from '@/constants/theme'
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 import PageHero from '@/components/PageHero'
@@ -17,8 +17,6 @@ import Footer from '@/components/Footer'
 import BlogPostBody from '@/components/BlogPostBody'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { FC } from 'react'
-import { BlogPost } from '@/types/common'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getAllPostSlugs('es')
@@ -59,7 +57,6 @@ type Props = {
   dateFormatted: string
   featuredImageUrl: string
   webpFeaturedImageUrl: string
-  colorScheme: keyof typeof COLOR_SCHEMES
   htmlContent: string
   otherPosts: Array<BlogPost>
 }
@@ -74,7 +71,6 @@ const BlogPostPage: FC<Props> = ({
   dateFormatted,
   featuredImageUrl,
   webpFeaturedImageUrl,
-  colorScheme,
   htmlContent,
   otherPosts,
 }) => {
@@ -108,7 +104,6 @@ const BlogPostPage: FC<Props> = ({
             title={title}
             imageUrl={featuredImageUrl}
             webpImageUrl={webpFeaturedImageUrl}
-            colorScheme={colorScheme}
           />
           <BlogPostBody
             subtitle={subtitle}

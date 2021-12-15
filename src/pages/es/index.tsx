@@ -1,8 +1,6 @@
 import { FC } from 'react'
 import { GetStaticProps } from 'next'
 
-import { BlogPost } from '@/types/common'
-
 import { ALIGN_MODES, COLOR_SCHEMES } from '@/constants/theme'
 
 import { getLatestPosts } from '@/services/blogService'
@@ -87,7 +85,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       separator={SEPARATORS.WAVES}
       framedImage={true}
     />
-    <ModuleBetaAnnouncement title="Si quieres apuntarte a la beta, déjanos aquí tu email y te mantendremos al tanto." />
+    <ModuleBetaAnnouncement />
     <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>
