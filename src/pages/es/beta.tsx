@@ -5,6 +5,7 @@ import { GetStaticProps } from 'next'
 import DefaultLayout from '@/layouts/DefaultLayout'
 import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import Wrapper from '@/components/Wrapper'
+import Picture from '@/components/Picture'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -36,17 +37,19 @@ const BetaLandingPage: FC = () => {
               escala en hielo.
             </p>
             <p className="flex justify-center my-16 lg:hidden">
-              <img
-                src="/images/beta/picture-01a.png"
-                srcSet="/images/beta/picture-01a@2x.png 2x"
+              <Picture
                 alt="Dersu App"
+                imageType="png"
+                imageName="picture-01a"
+                path="/images/beta"
+                densities={[1, 2]}
               />
             </p>
             <p className="mb-8">En esta versión, podrás hacer cosas como:</p>
             <ul className="mb-8">
               <li>1. Definir tu nivel.</li>
               <li>
-                2. Ver las rutas Dersu, definidas por guías con experiencia.
+                2. Ver las rutas Dersu, propuestas por guías con experiencia.
               </li>
               <li>
                 3. Saber si las rutas son adecuadas para ti y para tu grupo.
@@ -65,18 +68,22 @@ const BetaLandingPage: FC = () => {
               contarnos cómo podemos mejorar.
             </p>
             <p className="flex justify-center my-16 lg:hidden">
-              <img
-                src="/images/beta/picture-01b.png"
-                srcSet="/images/beta/picture-01b@2x.png 2x"
+              <Picture
                 alt="Dersu App"
+                imageType="png"
+                imageName="picture-01b"
+                path="/images/beta"
+                densities={[1, 2]}
               />
             </p>
           </div>
           <div className="hidden lg:block lg:w-6/12">
-            <img
-              src="/images/beta/picture-01.png"
-              srcSet="/images/beta/picture-01@2x.png 2x"
+            <Picture
               alt="Dersu App"
+              imageType="png"
+              imageName="picture-01"
+              path="/images/beta"
+              densities={[1, 2]}
             />
           </div>
         </div>
