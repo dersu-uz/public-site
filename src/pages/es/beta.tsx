@@ -47,7 +47,9 @@ const BetaLandingPage: FC = () => {
             </p>
             <p className="mb-8">En esta versión, podrás hacer cosas como:</p>
             <ul className="mb-8">
-              <li>1. Definir tu nivel.</li>
+              <li>
+                1. Definir tu nivel físico, técnico y de riesgo en las rutas.
+              </li>
               <li>
                 2. Ver las rutas Dersu, propuestas por guías con experiencia.
               </li>
