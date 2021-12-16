@@ -55,7 +55,7 @@ const Picture: FC<PictureProps> = ({
   className,
 }) => {
   return (
-    <picture className={className}>
+    <picture className="flex w-full h-full">
       {webpEnabled && (
         <PictureSource
           path={path}
@@ -70,7 +70,11 @@ const Picture: FC<PictureProps> = ({
         imageType={imageType}
         densities={densities}
       />
-      <img src={`${path}/${imageName}.${imageType}`} alt={alt} />
+      <img
+        className={className}
+        src={`${path}/${imageName}.${imageType}`}
+        alt={alt}
+      />
     </picture>
   )
 }
