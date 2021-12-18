@@ -42,6 +42,15 @@ const translations: TranslationStrings = {
   moduleHomeIntro: {
     tagLine: 'Enjoy the mountains safely and at your own pace',
   },
+  moduleHomeMountaineerProfile: {
+    title: 'Mountaineer profile',
+    subtitle: 'Finding the most suitable routes begins with knowing your level',
+    text: "Define your physical and technical levels as well as the degree of exposure you are comfortable with. This way, you'll know if the route is suitable for you and your group. Yes, we are also taking vertigo into account.",
+  },
+  moduleRoutePlanning: {
+    title: 'Plan your routes',
+    subtitle: 'We love when a plan comes together',
+  },
 }
 
 export default translations

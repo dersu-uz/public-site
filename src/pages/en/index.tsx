@@ -13,6 +13,8 @@ import ModuleHighlights from '@/components/ModuleHighlights'
 import HomeIntro from '@/modules/HomeIntro'
 import HomeHero from '@/modules/HomeHero'
 import SignupForBeta from '@/modules/SignupForBeta'
+import HomeMountaineerProfile from '@/modules/HomeMountaineerProfile'
+import HomeRoutePlanning from '@/modules/HomeRoutePlanning'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('en', 2)
@@ -34,6 +36,8 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
     <HomeHero />
     <Header />
     <HomeIntro />
+    <HomeMountaineerProfile />
+    <HomeRoutePlanning />
     <ModuleHighlights
       title="Routes for different levels and moments"
       subtitle="Mountaineer profile"

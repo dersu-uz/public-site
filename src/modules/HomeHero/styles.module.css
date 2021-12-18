@@ -1,9 +1,9 @@
 .module {
-  background-image: url('/images/home/hero/hero-bg-mobile.jpg');
+  background-image: url('/images/modules/home-hero/hero-bg-mobile.jpg');
   background-position: center top;
   background-size: cover;
 
   @screen md {
-    background-image: url('/images/home/hero/hero-bg-desktop.jpg');
+    background-image: url('/images/modules/home-hero/hero-bg-desktop.jpg');
   }
 }

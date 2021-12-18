@@ -42,6 +42,16 @@ const translations: TranslationStrings = {
   moduleHomeIntro: {
     tagLine: 'Disfruta la montaña, con seguridad y a tu ritmo',
   },
+  moduleHomeMountaineerProfile: {
+    title: 'Perfil de montañista',
+    subtitle:
+      'Conocer tu nivel es el primer paso para hacer las rutas adecuadas',
+    text: 'Podrás definir tus niveles físico, técnico y el grado de exposición con el que estás a gusto en las salidas. Así podrás saber si la ruta es apropiada para ti y el grupo con el que vas. Y sí, las evaluamos en función del vértigo, también.',
+  },
+  moduleRoutePlanning: {
+    title: 'Planifica tus salidas',
+    subtitle: 'Nos gusta que los planes salgan bien',
+  },
 }
 
 export default translations

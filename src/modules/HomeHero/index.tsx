@@ -12,12 +12,12 @@ const HomeHero: FC = () => {
   return (
     <div className={styles.module}>
       <div className="md:h-screen md:max-h-[900px]">
-        <div className="flex flex-col md:flex-row items-end">
+        <div className="flex flex-col items-end h-full md:flex-row pb-8">
           <div className="px-8 md:w-6/12 md:pl-16 md:pr-0">
-            <h1 className="text-dersu-lg text-center pt-28 pb-6 md:text-left lg:text-dersu-4xl text-dersu-white mb-14">
+            <h1 className="text-dersu-lg text-center pt-28 pb-6 md:text-dersu-3xl md:text-left lg:text-dersu-4xl text-dersu-white mb-14">
               {t.moduleHomeHero.tagLine}
             </h1>
-            <p className="text-dersu-md font-semibold text-dersu-blue text-center md:text-left mb-8">
+            <p className="text-dersu-md font-semibold text-dersu-blue text-center md:text-left mb-8 md:max-w-sm">
               {t.moduleHomeHero.signupForBeta}
             </p>
             <div className="md:max-w-lg">
@@ -28,7 +28,7 @@ const HomeHero: FC = () => {
             <div>
               <Picture
                 alt="Dersu app"
-                path="/images/home/hero"
+                path="/images/modules/home-hero"
                 imageName="hero-phone"
                 imageType="png"
                 densities={[1, 2]}
