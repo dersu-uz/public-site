@@ -9,7 +9,7 @@ const SignupForBeta: FC = () => {
   const { t } = useContext(TranslationsContext)
   return (
     <>
-      <div className="SignupForBeta bg-dersu-brown">
+      <div className="bg-dersu-brown">
         <Wrapper>
           <div className="py-16 md:py-20 max-w-4xl mx-auto">
             <Fade bottom distance={`24px`}>
@@ -17,7 +17,9 @@ const SignupForBeta: FC = () => {
                 {t.moduleSignupForBeta.title}
               </h2>
             </Fade>
-            <MailchimpForm />
+            <div className="max-w-lg">
+              <MailchimpForm />
+            </div>
           </div>
         </Wrapper>
       </div>
