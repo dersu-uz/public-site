@@ -7,7 +7,7 @@ import { getLatestPosts } from '@/services/blogService'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
+import PostsList from '@/components/PostsList'
 import ModuleHighlights from '@/components/ModuleHighlights'
 
 import HomeHero from '@/modules/HomeHero'
@@ -75,7 +75,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       alignMode={ALIGN_MODES.LEFT}
       framedImage={true}
     />
-    <ModuleFeaturedPosts posts={latestPosts} />
+    <PostsList posts={latestPosts} />
     <SignupForBeta />
     <Footer />
   </>

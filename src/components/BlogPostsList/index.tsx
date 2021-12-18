@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import ModuleFeaturedPost from '@/components/ModuleFeaturedPost'
+import FeaturedPost from '@/components/FeaturedPost'
 
 type Props = {
   posts: Array<BlogPost>
@@ -11,7 +11,7 @@ const BlogPostsList: FC<Props> = ({ posts }) => {
     <div className="BlogPostsList">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
         {posts.map((post, i) => (
-          <ModuleFeaturedPost
+          <FeaturedPost
             key={i}
             title={post.title}
             tag={post.tag}

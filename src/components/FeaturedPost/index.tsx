@@ -12,7 +12,7 @@ type Props = {
   href: string
 }
 
-const ModuleFeaturedPost: FC<Props> = ({
+const FeaturedPost: FC<Props> = ({
   title,
   tag,
   postDate,
@@ -21,7 +21,7 @@ const ModuleFeaturedPost: FC<Props> = ({
   href,
 }) => {
   return (
-    <div className="ModuleFeaturedPost">
+    <div className="FeaturedPost">
       <div className="relative h-[100vw] md:h-auto md:pt-[100%] overflow-hidden">
         <Link href={href} passHref>
           <a>
@@ -70,4 +70,4 @@ const ModuleFeaturedPost: FC<Props> = ({
   )
 }
 
-export default ModuleFeaturedPost
+export default FeaturedPost

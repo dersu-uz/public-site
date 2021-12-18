@@ -1,3 +1,4 @@
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { FC } from 'react'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
@@ -15,8 +16,7 @@ import PageHero from '@/components/PageHero'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BlogPostBody from '@/components/BlogPostBody'
-import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import { GetStaticPaths, GetStaticProps } from 'next'
+import PostsList from '@/components/PostsList'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getAllPostSlugs('es')
@@ -111,7 +111,7 @@ const BlogPostPage: FC<Props> = ({
             dateFormatted={dateFormatted}
             htmlContent={htmlContent}
           />
-          <ModuleFeaturedPosts posts={otherPosts} />
+          <PostsList posts={otherPosts} />
           <Footer />
         </>
       )}

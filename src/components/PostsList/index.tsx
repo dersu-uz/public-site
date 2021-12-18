@@ -12,12 +12,12 @@ type Props = {
   posts: Array<BlogPost>
 }
 
-const ModuleFeaturedPosts: FC<Props> = ({ posts }) => {
+const PostsList: FC<Props> = ({ posts }) => {
   const { t, currentLocale } = useContext(TranslationsContext)
   return (
     <>
       {posts.length > 0 && (
-        <div className="ModuleFeaturedPosts">
+        <div className="PostsList">
           <Wrapper>
             <div className="flex items-end justify-between">
               <h2 className="text-dersu-lg md:text-dersu-3xl lg:text-dersu-4xl mt-16">
@@ -43,4 +43,4 @@ const ModuleFeaturedPosts: FC<Props> = ({ posts }) => {
   )
 }
 
-export default ModuleFeaturedPosts
+export default PostsList
