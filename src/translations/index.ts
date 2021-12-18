@@ -1,7 +1,7 @@
 import en from './en'
 import es from './es'
 
-const locales = {
+export const locales = {
   es,
   en,
 }

@@ -7,11 +7,12 @@ import { getLatestPosts } from '@/services/blogService'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import HomeHero from '@/components/HomeHero'
-import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
 import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
-import ModuleIntro from '@/components/ModuleIntro'
+
+import HomeIntro from '@/modules/HomeIntro'
+import HomeHero from '@/modules/HomeHero'
+import SignupForBeta from '@/modules/SignupForBeta'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('en', 2)
@@ -30,16 +31,9 @@ type Props = {
 
 const HomePage: FC<Props> = ({ latestPosts }) => (
   <>
-    <HomeHero
-      tagline={
-        <>
-          Dersu connect people
-          <br /> with mountains
-        </>
-      }
-    />
+    <HomeHero />
     <Header />
-    <ModuleIntro tagline="Learn, explore and grow" />
+    <HomeIntro />
     <ModuleHighlights
       title="Routes for different levels and moments"
       subtitle="Mountaineer profile"
@@ -85,7 +79,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       separator={SEPARATORS.WAVES}
       framedImage={true}
     />
-    <ModuleBetaAnnouncement />
+    <SignupForBeta />
     <ModuleFeaturedPosts posts={latestPosts} />
     <Footer />
   </>

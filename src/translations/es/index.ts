@@ -21,10 +21,6 @@ const translations: TranslationStrings = {
       'https://www.iubenda.com/api/condiciones-de-uso/58677763/no-markup',
     allRightsReserved: 'Todos los derechos reservados',
   },
-  moduleBetaAnnouncement: {
-    title:
-      'Si quieres apuntarte a la beta, déjanos aquí tu email y te mantendremos al tanto.',
-  },
   mailchimpForm: {
     emailPlaceholder: 'Introduce tu email...',
     occupationLabel: '¿Eres profesional?',
@@ -34,6 +30,17 @@ const translations: TranslationStrings = {
     subscribeMe: 'Me apunto',
     acceptThe: 'Acepto la ',
     privacyPolicy: 'politica de privacidad',
+  },
+  moduleSignupForBeta: {
+    title:
+      'Si quieres apuntarte a la fase de pruebas, apúntate aquí y te mantendremos al tanto.',
+  },
+  moduleHomeHero: {
+    tagLine: 'Dersu conecta a las personas con las montañas.',
+    signupForBeta: 'Apúntate a la beta y prueba la primera versión de Dersu.',
+  },
+  moduleHomeIntro: {
+    tagLine: 'Disfruta la montaña, con seguridad y a tu ritmo',
   },
 }
 

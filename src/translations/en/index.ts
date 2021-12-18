@@ -21,10 +21,6 @@ const translations: TranslationStrings = {
       'https://www.iubenda.com/api/terms-and-conditions/82963742/no-markup',
     allRightsReserved: 'All rights reserved',
   },
-  moduleBetaAnnouncement: {
-    title:
-      "To sign up for our beta, leave your email here. We'll keep you updated.",
-  },
   mailchimpForm: {
     emailPlaceholder: 'Enter your email...',
     occupationLabel: 'Are you a professional?',
@@ -34,6 +30,17 @@ const translations: TranslationStrings = {
     subscribeMe: 'Subscribe',
     acceptThe: "I'm agree with the ",
     privacyPolicy: 'privacy policy',
+  },
+  moduleSignupForBeta: {
+    title:
+      'You can sign up for the testing phase here, and we will keep you updated.',
+  },
+  moduleHomeHero: {
+    tagLine: 'Dersu connect people with mountains.',
+    signupForBeta: 'Sign up for the beta and try the first version of Dersu.',
+  },
+  moduleHomeIntro: {
+    tagLine: 'Enjoy the mountains safely and at your own pace',
   },
 }
 

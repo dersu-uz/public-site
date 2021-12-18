@@ -1,7 +1,12 @@
-import Picture from '@/components/Picture'
-import Wrapper from '../Wrapper'
+import { FC, useContext } from 'react'
 
-const HomeHero = () => {
+import TranslationsContext from '@/contexts/TranslationsContext'
+
+import Picture from '@/components/Picture'
+import Wrapper from '@/components/Wrapper'
+
+const HomeHero: FC = () => {
+  const { t } = useContext(TranslationsContext)
   return (
     <div className="min-h-screen relative">
       <div className="absolute w-full h-full">
@@ -18,10 +23,10 @@ const HomeHero = () => {
       <div className="absolute w-full h-full">
         <Wrapper>
           <h1 className="text-dersu-4xl text-dersu-white">
-            Dersu conecta a las personas con las montañas.
+            {t.moduleHomeHero.tagLine}
           </h1>
           <p className="text-dersu-md font-semibold text-dersu-blue">
-            Apúntate a la beta y prueba la primera versión de Dersu.
+            {t.moduleHomeHero.signupForBeta}
           </p>
         </Wrapper>
       </div>

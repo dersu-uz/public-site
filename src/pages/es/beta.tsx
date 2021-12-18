@@ -3,9 +3,10 @@ import { FC } from 'react'
 import { GetStaticProps } from 'next'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import Wrapper from '@/components/Wrapper'
 import Picture from '@/components/Picture'
+
+import SignupForBeta from '@/modules/SignupForBeta'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -90,7 +91,7 @@ const BetaLandingPage: FC = () => {
           </div>
         </div>
       </Wrapper>
-      <ModuleBetaAnnouncement />
+      <SignupForBeta />
     </DefaultLayout>
   )
 }
