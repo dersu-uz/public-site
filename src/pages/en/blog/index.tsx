@@ -6,6 +6,7 @@ import { generateRSSFeed } from '@/utils/generateRSSFeed'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 
+import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = async () => {
@@ -22,13 +23,15 @@ export const getStaticProps: GetStaticProps = async () => {
 const BlogPage: FC = props => {
   return (
     <DefaultLayout {...props}>
-      <MarkdownContent>
-        We are working on the english version of our blog. There is the{' '}
-        <Link href="/es/blog">
-          <a>spanish version</a>
-        </Link>{' '}
-        available.
-      </MarkdownContent>
+      <MainContent>
+        <MarkdownContent>
+          We are working on the english version of our blog. There is the{' '}
+          <Link href="/es/blog">
+            <a>spanish version</a>
+          </Link>{' '}
+          available.
+        </MarkdownContent>
+      </MainContent>
     </DefaultLayout>
   )
 }

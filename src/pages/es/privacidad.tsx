@@ -1,9 +1,14 @@
 import { FC, useContext } from 'react'
-import TranslationsContext from '@/contexts/TranslationsContext'
-import useIubendaContent from '@/hooks/useIubendaContent'
-import DefaultLayout from '@/layouts/DefaultLayout'
-import IubendaContent from '@/components/IubendaContent'
 import { GetStaticProps } from 'next'
+
+import TranslationsContext from '@/contexts/TranslationsContext'
+
+import useIubendaContent from '@/hooks/useIubendaContent'
+
+import DefaultLayout from '@/layouts/DefaultLayout'
+
+import MainContent from '@/components/MainContent'
+import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -25,7 +30,9 @@ const PrivacyPage: FC = props => {
 
   return (
     <DefaultLayout {...props}>
-      <IubendaContent content={content} />
+      <MainContent>
+        <MarkdownContent dangerouslySetInnerHTML={{ __html: content }} />
+      </MainContent>
     </DefaultLayout>
   )
 }
