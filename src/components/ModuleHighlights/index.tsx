@@ -8,25 +8,6 @@ import {
   colorSchemeClasses,
 } from '@/constants/theme'
 
-import HighlightsSeparator01 from '../../styles/assets/highlights-separator-01.svg'
-import HighlightsSeparator02 from '../../styles/assets/highlights-separator-02.svg'
-import HighlightsSeparator03 from '../../styles/assets/highlights-separator-03.svg'
-import HighlightsSeparator04 from '../../styles/assets/highlights-separator-04.svg'
-
-export enum SEPARATORS {
-  LINES = 'LINES',
-  EXCLAMATION_MARK = 'EXCLAMATION_MARK',
-  ICONS = 'ICONS',
-  WAVES = 'WAVES',
-}
-
-const SeparatorComponents = {
-  LINES: HighlightsSeparator01,
-  EXCLAMATION_MARK: HighlightsSeparator02,
-  ICONS: HighlightsSeparator03,
-  WAVES: HighlightsSeparator04,
-}
-
 type Props = {
   title: string
   subtitle: string
@@ -36,7 +17,6 @@ type Props = {
   framedImage?: boolean
   alignMode?: keyof typeof ALIGN_MODES
   colorScheme?: keyof typeof COLOR_SCHEMES
-  separator?: keyof typeof SEPARATORS
   overlapsPreviousModule?: boolean
 }
 
@@ -49,11 +29,8 @@ const ModuleHighlights: FC<Props> = ({
   framedImage,
   alignMode,
   colorScheme,
-  separator,
   overlapsPreviousModule,
 }) => {
-  const SeparatorComponent = SeparatorComponents[separator]
-
   const singleImage = Array.isArray(imageUrl) === false
 
   return (
@@ -101,14 +78,6 @@ const ModuleHighlights: FC<Props> = ({
                 >
                   {title}
                 </h2>
-
-                <div
-                  className={`py-16 md:py-0 md:h-auto flex-grow flex items-center
-                    ${colorSchemeClasses[colorScheme].background}
-                    ${colorSchemeClasses[colorScheme].color}`}
-                >
-                  <SeparatorComponent width="100%" />
-                </div>
 
                 <p
                   className={`text-dersu-sm lg:text-dersu-md xl:mx-auto xl:max-w-3xl px-5 md:px-10 ${
@@ -174,7 +143,6 @@ const ModuleHighlights: FC<Props> = ({
 ModuleHighlights.defaultProps = {
   colorScheme: COLOR_SCHEMES.BROWN,
   alignMode: ALIGN_MODES.CENTER,
-  separator: SEPARATORS.WAVES,
   framedImage: false,
   overlapsPreviousModule: false,
 }

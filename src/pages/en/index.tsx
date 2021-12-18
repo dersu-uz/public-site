@@ -8,7 +8,7 @@ import { getLatestPosts } from '@/services/blogService'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import ModuleHighlights, { SEPARATORS } from '@/components/ModuleHighlights'
+import ModuleHighlights from '@/components/ModuleHighlights'
 
 import HomeIntro from '@/modules/HomeIntro'
 import HomeHero from '@/modules/HomeHero'
@@ -42,7 +42,6 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       webpImageUrl="/images/highlights/01.webp"
       colorScheme={COLOR_SCHEMES.GREEN}
       alignMode={ALIGN_MODES.CENTER}
-      separator={SEPARATORS.LINES}
     />
     <ModuleHighlights
       title="To avoid surprises, prepare your outings well"
@@ -55,7 +54,6 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       ]}
       colorScheme={COLOR_SCHEMES.YELLOW}
       alignMode={ALIGN_MODES.LEFT}
-      separator={SEPARATORS.EXCLAMATION_MARK}
     />
     <ModuleHighlights
       title="More information means better decisions"
@@ -65,7 +63,6 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       webpImageUrl="/images/highlights/03.webp"
       colorScheme={COLOR_SCHEMES.BROWN}
       alignMode={ALIGN_MODES.CENTER}
-      separator={SEPARATORS.ICONS}
       overlapsPreviousModule={true}
     />
     <ModuleHighlights
@@ -76,7 +73,6 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
       webpImageUrl="/images/highlights/04.webp"
       colorScheme={COLOR_SCHEMES.PINK}
       alignMode={ALIGN_MODES.LEFT}
-      separator={SEPARATORS.WAVES}
       framedImage={true}
     />
     <SignupForBeta />
