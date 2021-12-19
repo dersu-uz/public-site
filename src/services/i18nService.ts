@@ -1,28 +1,22 @@
-import en from './en'
-import es from './es'
+import locales from '@/locales'
 
-export const locales = {
-  es,
-  en,
-}
+export type LocaleShortCode = keyof typeof locales
 
-export type LocaleShortCode = 'en' | 'es'
 export type LocaleInfo = {
   locale: LocaleShortCode
   name: string
 }
+
 export type TranslationStrings = Record<string, Record<string, string>>
 
-export const availableLocales: Array<LocaleInfo> = [
-  {
-    locale: 'es',
-    name: 'Español',
-  },
-  {
-    locale: 'en',
-    name: 'English',
-  },
-]
+export const availableLocales: Array<LocaleInfo> = Object.keys(locales).map(
+  locale => {
+    return {
+      locale: locale as LocaleShortCode,
+      name: locales[locale].localeMetadata.name as string,
+    }
+  }
+)
 
 export function isLocale(localeToTest: string): boolean {
   return Object.keys(locales).some(locale => locale === localeToTest)

@@ -1,5 +1,10 @@
 import { createContext } from 'react'
-import { LocaleInfo, LocaleShortCode, TranslationStrings } from '@/translations'
+
+import {
+  LocaleInfo,
+  LocaleShortCode,
+  TranslationStrings,
+} from '@/services/i18nService'
 
 export type TranslationContextValue = {
   t: TranslationStrings

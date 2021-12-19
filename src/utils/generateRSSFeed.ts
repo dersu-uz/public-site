@@ -2,11 +2,10 @@ import path from 'path'
 import fs from 'fs'
 import { Feed } from 'feed'
 
-import type { LocaleShortCode } from '@/translations'
-
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 import { getLatestPosts } from '@/services/blogService'
+import { LocaleShortCode } from '@/services/i18nService'
 
 /* global process */
 

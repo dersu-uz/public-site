@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { NextSeo } from 'next-seo'
 
-import type { LocaleShortCode } from '@/translations'
+import { LocaleShortCode } from '@/services/i18nService'
 
 import { BASE_DOMAIN_URL, DEVELOPMENT_HELPERS } from '@/constants/settings'
 

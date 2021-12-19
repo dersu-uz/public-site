@@ -5,11 +5,11 @@ import { isNotJunk } from 'junk'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { es } from 'date-fns/locale'
 
-import type { LocaleShortCode } from '@/translations'
-
 import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 import markdownToHtml from '@/utils/markdownToHtml'
+
+import { LocaleShortCode } from '@/services/i18nService'
 
 /* global process */
 
