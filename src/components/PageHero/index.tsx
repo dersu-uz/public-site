@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { FC } from 'react'
 import { colorSchemeClasses, COLOR_SCHEMES } from '@/constants/theme'
 
