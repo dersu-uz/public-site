@@ -15,29 +15,26 @@ const PageHero: FC<Props> = ({
   colorScheme,
 }) => {
   return (
-    <div className="PageHero">
-      <div className={`relative ${colorSchemeClasses[colorScheme].background}`}>
-        <div className="absolute top-0 left-0 w-full h-full">
-          {imageUrl && (
-            <picture className="flex w-full h-full">
-              {webpImageUrl && (
-                <source type="image/webp" srcSet={webpImageUrl} />
-              )}
-              <source type="image/jpeg" srcSet={imageUrl} />
-              <img
-                className="flex-grow object-cover"
-                src={imageUrl}
-                alt={title}
-              />
-            </picture>
-          )}
-        </div>
+    <div className={`relative ${colorSchemeClasses[colorScheme].background}`}>
+      <div className="absolute top-0 left-0 w-full h-full">
         {imageUrl && (
-          <div className="absolute top-0 left-0 w-full h-full bg-white/60" />
+          <picture className="flex w-full h-full">
+            {webpImageUrl && <source type="image/webp" srcSet={webpImageUrl} />}
+            <source type="image/jpeg" srcSet={imageUrl} />
+            <img
+              className="flex-grow object-cover"
+              src={imageUrl}
+              alt={title}
+            />
+          </picture>
         )}
-        <div className="relative px-10 py-[240px] md:py-[278px]">
-          <h1
-            className={`
+      </div>
+      {imageUrl && (
+        <div className="absolute top-0 left-0 w-full h-full bg-white/60" />
+      )}
+      <div className="relative px-10 py-[240px] md:py-[278px]">
+        <h1
+          className={`
               ${
                 imageUrl
                   ? 'text-dersu-black'
@@ -46,10 +43,9 @@ const PageHero: FC<Props> = ({
                text-dersu-lg  md:text-dersu-4xl text-center
                max-w-5xl mx-auto
               `}
-          >
-            {title}
-          </h1>
-        </div>
+        >
+          {title}
+        </h1>
       </div>
     </div>
   )

@@ -41,6 +41,8 @@ type PictureProps = {
   imageType: 'jpg' | 'png'
   webpEnabled?: boolean
   densities?: Array<number>
+  pictureClassName?: string
+  imgClassName?: string
 }
 
 const Picture: FC<PictureProps> = ({
@@ -50,9 +52,11 @@ const Picture: FC<PictureProps> = ({
   imageType,
   webpEnabled,
   densities,
+  imgClassName,
+  pictureClassName,
 }) => {
   return (
-    <picture>
+    <picture className={pictureClassName}>
       {webpEnabled && (
         <PictureSource
           path={path}
@@ -67,7 +71,11 @@ const Picture: FC<PictureProps> = ({
         imageType={imageType}
         densities={densities}
       />
-      <img src={`${path}/${imageName}.${imageType}`} alt={alt} />
+      <img
+        src={`${path}/${imageName}.${imageType}`}
+        alt={alt}
+        className={imgClassName}
+      />
     </picture>
   )
 }

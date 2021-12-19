@@ -7,9 +7,7 @@ type Props = {
 }
 
 const Wrapper: FC<Props> = ({ className, children }) => (
-  <div className={classNames('Wrapper px-4 md:px-10', className)}>
-    {children}
-  </div>
+  <div className={classNames('px-4 md:px-10', className)}>{children}</div>
 )
 
 export default Wrapper

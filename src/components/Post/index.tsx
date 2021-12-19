@@ -11,12 +11,7 @@ type Props = {
   htmlContent: string
 }
 
-const BlogPostBody: FC<Props> = ({
-  subtitle,
-  author,
-  dateFormatted,
-  htmlContent,
-}) => {
+const Post: FC<Props> = ({ subtitle, author, dateFormatted, htmlContent }) => {
   return (
     <article className="bg-dersu-cream">
       <Wrapper>
@@ -38,4 +33,4 @@ const BlogPostBody: FC<Props> = ({
   )
 }
 
-export default BlogPostBody
+export default Post

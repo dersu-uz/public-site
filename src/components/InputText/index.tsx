@@ -1,5 +1,4 @@
 import { FC } from 'react'
-import styles from './styles.module.css'
 
 type Props = {
   type?: 'text' | 'password' | 'email' | 'number' | 'tel'
@@ -19,16 +18,15 @@ const InputText: FC<Props> = ({
   disabled,
 }) => {
   return (
-    <div className={styles.component}>
-      <input
-        type={type}
-        name={name}
-        placeholder={placeholder}
-        required={required}
-        defaultValue={defaultValue}
-        disabled={disabled}
-      />
-    </div>
+    <input
+      type={type}
+      name={name}
+      placeholder={placeholder}
+      required={required}
+      defaultValue={defaultValue}
+      disabled={disabled}
+      className="font-sans text-lg px-4 py-3.5 rounded-md w-full"
+    />
   )
 }
 

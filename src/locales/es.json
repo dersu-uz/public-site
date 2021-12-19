@@ -55,5 +55,10 @@
     "title": "Avisos en ruta",
     "subtitle": "Ayuda sobre el terreno",
     "text": "Recibe avisos cuando te acerques a los puntos críticos de la ruta y consulta las pautas que te ayudarán a tomar decisiones durante la salida."
+  },
+  "moduleHomeLearn": {
+    "title": "Aprende de montaña",
+    "subtitle": "Ve ganando autonomía y seguridad, a tu ritmo",
+    "text": "Artículos, vídeos, itinerarios formativos... En Dersu encontrarás un montón de cosas que te ayudarán a apender de montaña y ser más independiente. Si quieres."
   }
 }

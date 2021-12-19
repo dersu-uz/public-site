@@ -9,12 +9,6 @@ export enum COLOR_SCHEMES {
   PINK_INVERTED = 'PINK_INVERTED',
 }
 
-export enum ALIGN_MODES {
-  LEFT = 'LEFT',
-  CENTER = 'CENTER',
-  RIGHT = 'RIGHT',
-}
-
 export const colorSchemeClasses = {
   BROWN: {
     background: 'bg-dersu-brown',
