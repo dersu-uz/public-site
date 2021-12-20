@@ -24,7 +24,6 @@ const HomeRouteAlerts: FC = () => {
             path="/images/modules/home-route-alerts"
             imageName="picture-01"
             imageType="jpg"
-            densities={[1, 2]}
             pictureClassName="flex w-full h-full"
             imgClassName="flex-grow object-cover"
             webpEnabled
