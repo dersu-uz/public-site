@@ -27,7 +27,7 @@ const PictureSource: FC<PictureSourceProps> = ({
           density =>
             `${path}/${imageName}${
               density !== 1 ? `@${density}x` : ''
-            }.webp ${density}x`
+            }.${imageType} ${density}x`
         )
         .join(', ')}
     />
