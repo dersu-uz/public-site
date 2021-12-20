@@ -3,20 +3,21 @@ import Fade from 'react-reveal/Fade'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
 
-import VerticalDivision from '@/components/VerticalDivision'
 import Wrapper from '@/components/Wrapper'
-
-import styles from './styles.module.css'
 
 const HomeIntro: FC = () => {
   const { t } = useContext(TranslationsContext)
   return (
-    <Wrapper>
-      <Fade bottom distance={`24px`}>
-        <h2 className={styles.heading}>{t.moduleHomeIntro.tagLine}</h2>
-      </Fade>
-      <VerticalDivision />
-    </Wrapper>
+    <div className="pt-16 pb-16 text-center md:pt-44 md:pb-14">
+      <Wrapper>
+        <Fade bottom>
+          <h2 className="text-dersu-lg mb-16 md:mb-24 mx-auto max-w-sm md:text-dersu-4xl md:max-w-3xl">
+            {t.moduleHomeIntro.tagLine}
+          </h2>
+        </Fade>
+        <span className="inline-block w-1 h-32 from-dersu-black to-transparent bg-gradient-to-b"></span>
+      </Wrapper>
+    </div>
   )
 }
 

@@ -17,7 +17,7 @@ const RelatedPosts: FC<Props> = ({ posts }) => {
   return (
     <>
       {posts.length > 0 && (
-        <div className="pb-4 md:pb-16">
+        <div className="pb-4 md:pt-16 md:pb-16">
           <Wrapper>
             <div className="flex items-end justify-between">
               <h2 className="text-dersu-lg md:text-dersu-3xl lg:text-dersu-4xl mt-16">
