@@ -1,9 +1,17 @@
-.module {
+.module_bg_desktop {
+  @screen md {
+    background-image: url('/images/modules/home-hero/hero-bg-desktop.jpg');
+    background-position: center top;
+    background-size: cover;
+  }
+}
+
+.module_bg_mobile {
   background-image: url('/images/modules/home-hero/hero-bg-mobile.jpg');
   background-position: center top;
   background-size: cover;
 
   @screen md {
-    background-image: url('/images/modules/home-hero/hero-bg-desktop.jpg');
+    background: none;
   }
 }

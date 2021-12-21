@@ -8,7 +8,7 @@ import Picture from '@/components/Picture'
 const HomeRoutePlanning: FC = () => {
   const { t } = useContext(TranslationsContext)
   return (
-    <div className="bg-dersu-pink text-dersu-brown pt-16 px-4 text-center md:pt-16 md:pb-24 md:px-8">
+    <div className="bg-dersu-pink text-dersu-brown pt-16 pb-8 px-4 text-center md:pt-16 md:pb-24 md:px-8">
       <Fade bottom>
         <h2 className="font-sans font-bold text-dersu-2xs uppercase tracking-widest mb-5 md:text-dersu-xs">
           {t.moduleHomeRoutePlanning.title}
