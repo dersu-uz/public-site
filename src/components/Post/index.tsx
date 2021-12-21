@@ -18,7 +18,9 @@ const Post: FC<Props> = ({ subtitle, author, dateFormatted, htmlContent }) => {
           <h2 className="text-dersu-lg md:text-dersu-3xl text-center pt-10 md:pt-24">
             {subtitle}
           </h2>
-          <span className="inline-block w-1 h-32 from-dersu-black to-transparent bg-gradient-to-b"></span>
+          <div className="flex justify-center py-8">
+            <span className="inline-block w-0.5 h-32 from-dersu-black to-transparent bg-gradient-to-b"></span>
+          </div>
           <div className="pb-6">
             <p>
               <span className="text-dersu-xs font-bold pb-1">{author}</span> |{' '}
