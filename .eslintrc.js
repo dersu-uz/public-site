@@ -39,5 +39,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/no-shadow': 'error',
+    '@next/next/no-img-element': 'off',
   },
 }

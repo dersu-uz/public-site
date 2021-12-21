@@ -8,7 +8,7 @@ import { generateRSSFeed } from '@/utils/generateRSSFeed'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Wrapper from '@/components/Wrapper'
-import BlogPostsList from '@/components/BlogPostsList'
+import PostsList from '@/components/PostsList'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('es')
@@ -38,7 +38,7 @@ const BlogPage: FC<Props> = ({ latestPosts }) => (
             Blog
           </h2>
         </div>
-        <BlogPostsList posts={latestPosts} />
+        <PostsList posts={latestPosts} />
       </Wrapper>
     </div>
     <Footer />

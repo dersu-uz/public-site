@@ -1,3 +1,4 @@
+import { GetStaticPaths, GetStaticProps } from 'next'
 import { FC } from 'react'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
@@ -14,9 +15,8 @@ import { BASE_DOMAIN_URL } from '@/constants/settings'
 import PageHero from '@/components/PageHero'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import BlogPostBody from '@/components/BlogPostBody'
-import ModuleFeaturedPosts from '@/components/ModuleFeaturedPosts'
-import { GetStaticPaths, GetStaticProps } from 'next'
+import Post from '@/components/Post'
+import RelatedPosts from '@/modules/RelatedPosts'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getAllPostSlugs('es')
@@ -105,13 +105,13 @@ const BlogPostPage: FC<Props> = ({
             imageUrl={featuredImageUrl}
             webpImageUrl={webpFeaturedImageUrl}
           />
-          <BlogPostBody
+          <Post
             subtitle={subtitle}
             author={author}
             dateFormatted={dateFormatted}
             htmlContent={htmlContent}
           />
-          <ModuleFeaturedPosts posts={otherPosts} />
+          <RelatedPosts posts={otherPosts} />
           <Footer />
         </>
       )}

@@ -1,11 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
 import { FC } from 'react'
 import { GetStaticProps } from 'next'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import ModuleBetaAnnouncement from '@/components/ModuleBetaAnnouncement'
 import Wrapper from '@/components/Wrapper'
 import Picture from '@/components/Picture'
+
+import SignupForBeta from '@/modules/SignupForBeta'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -21,8 +21,8 @@ const BetaLandingPage: FC = () => {
   return (
     <DefaultLayout
       title="Antes de lanzar la App, queremos que la pongas a prueba."
-      heroImageUrl="/images/beta/hero.jpg"
-      webpHeroImageUrl="/images/beta/hero.webp"
+      heroImageUrl="/images/pages/beta/hero.jpg"
+      webpHeroImageUrl="/images/pages/beta/hero.webp"
     >
       <Wrapper>
         <div className="max-w-screen-xl xl:mx-auto py-24 lg:py-16 flex gap-16 justify-between">
@@ -41,7 +41,7 @@ const BetaLandingPage: FC = () => {
                 alt="Dersu App"
                 imageType="png"
                 imageName="picture-01a"
-                path="/images/beta"
+                path="/images/pages/beta"
                 densities={[1, 2]}
               />
             </p>
@@ -74,7 +74,7 @@ const BetaLandingPage: FC = () => {
                 alt="Dersu App"
                 imageType="png"
                 imageName="picture-01b"
-                path="/images/beta"
+                path="/images/pages/beta"
                 densities={[1, 2]}
               />
             </p>
@@ -84,13 +84,13 @@ const BetaLandingPage: FC = () => {
               alt="Dersu App"
               imageType="png"
               imageName="picture-01"
-              path="/images/beta"
+              path="/images/pages/beta"
               densities={[1, 2]}
             />
           </div>
         </div>
       </Wrapper>
-      <ModuleBetaAnnouncement />
+      <SignupForBeta />
     </DefaultLayout>
   )
 }

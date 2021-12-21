@@ -6,7 +6,9 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 import useIubendaContent from '@/hooks/useIubendaContent'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-import IubendaContent from '@/components/IubendaContent'
+
+import MainContent from '@/components/MainContent'
+import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -27,7 +29,9 @@ const TermsPage: FC = props => {
   )
   return (
     <DefaultLayout {...props}>
-      <IubendaContent content={content} />
+      <MainContent>
+        <MarkdownContent dangerouslySetInnerHTML={{ __html: content }} />
+      </MainContent>
     </DefaultLayout>
   )
 }

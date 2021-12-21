@@ -15,7 +15,7 @@ import {
   getTranslations,
   availableLocales,
   LocaleShortCode,
-} from '@/translations'
+} from '@/services/i18nService'
 
 import Page from '@/components/Page'
 

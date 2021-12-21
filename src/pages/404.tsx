@@ -3,6 +3,8 @@ import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
+
+import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = () => {
@@ -18,15 +20,17 @@ export const getStaticProps: GetStaticProps = () => {
 const Page404: FC = props => {
   return (
     <DefaultLayout {...props}>
-      <MarkdownContent>
-        <h2>Página no encontrada / Page not found</h2>
-        <p>No encontramos la página que buscas.</p>
-        <p>We cannot find the page you are looking for.</p>
-        <p>
-          <Link href="/es">Versión en Español</Link> -{' '}
-          <Link href="/en">English version</Link>
-        </p>
-      </MarkdownContent>
+      <MainContent>
+        <MarkdownContent>
+          <h2>Página no encontrada / Page not found</h2>
+          <p>No encontramos la página que buscas.</p>
+          <p>We cannot find the page you are looking for.</p>
+          <p>
+            <Link href="/es">Versión en Español</Link> -{' '}
+            <Link href="/en">English version</Link>
+          </p>
+        </MarkdownContent>
+      </MainContent>
     </DefaultLayout>
   )
 }

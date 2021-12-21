@@ -13,11 +13,7 @@ const MailchimpForm: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
 
   return (
-    <form
-      action={MAILCHIMP_SUBSCRIBE_URL}
-      method="post"
-      className="w-full md:w-6/12 md:max-w-[500px]"
-    >
+    <form action={MAILCHIMP_SUBSCRIBE_URL} method="post">
       <div className="mb-5">
         <InputText
           type="email"

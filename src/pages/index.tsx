@@ -3,12 +3,12 @@ import { GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
 import { useCookie } from 'react-use'
 
-import type { LocaleShortCode } from '@/translations'
-
 import {
   BASE_DOMAIN_URL,
   COOKIES_PREFERRED_LOCALE_NAME,
 } from '@/constants/settings'
+
+import { LocaleShortCode } from '@/services/i18nService'
 
 import ImportedHomePage, {
   getStaticProps as importedGetStaticProps,

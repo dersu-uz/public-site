@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { FC } from 'react'
 
 const MIME_TYPES = {
@@ -28,7 +27,7 @@ const PictureSource: FC<PictureSourceProps> = ({
           density =>
             `${path}/${imageName}${
               density !== 1 ? `@${density}x` : ''
-            }.webp ${density}x`
+            }.${imageType} ${density}x`
         )
         .join(', ')}
     />
@@ -42,7 +41,8 @@ type PictureProps = {
   imageType: 'jpg' | 'png'
   webpEnabled?: boolean
   densities?: Array<number>
-  className?: string
+  pictureClassName?: string
+  imgClassName?: string
 }
 
 const Picture: FC<PictureProps> = ({
@@ -52,10 +52,11 @@ const Picture: FC<PictureProps> = ({
   imageType,
   webpEnabled,
   densities,
-  className,
+  imgClassName,
+  pictureClassName,
 }) => {
   return (
-    <picture className={className}>
+    <picture className={pictureClassName}>
       {webpEnabled && (
         <PictureSource
           path={path}
@@ -70,7 +71,11 @@ const Picture: FC<PictureProps> = ({
         imageType={imageType}
         densities={densities}
       />
-      <img src={`${path}/${imageName}.${imageType}`} alt={alt} />
+      <img
+        src={`${path}/${imageName}.${imageType}`}
+        alt={alt}
+        className={imgClassName}
+      />
     </picture>
   )
 }
