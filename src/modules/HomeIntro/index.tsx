@@ -11,7 +11,7 @@ const HomeIntro: FC = () => {
     <div className="pt-16 pb-16 text-center md:pt-44 md:pb-14">
       <Wrapper>
         <Fade bottom>
-          <h2 className="text-dersu-lg mb-16 md:mb-24 mx-auto max-w-sm md:text-dersu-4xl md:max-w-3xl">
+          <h2 className="text-dersu-lg mb-16 md:mb-24 mx-auto max-w-sm md:text-dersu-3xl lg:text-dersu-4xl md:max-w-3xl">
             {t.moduleHomeIntro.tagLine}
           </h2>
         </Fade>

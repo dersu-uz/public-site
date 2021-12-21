@@ -15,7 +15,7 @@ const HomeRouteAlerts: FC = () => {
             <h2 className="font-sans font-bold text-dersu-2xs uppercase tracking-widest mb-5 md:text-dersu-xs 2xl:text-center">
               {t.moduleHomeRouteAlerts.title}
             </h2>
-            <p className="text-dersu-xl mb-24 md:mb-40 max-w-screen-sm 2xl:mx-auto 2xl:text-center md:text-dersu-4xl">
+            <p className="text-dersu-xl mb-24 md:mb-40 max-w-screen-sm 2xl:mx-auto 2xl:text-center md:text-dersu-xl lg:text-dersu-4xl">
               {t.moduleHomeRouteAlerts.subtitle}
             </p>
             <p className="text-dersu-md mb-28 max-w-lg 2xl:mx-auto 2xl:text-center">
