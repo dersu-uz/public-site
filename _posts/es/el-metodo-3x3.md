@@ -14,23 +14,13 @@ El método 3x3 es un sistema de toma de decisiones para prevención de accidente
 
 Este sistema se representa con una matriz de 3 filtros que representan diferentes momentos (líneas horizontales) y 3 factores que hay que tener en cuenta en cada momento (líneas verticales) en cuyos cruces nos planteamos unas preguntas concretas que nos ayudarán a decidir si continuamos con el plan o buscamos alternativas más seguras.
 
-Momentos (horizontales):
-
-- En casa
-- Antes de salir
-- En el punto
-
-Factores (verticales):
-
-- Condiciones
-- Terreno
-- Grupo
+![](https://dersu.uz/images/posts/el-metodo-3x3/picture-01.png)
 
 Esta matriz nace de la idea de tomar decisiones en terrenos con nieve y condiciones adversas, para actividades como el esquí de montaña o el alpinismo. La idea es brillante, porque ofrece la posibilidad de reaccionar en poco tiempo y bajo unos parámetros constantes. A partir de esta base, se ha ido completando con otras herramientas o patrones que ayudan a comprobar determinados indicios de peligro como el método de reducción de riesgo potencial de avalanchas.
 
 A lo largo de los años, se ha comprobado su utilidad y ha ganado prestigio porque es un sistema sencillo de recordar y funciona en diferentes circunstancias, ya que ayuda a tomar decisiones conscientes de manera organizada y sin grandes cálculos o complicaciones. Por eso, con la asimilación de este sistema, se han creado adaptaciones a otras actividades y especialistas en montaña lo aplican en múltiples circunstancias para resolver situaciones de diferente índole.
 
-**Te contamos todo esto porque este método es esencial para Dersu, nuestra piedra angular**. Y queremos que conozcas mejor cómo lo hemos integrado en la APP desde el inicio:
+**Te contamos todo esto porque este método es esencial para Dersu, nuestra piedra angular**. Y queremos que conozcas mejor cómo lo hemos integrado en la App desde el inicio:
 
 Uno de los grandes objetivos de Dersu es que cada montañista aprenda a tomar decisiones conscientes para ganar autonomía, sea del nivel que sea. Además, uno de los grandes pilares de nuestro servicio es el aprendizaje.
 

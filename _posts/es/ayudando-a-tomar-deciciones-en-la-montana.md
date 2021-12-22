@@ -18,7 +18,7 @@ No hemos encontrado respuestas concluyentes a estas preguntas, pero vamos a toma
 
 Hay que poner atención y tomar las medidas necesarias para reducir el riesgo, no importa si vamos a hacer una ruta sencilla en una soleada mañana de primavera o si tenemos que decidir salir o no en medio de una tormenta de nieve.
 
-Queremos dar un paso más allá de las recomendaciones generales y vagas del tipo "hay que tener cuidado", "planificar bien" o "evitar riesgos innecesarios" cuando las condiciones son adversas o se ha producido un accidente, pero ¿cómo lo hacemos?
+Queremos dar un paso más allá de las recomendaciones generales y vagas del tipo "hay que tener cuidado", "planificar bien" o "evitar riesgos innecesarios" cuando las condiciones son adversas o se ha producido un accidente.
 
 **Es imposible aprender a evaluar circunstancias complicadas y tomar decisiones adecuadas si solo salimos al monte cuando se dan las mejores condiciones.**
 
@@ -33,7 +33,5 @@ Los dos puntos anteriores requieren de conocimiento y práctica, por eso vamos a
 Creemos que el análisis de las salidas puede ayudar a la gente a evaluar y aprender a gestionar mejor el riesgo desde la práctica real sobre el terreno, no desde la mera advertencia.
 
 Queremos terminar este artículo reconociendo la gran labor en la prevención de accidentes realizada por la Federación Española de Deportes de Montaña y todas las entidades relacionadas con la seguridad y el rescate. Gracias a su trabajo existe una base sobre la que tomar decisiones en la montaña. Queremos construir sobre su labor e intentar hacer una propuesta práctica para aplicar todas sus recomendaciones.
-
-Sólo el tiempo dirá si estamos en lo cierto y si somos capaces de hacerlo de forma adecuada.
 
 Un abrazo. Nos vemos en el monte.
