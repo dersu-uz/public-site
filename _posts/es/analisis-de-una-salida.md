@@ -6,7 +6,7 @@ author: 'Borja Delgado'
 date: '2021-12-23'
 ---
 
-Si no lo has hecho ya, es importante que [leas antes este texto](ENLACE A POST TOMAR DECISIONES), en el que te contamos cuál es nuestra motivación y posicionamiento ante la toma de decisiones en situaciones con condiciones adversas.
+Si no lo has hecho ya, es importante que [leas antes este texto](https://dersu.uz/es/blog/ayudando-a-tomar-deciciones-en-la-montana/), en el que te contamos cuál es nuestra motivación y posicionamiento ante la toma de decisiones en situaciones con condiciones adversas.
 
 Así que, tal y como dijimos, con este iniciamos una serie de artículos de análisis sobre itinerarios reales en condiciones complicadas, en los que os contaremos la planificación que hicimos, las decisiones que tomamos y el resultado de nuestra salida.
 
