@@ -14,7 +14,7 @@ Como sabemos que no es tarea fácil, os damos algunas claves sobre cómo optimiz
 
 Antes de mirar dentro de la mochila, queremos recordarte la importancia de llevar un calzado cómodo y adecuado para la actividad, no te olvides de revisar que esté en buen estado. Pronto os hablaremos de cómo equiparnos, de la ropa y el calzado.
 
-![Grupo avanzando por la montaña](/images/posts/la-mochila-basica/01.jpg)
+![Grupo avanzando por la montaña](https://dersu.uz/es/images/posts/la-mochila-basica/01.jpg)
 
 Por supuesto, en Dersu podréis ver el material específico para cada actividad, pero hoy hablaremos de la mochila básica, el equipo imprescindible y común para todas las salidas, tengas el nivel que tengas.
 
