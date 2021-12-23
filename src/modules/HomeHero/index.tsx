@@ -9,6 +9,8 @@ import Button from '@/components/Button'
 
 import styles from './styles.module.css'
 
+import HeroLogo from '../../styles/assets/hero-logo.svg'
+
 const HomeHero: FC = () => {
   const { t } = useContext(TranslationsContext)
   const [showSignupForm, setShowSignupForm] = useState(false)
@@ -17,7 +19,8 @@ const HomeHero: FC = () => {
       <div className="min-h-[900px] md:flex mx-auto max-w-screen-2xl">
         <div className="md:px-8 md:w-6/12 md:pl-16 md:pr-0">
           <div className={styles.module_bg_mobile}>
-            <h1 className="text-dersu-white text-dersu-lg text-center pt-[208px] md:pt-[110px] mb-16 max-w-[300px] md:max-w-none mx-auto md:text-dersu-3xl lg:text-dersu-4xl md:text-left">
+            <h1 className="text-dersu-white text-dersu-lg text-center pt-[135px] md:pt-[110px] mb-16 max-w-[300px] md:max-w-none mx-auto md:text-dersu-3xl lg:text-dersu-4xl md:text-left">
+              <HeroLogo className="mb-[30px] mx-auto md:invisible" />
               {t.moduleHomeHero.tagLine}
             </h1>
             <div className="px-8 md:hidden flex justify-center overflow-hidden h-1/6">
