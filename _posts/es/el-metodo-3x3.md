@@ -2,7 +2,7 @@
 title: 'El método 3x3 como base de Dersu.'
 subtitle: 'El corazón de nuestra metodología.'
 tag: 'Aprender'
-author: 'Amalia Calvo'
+author: 'Equipo Dersu'
 date: '2021-12-21'
 ---
 
