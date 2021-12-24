@@ -18,7 +18,7 @@ const HomeLearn: FC = () => {
           {t.moduleHomeLearn.text}
         </p>
         <div className="flex justify-center">
-          <img className='opacity-80'
+          <img className='opacity-90'
             src="/images/modules/home-learn/picture-01.jpg"
             alt={t.moduleHomeLearn.title}
           />
