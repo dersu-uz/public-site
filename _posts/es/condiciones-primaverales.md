@@ -22,8 +22,8 @@ Esto se refleja también en el BPA - Boletín de Peligro de Aludes, que habla de
 
 Para nuestra actividad, en este caso el esquí de montaña, nos interesa la situación de nieve húmeda. Debemos buscar el equilibrio entre la estabilidad de la nieve y el disfrute en el esquí.
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-01.jpeg)
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-02.jpeg)
+![](/images/posts/condiciones-primaverales/picture-01.jpeg)
+![](/images/posts/condiciones-primaverales/picture-02.jpeg)
 
 
 **El grupo.**
@@ -50,7 +50,7 @@ Nos resultó muy útil tener marcados de antemano los puntos de pendiente durant
 
 
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-03.jpeg)
+![](/images/posts/condiciones-primaverales/picture-03.jpg)
 
 
 
@@ -66,7 +66,7 @@ En casa, hacemos un repaso del equipo y material que llevamos para nuestra activ
 
 Tampoco olvidamos hacer el test de DVA, aunque los aludes no sean hoy la amenaza principal, nunca tenemos que obviarlo.
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-04.jpeg)
+![](/images/posts/condiciones-primaverales/picture-04.jpeg)
 
 **En ruta**
 
@@ -78,7 +78,7 @@ Para mejorar la progresión valoramos las diferentes opciones: ir solo con las p
 
 Para decidirnos por **la mejor opción de progresión debemos valorar la dureza de la nieve y calibrar las consecuencias en caso de caída**, esto puede ayudarnos a decidir.
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-05.jpeg)
+![](/images/posts/condiciones-primaverales/picture-05.jpeg)
 
 Para valorar las conscuencias en caso de caída, debemos fijarnos en la dureza de la nieve, la pendiente y la probabilidad de que ocurra. Pero lo que realmente va ayudarnos a valorar es imaginarnos que ocurriria si nos cayeramos y deslizaramos ladera abajo. 
 
@@ -90,13 +90,13 @@ Veamos algunas situaciones en las que es importante anticiparse y elegir si prog
 
 1. Este es un ejemplo de una progresión que no tendría que ser difícil, pero hoy tiene el terreno complejo, porque presenta restos de aludes de nieve endurecida y una media ladera con nieve dura. 
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-06.jpeg)
+![](/images/posts/condiciones-primaverales/picture-06.jpeg)
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-07.jpeg)
+![](/images/posts/condiciones-primaverales/picture-07.jpeg)
 
 2. Aquí vemos una media ladera fácil, pero con riesgo en caso de sufrir una caída, porque presenta una recepción llena de grandes piedras esperándote cual pinball. 
 
-    ![](https://dersu.uz/images/posts/condiciones-primaverales/picture-08.jpeg)
+    ![](/images/posts/condiciones-primaverales/picture-08.jpeg)
 
 
 
@@ -110,7 +110,7 @@ Antes de comenzar el descenso nos lo imaginamos y tratamos de valorar también l
 
 Tratamos de parar para volver a hacer las valoraciones cuando nos encontremos ante cambios de pendiente o de orientación. 
 
-![](https://dersu.uz/images/posts/condiciones-primaverales/picture-09.jpeg)
+![](/images/posts/condiciones-primaverales/picture-09.jpeg)
 
 **No siempre tomamos las mismas decisiones en la montaña.** 
 
