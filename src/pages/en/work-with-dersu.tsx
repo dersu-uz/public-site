@@ -36,42 +36,6 @@ const WorkWithDersuPage: FC = props => {
           <h2>What are we looking for?</h2>
 
           <p>
-            We are looking for people that can help us with the first
-            implementation of the service and tools. Currently Dersu has in
-            early stages of development:
-          </p>
-
-          <ul>
-            <li>A mission to help us stay focused.</li>
-            <li>
-              A value proposition that we would like to validate as soon as
-              possible with real users.
-            </li>
-            <li>
-              A functional definition of the service and its touch points.
-            </li>
-            <li>A brand and comms strategy.</li>
-            <li>A mobile app for Android and iOS built in Flutter.</li>
-            <li>
-              A backend built in Express/Nest + Typescript to bring together
-              different data sources for the mobile app.
-            </li>
-            <li>A CMS built with Strapi.</li>
-            <li>
-              A public website with commercial information and own content using
-              NextJS.
-            </li>
-            <li>
-              Google Cloud, Terraform and Github Actions for infrastructure.
-            </li>
-          </ul>
-
-          <p>
-            We are looking for people that can contribute in one or several of
-            the areas above, both full time and as external collaborators.
-          </p>
-
-          <p>
             We prefer people more motivated by solving user problems than
             whatever their craft (design, development, etc). Pragmatic people
             with a preference for reducing uncertainty by releasing small
@@ -114,14 +78,16 @@ const WorkWithDersuPage: FC = props => {
 
           <p>
             The founding team comprises{' '}
+            <Link href="https://twitter.com/mariarenilla">María Renilla</Link>{' '}
+            (operations),{' '}
             <Link href="https://instagram.com/fernando_errekalde">
               Fernando Errekalde
             </Link>{' '}
             (mountain guide and product),{' '}
             <Link href="https://twitter.com/borjadelgado">Borja Delgado</Link>{' '}
-            (product, design and operations) and{' '}
-            <Link href="https://twitter.com/wadus">Juan Delgado</Link> (product
-            and technology).
+            (product and design) and{' '}
+            <Link href="https://twitter.com/wadus">Juan Delgado</Link>{' '}
+            (technology).
           </p>
 
           <p>

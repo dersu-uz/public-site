@@ -36,45 +36,6 @@ const WorkWithDersuPage: FC = props => {
           <h2>¿Qué buscamos?</h2>
 
           <p>
-            Buscamos personas que nos ayuden con la primera implementación del
-            servicio. Actualmente Dersu tiene en estado inicial:
-          </p>
-
-          <ul>
-            <li>Una visión clara, con un equipo fundador muy experimentado.</li>
-            <li>
-              Una propuesta de valor que nos gustaría confirmar cuanto antes con
-              usuarios reales.
-            </li>
-            <li>Una primera definición funcional del servicio.</li>
-            <li>
-              Estamos trabajando en una primera aproximación a temas de
-              branding, comunicación, etc.
-            </li>
-            <li>Una aplicación móvil para Android y iOS en Flutter.</li>
-            <li>
-              Un backend con Express/Nest + TypeScript que aglutina y da
-              coherencia a distintas fuentes de datos con los que alimentar a la
-              aplicación móvil.
-            </li>
-            <li>Un gestor de contenidos con Strapi.</li>
-            <li>
-              Una web pública con información tanto comercial como contenido
-              propio en NextJS.
-            </li>
-            <li>
-              Google Cloud, Terraform y Github Actions para la infraestructura
-              necesaria.
-            </li>
-          </ul>
-
-          <p>
-            Buscamos personas que puedan contribuir en una o varias de las áreas
-            mencionadas, tanto a tiempo completo como con colaboraciones
-            puntuales.
-          </p>
-
-          <p>
             Preferimos personas más motivadas por resolver los problemas de
             nuestros usuarios que por su especialidad en concreto (llámese
             diseño, tecnología o lo que se quiera). Personas pragmáticas con
@@ -118,15 +79,14 @@ const WorkWithDersuPage: FC = props => {
           </p>
 
           <p>
-            El equipo fundador está compuesto (por ahora) por{' '}
+            El equipo fundador está compuesto por{' '}<Link href="https://twitter.com/mariarenilla">María Renilla</Link> (operaciones), {' '}
             <Link href="https://instagram.com/fernando_errekalde">
               Fernando Errekalde
             </Link>{' '}
             (guía de montaña y producto),{' '}
             <Link href="https://twitter.com/borjadelgado">Borja Delgado</Link>{' '}
-            (producto, diseño y operaciones) y{' '}
-            <Link href="https://twitter.com/wadus">Juan Delgado</Link> (producto
-            y tecnología).
+            (producto y diseño) y{' '}
+            <Link href="https://twitter.com/wadus">Juan Delgado</Link> (tecnología).
           </p>
 
           <p>
