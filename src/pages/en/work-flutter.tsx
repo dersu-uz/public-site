@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 
-import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
+import MainContent from '@/components/MainContent'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -13,12 +13,12 @@ export const getStaticProps: GetStaticProps = async () => {
       locale: 'en',
       title: 'Work with Dersu',
       description:
-        'We are looking for someone focused on backend and infrastructure work.',
+        'We are looking for someone to help us with our Flutter app.',
     },
   }
 }
 
-const Backend: FC = props => {
+const Flutter: FC = props => {
   return (
     <DefaultLayout {...props}>
       <MainContent>
@@ -32,41 +32,35 @@ const Backend: FC = props => {
             the mountains. More information in the general{' '}
             <Link href="/en/work-with-dersu">work with Dersu page</Link>.
           </p>
+          <h2>What are we looking for?</h2>
+          <p>We are looking for someone to help us with our Flutter app.</p>
+
           <p>
-            We are looking for someone focused on backend and infrastructure
-            work.
+            The mobile app is the key to the relationship of our users with
+            Dersu. From the mobile app our users can:
           </p>
-          <p>Some of the expected functionality for Dersu backend services:</p>
+
           <ul>
+            <li>Plan expeditions looking up weather and nivology reports.</li>
+            <li>Create or be part of groups for the expeditions.</li>
             <li>
-              Combine several heterogeneous data sources for weather, nivology,
-              avalanche reports, etc and provide them as a coherent, single API
-              to the mobile app.
+              Receive real time support during expeditions (critical waypoint
+              warnings, weather alerts, etc.).
             </li>
             <li>
-              Monitor said data sources in order to provide real time support to
-              on-going expeditions proactively warning of relevant changes.
+              Define their profile by setting their technical, physical and
+              psychological levels.
             </li>
-            <li>
-              A CMS to both feed content to the public site (blog, specific
-              location pages) and serve as an internal waypoint and route
-              repository.
-            </li>
-            <li>
-              Management of user profiles including self-assesment and
-              progression tools.
-            </li>
-            <li>Expedition management tools for mountain guides.</li>
-            <li>
-              Integration with 3rd party services such as Strava, Garmin,
-              Apple&apos;s HealthKit, etc
-            </li>
+            <li>And so much more to come : )</li>
           </ul>
           <p>
-            Even though there is flexibility when choosing the technical stack
-            and frameworks we have a preference for Express/Nest + Typescript,
-            Google Cloud + Terraform and Strapi as a CMS.
+            The current architecture is based on{' '}
+            <Link href="https://bloclibrary.dev/">Bloc</Link> alongside other
+            standard libraries from the Flutter ecosystem such as{' '}
+            <Link href="https://github.com/fluttercommunity/get_it">GetIt</Link>{' '}
+            or <Link href="https://docs.hivedb.dev">Hive</Link>.
           </p>
+
           <h2>What do we offer?</h2>
           <p>Remote work as long as there is compatibility with GMT+1.</p>
           <p>
@@ -92,4 +86,4 @@ const Backend: FC = props => {
   )
 }
 
-export default Backend
+export default Flutter
