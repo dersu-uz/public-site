@@ -30,7 +30,7 @@ Para nuestra actividad, en este caso el esquí de montaña, nos interesa la situ
 
 Debido a la altura que alcanza el sol y el grado con el que incide sobre la nieve, las orientaciones con condiciones más primaverales son las caras E y SE y S, pero además con cierta pendiente, lo que hace que el nivel técnico requerido para el grupo aumente. 
 
-Hacemos un análisis del los integrantes del grupo en función de sus niveles, teniendo en cuenta los tipos de terreno y pendientes que frecuentan, las capacidades de orientación y las técnicas de esquí que son capaces de ejecutar.  No podemos olvidarnos de sus conocimientos de nivología y primeros auxilios. 
+Hacemos un análisis de cada integrante del grupo en función de sus niveles, teniendo en cuenta los tipos de terreno y pendientes que frecuentan, las capacidades de orientación y las técnicas de esquí que son capaces de ejecutar.  No podemos olvidarnos de sus conocimientos de nivología y primeros auxilios. 
 
 En Dersu puedes definir tu nivel técnico teniendo en cuenta estas categorías, además de considerar el nivel físico y de exposición al riesgo.
 
@@ -42,7 +42,7 @@ En cuanto al terreno buscaremos itinerarios que mantengan el equilibrio de la es
 
 En nuestra salida, decidimos buscar rutas con palas bien orientadas al sol, E, SE y S y con pendientes mantenidas entre los 25º y 30º buscando unas mejores condiciones de nieve para el esquí. 
 
-Por eso, las actividades elegidas durante esta semana han sido Pico de los monjes, Sanchacollons, Acue, Pico Agüerri o Llana del Bozo, todas ellas con características similares.
+Por ejemplo, para nuestra salida elegimos lugares como el Pico de los Monjes, Sanachacollons, Acuernas, Pico Agüerri o Llana del Bozo, que reunían las características buscadas.
 
 **Trabajamos con la anticipación como medida de seguridad.**
 
@@ -60,7 +60,7 @@ Con estas condiciones, adquiere gran importancia el horario.
 
 Hacemos el cálculo de horario teniendo en cuenta a qué hora vamos a pasar por las zonas más expuestas y a qué hora comenzaremos el descenso. Recuerda los cambios que sufre la nieve con el contacto del sol. 
 
-Durante estos días, un buen horario para comenzar a esquiar era a partir de las 13.00h. Esto afecta directamente a la hora de salida.
+En estos días, calculamos que la buena hora para el descenso era entorno a las 13:00, a partir de este dato,  definimos la hora de salida.
 
 En casa, hacemos un repaso del equipo y material que llevamos para nuestra actividad. Con estas condiciones todo el material es importante, pero le damos más protagonismo a los elementos que nos facilitan la progresión en nieve dura y nos protegen de las caídas.
 
