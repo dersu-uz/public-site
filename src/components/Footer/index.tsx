@@ -119,7 +119,7 @@ const Footer: FC = () => {
           </div>
           <div className="text-dersu-light-gray leading-5 md:flex">
             <p className="md:order-1">
-              {t.common.allRightsReserved}. Dersu ® 2021
+              {t.common.allRightsReserved}. Dersu ® {new Date().getFullYear()}
             </p>
           </div>
         </div>
