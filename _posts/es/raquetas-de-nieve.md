@@ -6,7 +6,7 @@ author: 'Equipo Dersu'
 date: '2022-01-28'
 ---
 
-Cada vez vemos a más gente haciendo paseos con raquetas de nieve y lo celebramos con alegría, es una de nuestras actividades favoritas cuando vamos con gente de diferentes niveles o cuando queremos disfrutar de paisajes espectaculares en terrenos sencillos sin grandes pendientes.
+Cada vez vemos a más gente haciendo paseos con raquetas de nieve y lo celebramos con alegría, es una de nuestras actividades favoritas cuando vamos con [gente de diferentes niveles](https://dersu.uz/es/blog/montanista-punto-de-partida/) o cuando queremos disfrutar de paisajes espectaculares en terrenos sencillos sin grandes pendientes.
 
 Lo mejor de las raquetas de nieve es que no requieren de un aprendizaje complejo, simplemente tenemos que conocer algunas técnicas y particularidades sobre el material que vamos a utilizar.
 
@@ -16,7 +16,7 @@ Como siempre, la planificación es fundamental para esta actividad, ya que las r
 
 Te recordamos que en las actividades de naturaleza el riesgo cero no existe, y si añadimos la nieve, nos enfrentaremos a un riesgo extra que tenemos que saber prever y analizar antes de salir.
 
-En la app de Dersu te presentamos rutas de raquetas, con los partes de meteo y nivología (peligro de aludes) de la zona y clasificadas por niveles para que puedas elegir la más adecuada para ti y para el grupo. También te dejamos aquí algunas nociones básicas para conocer un poco más sobre esta actividad:
+[En la app de Dersu te presentamos rutas para raquetas](https://dersu.uz/es/beta/), con los partes de meteo y nivología (peligro de aludes) de la zona y clasificadas por niveles para que puedas elegir la más adecuada para ti y para el grupo. También te dejamos aquí algunas nociones básicas para conocer un poco más sobre esta actividad:
 
 ### ¿Cómo ponerse unas raquetas de nieve?
 
@@ -50,16 +50,16 @@ Además, en terrenos nevados, nos darán estabilidad si cambia la consistencia d
 
 **Cuesta abajo**: en pendientes poco pronunciadas, daremos pasos cortos aprovechando la clavada de las puntas y soltamos las dragonera del bastón para que no interfiera en caso de inestabilidad.
 
-Evitaremos bajar con raquetas pendientes muy pronunciadas, para esto es esencial planificar bien la ruta antes de salir y analizar el terreno al que te vas a enfrentar; pero si se dan las circunstancias y te encuentras con una gran pendiente no esperada, lo recomendable es bloquear el talón y afrontarla en grandes zigzags.
+Evitaremos bajar pendientes muy pronunciadas con raquetas de nieve, para esto es esencial [planificar bien la ruta antes de salir](https://dersu.uz/es/blog/planificar-salida-invernal/) y analizar el terreno al que te vas a enfrentar; pero si se dan las circunstancias y te encuentras con una gran pendiente no esperada, lo recomendable es bloquear el talón y afrontarla en grandes zigzags.
 
 **Cuesta arriba**: podemos subir pendientes poco pronunciadas con las raquetas, dando apoyo con los bastones, poniendo el alza y con el talón desbloqueado.
 
-Siempre tendremos en cuenta al planificar nuestra salida el nivel de pendientes al que vamos a enfrentarnos, ya que las raquetas están pensadas para paseos por zonas sin grandes pendientes.
+Siempre tendremos en cuenta al planificar nuestra salida el nivel de pendientes al que vamos a enfrentarnos, ya que las raquetas de nieve están pensadas para paseos por zonas sin grandes pendientes.
 
 **Levantarse de una caída o "inmersión" en nieve profunda**: ponte mirando al suelo y apóyate en los bastones tumbados en el suelo, utilízalos como punto de apoyo para ponerte de rodillas y ve incorporándote poco a poco.
 
 Puedes aprovechar para hacer la croqueta un poco antes de levantarte.
 
-**Zonas inclinadas de nieve dura**: Evitaremos estas zonas durante la planificación, mirando los partes de meteo y nivología y fijándonos en la nieve que ha caído, la incidencia del sol y las zonas sombrías. Para avanzar sobre nieve dura, utilizaremos crampones, nunca raquetas.
+**Zonas inclinadas de nieve dura**: Evitaremos estas zonas durante la planificación, mirando los partes de meteo y nivología y fijándonos en la nieve que ha caído, la incidencia del sol y las zonas sombrías. Para avanzar sobre nieve dura, utilizaremos crampones, nunca raquetas de nieve.
 
 En caso de encontrarnos con una zona así, lo afrontaremos con todas las precauciones activadas, analizamos el terreno, buscamos itinerarios alternativos con nieve más blanda (dar un rodeo) y no descartamos la opción de volver por el camino que hemos venido.
