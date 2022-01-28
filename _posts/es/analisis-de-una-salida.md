@@ -4,7 +4,6 @@ subtitle: 'Candanchú - 28 de noviembre, 2021'
 tag: 'Aprender'
 author: 'Equipo Dersu'
 date: '2021-12-23'
-color_scheme: BROWN
 ---
 
 Si no lo has hecho ya, es importante que [leas antes este texto](https://dersu.uz/es/blog/ayudando-a-tomar-deciciones-en-la-montana/), en el que te contamos cuál es nuestra motivación y posicionamiento ante la toma de decisiones en situaciones con condiciones adversas.
