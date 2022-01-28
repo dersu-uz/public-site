@@ -12,11 +12,11 @@ Lo mejor de las raquetas de nieve es que no requieren de un aprendizaje complejo
 
 Para la primera vez, siempre es mejor ir con alguna persona experta que te ayude a aprender las técnicas desde el principio para evolucionar más rápido y con mayor seguridad.
 
-Como siempre, la planificación es fundamental para esta actividad, ya que las raquetas no son aptas para todas las condiciones de nieve ni para todos los tipos de terreno, haremos rutas sin grandes pendientes y con nieve blanda, nunca nieve dura, y por supuesto, jamás con hielo.
+Como siempre, la planificación es fundamental para esta actividad, ya que las raquetas no son aptas para todas las condiciones de nieve ni para todos los tipos de terreno. Haremos rutas sin grandes pendientes y con nieve blanda (nunca nieve dura) y por supuesto, jamás con hielo.
 
 Te recordamos que en las actividades de naturaleza el riesgo cero no existe, y si añadimos la nieve, nos enfrentaremos a un riesgo extra que tenemos que saber prever y analizar antes de salir.
 
-[En la app de Dersu te presentamos rutas para raquetas](https://dersu.uz/es/beta/), con los partes de meteo y nivología (peligro de aludes) de la zona y clasificadas por niveles para que puedas elegir la más adecuada para ti y para el grupo. También te dejamos aquí algunas nociones básicas para conocer un poco más sobre esta actividad:
+[En la app de Dersu te presentamos rutas para raquetas](https://dersu.uz/es/), con los partes de meteo y nivología (peligro de aludes) de la zona y clasificadas por niveles para que puedas elegir la más adecuada para ti y para el grupo. También te dejamos aquí algunas nociones básicas para conocer un poco más sobre esta actividad:
 
 ### ¿Cómo ponerse unas raquetas de nieve?
 
