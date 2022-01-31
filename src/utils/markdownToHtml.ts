@@ -7,7 +7,7 @@ export default async function markdownToHtml(markdown: string) {
   const result = await remark()
     .use(remarkParse)
     .use(remarkGfm)
-    .use(remarkHtml)
+    .use(remarkHtml, { sanitize: false })
     .process(markdown)
   return result.toString()
 }
