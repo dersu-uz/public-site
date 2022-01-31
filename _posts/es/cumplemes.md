@@ -1,6 +1,6 @@
 ---
-title: 'Cumplemes - Enero 2022, un mes con Dersu'
-subtitle: 'Lanzamiento y pruebas con especialistas'
+title: 'Cumplemes con Dersu'
+subtitle: 'Un mes de lanzamiento probando con especialistas'
 tag: 'Inspiración'
 author: 'Borja Delgado'
 date: '2022-01-31'
