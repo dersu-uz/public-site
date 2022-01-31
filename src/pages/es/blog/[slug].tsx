@@ -1,8 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import { NextSeo } from 'next-seo'
+import Script from 'next/script'
 
 import {
   getPostBySlug,
@@ -76,6 +77,15 @@ const BlogPostPage: FC<Props> = ({
 }) => {
   const { isFallback } = useRouter()
 
+  // Process Instagram embed posts
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const { instgrm } = window as any
+    if (instgrm) {
+      instgrm.Embeds.process()
+    }
+  })
+
   return (
     <>
       {isFallback ? (
@@ -115,6 +125,7 @@ const BlogPostPage: FC<Props> = ({
           <Footer />
         </>
       )}
+      <Script async src="//www.instagram.com/embed.js" />
     </>
   )
 }
