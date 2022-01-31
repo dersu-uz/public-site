@@ -10,7 +10,7 @@ date: '2022-01-31'
 
 Pues así, como quien no quiere la cosa, cumplimos nuestro primer mes de vida con la App. Y ha sido un mes inolvidable de mucho trabajo, muchos nervios y muchas alegrías.
 
-Hicimos nuestra salida inaugural la Nochevieja de 2021 con gente de montaña de toda la vida, a la que respetamos mucho y con la que hemos compartido infinidad de experiencias.
+Hicimos [nuestra salida inaugural](https://www.instagram.com/p/CYLp5rNqnlN/?utm_source=ig_web_copy_link) la Nochevieja de 2021 con gente de montaña de toda la vida, a la que respetamos mucho y con la que hemos compartido infinidad de experiencias.
 
 No os vamos a decir que no pasamos muchos nervios, pero vida solo hay una y aquí hemos venido a jugar.
 
@@ -19,9 +19,9 @@ No os vamos a decir que no pasamos muchos nervios, pero vida solo hay una y aqu�
 </div>
 
 Esta salida abrió un mes de enero dedicado a probar la App en el terreno con profesionales y expertos en distintos ámbitos de la montaña: [Guías de Alta Montaña](https://www.instagram.com/p/CY1oTUPITco/?utm_source=ig_web_copy_link), [Media Montaña](https://twitter.com/dersu_uz/status/1481240726533029889?s=20&t=uP-VyzwjAWSP00DhiiFGvg) , [el equipo de la Alta Ruta](https://www.instagram.com/p/CYlOjymK1yI/?utm_source=ig_web_copy_link) y [Profesionales relacionados con los servicios de rescate](https://www.instagram.com/p/CZJiVMNI0ru/?utm_source=ig_web_copy_link).
-Además hemos hecho estas salidas en Aragón, Catalunya (meter enlace post Vall D’Aran), [Madrid](https://www.instagram.com/p/CYjDIDVosdW/?utm_source=ig_web_copy_link) y próximamente visitaremos Sierra Nevada y Picos de Europa.
+Además hemos hecho estas salidas en Aragón, Val D'Aran, [Madrid](https://www.instagram.com/p/CYjDIDVosdW/?utm_source=ig_web_copy_link) y próximamente visitaremos Sierra Nevada y Picos de Europa.
 
-**El objetivo era probar la aplicación en las condiciones más duras, ante el juicio más experto**. De forma que tuviéramos claro que todo estaba en su sitio, antes de ponerla en manos de los usuarios. La seguridad es la piedra angular sobre la que está edificado el proyecto y queríamos estar convencidos de que no se nos había escapado nada importante.
+**El objetivo era probar la aplicación en las condiciones más duras, ante el juicio más experto**, de forma que tuviéramos claro que todo estaba en su sitio antes de ponerla en manos de los usuarios. La seguridad es la piedra angular sobre la que está edificado el proyecto y queríamos asegurarnos de que no se nos había escapado nada importante.
 
 En [nuestras stories destacadas](https://www.instagram.com/stories/highlights/18259835218069487/) podéis ver más detalles de estas salidas y algunas de las opiniones de las que han ido publicando.
 
@@ -35,7 +35,7 @@ En [nuestras stories destacadas](https://www.instagram.com/stories/highlights/18
 
 Nuestras principales conclusiones son:
 
-- Esta versión inicial de la App funciona y aporta valor. Lo que parecen cosas muy obvias, pero os podemos asegurar que no son fáciles de conseguir.
+- Esta versión inicial de la App funciona y aporta valor, lo que parecen cosas muy obvias, pero os podemos asegurar que no son fáciles de conseguir.
 
 - La app es un proyecto que nace de la gente de montaña, que quiere implementar sus valores y transmitir sus conocimientos; pero sobre todo ayudar a conocer, vivir y cuidar nuestra relación con el medio. Esto es algo que debemos cuidar siempre.
 
@@ -51,9 +51,9 @@ En febrero vamos a empezar a realizar ya pruebas con usuarios, tenemos una agend
 
 Resumiendo: se vienen cositas.
 
-Dentro de unos días anunciaremos cuál es el plan y las distintas actividades, para que podáis apuntaros si os apetece. Prestad atención [al blog](https://dersu.uz/es/blog/), a las redes o [newsletter](https://dersu.us5.list-manage.com/subscribe?u=09aa1f83820733bb99bd70605&id=85e6d8b7c4); porque las cosas van a empezar a coger velocidad :D
+Dentro de unos días anunciaremos cuál es el plan y las distintas actividades, para que podáis apuntaros si os apetece. Prestad atención [al blog](https://dersu.uz/es/blog/), a la [newsletter](https://dersu.us5.list-manage.com/subscribe?u=09aa1f83820733bb99bd70605&id=85e6d8b7c4) y a las redes (contamos cosas en [Instagram](https://www.instagram.com/dersu_uz/), actualizamos [Twitter](https://twitter.com/dersu_uz) y compartimos en [Facebook](https://www.facebook.com/DersuMendia)); porque las cosas van a empezar a coger velocidad :D
 
-Pero sobre todo no os olvidéis de apuntaros a la beta, para poder participar de todo: https://dersu.uz/es/beta
+Y, por supuesto, no os olvidéis de apuntaros a la beta para poder participar de todo: https://dersu.uz/es/beta
 
 Pronto, más.
 
