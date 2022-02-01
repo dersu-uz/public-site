@@ -4,16 +4,15 @@ import Link from 'next/link'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 
-import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
+import MainContent from '@/components/MainContent'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       locale: 'en',
       title: 'Work with Dersu',
-      description:
-        'We are looking for someone focused on backend and infrastructure work.',
+      description: 'We are looking for someone focused on backend.',
     },
   }
 }
@@ -32,16 +31,12 @@ const Backend: FC = props => {
             the mountains. More information in the general{' '}
             <Link href="/en/work-with-dersu">work with Dersu page</Link>.
           </p>
-          <p>
-            We are looking for someone focused on backend and infrastructure
-            work.
-          </p>
+          <p>We are looking for someone focused on backend work.</p>
           <p>Some of the expected functionality for Dersu backend services:</p>
           <ul>
             <li>
               Combine several heterogeneous data sources for weather, nivology,
-              avalanche reports, etc and provide them as a coherent, single API
-              to the mobile app.
+              etc. and provide them as a coherent, single API to the mobile app.
             </li>
             <li>
               Monitor said data sources in order to provide real time support to
@@ -49,8 +44,7 @@ const Backend: FC = props => {
             </li>
             <li>
               A CMS to both feed content to the public site (blog, specific
-              location pages) and serve as an internal waypoint and route
-              repository.
+              location pages) and the app.
             </li>
             <li>
               Management of user profiles including self-assesment and
@@ -64,8 +58,8 @@ const Backend: FC = props => {
           </ul>
           <p>
             Even though there is flexibility when choosing the technical stack
-            and frameworks we have a preference for Express/Nest + Typescript,
-            Google Cloud + Terraform and Strapi as a CMS.
+            and frameworks our current services are built using NestJS +
+            Typescript and Google Cloud + Terraform.
           </p>
           <h2>What do we offer?</h2>
           <p>Remote work as long as there is compatibility with GMT+1.</p>

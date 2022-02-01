@@ -12,8 +12,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       locale: 'es',
       title: 'Trabaja con Dersu',
-      description:
-        'Buscamos una persona con foco de trabajo en backend e infraestructura.',
+      description: 'Buscamos una persona con foco de trabajo en backend.',
     },
   }
 }
@@ -37,17 +36,14 @@ const Backend: FC = props => {
             .
           </p>
 
-          <p>
-            Buscamos una persona con foco de trabajo en backend e
-            infraestructura.
-          </p>
+          <p>Buscamos una persona con foco de trabajo en backend.</p>
 
           <p>Algunas de las funciones del backend y servicios de Dersu:</p>
 
           <ul>
             <li>
               Aglutinar fuentes de datos heterogéneas de metereología,
-              nivología, aludes, etc. y ofrecerlas de una forma coherente a la
+              nivología, etc. y ofrecerlas de una forma coherente a la
               aplicación móvil a través de una API única.
             </li>
             <li>
@@ -62,7 +58,7 @@ const Backend: FC = props => {
             </li>
             <li>
               Gestión de perfiles de deportistas incluyendo herramientas de
-              auto-evaluación y progresión técnica.
+              auto-evaluación y progresión.
             </li>
             <li>Gestión de expediciones para guías de montaña.</li>
             <li>
@@ -73,8 +69,8 @@ const Backend: FC = props => {
           <p></p>
           <p>
             Aunque hay cierta flexibilidad a la hora de elegir tecnología y
-            framework tenemos preferencia por Express/Nest + Typescript, Google
-            Cloud + Terraform y Strapi como CMS.
+            frameworks nuestros servicios actuales usan NestJS + Typescript y
+            Google Cloud + Terraform.
           </p>
 
           <h2>¿Qué ofrecemos?</h2>
