@@ -73,6 +73,12 @@ const Backend: FC = props => {
             Google Cloud + Terraform.
           </p>
 
+          <p>
+            <strong>IMPORTANTE:</strong> somos un equipo pequeño pero
+            internacional, el día a día del equipo de desarollo es en Inglés,
+            tanto hablado como escrito.
+          </p>
+
           <h2>¿Qué ofrecemos?</h2>
 
           <p>Trabajo en remoto mientras haya compatibilidad con GMT+1.</p>
