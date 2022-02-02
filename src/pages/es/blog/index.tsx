@@ -11,7 +11,7 @@ import Wrapper from '@/components/Wrapper'
 import PostsList from '@/components/PostsList'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const latestPosts = await getLatestPosts('es')
+  const latestPosts = await getLatestPosts('es', 100)
   generateRSSFeed('es')
   return {
     props: {
