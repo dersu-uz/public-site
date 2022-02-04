@@ -1,10 +1,12 @@
+import { useContext } from 'react'
 import { useRouter } from 'next/router'
-import { useCookie } from 'react-use'
 
 import {
   COOKIES_PREFERRED_LOCALE_DAYS,
   COOKIES_PREFERRED_LOCALE_NAME,
 } from '@/constants/settings'
+
+import PrivacyContext from '@/contexts/PrivacyContext'
 
 import { LocaleShortCode } from '@/services/i18nService'
 
@@ -15,12 +17,14 @@ type UsePreferredLocale = {
 const usePreferredLocale = (): UsePreferredLocale => {
   const router = useRouter()
 
-  const [preferredLocale, updatePreferredLocale] = useCookie(
+  const { acceptCookies, useHonestCookie } = useContext(PrivacyContext)
+
+  const [preferredLocale, updatePreferredLocale] = useHonestCookie(
     COOKIES_PREFERRED_LOCALE_NAME
   )
 
   const changeLocale = (newLocale: LocaleShortCode) => {
-    if (preferredLocale !== newLocale) {
+    if (acceptCookies && preferredLocale !== newLocale) {
       updatePreferredLocale(newLocale, {
         expires: COOKIES_PREFERRED_LOCALE_DAYS,
       })
