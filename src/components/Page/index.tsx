@@ -1,9 +1,17 @@
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 import { NextSeo } from 'next-seo'
+import PlausibleProvider from 'next-plausible'
 
 import { LocaleShortCode } from '@/services/i18nService'
 
-import { BASE_DOMAIN_URL, DEVELOPMENT_HELPERS } from '@/constants/settings'
+import PrivacyContext from '@/contexts/PrivacyContext'
+
+import {
+  BASE_DOMAIN_URL,
+  DEVELOPMENT_HELPERS,
+  ENABLE_PLAUSIBLE,
+  PLAUSIBLE_DOMAIN,
+} from '@/constants/settings'
 
 import CookieBanner from '@/components/CookieBanner'
 import DeveloperHelpers from '@/components/DeveloperHelpers'
@@ -21,59 +29,66 @@ const Page: FC<Props> = ({
   canonicalUrl,
   locale,
   children,
-}) => (
-  <>
-    <NextSeo
-      title={title ? `${title} | Dersu` : `Dersu | ${description}`}
-      description={description}
-      canonical={canonicalUrl}
-      additionalLinkTags={[
-        {
-          rel: 'icon',
-          type: 'image/svg+xml',
-          href: '/favicon.svg',
-        },
-        {
-          rel: 'icon',
-          type: 'image/png',
-          href: '/favicon.png',
-        },
-        {
-          rel: 'alternate',
-          type: 'application/rss+xml',
-          href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.xml`,
-        },
-        {
-          rel: 'alternate',
-          type: 'application/json',
-          href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.json`,
-        },
-        {
-          rel: 'alternate',
-          type: 'application/atom+xml',
-          href: `${BASE_DOMAIN_URL}/feed/${locale}/atom.xml`,
-        },
-      ]}
-      additionalMetaTags={[
-        {
-          name: 'viewport',
-          content: 'initial-scale=1.0, width=device-width',
-        },
-      ]}
-      openGraph={{
-        description,
-        images: [
+}) => {
+  const { acceptCookies } = useContext(PrivacyContext)
+
+  return (
+    <PlausibleProvider
+      domain={PLAUSIBLE_DOMAIN}
+      enabled={ENABLE_PLAUSIBLE && acceptCookies}
+    >
+      <NextSeo
+        title={title ? `${title} | Dersu` : `Dersu | ${description}`}
+        description={description}
+        canonical={canonicalUrl}
+        additionalLinkTags={[
           {
-            url: `${BASE_DOMAIN_URL}/opengraph-banner.jpg`,
+            rel: 'icon',
+            type: 'image/svg+xml',
+            href: '/favicon.svg',
           },
-        ],
-      }}
-    />
-    {children}
-    <CookieBanner />
-    <div id="modal-root"></div>
-    {DEVELOPMENT_HELPERS && <DeveloperHelpers />}
-  </>
-)
+          {
+            rel: 'icon',
+            type: 'image/png',
+            href: '/favicon.png',
+          },
+          {
+            rel: 'alternate',
+            type: 'application/rss+xml',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.xml`,
+          },
+          {
+            rel: 'alternate',
+            type: 'application/json',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.json`,
+          },
+          {
+            rel: 'alternate',
+            type: 'application/atom+xml',
+            href: `${BASE_DOMAIN_URL}/feed/${locale}/atom.xml`,
+          },
+        ]}
+        additionalMetaTags={[
+          {
+            name: 'viewport',
+            content: 'initial-scale=1.0, width=device-width',
+          },
+        ]}
+        openGraph={{
+          description,
+          images: [
+            {
+              url: `${BASE_DOMAIN_URL}/opengraph-banner.jpg`,
+            },
+          ],
+        }}
+      />
+      {children}
+      <CookieBanner />
+      <div id="modal-root"></div>
+      {DEVELOPMENT_HELPERS && <DeveloperHelpers />}
+    </PlausibleProvider>
+  )
+}
 
 export default Page

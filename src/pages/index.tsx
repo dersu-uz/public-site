@@ -1,12 +1,13 @@
-import { FC, useEffect } from 'react'
+import { FC, useContext, useEffect } from 'react'
 import { GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
-import { useCookie } from 'react-use'
 
 import {
   BASE_DOMAIN_URL,
   COOKIES_PREFERRED_LOCALE_NAME,
 } from '@/constants/settings'
+
+import PrivacyContext from '@/contexts/PrivacyContext'
 
 import { LocaleShortCode } from '@/services/i18nService'
 
@@ -32,7 +33,9 @@ type Props = {
 const HomePage: FC<Props> = props => {
   const { locale } = props
   const router = useRouter()
-  const [preferredLocale] = useCookie(COOKIES_PREFERRED_LOCALE_NAME)
+
+  const { useHonestCookie } = useContext(PrivacyContext)
+  const [preferredLocale] = useHonestCookie(COOKIES_PREFERRED_LOCALE_NAME)
 
   useEffect(() => {
     if (locale && preferredLocale && locale !== preferredLocale) {

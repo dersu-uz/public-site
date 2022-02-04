@@ -1,0 +1,54 @@
+import { createContext, FC } from 'react'
+import { useCookie } from 'react-use'
+
+import {
+  COOKIES_ACCEPT_EXPIRE_DAYS,
+  COOKIES_ACCEPT_NAME,
+} from '@/constants/settings'
+
+type PrivacyContextType = {
+  acceptCookies: boolean
+  useHonestCookie: typeof useCookie
+  handleUserAcceptCookies: () => void
+}
+
+const PrivacyContext = createContext<PrivacyContextType>(null)
+
+const PrivacyContextProvider: FC = ({ children }) => {
+  const [acceptCookies, updateAcceptCookies] = useCookie(COOKIES_ACCEPT_NAME)
+
+  const handleUserAcceptCookies = () => {
+    updateAcceptCookies('true', {
+      expires: COOKIES_ACCEPT_EXPIRE_DAYS,
+    })
+  }
+
+  // Wrapper for useCookies which only persist new cookie values
+  // if the user has accepted privacy policy
+  const useHonestCookie: typeof useCookie = cookieName => {
+    const [cookieValue, setCookieValue, deleteCookieValue] =
+      useCookie(cookieName)
+    return [
+      cookieValue,
+      (value, options?) => {
+        if (acceptCookies) {
+          setCookieValue(value, options)
+        }
+      },
+      deleteCookieValue,
+    ]
+  }
+
+  const value: PrivacyContextType = {
+    acceptCookies: acceptCookies === 'true' ? true : false,
+    useHonestCookie,
+    handleUserAcceptCookies,
+  }
+
+  return (
+    <PrivacyContext.Provider value={value}>{children}</PrivacyContext.Provider>
+  )
+}
+
+export { PrivacyContextProvider }
+export default PrivacyContext

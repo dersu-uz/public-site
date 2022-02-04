@@ -1,28 +1,18 @@
 import { FC, useContext, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useCookie } from 'react-use'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
-import {
-  COOKIES_ACCEPT_NAME,
-  COOKIES_ACCEPT_EXPIRE_DAYS,
-} from '@/constants/settings'
+import PrivacyContext from '@/contexts/PrivacyContext'
 
 const CookieBanner: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
-  const [acceptCookies, updateAcceptCookies] = useCookie(COOKIES_ACCEPT_NAME)
+  const { acceptCookies, handleUserAcceptCookies } = useContext(PrivacyContext)
+
   const [showCookieBanner, setShowCookieBanner] = useState(false)
 
   useEffect(() => {
-    if (!acceptCookies) setShowCookieBanner(true)
+    setShowCookieBanner(!acceptCookies)
   }, [acceptCookies])
-
-  const handleAcceptCookies = () => {
-    updateAcceptCookies('true', {
-      expires: COOKIES_ACCEPT_EXPIRE_DAYS,
-    })
-    setShowCookieBanner(false)
-  }
 
   return showCookieBanner ? (
     <div className="CookieBanner">
@@ -37,7 +27,7 @@ const CookieBanner: FC = () => {
             </Link>
           </div>
           <div
-            onClick={handleAcceptCookies}
+            onClick={() => handleUserAcceptCookies()}
             className="text-dersu-sm cursor-pointer"
           >
             ✕

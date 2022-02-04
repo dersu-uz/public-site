@@ -2,9 +2,6 @@ import '@/styles/main.css'
 
 import { FC } from 'react'
 import type { AppProps /*, AppContext */ } from 'next/app'
-import PlausibleProvider from 'next-plausible'
-
-import { ENABLE_PLAUSIBLE, PLAUSIBLE_DOMAIN } from '@/constants/settings'
 
 import TranslationsContext, {
   TranslationContextValue,
@@ -18,6 +15,7 @@ import {
 } from '@/services/i18nService'
 
 import Page from '@/components/Page'
+import { PrivacyContextProvider } from '@/contexts/PrivacyContext'
 
 const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
   const { title, description, canonicalUrl, locale } = pageProps
@@ -27,8 +25,9 @@ const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
     currentLocale: locale as LocaleShortCode,
     availableLocales,
   }
+
   return (
-    <PlausibleProvider domain={PLAUSIBLE_DOMAIN} enabled={ENABLE_PLAUSIBLE}>
+    <PrivacyContextProvider>
       <TranslationsContext.Provider value={contextValue}>
         <DeveloperContextProvider>
           <Page
@@ -41,7 +40,7 @@ const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
           </Page>
         </DeveloperContextProvider>
       </TranslationsContext.Provider>
-    </PlausibleProvider>
+    </PrivacyContextProvider>
   )
 }
 
