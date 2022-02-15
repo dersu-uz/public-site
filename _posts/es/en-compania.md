@@ -11,7 +11,7 @@ date: '2022-02-15'
 El plan era subir a Peña Nebera, hacer [este itinerario]( https://www.strava.com/activities/4791774863), pero lo que pasó ese día cambió nuestras vidas...
 Al comienzo de la ascensión, me acerqué a Fer y le dije:
 
-*"Fer, a ver si nos tomamos un café, porque hay algo que tengo que contarte"*.
+-- *"Fer, a ver si nos tomamos un café, porque hay algo que tengo que contarte"*.
 
 Parece mentira que después de tanto tiempo no supiera que es imposible decir algo así y dejarle en blanco; así que, a los 5 minutos de intentar sonsacarme, tuve que contarle de qué iba el asunto.
 
@@ -26,25 +26,25 @@ Ese fue el inicio de tres largos años donde había probado de todo: Apps de mon
 
 ### El punto de partida
 
-- *Ya lo hemos hablado más veces. Creo que hay un potencial enorme para lanzar una nueva App de montaña. Todo lo que hay son soluciones parciales e incompletas; y al final te pasas la vida buceando entre las rutas, la meteo, la nieve, cursos y artículos... La gente quiere salir al monte y necesita algo que le ayude.*
+-- *Ya lo hemos hablado más veces. Creo que hay un potencial enorme para lanzar una nueva App de montaña. Todo lo que hay son soluciones parciales e incompletas; y al final te pasas la vida buceando entre las rutas, la meteo, la nieve, cursos y artículos... La gente quiere salir al monte y necesita algo que le ayude.*
 
-*- ¿Tú crees? Ya hay muchas cosas hechas.*
+*-- ¿Tú crees? Ya hay muchas cosas hechas.*
 
 Y entonces nos tiramos toda la subida hablando: De cómo todo se basaba en rutas y conocimientos sueltos, que no había nada que te ayudara a saber cómo comportarte en la montaña, a aprender a tomar decisiones, algo que te preparara a largo plazo, que se adaptara a tus necesidades y otras mil cosas más.
+
 Y en un momento dado, me pareció que Fer estaba convencido. Vi ese brillo en los ojos de cuando algo le entusiasma. Al fin y al cabo, se trataba de intentar trasladar su filosofía acerca de la montaña, su manera de hacer las cosas, toda su experiencia y saber hacer.
+
 Entonces me dijo:
 
-*- Vale. Ya veo. ¿Así que es ahí donde quieres ir?*
+*-- Vale. Ya veo. ¿Así que es ahí donde quieres ir?*
 
 Yo le respondí:
 
-*- No, ahí es donde quiero que **vayamos**.*
+*-- No, ahí es donde quiero que **vayamos**.*
 
-### Un año después
+Y un año después, Dersu es una realidad. Es esa aplicación que imaginamos. Es una aplicación que está dando sus primeros pasos, funcionando. Y, por ahora, las impresiones que vienen de la gente de montaña no pueden ser mejores. Lo cual nos llena de orgullo y responsabilidad, pero ya habrá tiempo de contar todo eso.
 
-Un año después, Dersu es una realidad. Es esa aplicación que imaginamos. Es una aplicación que está funcionando, que está dando sus primeros pasos. Y, por ahora, las impresiones que vienen de la gente de montaña no pueden ser mejores. Lo cual nos llena de orgullo y responsabilidad.
-
-Pero ya habrá tiempo de contar todo eso. Hoy es un día de celebración y recuerdo. De recuperar las pequeñas historias que dan origen a las grandes cosas. Y, sobre todo, de recordarnos que casi más importante que el camino recorrido, es quién te acompaña. Dersu es lo que es por toda la gente que está aportando su granito de arena.
+Hoy es un día de celebración y recuerdo. De recuperar las pequeñas historias que dan origen a las grandes cosas. Y, sobre todo, de recordarnos que casi más importante que el camino recorrido, es quién te acompaña. Dersu es lo que es por toda la gente que está aportando su granito de arena.
 
 Queremos que valga este post para darle nuestro más sincero agradecimiento a todas las personas del equipo, a quienes habéis  invertido en el proyecto, a quienes os acercáis para unir caminos como partners, a la gente experta en montaña que la está probando, y, en general, a todas las personas que ya tenéis ganas de utilizar Dersu.
 
