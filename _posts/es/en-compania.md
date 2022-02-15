@@ -52,11 +52,14 @@ Gracias por enviarnos tanto cariño todos los días.
 
 Queda mucho camino por delante, pero no podríamos tener mejor compañía.
 
-<video controls preload="auto">
+<div class="flex flex-col items-center">
+<video controls preload="auto" style="width:100%; max-width:480px">
   <source src="/images/posts/en-compania/video-01.mp4" type="video/mp4">
 </video>
+<span>👆🏻 Dale al play</span>
+<span>(Fer, espíritu de sacrificio)</span>
+</div>
 
-👆🏻 Dale al play
 
-(Fer, espíritu de sacrificio)
+
 
