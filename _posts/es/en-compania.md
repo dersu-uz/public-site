@@ -42,7 +42,7 @@ Yo le respondí:
 
 *-- No, ahí es donde quiero que **vayamos**.*
 
-Y un año después, Dersu es una realidad. Es esa aplicación que imaginamos. Es una aplicación que está dando sus primeros pasos, funcionando. Y, por ahora, las impresiones que vienen de la gente de montaña no pueden ser mejores. Lo cual nos llena de orgullo y responsabilidad, pero ya habrá tiempo de contar todo eso.
+Y un año después, Dersu es una realidad. Es una aplicación que está dando sus primeros pasos, funcionando tal y como imaginamos. Y, por ahora, las impresiones que vienen de la gente de montaña no pueden ser mejores. Lo cual nos llena de orgullo y responsabilidad, pero ya habrá tiempo de contar todo eso.
 
 Hoy es un día de celebración y recuerdo. De recuperar las pequeñas historias que dan origen a las grandes cosas. Y, sobre todo, de recordarnos que casi más importante que el camino recorrido, es quién te acompaña. Dersu es lo que es por toda la gente que está aportando su granito de arena.
 
@@ -50,7 +50,7 @@ Queremos que valga este post para darle nuestro más sincero agradecimiento a to
 
 Gracias por enviarnos tanto cariño todos los días.
 
-Queda mucho camino por delante, pero no podríamos tener mejor compañía.
+Queda mucho camino por delante, pero no podríamos estar en mejor compañía.
 
 <div class="flex flex-col items-center">
 <video controls preload="auto" style="width:100%; max-width:480px">
