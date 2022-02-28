@@ -27,7 +27,7 @@ Por ejemplo, no necesitaré llevar lo mismo si la actividad es en un sitio remot
 
 Dicho esto, podemos establecer un **botiquín básico** que sirva como **guía** sobre el material común para la mayoría de actividades en montaña y para todos los perfiles de montañista. Basándonos en este, se podrán hacer modificaciones según los factores comentados previamente.
 
-![](/Users/amalia/Dropbox/Mi Mac (MacBook-de-Amalia.local)/Desktop/BOTIQUIN2.jpg)
+![](/images/posts/botiquin/BOTIQUIN-tabla.jpg)
 
 Un botiquín completo debe incluir material para curas, material para inmovilización, para prevenir hipotermia y algún medicamento para el dolor.
 
