@@ -16,7 +16,7 @@ Sabemos que lleváis un tiempo esperando noticias acerca del estado de la App y 
 
 - Febrero está siendo un mes de [pruebas con gente de todos los niveles](https://www.instagram.com/p/CaFnrSDoTXS/)
 
-- Abriremos el acceso para la lista de gente que se ha apuntado a la beta la semana del 15 de marzo. Lo haremos poco a poco. [Apúntate aquí](https://dersu.us5.list-manage.com/subscribe?u=09aa1f83820733bb99bd70605&id=85e6d8b7c4).
+- Abriremos el acceso para la lista de gente que se ha apuntado a la beta la semana del 15 de marzo. Lo haremos poco a poco. [Apúntate aquí](https://dersu.uz/es/beta/).
 
 - Abriremos la App al público alrededor de Semana Santa.
 
