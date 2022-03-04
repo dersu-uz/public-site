@@ -3,7 +3,7 @@ title: 'Plan de lanzamiento'
 subtitle: 'Cómo avanzamos y cuándo podrás probar la App de Dersu'
 tag: 'La App'
 author: 'Equipo Dersu'
-date: '2022-03-07'
+date: '2022-03-04'
 ---
 
 El tiempo pasa, las cosas avanzan y el panorama empieza a despejarse :-)
