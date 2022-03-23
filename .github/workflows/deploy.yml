@@ -2,7 +2,7 @@ name: Build, push and deploy
 on:
   push:
     branches:
-      - 'main'   
+      - 'main'
 jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
@@ -11,9 +11,9 @@ jobs:
         id: slug
         run: echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
       - name: Check out
-        uses: actions/checkout@v2        
+        uses: actions/checkout@v2
       - name: Set up Cloud SDK
-        uses: google-github-actions/setup-gcloud@master
+        uses: google-github-actions/setup-gcloud@v0
         with:
           project_id: ${{ secrets.GCP_PROJECT_ID }}
           service_account_key: ${{ secrets.GCP_SA_KEY }}
@@ -36,7 +36,7 @@ jobs:
           terraform_version: 0.14.10
       - name: Terraform init
         working-directory: terraform
-        run: terraform init -input=false -lock=true 
+        run: terraform init -input=false -lock=true
       - name: Terraform plan
         working-directory: terraform
         run: |
