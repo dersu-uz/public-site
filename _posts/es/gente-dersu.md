@@ -1,14 +1,14 @@
 ---
 title: 'Gente Dersu'
-subtitle: 'Profesionales y especialistas en montaña que nos acompañan en el camino'
+subtitle: 'El grupo de profesionales de montaña que probó la App'
 tag: 'Inspiración'
 author: 'Equipo Dersu'
 date: '2022-04-07'
 ---
 
-Ahora que empezamos a dar la bienvenida a gente nueva, ahora que pronto seremos muchísimas personas con Dersu en el bolsillo (y que vivimos con la esperanza de que ese número irá creciendo), hemos pensado que es el momento perfecto para sacar de la mochila los nombres de quienes han estado a nuestro lado desde el principio.
+Ahora que empezamos a dar la bienvenida a gente nueva cada día, ahora que pronto seremos muchísimas personas con Dersu en el bolsillo (y que vivimos con la esperanza de que ese número irá creciendo), hemos pensado que es el momento perfecto para sacar de la mochila los nombres de quienes estuvieron [probando la App desde el principio](https://dersu.uz/es/blog/cumplemes/).
 
-Porque además del equipo, hay muchísimas personas detrás de esto: grandes profesionales de la montaña, especialistas en seguridad y primeros auxilios, guías y clubes de montañismo... gente que nos ha acompañado al monte a ver cómo un prototipo de App fallaba o funcionaba y se ha preocupado por imaginar cómo sería.
+Porque además del equipo, hay muchísimas personas que han ayudado a que la App evolucione: hoy hablamos de grandes profesionales de la montaña, especialistas en seguridad y primeros auxilios, guías y clubes de montañismo... que se vinieron al monte a mirar cómo un prototipo de App fallaba o funcionaba y se preocupó por imaginar cómo sería.
 
 Gracias a este grupo de personas, hemos ganado autonomía, seguridad y calidad en nuestro proyecto, como en toda travesía.
 
@@ -59,8 +59,6 @@ Si buscas experiencia y profesionalidad para organizar tu próxima aventura, aqu
 [Michel González](https://www.instagram.com/michel_gonzalez_guiamontana/)
 
 [David Lombas](https://www.instagram.com/lombasdavid/)
-
-[Fernando Errekalde](https://www.instagram.com/fernando_errekalde/)
 
 - Y una mención especial a especialistas en medicina y seguridad en montaña:
 
