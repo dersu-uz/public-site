@@ -32,8 +32,8 @@ const HomeHero: FC = () => {
             </div>
           </div>
           <div className="bg-dersu-brown md:bg-transparent py-16 px-4 md:p-0 mt-[-150px] transform scale-100 md:mt-0">
-            <p className="text-dersu-lg text-center text-dersu-blue mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
-              {t.moduleHomeHero.signupForBeta}
+            <p className="text-dersu-lg text-center text-dersu-blue mb-4 max-w-[300px] mx-auto md:mx-0 md:text-dersu-md md:text-left">
+              {t.moduleHomeHero.signupForNewsletter}
             </p>
             <div className="md:max-w-lg text-center md:text-left mx-auto md:mx-0">
               {!showSignupForm && (

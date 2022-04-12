@@ -29,12 +29,12 @@
     "acceptThe": "I'm agree with the ",
     "privacyPolicy": "privacy policy"
   },
-  "moduleSignupForBeta": {
-    "title": "You can sign up for the testing phase here, and we will keep you updated."
+  "moduleSignupForNewsletter": {
+    "title": "Join our newsletter and stay up to date."
   },
   "moduleHomeHero": {
     "tagLine": "Dersu connect people with mountains.",
-    "signupForBeta": "Sign up for the beta and try the first version of Dersu."
+    "signupForNewsletter": "Join our newsletter and stay up to date."
   },
   "moduleHomeIntro": {
     "tagLine": "Enjoy the mountains safely and at your own pace"

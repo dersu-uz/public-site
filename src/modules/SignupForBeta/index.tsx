@@ -13,7 +13,7 @@ const SignupForBeta: FC = () => {
         <Fade bottom>
           <div className="pt-14 pb-3 max-w-[700px] mx-auto md:pt-24 md:pb-20">
             <h2 className="text-dersu-blue text-dersu-lg mb-8">
-              {t.moduleSignupForBeta.title}
+              {t.moduleSignupForNewsletter.title}
             </h2>
             <div className="max-w-lg">
               <MailchimpForm />
