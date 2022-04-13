@@ -37,9 +37,9 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
     <HomeIntro />
     <HomeMountaineerProfile />
     <HomeRoutePlanning />
+    <SignupForBeta />
     <HomeRouteAlerts />
     <HomeLearn />
-    <SignupForBeta />
     <RelatedPosts posts={latestPosts} />
     <Footer />
   </>
