@@ -9,7 +9,7 @@ import Header from '@/components/Header'
 import HomeHero from '@/modules/HomeHero'
 import HomeIntro from '@/modules/HomeIntro'
 import HomeMountaineerProfile from '@/modules/HomeMountaineerProfile'
-import SignupForBeta from '@/modules/SignupForBeta'
+import Signup from '@/modules/Signup'
 import HomeRoutePlanning from '@/modules/HomeRoutePlanning'
 import HomeRouteAlerts from '@/modules/HomeRouteAlerts'
 import HomeLearn from '@/modules/HomeLearn'
@@ -39,7 +39,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
     <HomeRoutePlanning />
     <HomeRouteAlerts />
     <HomeLearn />
-    <SignupForBeta />
+    <Signup />
     <RelatedPosts posts={latestPosts} />
     <Footer />
   </>
