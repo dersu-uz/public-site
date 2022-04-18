@@ -5,9 +5,13 @@ import DefaultLayout from '@/layouts/DefaultLayout'
 import Wrapper from '@/components/Wrapper'
 import Picture from '@/components/Picture'
 
-import SignupForBeta from '@/modules/SignupForBeta'
+import Signup from '@/modules/Signup'
+import { ENABLE_BETA_SIGNUP } from '@/constants/settings'
 
 export const getStaticProps: GetStaticProps = async () => {
+  if (!ENABLE_BETA_SIGNUP) {
+    return { props: {}, notFound: true }
+  }
   return {
     props: {
       locale: 'es',
@@ -90,7 +94,7 @@ const BetaLandingPage: FC = () => {
           </div>
         </div>
       </Wrapper>
-      <SignupForBeta />
+      <Signup />
     </DefaultLayout>
   )
 }

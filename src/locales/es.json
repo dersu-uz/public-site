@@ -17,7 +17,10 @@
     "terms": "Terms and Conditions",
     "termsIubendaPageUrl": "https://www.iubenda.com/condiciones-de-uso/58677763",
     "termsIubendaApiUrl": "https://www.iubenda.com/api/condiciones-de-uso/58677763/no-markup",
-    "allRightsReserved": "Todos los derechos reservados"
+    "allRightsReserved": "Todos los derechos reservados",
+    "downloadAppApple": "Descargar para iOS",
+    "downloadAppGoogle": "Descargar para Android",
+    "downloadTheApp": "Descarga la app"
   },
   "mailchimpForm": {
     "emailPlaceholder": "Introduce tu email...",
@@ -29,12 +32,15 @@
     "acceptThe": "Acepto la ",
     "privacyPolicy": "politica de privacidad"
   },
-  "moduleSignupForBeta": {
-    "title": "Si quieres apuntarte a la fase de pruebas, apúntate aquí y te mantendremos al tanto."
+  "moduleSignup": {
+    "signupForBeta": "Si quieres apuntarte a la fase de pruebas, apúntate aquí y te mantendremos al tanto.",
+    "signupForNewsletter": "Apúntate a la newsletter y entérate de todo."
   },
   "moduleHomeHero": {
     "tagLine": "Dersu conecta a las personas con las montañas.",
-    "signupForBeta": "Apúntate a la beta y prueba la primera versión de Dersu."
+    "signupForBeta": "Apúntate a la beta y prueba la primera versión de Dersu.",
+    "signupForNewsletter": "Apúntate a la newsletter y entérate de todo.",
+    "downloadApp": "Descarga la App y organiza tus rutas de una manera más segura."
   },
   "moduleHomeIntro": {
     "tagLine": "Disfruta la montaña, con seguridad y a tu ritmo"

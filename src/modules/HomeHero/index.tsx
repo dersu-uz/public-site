@@ -8,6 +8,7 @@ import MailchimpForm from '@/components/MailchimpForm'
 import Button from '@/components/Button'
 
 import styles from './styles.module.css'
+import { ENABLE_APP_DOWNLOAD, ENABLE_BETA_SIGNUP } from '@/constants/settings'
 
 const HomeHero: FC = () => {
   const { t } = useContext(TranslationsContext)
@@ -35,21 +36,68 @@ const HomeHero: FC = () => {
               </div>
             </div>
             <div className="bg-dersu-brown md:bg-transparent py-16 px-4 md:p-0 mt-[-150px] transform scale-100 md:mt-0">
-              <p className="text-dersu-lg text-center text-dersu-blue mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
-                {t.moduleHomeHero.signupForBeta}
-              </p>
-              <div className="md:max-w-lg text-center md:text-left mx-auto md:mx-0">
-                {!showSignupForm && (
-                  <Button type="button" onClick={() => setShowSignupForm(true)}>
-                    {t.mailchimpForm.subscribeMe}
-                  </Button>
-                )}
-                {showSignupForm && (
-                  <Fade>
-                    <MailchimpForm />
-                  </Fade>
-                )}
-              </div>
+              {ENABLE_BETA_SIGNUP ? (
+                <p className="text-dersu-lg text-center text-dersu-blue mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
+                  {t.moduleHomeHero.signupForBeta}
+                </p>
+              ) : ENABLE_APP_DOWNLOAD ? (
+                <p className="text-dersu-lg text-center text-dersu-blue mb-8 md:mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
+                  {t.moduleHomeHero.downloadApp}
+                </p>
+              ) : (
+                <p className="text-dersu-lg text-center text-dersu-blue mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
+                  {t.moduleHomeHero.signupForNewsletter}
+                </p>
+              )}
+
+              {!ENABLE_APP_DOWNLOAD && (
+                <div className="md:max-w-lg text-center md:text-left mx-auto md:mx-0">
+                  {!showSignupForm && (
+                    <Button
+                      type="button"
+                      onClick={() => setShowSignupForm(true)}
+                    >
+                      {t.mailchimpForm.subscribeMe}
+                    </Button>
+                  )}
+                  {showSignupForm && (
+                    <Fade>
+                      <MailchimpForm />
+                    </Fade>
+                  )}
+                </div>
+              )}
+
+              {ENABLE_APP_DOWNLOAD && (
+                <div className="md:max-w-lg text-center md:text-left mx-auto md:mx-0 flex flex-col md:flex-row gap-3 items-center">
+                  <a
+                    href="https://apps.apple.com/us/app/dersu/id1596941542"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={t.common.downloadAppApple}
+                    className="block"
+                  >
+                    <img
+                      src="/images/common/icon-app-store-es-light.svg"
+                      alt={t.common.downloadAppApple}
+                      className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
+                    />
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=uz.dersu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={t.common.downloadAppGoogle}
+                    className="block"
+                  >
+                    <img
+                      src="/images/common/icon-play-store-es-light.svg"
+                      alt={t.common.downloadAppGoogle}
+                      className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
+                    />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
           <div className="md:w-6/12 flex justify-center md:pt-[90px]">
