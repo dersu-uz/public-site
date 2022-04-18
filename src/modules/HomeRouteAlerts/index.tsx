@@ -33,7 +33,7 @@ const HomeRouteAlerts: FC = () => {
             imgClassName="flex-grow object-cover"
             webpEnabled
           />
-          <div className="absolute w-full flex justify-end pr-4 -bottom-10 md:bottom-auto md:top-1/2 md:-translate-y-[40%] ">
+          <div className="absolute w-full flex justify-end pr-4 -bottom-[10%] sm:-bottom-10">
             <Fade bottom>
               <Picture
                 alt="Dersu App"
@@ -41,7 +41,7 @@ const HomeRouteAlerts: FC = () => {
                 imageName="picture-02"
                 imageType="png"
                 densities={[1, 2]}
-                imgClassName="w-[220px] sm:w-[300px] md:w-[240px]"
+                imgClassName="w-[180px] sm:w-[300px] md:w-[240px]"
               />
             </Fade>
           </div>
