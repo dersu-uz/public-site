@@ -14,20 +14,19 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       locale: 'es',
-      title: 'Política de privacidad',
-      description: 'Política de privacidad de Dersu.uz',
+      title: 'Condiciones de uso',
+      description: 'Condiciones de uso de Dersu.uz',
     },
   }
 }
 
-const PrivacyPage: FC = props => {
+const TermsPage: FC = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
-    'Política de privacidad',
-    t.common.privacyIubendaPageUrlWeb,
-    t.common.privacyIubendaApiUrlWeb
+    'Condiciones de uso',
+    t.common.termsIubendaPageUrlApp,
+    t.common.termsIubendaApiUrlApp
   )
-
   return (
     <DefaultLayout {...props}>
       <MainContent>
@@ -37,4 +36,4 @@ const PrivacyPage: FC = props => {
   )
 }
 
-export default PrivacyPage
+export default TermsPage
