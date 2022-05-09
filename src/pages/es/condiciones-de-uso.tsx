@@ -24,8 +24,8 @@ const TermsPage: FC = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
     'Condiciones de uso',
-    t.common.termsIubendaPageUrlWeb,
-    t.common.termsIubendaApiUrlWeb
+    t.common.termsIubendaPageUrlApp,
+    t.common.termsIubendaApiUrlApp
   )
   return (
     <DefaultLayout {...props}>
