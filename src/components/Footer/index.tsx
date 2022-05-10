@@ -54,6 +54,11 @@ const Footer: FC = () => {
                     {t.common.privacy}
                   </Link>
                 </li>
+                <li>
+                  <Link href={`/${currentLocale}/${t.common.termsSlug}`}>
+                    {t.common.terms}
+                  </Link>
+                </li>
 
                 <li>
                   <Link href="https://www.instagram.com/dersu_uz/">

@@ -24,8 +24,8 @@ const PrivacyPage: FC = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
     'Privacy Policy',
-    t.common.privacyIubendaPageUrlApp,
-    t.common.privacyIubendaApiUrlApp
+    t.common.privacyIubendaPageUrlWeb,
+    t.common.privacyIubendaApiUrlWeb
   )
   return (
     <DefaultLayout {...props}>

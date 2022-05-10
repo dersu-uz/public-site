@@ -13,19 +13,19 @@ import MarkdownContent from '@/components/MarkdownContent'
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      locale: 'en',
-      title: 'Privacy Policy',
-      description: 'Privacy Policy of Dersu.uz',
+      locale: 'es',
+      title: 'Condiciones de uso',
+      description: 'Condiciones de uso de Dersu.uz',
     },
   }
 }
 
-const PrivacyPage: FC = props => {
+const TermsPage: FC = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
-    'Privacy Policy',
-    t.common.privacyIubendaPageUrlApp,
-    t.common.privacyIubendaApiUrlApp
+    'Condiciones de uso',
+    t.common.termsIubendaPageUrlWeb,
+    t.common.termsIubendaApiUrlWeb
   )
   return (
     <DefaultLayout {...props}>
@@ -36,4 +36,4 @@ const PrivacyPage: FC = props => {
   )
 }
 
-export default PrivacyPage
+export default TermsPage
