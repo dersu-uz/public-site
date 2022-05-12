@@ -1,10 +1,9 @@
 import { FC, useContext } from 'react'
 import { GetStaticProps } from 'next'
-import Link from 'next/link'
-
-import { generateRSSFeed } from '@/utils/generateRSSFeed'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
+
+import useIubendaContent from '@/hooks/useIubendaContent'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 
@@ -12,31 +11,29 @@ import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = async () => {
-  generateRSSFeed('en')
   return {
     props: {
-      locale: 'en',
-      title: 'Blog',
-      description: '',
+      locale: 'fr',
+      title: 'Privacy Policy',
+      description: 'Privacy Policy of Dersu.uz',
     },
   }
 }
 
-const BlogPage: FC = props => {
+const PrivacyPage: FC = props => {
   const { t } = useContext(TranslationsContext)
+  const { content } = useIubendaContent(
+    'Privacy Policy',
+    t.common.privacyIubendaPageUrlApp,
+    t.common.privacyIubendaApiUrlApp
+  )
   return (
     <DefaultLayout {...props}>
       <MainContent>
-        <MarkdownContent>
-          {t.blog.workingOn}{' '}
-          <Link href="/es/blog">
-            <a>{t.blog.spanishVersion}</a>
-          </Link>{' '}
-          {t.blog.available}
-        </MarkdownContent>
+        <MarkdownContent dangerouslySetInnerHTML={{ __html: content }} />
       </MainContent>
     </DefaultLayout>
   )
 }
 
-export default BlogPage
+export default PrivacyPage

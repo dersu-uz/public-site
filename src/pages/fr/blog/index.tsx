@@ -12,10 +12,10 @@ import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
 
 export const getStaticProps: GetStaticProps = async () => {
-  generateRSSFeed('en')
+  generateRSSFeed('fr')
   return {
     props: {
-      locale: 'en',
+      locale: 'fr',
       title: 'Blog',
       description: '',
     },

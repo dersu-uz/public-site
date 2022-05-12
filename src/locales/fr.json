@@ -1,0 +1,80 @@
+{
+  "localeMetadata": {
+    "name": "Français"
+  },
+  "common": {
+    "slide": "Glisser",
+    "articles": "Histoires",
+    "checkOutAll": "Voir tout",
+    "cookieBanner1": "Ce site utilise des cookies. Consultez les doncitions dans notre.",
+    "cookieBanner2": "politique de confidentialite",
+    "workWithDersu": "Travail",
+    "workWithDersuSlug": "work-with-dersu",
+    "privacy": "Confidentialite",
+    "privacyIubendaPageUrlWeb": "https://www.iubenda.com/privacy-policy/38026954",
+    "privacyIubendaApiUrlWeb": "https://www.iubenda.com/api/privacy-policy/38026954/no-markup",
+    "privacyIubendaPageUrlApp": "https://www.iubenda.com/privacy-policy/82963742",
+    "privacyIubendaApiUrlApp": "https://www.iubenda.com/api/privacy-policy/82963742/no-markup",
+    "privacySlug": "privacy-web",
+    "terms": "Confidentialite du web",
+    "termsIubendaPageUrlWeb": "https://www.iubenda.com/terms-and-conditions/38026954",
+    "termsIubendaApiUrlWeb": "https://www.iubenda.com/api/terms-and-conditions/38026954/no-markup",
+    "termsIubendaPageUrlApp": "https://www.iubenda.com/terms-and-conditions/82963742",
+    "termsIubendaApiUrlApp": "https://www.iubenda.com/api/terms-and-conditions/82963742/no-markup",
+    "termsSlug": "terms-and-conditions-web",
+    "allRightsReserved": "Tous droits réservés",
+    "downloadAppApple": "Télécharger pour iOS",
+    "downloadAppGoogle": "Télécharger pour Android",
+    "downloadTheApp": "Télécharger l’application"
+  },
+  "mailchimpForm": {
+    "emailPlaceholder": "Inscrivez votre courriel...",
+    "occupationLabel": "Êtes-vous un professionnel?",
+    "occupationOptionNotPro": "No, je ne suis pas un professionnel",
+    "occupationOptionMountainGuide": "Je suis guide de montaigne",
+    "occupationOptionMedia": "Je travaille dans un média de communication",
+    "subscribeMe": "Je m’inscris",
+    "acceptThe": "J’accepte le ",
+    "privacyPolicy": "politique de confidentialite"
+  },
+  "moduleSignup": {
+    "signupForBeta": "Si vous souhaitez vous inscrire à la phase de test, inscrivez-vous ici et nous vous tiendrons au courant.",
+    "signupForNewsletter": "Inscrivez-vouz à la newsletter et découvrez tout."
+  },
+  "moduleHomeHero": {
+    "tagLine": "Dersu connecte les gens avec les montaignes.",
+    "signupForBeta": "Inscrivez-vouz a la beta et essayez la première version de Dersu.",
+    "signupForNewsletter": "Inscrivez-vous à la newsletter et découvrez tout.",
+    "downloadApp": "Téléchargez lápplication et organisez vos itinéraires de manière plus sûre."
+  },
+  "moduleHomeIntro": {
+    "tagLine": "Profitez de la montagne en tout sécurité et à votre rythme"
+  },
+  "moduleHomeMountaineerProfile": {
+    "title": "Profil d’alpiniste",
+    "subtitle": "Connaître son niveau est la première étape pour faire les bonnes randonnées",
+    "text": "Vous pourrez définir votre niveau physique et technique et le degré d'exposition avec lequel vous êtes à l'aise sur les départs. De cette façon, vous saurez si l'itinéraire est approprié pour vous et le groupe avec lequel vous partez. Et oui, nous les évaluons aussi en fonction du vertige!"
+  },
+  "moduleHomeRoutePlanning": {
+    "title": "Planification de l’itinéraire",
+    "subtitle": "On veut que les itinéraires se passent bien",
+    "text1": "Connaître le niveau de l'itinéraire, les points difficiles et le matériel nécessaire.",
+    "text2": "Vérifiez la météo dans la région et comment elle sera sur l'itinéraire.",
+    "text3": "Créez un groupe et vérifiez si l'itinéraire est adapté à votre niveau."
+  },
+  "moduleHomeRouteAlerts": {
+    "title": "Avertissements sur la randonnee",
+    "subtitle": "Aide sur le terrain",
+    "text": "Recevez des avertissements lorsque vous approchez des points critiques de l'itinéraire et consultez les directives qui vous aideront à prendre des décisions lors de la randonnée."
+  },
+  "moduleHomeLearn": {
+    "title": "Découvrir la montagne",
+    "subtitle": "Gagnez en autonomie et en sécurité, à votre rythme",
+    "text": "Articles, vidéos, itinéraires de formation... Dans Dersu, vous trouverez beaucoup de choses qui vous aideront à connâitre la montagne et à gagner en autonomie. Si tu veux"
+  },
+  "blog": {
+    "workingOn": "We are working on the french version of our blog. There is the",
+    "spanishVersion": "spanish version",
+    "available": "available."
+  }
+}
