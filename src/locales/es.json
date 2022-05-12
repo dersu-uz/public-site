@@ -71,5 +71,10 @@
     "title": "Aprende de montaña",
     "subtitle": "Ve ganando autonomía y seguridad, a tu ritmo",
     "text": "Artículos, vídeos, itinerarios formativos... En Dersu encontrarás un montón de cosas que te ayudarán a aprender de montaña y ser más independiente. Si quieres."
+  },
+  "blog": {
+    "workingOn": "Estamos trabajando en la verión en Español de nuestro blog. Aqui está la ",
+    "spanishVersion": "versión en español",
+    "available": "disponible."
   }
 }
