@@ -17,9 +17,9 @@ Así que, tal y como dijimos, con este iniciamos una serie de artículos de aná
 Esta salida se produjo el 28 de noviembre de 2021 en el Valle del Aragón (Huesca, España).
 Se habían dado fuertes nevadas y salimos justo después. Este día en concreto presentaba condiciones bastante adversas, como se puede ver en el meteograma y el Boletín de Peligro de Aludes.
 
-![img](/images/posts/analisis-de-una-salida/picture-01.jpg)*Pie de foto: Nuestra ventana temporal teórica, donde no había precipitaciones y la visibilidad mejoraba ligeramente. (Fuente:* [*Meteoblue*](https://www.meteoblue.com)*)*
+![img](/images/posts/es/analisis-de-una-salida/picture-01.jpg)*Pie de foto: Nuestra ventana temporal teórica, donde no había precipitaciones y la visibilidad mejoraba ligeramente. (Fuente:* [*Meteoblue*](https://www.meteoblue.com)*)*
 
-![img](/images/posts/analisis-de-una-salida/picture-02.png)*Pie de foto: El riesgo de aludes era muy alto.(Fuente:* [*AEMET*](http://www.aemet.es/es/eltiempo/prediccion/montana/boletin_peligro_aludes)*)*
+![img](/images/posts/es/analisis-de-una-salida/picture-02.png)*Pie de foto: El riesgo de aludes era muy alto.(Fuente:* [*AEMET*](http://www.aemet.es/es/eltiempo/prediccion/montana/boletin_peligro_aludes)*)*
 
 **Obviamente, el riesgo de cualquier salida en zona nevada era muy alto**
 
@@ -85,7 +85,7 @@ Comenzamos la ascensión por Rinconada, donde ya vimos que la acumulación de ni
 - El segundo, la canal que cae sobre el paso estaba cubierta y esta es zona de máximo riesgo por aludes históricos, con lo cual **no podíamos evaluar el riesgo** que estaba sobre nosotros.
 
 Con todo el dolor de nuestro corazón, pero con la seguridad de que era la mejor decisión para nuestros objetivos (¡importante tenerlos siempre presentes!) decidimos dar marcha atrás.
-![img](/images/posts/analisis-de-una-salida/picture-03.jpg)
+![img](/images/posts/es/analisis-de-una-salida/picture-03.jpg)
 *Pie de foto: Fernando subiendo hacia el paso de Tortiellas. Se puede apreciar cómo la visibilidad se va reduciendo, y la acumulación de nieve es mayor de lo esperado. Justo en la zona izquierda de la foto desemboca el Corredor Javichu, famoso en todo el valle por caerse a menudo, el conocimiento previo del terreno nos ayudó aquí a evitar riesgos mayores*.
 
 Al llegar a la base de la estación, vimos que la zona del estadium estaba medianamente despejada, habían petardeado para quitar nieve en zonas altas y parecía todo bastante pisado. Así que decidimos intentar llegar a la cumbre del Tobazo para aprovechar el día.
@@ -100,7 +100,7 @@ Así que, tan pronto como pudimos, decidimos bajar y dar el día por concluido.
 
 **"Estrenar la temporada y coger sensaciones en nieve, sin mayores pretensiones"**.
 
-Y eso hicimos exactamente, volviendo contentos para casa. Lo que puede parecer una historia de renuncias es en realidad una serie de decisiones acordes a las circunstancias en las que estábamos.![img](/images/posts/analisis-de-una-salida/picture-04.jpg)*Pie de foto: [Esta fue finalmente nuestra excursión](https://strava.app.link/DOnkRiW3Olb). 6km y 500m durante un par de horas largas. Suficientes para cumplir nuestros objetivos del día.*
+Y eso hicimos exactamente, volviendo contentos para casa. Lo que puede parecer una historia de renuncias es en realidad una serie de decisiones acordes a las circunstancias en las que estábamos.![img](/images/posts/es/analisis-de-una-salida/picture-04.jpg)*Pie de foto: [Esta fue finalmente nuestra excursión](https://strava.app.link/DOnkRiW3Olb). 6km y 500m durante un par de horas largas. Suficientes para cumplir nuestros objetivos del día.*
 
 Este ha sido un día muy complicado a la hora de planificar y tomar decisiones; pero con conocimientos, experiencia y la cabeza fría ha sido posible disfrutar de la nieve.
 
@@ -115,4 +115,4 @@ Nuestra intención con esta serie de artículos es analizar y comentar experienc
 Muchísimo cuidado con la carretera. De hecho, este día, podría ser tan difícil llegar a la zona de los itinerarios como los itinerarios mismos. Aquí podéis ver uno de los muchísimos coches que nos encontramos tirados durante el recorrido.
 
 Esta fue una de las razones por las que decidimos bajarnos, pese a que aún había algo de tiempo dentro de nuestra hipotética ventana.
-![img](/images/posts/analisis-de-una-salida/picture-05.jpg)
+![img](/images/posts/es/analisis-de-una-salida/picture-05.jpg)

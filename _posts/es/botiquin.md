@@ -27,7 +27,7 @@ Por ejemplo, no necesitaré llevar lo mismo si la actividad es en un sitio remot
 
 Dicho esto, podemos establecer un **botiquín básico** que sirva como **guía** sobre el material común para la mayoría de actividades en montaña y para todos los perfiles de montañista. Basándonos en este, se podrán hacer modificaciones según los factores comentados previamente.
 
-![](/images/posts/botiquin/BOTIQUIN-tabla.jpg)
+![](/images/posts/es/botiquin/BOTIQUIN-tabla.jpg)
 
 Un botiquín completo debe incluir material para curas, material para inmovilización, para prevenir hipotermia y algún medicamento para el dolor.
 
@@ -50,7 +50,7 @@ A continuación te damos más detalles del material que necesitas y algunas reco
 - 1 paq puntos de aproximación (sustituible por esparadrapo): Son puntos de sutura de papel adhesivos, para unir los bordes de las heridas (similar a “coser” una herida). Se pueden hacer con esparadrapo cortado en tiras finas, por lo que serían prescindibles, aunque son más rápidas de usar ya hechas.
 - 1 hoja de bisturí: para cortar material, es lo que menos ocupa. Se puede sustituir por una tijera pequeña, o prescindir de ellos si llevamos navaja.
 
-![](/images/posts/botiquin/BOTIQUIN-curas.jpg)
+![](/images/posts/es/botiquin/BOTIQUIN-curas.jpg)
 
 ### **Inmovilización para golpes, torceduras o fracturas**
 
@@ -59,7 +59,7 @@ A continuación te damos más detalles del material que necesitas y algunas reco
 
 - Férula moldeable (tipo SamSplint): muy versátil para inmovilizar fracturas o luxaciones, pesa y ocupa muy poco.
 
-![](/images/posts/botiquin/BOTIQUIN-torceduras.jpg)
+![](/images/posts/es/botiquin/BOTIQUIN-torceduras.jpg)
 
 ### **Medicamentos para el dolor, inflamaciones o fiebre**
 
@@ -76,7 +76,7 @@ Además, si la persona toma medicación habitual, deberá llevarla consigo (por 
 
 - (R) Manta térmica / punto caliente: para prevenir hipotermia (los accidentados se quedan fríos muy rápido y esto puede empeorar las lesiones, o incluso llegar a la muerte por hipotermia). Refleja la radiación infrarroja del cuerpo (calor) y ayuda a aislar del frío exterior. Dependiendo de la actividad, sería recomendable completar con material para confeccionar un punto caliente más completo (placas de calor químico, vela y mechero)
 
-![](/images/posts/botiquin/BOTIQUIN-puntocaliente.jpg)
+![](/images/posts/es/botiquin/BOTIQUIN-puntocaliente.jpg)
 
 
 ### ¿Cómo llevar el botiquín a la montaña?
@@ -85,4 +85,4 @@ Todo el contenido comentado en el botiquín (a excepción de la férula moldeabl
 
 Existen en el mercado botiquines de montaña de material impermeable. Otra opción es meter el botiquín completo en una bolsa de plástico con cierre zip o que todo el material que vaya dentro del botiquín vaya en bolsas pequeñas de plástico con este tipo de cierre. También serviría llevar el material de primeros auxilios en un recipiente tipo “tupper”, bote estanco o una caja metálica con buen cierre, aunque estos recipientes suelen ocupar más volumen.
 
-![](/images/posts/botiquin/BOTIQUIN-despiece.jpg)
+![](/images/posts/es/botiquin/BOTIQUIN-despiece.jpg)

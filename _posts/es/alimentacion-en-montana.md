@@ -40,7 +40,7 @@ Tengo que reconocer que las barritas blandas son una de mis opciones favoritas: 
 
 Os dejo un par de recetas que me encantan y tienen muchas variaciones posibles.
 
-![Imagen barrita](/images/posts/alimentacion-en-montana/01.jpg)
+![Imagen barrita](/images/posts/es/alimentacion-en-montana/01.jpg)
 
 ### Si eres de salado: Pasteles de polenta
 
@@ -82,4 +82,4 @@ Corta las porciones con un cuchillo un poco húmedo.
 
 Guárdalas en un bote hermético dentro de la nevera o congélalas hasta que vayas a usarlas.
 
-![Comiendo barritas](/images/posts/alimentacion-en-montana/02.jpg)
+![Comiendo barritas](/images/posts/es/alimentacion-en-montana/02.jpg)

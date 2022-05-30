@@ -20,7 +20,7 @@ Sabemos que lleváis un tiempo esperando noticias acerca del estado de la App y 
 
 - Abriremos la App al público alrededor de Semana Santa.
 
-![Equipo Dersu](/images/posts/plan-de-lanzamiento/team.jpg)
+![Equipo Dersu](/images/posts/es/plan-de-lanzamiento/team.jpg)
 
 
 ### Con algo más de detalle
