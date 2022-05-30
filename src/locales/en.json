@@ -39,12 +39,10 @@
     "privacyPolicy": "privacy policy"
   },
   "moduleSignup": {
-    "signupForBeta": "You can sign up for the testing phase here, and we will keep you updated.",
     "signupForNewsletter": "Join our newsletter and stay up to date."
   },
   "moduleHomeHero": {
     "tagLine": "Dersu connect people with mountains.",
-    "signupForBeta": "Sign up for the beta and try the first version of Dersu.",
     "signupForNewsletter": "Join our newsletter and stay up to date.",
     "downloadApp": "Download the App and plan your routes safely."
   },

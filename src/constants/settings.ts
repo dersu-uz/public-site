@@ -24,11 +24,3 @@ export const PLAUSIBLE_DOMAIN = 'dersu.uz'
 // Mailchimp setup
 export const MAILCHIMP_SUBSCRIBE_URL =
   'https://Dersu.us5.list-manage.com/subscribe/post?u=09aa1f83820733bb99bd70605&id=85e6d8b7c4'
-
-// Feature flag - App download
-export const ENABLE_APP_DOWNLOAD =
-  process.env.NEXT_PUBLIC_ENABLE_APP_DOWNLOAD === 'true'
-
-// Feature flag - Beta signup
-export const ENABLE_BETA_SIGNUP =
-  process.env.NEXT_PUBLIC_ENABLE_BETA_SIGNUP === 'true'

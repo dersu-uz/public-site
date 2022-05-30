@@ -14,7 +14,6 @@ import HomeRoutePlanning from '@/modules/HomeRoutePlanning'
 import HomeRouteAlerts from '@/modules/HomeRouteAlerts'
 import HomeLearn from '@/modules/HomeLearn'
 import RelatedPosts from '@/modules/RelatedPosts'
-import { ENABLE_APP_DOWNLOAD } from '@/constants/settings'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('es', 2)
@@ -38,10 +37,9 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
     <HomeIntro />
     <HomeMountaineerProfile />
     <HomeRoutePlanning />
-    {ENABLE_APP_DOWNLOAD && <Signup />}
+    <Signup />
     <HomeRouteAlerts />
     <HomeLearn />
-    {!ENABLE_APP_DOWNLOAD && <Signup />}
     <RelatedPosts posts={latestPosts} />
     <Footer />
   </>
