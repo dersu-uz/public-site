@@ -25,6 +25,7 @@ const PageHero: FC<Props> = ({
               className="flex-grow object-cover"
               src={imageUrl}
               alt={title}
+              loading="lazy"
             />
           </picture>
         )}

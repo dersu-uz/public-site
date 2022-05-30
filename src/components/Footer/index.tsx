@@ -131,6 +131,7 @@ const Footer: FC = () => {
                       src={`/images/common/icon-app-store-dark.${currentLocale}.svg`}
                       alt={t.common.downloadAppApple}
                       className="h-12 md:h-10 rounded-[10px] md:rounded-[6px]"
+                      loading="lazy"
                     />
                   </a>
                   <a
@@ -144,6 +145,7 @@ const Footer: FC = () => {
                       src={`/images/common/icon-play-store-dark.${currentLocale}.svg`}
                       alt={t.common.downloadAppGoogle}
                       className="h-12 md:h-10 rounded-[10px] md:rounded-[6px]"
+                      loading="lazy"
                     />
                   </a>
                 </p>

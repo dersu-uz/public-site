@@ -47,6 +47,7 @@ const HomeHero: FC = () => {
                     src={`/images/common/icon-app-store-light.${currentLocale}.svg`}
                     alt={t.common.downloadAppApple}
                     className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
+                    loading="lazy"
                   />
                 </a>
                 <a
@@ -60,6 +61,7 @@ const HomeHero: FC = () => {
                     src={`/images/common/icon-play-store-light.${currentLocale}.svg`}
                     alt={t.common.downloadAppGoogle}
                     className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
+                    loading="lazy"
                   />
                 </a>
               </div>
