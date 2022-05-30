@@ -128,7 +128,7 @@ const Footer: FC = () => {
                     className="block"
                   >
                     <img
-                      src="/images/common/icon-app-store-es-dark.svg"
+                      src={`/images/common/icon-app-store-dark.${currentLocale}.svg`}
                       alt={t.common.downloadAppApple}
                       className="h-12 md:h-10 rounded-[10px] md:rounded-[6px]"
                     />
@@ -141,7 +141,7 @@ const Footer: FC = () => {
                     className="block"
                   >
                     <img
-                      src="/images/common/icon-play-store-es-dark.svg"
+                      src={`/images/common/icon-play-store-dark.${currentLocale}.svg`}
                       alt={t.common.downloadAppGoogle}
                       className="h-12 md:h-10 rounded-[10px] md:rounded-[6px]"
                     />

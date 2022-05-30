@@ -7,7 +7,7 @@ import Picture from '@/components/Picture'
 import styles from './styles.module.css'
 
 const HomeHero: FC = () => {
-  const { t } = useContext(TranslationsContext)
+  const { t, currentLocale } = useContext(TranslationsContext)
   return (
     <div className={styles.module_bg_desktop}>
       <div className="relative">
@@ -44,7 +44,7 @@ const HomeHero: FC = () => {
                   className="block"
                 >
                   <img
-                    src="/images/common/icon-app-store-es-light.svg"
+                    src={`/images/common/icon-app-store-light.${currentLocale}.svg`}
                     alt={t.common.downloadAppApple}
                     className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
                   />
@@ -57,7 +57,7 @@ const HomeHero: FC = () => {
                   className="block"
                 >
                   <img
-                    src="/images/common/icon-play-store-es-light.svg"
+                    src={`/images/common/icon-play-store-light.${currentLocale}.svg`}
                     alt={t.common.downloadAppGoogle}
                     className="h-16 md:h-10 rounded-[10px] md:rounded-[6px]"
                   />
