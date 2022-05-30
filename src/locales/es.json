@@ -25,7 +25,8 @@
     "allRightsReserved": "Todos los derechos reservados",
     "downloadAppApple": "Descargar para iOS",
     "downloadAppGoogle": "Descargar para Android",
-    "downloadTheApp": "Descarga la app"
+    "downloadTheApp": "Descarga la app",
+    "appLocalesDisclaimer": ""
   },
   "mailchimpForm": {
     "emailPlaceholder": "Introduce tu email...",

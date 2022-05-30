@@ -13,7 +13,7 @@ const HomeHero: FC = () => {
       <div className="relative">
         <div className="absolute inset-0 bg-dersu-brown/30"></div>
         <div className="relative min-h-[900px] md:flex mx-auto max-w-screen-2xl">
-          <div className="md:px-8 md:w-6/12 md:pl-16 md:pr-0">
+          <div className="md:px-8 md:w-6/12 md:pl-16 md:pr-0 flex flex-col justify-between md:pb-[180px]">
             <div className={styles.module_bg_mobile}>
               <div className="md:hidden absolute inset-0 bg-dersu-brown/30"></div>
               <h1 className="relative text-dersu-white text-dersu-lg text-center pt-[208px] md:pt-[110px] mb-16 max-w-[300px] md:max-w-none mx-auto md:text-dersu-3xl lg:text-dersu-4xl md:text-left">
@@ -63,6 +63,12 @@ const HomeHero: FC = () => {
                   />
                 </a>
               </div>
+
+              {currentLocale !== 'es' && (
+                <p className="text-white font-sans font-semibold mt-4 text-center md:text-left max-w-md mx-auto md:mx-0">
+                  {t.common.appLocalesDisclaimer}
+                </p>
+              )}
             </div>
           </div>
           <div className="md:w-6/12 flex justify-center md:pt-[90px]">

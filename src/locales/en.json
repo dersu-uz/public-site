@@ -25,8 +25,8 @@
     "allRightsReserved": "All rights reserved",
     "downloadAppApple": "Download for iOS",
     "downloadAppGoogle": "Download for Android",
-    "downloadTheApp": "Download the app"
-
+    "downloadTheApp": "Download the app",
+    "appLocalesDisclaimer": "Unfortunately the App is available only in Spanish right now. More languages are on the way."
   },
   "mailchimpForm": {
     "emailPlaceholder": "Enter your email...",
