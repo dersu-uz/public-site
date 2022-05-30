@@ -23,7 +23,7 @@ const HomeHero: FC = () => {
                 <Picture
                   alt="Dersu app"
                   path="/images/modules/home-hero"
-                  imageName="hero-phone"
+                  imageName={`hero-phone-${currentLocale}`}
                   imageType="png"
                   densities={[1, 2]}
                   webpEnabled
@@ -70,7 +70,7 @@ const HomeHero: FC = () => {
               <Picture
                 alt="Dersu app"
                 path="/images/modules/home-hero"
-                imageName="hero-phone"
+                imageName={`hero-phone-${currentLocale}`}
                 imageType="png"
                 densities={[1, 2]}
                 webpEnabled

@@ -6,7 +6,7 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 import Picture from '@/components/Picture'
 
 const HomeRouteAlerts: FC = () => {
-  const { t } = useContext(TranslationsContext)
+  const { t, currentLocale } = useContext(TranslationsContext)
   return (
     <div className="bg-dersu-dark-green text-dersu-blue">
       <div className="md:flex md:max-h-[710px] overflow-hidden">
@@ -38,7 +38,7 @@ const HomeRouteAlerts: FC = () => {
               <Picture
                 alt="Dersu App"
                 path="/images/modules/home-route-alerts"
-                imageName="picture-02"
+                imageName={`picture-02-${currentLocale}`}
                 imageType="png"
                 densities={[1, 2]}
                 imgClassName="w-[180px] sm:w-[300px] md:w-[240px]"

@@ -6,7 +6,7 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 import Picture from '@/components/Picture'
 
 const HomeMountaineerProfile: FC = () => {
-  const { t } = useContext(TranslationsContext)
+  const { t, currentLocale } = useContext(TranslationsContext)
   return (
     <div className="md:flex md:min-h-[785px]">
       <div className="md:w-[55%] bg-dersu-brown text-dersu-blue py-16 px-8 md:px-10 text-center">
@@ -28,7 +28,7 @@ const HomeMountaineerProfile: FC = () => {
             <Picture
               alt="Dersu App"
               path="/images/modules/home-mountaineer-profile"
-              imageName="picture-mobile"
+              imageName={`picture-mobile-${currentLocale}`}
               imageType="png"
               densities={[1, 2]}
               webpEnabled
@@ -38,7 +38,7 @@ const HomeMountaineerProfile: FC = () => {
             <Picture
               alt="Dersu App"
               path="/images/modules/home-mountaineer-profile"
-              imageName="picture-desktop"
+              imageName={`picture-desktop-${currentLocale}`}
               imageType="png"
               densities={[1, 2]}
               webpEnabled
