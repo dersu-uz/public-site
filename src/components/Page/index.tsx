@@ -16,6 +16,8 @@ import {
 import CookieBanner from '@/components/CookieBanner'
 import DeveloperHelpers from '@/components/DeveloperHelpers'
 
+import locales from '@/locales'
+
 type Props = {
   title: string
   description: string
@@ -31,7 +33,6 @@ const Page: FC<Props> = ({
   children,
 }) => {
   const { acceptCookies } = useContext(PrivacyContext)
-
   return (
     <PlausibleProvider
       domain={PLAUSIBLE_DOMAIN}
@@ -82,6 +83,10 @@ const Page: FC<Props> = ({
             },
           ],
         }}
+        languageAlternates={Object.keys(locales).map(l => ({
+          hrefLang: l,
+          href: `/${l}/`,
+        }))}
       />
       {children}
       <CookieBanner />
