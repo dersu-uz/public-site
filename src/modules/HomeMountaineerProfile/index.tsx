@@ -22,30 +22,30 @@ const HomeMountaineerProfile: FC = () => {
           </p>
         </Fade>
       </div>
-      <div className="md:w-[45%] bg-dersu-cream flex justify-center pb-12 md:p-8">
+      <div className="md:w-[45%] bg-dersu-cream flex justify-center pb-12 md:p-8 ">
         <Fade right>
-          <p className="flex w-full h-full items-center">
+          <div className="relative w-full -mt-28 md:mt-0 px-8 md:p-0">
             <Picture
               alt="Dersu App"
               path="/images/modules/home-mountaineer-profile"
-              imageName={`picture-mobile-${currentLocale}`}
+              imageName={`picture-01-${currentLocale}`}
               imageType="png"
               densities={[1, 2]}
               webpEnabled
-              pictureClassName="w-full lg:hidden -mt-28 md:mt-0 px-8 md:w-auto md:p-0"
+              pictureClassName="w-full lg:absolute lg:left-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:z-10 lg:w-2/3"
               imgClassName="w-full"
             />
             <Picture
               alt="Dersu App"
               path="/images/modules/home-mountaineer-profile"
-              imageName={`picture-desktop-${currentLocale}`}
+              imageName={`picture-02-${currentLocale}`}
               imageType="png"
               densities={[1, 2]}
               webpEnabled
-              pictureClassName="place-self-center hidden lg:block"
+              pictureClassName="w-full lg:absolute lg:right-0 lg:top-1/2 lg:transform lg:-translate-y-1/2 lg:z-0 lg:w-1/2"
               imgClassName="w-full"
             />
-          </p>
+          </div>
         </Fade>
       </div>
     </div>
