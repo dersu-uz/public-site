@@ -75,6 +75,7 @@ const Picture: FC<PictureProps> = ({
         src={`${path}/${imageName}.${imageType}`}
         alt={alt}
         className={imgClassName}
+        loading="lazy"
       />
     </picture>
   )

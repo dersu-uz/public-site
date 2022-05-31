@@ -20,7 +20,7 @@ Parece mentira que después de tanto tiempo no supiera que es imposible decir al
 Yo me había mudado con mi familia a Pirineos hacía cerca de tres años. Me gustaba la montaña pero era todo dudas: ¿Por dónde empezar? ¿Qué había que aprender? ¿Esta ruta será segura? ¿Qué material necesito? ¿Estaré al nivel?
 Ese fue el inicio de tres largos años donde había probado de todo: Apps de montaña, blogs, libros, cursos. De todo. Hasta que caí en uno de sus grupos. Uno como el que estaba subiendo aquel dia...
 
-**![El lugar donde surgen las cosas importantes](/images/posts/en-compania/01.jpg)**
+**![El lugar donde surgen las cosas importantes](/images/posts/es/en-compania/01.jpg)**
 
 (El lugar donde surgen las cosas importantes)
 
@@ -54,7 +54,7 @@ Queda mucho camino por delante, pero no podríamos estar en mejor compañía.
 
 <div class="flex flex-col items-center">
 <video controls preload="auto" style="width:100%; max-width:480px">
-  <source src="/images/posts/en-compania/video-01.mp4" type="video/mp4">
+  <source src="/images/posts/es/en-compania/video-01.mp4" type="video/mp4">
 </video>
 <span>👆🏻 Dale al play</span>
 <span>(Fer, espíritu de sacrificio)</span>

@@ -31,7 +31,7 @@ Existen diferentes tipos de raquetas, aquí te contamos algunos consejos genéra
 - Talón liberado: durante la mayoría del trayecto iremos con el talón liberado, es más cómodo y natural.
 - Talón bloqueado: solo bloquearemos el talón para algunos descensos o para superar obstáculos.
 
-![Foto grupo con raquetas de nieve](/images/posts/raquetas-de-nieve/01.jpg)
+![Foto grupo con raquetas de nieve](/images/posts/es/raquetas-de-nieve/01.jpg)
 
 ### Raquetas y bastones siempre juntos
 

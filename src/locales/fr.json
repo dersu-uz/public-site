@@ -25,7 +25,8 @@
     "allRightsReserved": "Tous droits réservés",
     "downloadAppApple": "Télécharger pour iOS",
     "downloadAppGoogle": "Télécharger pour Android",
-    "downloadTheApp": "Télécharger l’application"
+    "downloadTheApp": "Télécharger l’application",
+    "appLocalesDisclaimer": "Actuellement, l'application n'est disponible qu'en espagnol. D'autres langues sont en route"
   },
   "mailchimpForm": {
     "emailPlaceholder": "Inscrivez votre courriel...",
@@ -38,12 +39,10 @@
     "privacyPolicy": "politique de confidentialite"
   },
   "moduleSignup": {
-    "signupForBeta": "Si vous souhaitez vous inscrire à la phase de test, inscrivez-vous ici et nous vous tiendrons au courant.",
     "signupForNewsletter": "Inscrivez-vouz à la newsletter et découvrez tout."
   },
   "moduleHomeHero": {
     "tagLine": "Dersu connecte les gens avec les montaignes.",
-    "signupForBeta": "Inscrivez-vouz a la beta et essayez la première version de Dersu.",
     "signupForNewsletter": "Inscrivez-vous à la newsletter et découvrez tout.",
     "downloadApp": "Téléchargez lápplication et organisez vos itinéraires de manière plus sûre."
   },

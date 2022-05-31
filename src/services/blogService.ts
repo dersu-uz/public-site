@@ -32,7 +32,7 @@ async function _preparePost(
   data,
   content
 ): Promise<BlogPost> {
-  const imagesPath = `/images/posts/${slug}`
+  const imagesPath = `/images/posts/${locale}/${slug}`
   const dateFormatted = format(parseISO(data.date), 'PP', { locale: es })
   const htmlContent = await markdownToHtml(content)
 

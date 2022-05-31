@@ -6,7 +6,7 @@ author: 'Borja Delgado'
 date: '2022-01-31'
 ---
 
-![](/images/posts/cumplemes/01.gif)
+![](/images/posts/es/cumplemes/01.gif)
 
 Pues así, como quien no quiere la cosa, cumplimos nuestro primer mes de vida con la App. Y ha sido un mes inolvidable de mucho trabajo, muchos nervios y muchas alegrías.
 
@@ -43,7 +43,7 @@ Nuestras principales conclusiones son:
 
 Estas primeras pruebas nos dan una ganas tremendas de seguir avanzando. Tenemos mil ideas por implementar, miles de rutas por añadir, millones de detalles por mejorar… Pero así son siempre las cosas con los lanzamientos, suponemos.
 
-![](/images/posts/cumplemes/02.jpg)
+![](/images/posts/es/cumplemes/02.jpg)
 
 ### Bien ¿y ahora qué?
 

@@ -6,7 +6,7 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 import Picture from '@/components/Picture'
 
 const HomeRoutePlanning: FC = () => {
-  const { t } = useContext(TranslationsContext)
+  const { t, currentLocale } = useContext(TranslationsContext)
   return (
     <div className="bg-dersu-pink text-dersu-brown pt-16 pb-8 px-4 text-center md:pt-16 md:pb-24 md:px-8">
       <Fade bottom>
@@ -24,7 +24,7 @@ const HomeRoutePlanning: FC = () => {
               <Picture
                 alt="Dersu app"
                 path="/images/modules/home-route-planning"
-                imageName="picture-01"
+                imageName={`picture-01-${currentLocale}`}
                 imageType="png"
                 densities={[1, 2]}
                 webpEnabled
@@ -41,7 +41,7 @@ const HomeRoutePlanning: FC = () => {
               <Picture
                 alt="Dersu app"
                 path="/images/modules/home-route-planning"
-                imageName="picture-02"
+                imageName={`picture-02-${currentLocale}`}
                 imageType="png"
                 densities={[1, 2]}
                 webpEnabled
@@ -58,7 +58,7 @@ const HomeRoutePlanning: FC = () => {
               <Picture
                 alt="Dersu app"
                 path="/images/modules/home-route-planning"
-                imageName="picture-03"
+                imageName={`picture-03-${currentLocale}`}
                 imageType="png"
                 densities={[1, 2]}
                 webpEnabled

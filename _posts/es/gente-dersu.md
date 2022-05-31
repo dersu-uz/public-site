@@ -74,4 +74,4 @@ Gracias por revisar que todo sea correcto y seguro desde vuestra especializació
 
 **Gracias por hacer que Dersu sea mejor.**
 
-![profesionales y dersu - mirando app](/images/posts/gente-dersu/picture-01.jpg)
+![profesionales y dersu - mirando app](/images/posts/es/gente-dersu/picture-01.jpg)

@@ -2,6 +2,7 @@ import { FC, useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 
 import TranslationsContext from '@/contexts/TranslationsContext'
+import Picture from '@/components/Picture'
 
 const HomeLearn: FC = () => {
   const { t } = useContext(TranslationsContext)
@@ -18,9 +19,13 @@ const HomeLearn: FC = () => {
           {t.moduleHomeLearn.text}
         </p>
         <div className="flex justify-center">
-          <img className='opacity-90'
-            src="/images/modules/home-learn/picture-01.jpg"
+          <Picture
             alt={t.moduleHomeLearn.title}
+            path="/images/modules/home-learn"
+            imageName="picture-01"
+            imageType="jpg"
+            pictureClassName="opacity-90"
+            webpEnabled
           />
         </div>
       </Fade>

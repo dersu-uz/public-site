@@ -69,7 +69,7 @@ const Header: FC<Props> = ({
           <div className="flex py-10 items-center">
             <h1 className="flex-grow">
               <Link href={`/${currentLocale}`}>
-                <a>
+                <a title="Dersu">
                   <DersuLogoWithText
                     className={`h-5 -mt-1.5 md:h-6 transition-colors ${
                       negativeColor ? 'text-dersu-white' : 'text-dersu-black'

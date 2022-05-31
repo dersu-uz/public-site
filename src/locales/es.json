@@ -25,7 +25,8 @@
     "allRightsReserved": "Todos los derechos reservados",
     "downloadAppApple": "Descargar para iOS",
     "downloadAppGoogle": "Descargar para Android",
-    "downloadTheApp": "Descarga la app"
+    "downloadTheApp": "Descarga la app",
+    "appLocalesDisclaimer": ""
   },
   "mailchimpForm": {
     "emailPlaceholder": "Introduce tu email...",
@@ -38,12 +39,10 @@
     "privacyPolicy": "politica de privacidad"
   },
   "moduleSignup": {
-    "signupForBeta": "Si quieres apuntarte a la fase de pruebas, apúntate aquí y te mantendremos al tanto.",
     "signupForNewsletter": "Apúntate a la newsletter y entérate de todo."
   },
   "moduleHomeHero": {
     "tagLine": "Dersu conecta a las personas con las montañas.",
-    "signupForBeta": "Apúntate a la beta y prueba la primera versión de Dersu.",
     "signupForNewsletter": "Apúntate a la newsletter y entérate de todo.",
     "downloadApp": "Descarga la App y organiza tus rutas de una manera más segura."
   },

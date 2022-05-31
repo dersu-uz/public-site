@@ -14,7 +14,7 @@ El método 3x3 es un sistema de toma de decisiones para prevención de accidente
 
 Este sistema se representa con una matriz de 3 filtros que representan diferentes momentos (líneas horizontales) y 3 factores que hay que tener en cuenta en cada momento (líneas verticales) en cuyos cruces nos planteamos unas preguntas concretas que nos ayudarán a decidir si continuamos con el plan o buscamos alternativas más seguras.
 
-![](https://dersu.uz/images/posts/el-metodo-3x3/picture-01.png)
+![](https://dersu.uz/images/posts/es/el-metodo-3x3/picture-01.png)
 
 Esta matriz nace de la idea de tomar decisiones en terrenos con nieve y condiciones adversas, para actividades como el esquí de montaña o el alpinismo. La idea es brillante, porque ofrece la posibilidad de reaccionar en poco tiempo y bajo unos parámetros constantes. A partir de esta base, se ha ido completando con otras herramientas o patrones que ayudan a comprobar determinados indicios de peligro como el método de reducción de riesgo potencial de avalanchas.
 
