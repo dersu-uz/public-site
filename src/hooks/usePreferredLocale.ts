@@ -13,7 +13,7 @@ type UsePreferredLocale = {
 }
 
 const usePreferredLocale = (): UsePreferredLocale => {
-  const { push, pathname, locale } = useRouter()
+  const { push, asPath, locale } = useRouter()
   const { acceptCookies, useHonestCookie } = useContext(PrivacyContext)
   const [preferredLocale, updatePreferredLocale] =
     useHonestCookie('NEXT_LOCALE')
@@ -26,9 +26,9 @@ const usePreferredLocale = (): UsePreferredLocale => {
         })
       }
 
-      push(pathname, undefined, { locale: newLocale })
+      push(asPath, undefined, { locale: newLocale })
     },
-    [acceptCookies, preferredLocale, updatePreferredLocale, push, pathname]
+    [acceptCookies, preferredLocale, updatePreferredLocale, push, asPath]
   )
 
   return {

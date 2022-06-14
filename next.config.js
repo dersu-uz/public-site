@@ -48,6 +48,8 @@ const nextConfig = {
       })
     });
 
+    console.log(rewrites)
+
     return rewrites;
   },
 }

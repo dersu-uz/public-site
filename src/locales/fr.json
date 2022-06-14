@@ -74,6 +74,24 @@
   "blog": {
     "workingOn": "We are working on the french version of our blog. There is the",
     "spanishVersion": "spanish version",
-    "available": "available."
+    "available": "available.",
+    "description": "Votre assistant sur la montagne"
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "description": "Política de privacidad de Dersu.uz"
+  },
+  "tAndC": {
+    "title": "Condiciones de uso",
+    "description": "Condiciones de uso de Dersu.uz"
+  },
+  "work": {
+    "title": "Trabaja con Dersu",
+    "descriptionBackend": "Buscamos una persona con foco de trabajo en backend.",
+    "descriptionMobile": "Buscamos una persona que nos ayude con nuestra applicación Flutter.",
+    "description": "Buscamos personas que nos ayuden con la primera implementación del servicio"
+  },
+  "routeFallback": {
+    "message": "Le contenu que vous souhaitez regarder pour l’instant n’est disponible que dans l’application mobile. Téléchargez-le, c’est gratuit"
   }
 }
