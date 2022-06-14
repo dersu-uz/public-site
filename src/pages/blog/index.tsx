@@ -1,5 +1,5 @@
-import { FC, useContext } from 'react'
 import { GetStaticProps } from 'next'
+import { FC, useContext } from 'react'
 
 import { getLatestPosts } from '@/services/blogService'
 
@@ -7,14 +7,14 @@ import { generateRSSFeed } from '@/utils/generateRSSFeed'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Wrapper from '@/components/Wrapper'
-import PostsList from '@/components/PostsList'
-import { LocaleShortCode } from '@/services/i18nService'
 import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
-import DefaultLayout from '@/layouts/DefaultLayout'
-import Link from 'next/link'
+import PostsList from '@/components/PostsList'
+import Wrapper from '@/components/Wrapper'
 import TranslationsContext from '@/contexts/TranslationsContext'
+import DefaultLayout from '@/layouts/DefaultLayout'
+import { LocaleShortCode } from '@/services/i18nService'
+import Link from 'next/link'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const latestPosts = await getLatestPosts(locale as LocaleShortCode, 100)
@@ -44,7 +44,7 @@ const BlogPage: FC<Props> = props => {
         <MainContent>
           <MarkdownContent>
             {t.blog.workingOn}{' '}
-            <Link href="/es/blog">
+            <Link href="/blog" locale="es">
               <a>{t.blog.spanishVersion}</a>
             </Link>{' '}
             {t.blog.available}

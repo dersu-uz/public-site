@@ -20,7 +20,7 @@ const Footer: FC = () => {
             <div className="py-10 md:order-2 flex flex-wrap gap-10 md:mr-10">
               <ul className="w-2/3 md:w-auto font-bold columns-2 gap-9 md:gap-11 leading-9">
                 <li>
-                  <Link href={`/${currentLocale}/blog`}>Blog</Link>
+                  <Link href="/blog">Blog</Link>
                 </li>
                 <li>
                   <Link href="http://eepurl.com/hI63hX">
@@ -40,7 +40,7 @@ const Footer: FC = () => {
                 {(currentLocale === 'en' || currentLocale === 'es') && (
                   <li>
                     <Link
-                      href={`/${currentLocale}/${t.common.workWithDersuSlug}`}
+                      href={`/${t.common.workWithDersuSlug}`}
                     >
                       {t.common.workWithDersu}
                     </Link>
@@ -48,12 +48,12 @@ const Footer: FC = () => {
                 )}
 
                 <li>
-                  <Link href={`/${currentLocale}/${t.common.privacySlug}`}>
+                  <Link href={`/${t.common.privacySlug}`}>
                     {t.common.privacy}
                   </Link>
                 </li>
                 <li>
-                  <Link href={`/${currentLocale}/${t.common.termsSlug}`}>
+                  <Link href={`/${t.common.termsSlug}`}>
                     {t.common.terms}
                   </Link>
                 </li>
