@@ -12,7 +12,7 @@ const PageHero: FC<Props> = ({
   title,
   imageUrl,
   webpImageUrl,
-  colorScheme,
+  colorScheme = COLOR_SCHEMES.BROWN_INVERTED,
 }) => {
   return (
     <div className={`relative ${colorSchemeClasses[colorScheme].background}`}>
@@ -50,10 +50,6 @@ const PageHero: FC<Props> = ({
       </div>
     </div>
   )
-}
-
-PageHero.defaultProps = {
-  colorScheme: COLOR_SCHEMES.BROWN_INVERTED,
 }
 
 export default PageHero

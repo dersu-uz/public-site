@@ -68,7 +68,7 @@ const Header: FC<Props> = ({
         <Wrapper>
           <div className="flex py-10 items-center">
             <h1 className="flex-grow">
-              <Link href={`/${currentLocale}`}>
+              <Link href="/">
                 <a title="Dersu">
                   <DersuLogoWithText
                     className={`h-5 -mt-1.5 md:h-6 transition-colors ${
@@ -81,7 +81,7 @@ const Header: FC<Props> = ({
             <nav>
               <ul className="flex font-sans">
                 <li className={navItemClasses}>
-                  <Link href={`/${currentLocale}/blog`}>
+                  <Link href="/blog">
                     <a>Blog</a>
                   </Link>
                 </li>

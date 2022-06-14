@@ -4,6 +4,7 @@
   "private": true,
   "description": "This is the source code for Dersu's public site at [dersu.uz](https://dersu.uz).",
   "dependencies": {
+    "@fluent/langneg": "^0.6.2",
     "axios": "^0.24.0",
     "classnames": "^2.3.1",
     "date-fns": "^2.27.0",

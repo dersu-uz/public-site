@@ -8,7 +8,7 @@ import Picture from '@/components/Picture'
 const HomeRouteAlerts: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)
   return (
-    <div className="bg-dersu-dark-green text-dersu-blue">
+    <div className="lg:bg-dersu-dark-green text-dersu-blue">
       <div className="md:flex md:max-h-[710px] overflow-hidden">
         <div className="px-4 pt-16 md:w-6/12 md:py-16 md:pl-10 md:pr-20">
           <Fade right>

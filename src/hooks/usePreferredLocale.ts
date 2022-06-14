@@ -1,10 +1,7 @@
-import { useContext } from 'react'
 import { useRouter } from 'next/router'
+import { useCallback, useContext } from 'react'
 
-import {
-  COOKIES_PREFERRED_LOCALE_DAYS,
-  COOKIES_PREFERRED_LOCALE_NAME,
-} from '@/constants/settings'
+import { COOKIES_PREFERRED_LOCALE_DAYS } from '@/constants/settings'
 
 import PrivacyContext from '@/contexts/PrivacyContext'
 
@@ -12,29 +9,32 @@ import { LocaleShortCode } from '@/services/i18nService'
 
 type UsePreferredLocale = {
   changeLocale: (newLocale: LocaleShortCode) => void
+  locale: LocaleShortCode
 }
 
 const usePreferredLocale = (): UsePreferredLocale => {
-  const router = useRouter()
-
+  const { push, pathname, locale } = useRouter()
   const { acceptCookies, useHonestCookie } = useContext(PrivacyContext)
+  const [preferredLocale, updatePreferredLocale] =
+    useHonestCookie('NEXT_LOCALE')
 
-  const [preferredLocale, updatePreferredLocale] = useHonestCookie(
-    COOKIES_PREFERRED_LOCALE_NAME
+  const changeLocale = useCallback(
+    (newLocale: LocaleShortCode) => {
+      if (acceptCookies && preferredLocale !== newLocale) {
+        updatePreferredLocale(newLocale, {
+          expires: COOKIES_PREFERRED_LOCALE_DAYS,
+        })
+      }
+
+      push(pathname, undefined, { locale: newLocale })
+    },
+    [acceptCookies, preferredLocale, updatePreferredLocale, push, pathname]
   )
-
-  const changeLocale = (newLocale: LocaleShortCode) => {
-    if (acceptCookies && preferredLocale !== newLocale) {
-      updatePreferredLocale(newLocale, {
-        expires: COOKIES_PREFERRED_LOCALE_DAYS,
-      })
-    }
-    router.push(`/${newLocale}`)
-  }
 
   return {
     changeLocale,
-  } as UsePreferredLocale
+    locale: locale as LocaleShortCode,
+  }
 }
 
 export default usePreferredLocale

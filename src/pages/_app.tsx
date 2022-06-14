@@ -1,7 +1,7 @@
 import '@/styles/main.css'
 
 import { FC } from 'react'
-import type { AppProps /*, AppContext */ } from 'next/app'
+import type { AppProps } from 'next/app'
 
 import TranslationsContext, {
   TranslationContextValue,
@@ -17,12 +17,13 @@ import {
 import Page from '@/components/Page'
 import { PrivacyContextProvider } from '@/contexts/PrivacyContext'
 
-const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
-  const { title, description, canonicalUrl, locale } = pageProps
-  const translations = getTranslations(locale)
+const NextApp: FC<AppProps> = props => {
+  const { Component, pageProps, router } = props
+  const { title, description, canonicalUrl } = pageProps
+  const translations = getTranslations(router.locale as LocaleShortCode)
   const contextValue: TranslationContextValue = {
     t: translations,
-    currentLocale: locale as LocaleShortCode,
+    currentLocale: router.locale as LocaleShortCode,
     availableLocales,
   }
 
@@ -34,7 +35,6 @@ const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
             title={title}
             description={description}
             canonicalUrl={canonicalUrl}
-            locale={locale}
           >
             <Component {...pageProps} />
           </Page>

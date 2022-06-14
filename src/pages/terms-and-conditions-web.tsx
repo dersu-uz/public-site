@@ -9,25 +9,26 @@ import DefaultLayout from '@/layouts/DefaultLayout'
 
 import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
+import { getTranslations, LocaleShortCode } from '@/services/i18nService'
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async ctx => {
+  const t = getTranslations(ctx.locale as LocaleShortCode)
+
   return {
     props: {
-      locale: 'es',
-      title: 'Política de privacidad',
-      description: 'Política de privacidad de Dersu.uz',
+      title: t.tAndC.title,
+      description: t.tAndC.description,
     },
   }
 }
 
-const PrivacyPage: FC = props => {
+const TermsPage: FC = props => {
   const { t } = useContext(TranslationsContext)
   const { content } = useIubendaContent(
-    'Política de privacidad',
-    t.common.privacyIubendaPageUrlApp,
-    t.common.privacyIubendaApiUrlApp
+    'Terms and Conditions',
+    t.common.termsIubendaPageUrlWeb,
+    t.common.termsIubendaApiUrlWeb
   )
-
   return (
     <DefaultLayout {...props}>
       <MainContent>
@@ -37,4 +38,4 @@ const PrivacyPage: FC = props => {
   )
 }
 
-export default PrivacyPage
+export default TermsPage
