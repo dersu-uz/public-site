@@ -2,13 +2,16 @@ import Header from '@/components/Header'
 import Picture from '@/components/Picture'
 import StoreButtons from '@/components/StoreButtones'
 import TranslationsContext from '@/contexts/TranslationsContext'
+import { getTranslations, LocaleShortCode } from '@/services/i18nService'
 import { GetServerSideProps } from 'next'
 import { useContext } from 'react'
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  const t = getTranslations(ctx.locale as LocaleShortCode)
+
   return {
     props: {
-      title: 'Route',
+      title: t.routeFallback.title,
     },
   }
 }

@@ -92,6 +92,11 @@
     "description": "Buscamos personas que nos ayuden con la primera implementación del servicio"
   },
   "routeFallback": {
+    "title": "Route",
+    "message": "Le contenu que vous souhaitez regarder pour l’instant n’est disponible que dans l’application mobile. Téléchargez-le, c’est gratuit"
+  },
+  "articleFallback": {
+    "title": "Article",
     "message": "Le contenu que vous souhaitez regarder pour l’instant n’est disponible que dans l’application mobile. Téléchargez-le, c’est gratuit"
   }
 }

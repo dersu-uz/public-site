@@ -92,6 +92,11 @@
     "description": "We are looking for people that can help us with the first implementation of the service and tools"
   },
   "routeFallback": {
-    "message": "The content you want to watch for now is only available in the mobile app. Download it, it's free."
+    "title": "Route",
+    "message": "The content you want to view for now is only available in the mobile app. Download it, it's free."
+  },
+  "articleFallback": {
+    "title": "Article",
+    "message": "The content you want to view for now is only available in the mobile app. Download it, it's free."
   }
 }

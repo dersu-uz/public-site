@@ -92,6 +92,11 @@
     "description": "Buscamos personas que nos ayuden con la primera implementación del servicio"
   },
   "routeFallback": {
+    "title": "Ruta",
+    "message": "El contenido que quieres ver por ahora solo está disponible en la app móvil. Descárgatela, es gratis."
+  },
+  "articleFallback": {
+    "title": "Articulo",
     "message": "El contenido que quieres ver por ahora solo está disponible en la app móvil. Descárgatela, es gratis."
   }
 }
