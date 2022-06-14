@@ -15,7 +15,7 @@ export const middleware = (req: NextRequest) => {
   if (req.page.name) {
     const redirects = pathMap.get(req.page.name)
 
-    const redirectPath = redirects[locale]
+    const redirectPath = redirects?.[locale]
 
     if (!redirectPath || redirectPath === req.page.name) {
       return NextResponse.next()
