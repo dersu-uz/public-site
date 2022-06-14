@@ -2,7 +2,7 @@ FROM node:lts-slim AS builder
 WORKDIR /usr/src/app/dersu-site
 COPY package.json package.json
 COPY package-lock.json package-lock.json
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY .env .env
 COPY .eslintignore .eslintignore
 COPY .eslintrc.js .eslintrc.js
