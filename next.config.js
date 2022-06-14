@@ -1,7 +1,5 @@
 const paths = require('./src/constants/paths')
 
-const defaultLocale = 'es';
-
 /**
  * @type {import('next').NextConfig}
  **/
@@ -31,8 +29,8 @@ const nextConfig = {
     return config
   },
   i18n: {
-    locales: ['es', 'en', 'fr'],
-    defaultLocale,
+    locales: ['default', 'es', 'en', 'fr'],
+    defaultLocale: 'default',
     localeDetection: true,
   },
   trailingSlash: false,
@@ -47,8 +45,6 @@ const nextConfig = {
         })
       })
     });
-
-    console.log(rewrites)
 
     return rewrites;
   },
