@@ -40,5 +40,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error'],
     '@typescript-eslint/no-shadow': 'error',
     '@next/next/no-img-element': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off'
   },
 }
