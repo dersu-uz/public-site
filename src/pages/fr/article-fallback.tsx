@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import Picture from '@/components/Picture'
-import StoreButtons from '@/components/StoreButtones'
+import StoreButtons from '@/components/StoreButtons'
 import TranslationsContext from '@/contexts/TranslationsContext'
 import { getTranslations } from '@/services/i18nService'
 import { GetStaticProps } from 'next'
