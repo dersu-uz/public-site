@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Arimo', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
         serif: ['Recoleta', ...defaultTheme.fontFamily.serif],
       },
       fontSize: {
