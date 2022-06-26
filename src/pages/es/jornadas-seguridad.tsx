@@ -1,10 +1,14 @@
 import { GetStaticProps } from 'next'
+import Link from 'next/link'
 
 import Button from '@/components/Button'
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import Picture from '@/components/Picture'
 import Wrapper from '@/components/Wrapper'
+
+import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
+import { useContext } from 'react'
+import TranslationsContext from '@/contexts/TranslationsContext'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -15,13 +19,32 @@ export const getStaticProps: GetStaticProps = async () => {
   }
 }
 
-const ArticleFallback = () => {
+const JornadasSeguridadPage = () => {
+  const { currentLocale } = useContext(TranslationsContext)
+
   return (
     <div className="bg-white">
-      <Header negativeColor needsCompensation={false} forceSticky={true} />
-
       {/* Hero */}
       <div className="relative">
+        <header className="text-dersu-white">
+          <div className="absolute top-0 left-0 w-full z-10">
+            <Wrapper>
+              <div className="flex py-10 items-center">
+                <h1 className="flex-grow">
+                  <Link href={`/${currentLocale}`}>
+                    <a title="Dersu">
+                      <DersuLogoWithText className="h-5 -mt-1.5 md:h-6 transition-colors " />
+                    </a>
+                  </Link>
+                </h1>
+                <p className="font-sans text-sm font-semibold">
+                  #CAMINAYAPRENDE
+                </p>
+              </div>
+            </Wrapper>
+          </div>
+        </header>
+
         <div className="absolute top-0 left-0 w-full h-full">
           {/* <Picture
             imageName="hero"
@@ -44,7 +67,7 @@ const ArticleFallback = () => {
           </video>
         </div>
         <div className="relative px-10 py-[240px] md:py-[278px] text-center text-white">
-          <p className="font-sans text-2xl">Julio/Agosto 2022</p>
+          <p className="font-sans text-2xl mb-4">Julio/Agosto 2022</p>
           <h1 className="text-dersu-lg mb-12  md:text-dersu-4xl text-center max-w-5xl mx-auto">
             Jornadas gratuitas para la seguridad en montaña
           </h1>
@@ -52,11 +75,11 @@ const ArticleFallback = () => {
         </div>
       </div>
 
-      <Wrapper limitedWidth>
+      <Wrapper>
         <div className="relative">
           <div>
             <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-              <div className="lg:w-1/2">
+              <div className="lg:w-[48%]">
                 <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                   sesiones en ruta
                 </h2>
@@ -73,7 +96,7 @@ const ArticleFallback = () => {
             </div>
 
             <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-              <div className="lg:w-1/2">
+              <div className="lg:w-[48%]">
                 <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                   con profesionales de montaña
                 </h2>
@@ -98,7 +121,7 @@ const ArticleFallback = () => {
             </div>
 
             <div className="py-11 md:py-20">
-              <div className="lg:w-1/2">
+              <div className="lg:w-[48%]">
                 <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                   Estamos formando grupos
                 </h2>
@@ -112,7 +135,7 @@ const ArticleFallback = () => {
           </div>
 
           {/* Fotos */}
-          <div className="relative h-[2000px] lg:absolute lg:w-[45%] lg:max-w-2xl lg:right-0 lg:top-0 lg:h-full">
+          <div className="relative h-[2000px] lg:absolute lg:w-[45%] lg:right-0 lg:top-0 lg:h-full">
             <p className="absolute right-0 top-20">
               <Picture
                 path="/images/pages/jornadas-seguridad"
@@ -173,10 +196,12 @@ const ArticleFallback = () => {
 
       {/* Organiza y colabora */}
       <div className="bg-[#F7F7F7] pt-24 pb-1">
-        <Wrapper limitedWidth>
-          <h2 className="text-dersu-4xl mb-10">Quién organiza</h2>
+        <Wrapper>
+          <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
+            Quién organiza
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
             <div className="bg-white rounded-lg flex flex-col px-8 hover:bg-dersu-blue">
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
@@ -231,39 +256,45 @@ const ArticleFallback = () => {
           </div>
         </Wrapper>
 
-        <Wrapper limitedWidth>
-          <h2 className="text-dersu-4xl mb-10">Quién colabora</h2>
+        <Wrapper>
+          <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
+            Quién colabora
+          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
-            <div className="bg-white rounded-lg flex flex-col px-8 border-transparent border-2 hover:border-dersu-blue">
-              <p className="h-[180px] flex justify-center items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+              <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
                   alt="Logo Montaña Segura"
+                  className="p-8"
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col px-8 border-transparent border-2 hover:border-dersu-blue">
-              <p className="h-[180px] flex justify-center items-center">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+              <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"
                   alt="Logo Federación Andaluza de Montañismo"
+                  className="p-8"
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col px-8 border-transparent border-2 hover:border-dersu-blue">
-              <p className="h-[180px] flex justify-center items-center">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+              <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
                   alt="Logo Montaña Segura"
+                  className="p-8"
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col px-8 border-transparent border-2 hover:border-dersu-blue">
-              <p className="h-[180px] flex justify-center items-center">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+              <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"
                   alt="Logo Federación Andaluza de Montañismo"
+                  className="p-8"
                 />
               </p>
             </div>
@@ -276,4 +307,4 @@ const ArticleFallback = () => {
   )
 }
 
-export default ArticleFallback
+export default JornadasSeguridadPage
