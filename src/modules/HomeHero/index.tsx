@@ -31,7 +31,7 @@ const HomeHero: FC = () => {
               </div>
             </div>
             <div className="bg-dersu-brown md:bg-transparent py-16 px-4 md:p-0 mt-[-150px] transform scale-100 md:mt-0">
-              <p className="text-dersu-lg text-center text-dersu-blue mb-8 md:mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
+              <p className="text-dersu-lg text-center text-dersu-white mb-8 md:mb-4 max-w-xs md:max-w-sm mx-auto md:mx-0 md:text-dersu-md md:text-left">
                 {t.moduleHomeHero.downloadApp}
               </p>
 

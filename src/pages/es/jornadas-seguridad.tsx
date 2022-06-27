@@ -23,7 +23,7 @@ const JornadasSeguridadPage = () => {
   const { currentLocale } = useContext(TranslationsContext)
 
   return (
-    <div className="bg-white">
+    <div>
       {/* Hero */}
       <div className="relative">
         <header className="text-dersu-white">
@@ -75,128 +75,137 @@ const JornadasSeguridadPage = () => {
         </div>
       </div>
 
-      <Wrapper>
-        <div className="relative">
-          <div>
-            <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-              <div className="lg:w-[48%]">
-                <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                  sesiones en ruta
-                </h2>
-                <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                  Aprende de seguridad y primeros auxilios en montaña con
-                  especialistas.
-                </p>
-                <p className="font-sans text-dersu-xs md:text-dersu-md">
-                  Trataremos los básicos (y algún extra) en una ruta fácil, con
-                  paradas para hablar y practicar técnicas que puedas aplicar en
-                  tu siguiente salida.
-                </p>
+      <div className="bg-white">
+        <Wrapper limitedWidth>
+          <div className="relative">
+            <div>
+              <div className="py-11 md:py-20 border-dersu-black/20 border-b">
+                <div className="lg:w-1/2">
+                  <div className="lg:max-w-[620px]">
+                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                      sesiones en ruta
+                    </h2>
+                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                      Aprende de seguridad y primeros auxilios en montaña con
+                      especialistas.
+                    </p>
+                    <p className="font-sans text-dersu-xs md:text-dersu-md">
+                      Trataremos los básicos (y algún extra) en una ruta fácil,
+                      con paradas para hablar y practicar técnicas que puedas
+                      aplicar en tu siguiente salida.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="py-11 md:py-20 border-dersu-black/20 border-b">
+                <div className="lg:w-1/2">
+                  <div className="lg:max-w-[550px]">
+                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                      con profesionales de montaña
+                    </h2>
+                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                      De qué hablaremos:
+                    </p>
+                    <ul className="font-sans text-dersu-xs md:text-dersu-md">
+                      <li className="mb-4 list-disc ml-8">
+                        Cómo planificar tus rutas y hacerlas de forma más
+                        segura.
+                      </li>
+                      <li className="mb-4 list-disc ml-8">
+                        Prepárate y reacciona ante emergencias: desde la
+                        preparación del botiquín a cómo actuar si tienes que
+                        llamar a los equipos de rescate.
+                      </li>
+                      <li className="mb-4 list-disc ml-8">
+                        Orientación y tecnología como compañeras de ruta:
+                        seguimiento y comunicaciones en entornos naturales.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="py-11 md:py-20">
+                <div className="lg:w-1/2">
+                  <div className="lg:max-w-[600px]">
+                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                      Estamos formando grupos
+                    </h2>
+                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                      Barajamos varias fechas y lugares donde hacerlo ¿cuál te
+                      vendría mejor?
+                    </p>
+                    <Button type="button">Cuéntanos y apúntate</Button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-              <div className="lg:w-[48%]">
-                <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                  con profesionales de montaña
-                </h2>
-                <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                  De qué hablaremos:
-                </p>
-                <ul className="font-sans text-dersu-xs md:text-dersu-md">
-                  <li className="mb-4 list-disc ml-8">
-                    Cómo planificar tus rutas y hacerlas de forma más segura.
-                  </li>
-                  <li className="mb-4 list-disc ml-8">
-                    Prepárate y reacciona ante emergencias: desde la preparación
-                    del botiquín a cómo actuar si tienes que llamar a los
-                    equipos de rescate.
-                  </li>
-                  <li className="mb-4 list-disc ml-8">
-                    Orientación y tecnología como compañeras de ruta:
-                    seguimiento y comunicaciones en entornos naturales.
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="py-11 md:py-20">
-              <div className="lg:w-[48%]">
-                <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                  Estamos formando grupos
-                </h2>
-                <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                  Barajamos varias fechas y lugares donde hacerlo ¿cuál te
-                  vendría mejor?
-                </p>
-                <Button type="button">Cuéntanos y apúntate</Button>
-              </div>
+            {/* Fotos */}
+            <div className="relative h-[2000px] lg:absolute lg:w-[45%] lg:right-0 lg:top-0 lg:h-full">
+              <p className="absolute right-0 top-20">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-01"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
+              <p className="absolute left-0 top-[34%]">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-02"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
+              <p className="absolute right-0 top-[39%]">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-03"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
+              <p className="absolute left-[30%] top-[56%]">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-04"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
+              <p className="absolute right-0 bottom-[19%]">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-05"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
+              <p className="absolute left-0 bottom-20">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="jpg"
+                  imageName="photo-06"
+                  alt="Image"
+                  imgClassName="w-full rounded-xl"
+                />
+              </p>
             </div>
           </div>
-
-          {/* Fotos */}
-          <div className="relative h-[2000px] lg:absolute lg:w-[45%] lg:right-0 lg:top-0 lg:h-full">
-            <p className="absolute right-0 top-20">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-01"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-            <p className="absolute left-0 top-[34%]">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-02"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-            <p className="absolute right-0 top-[39%]">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-03"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-            <p className="absolute left-[30%] top-[56%]">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-04"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-            <p className="absolute right-0 bottom-[19%]">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-05"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-            <p className="absolute left-0 bottom-20">
-              <Picture
-                path="/images/pages/jornadas-seguridad"
-                imageType="jpg"
-                imageName="photo-06"
-                alt="Image"
-                imgClassName="w-full rounded-xl"
-              />
-            </p>
-          </div>
-        </div>
-      </Wrapper>
+        </Wrapper>
+      </div>
 
       {/* Organiza y colabora */}
-      <div className="bg-[#F7F7F7] pt-24 pb-1">
-        <Wrapper>
+      <div className="pt-24 pb-1">
+        <Wrapper limitedWidth>
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién organiza
           </h2>
@@ -256,13 +265,13 @@ const JornadasSeguridadPage = () => {
           </div>
         </Wrapper>
 
-        <Wrapper>
+        <Wrapper limitedWidth>
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién colabora
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
@@ -271,7 +280,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"
@@ -280,7 +289,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
@@ -289,7 +298,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-2 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"

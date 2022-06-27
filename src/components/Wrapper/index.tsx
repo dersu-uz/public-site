@@ -12,7 +12,7 @@ const Wrapper: FC<Props> = ({ className, limitedWidth = false, children }) => {
     <div
       className={classNames(
         'px-4 md:px-10',
-        limitedWidth ? 'max-w-7xl mx-auto' : null,
+        limitedWidth ? 'max-w-[1440px] mx-auto' : null,
         className
       )}
     >
