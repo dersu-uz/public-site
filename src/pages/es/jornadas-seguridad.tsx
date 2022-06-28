@@ -23,7 +23,7 @@ const JornadasSeguridadPage = () => {
   const { currentLocale } = useContext(TranslationsContext)
 
   return (
-    <div>
+    <>
       {/* Hero */}
       <div className="relative">
         <header className="text-dersu-white">
@@ -45,6 +45,7 @@ const JornadasSeguridadPage = () => {
           </div>
         </header>
 
+        {/* Hero background */}
         <div className="absolute top-0 left-0 w-full h-full">
           {/* <Picture
             imageName="hero"
@@ -66,6 +67,8 @@ const JornadasSeguridadPage = () => {
             />
           </video>
         </div>
+
+        {/* Hero content */}
         <div className="relative px-10 py-[240px] md:py-[278px] text-center text-white">
           <p className="font-sans text-2xl mb-4">Julio/Agosto 2022</p>
           <h1 className="text-dersu-lg mb-12  md:text-dersu-4xl text-center max-w-5xl mx-auto">
@@ -77,74 +80,26 @@ const JornadasSeguridadPage = () => {
 
       <div className="bg-white">
         <Wrapper limitedWidth>
-          <div className="relative">
-            <div>
-              <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-                <div className="lg:w-1/2">
-                  <div className="lg:max-w-[620px]">
-                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                      sesiones en ruta
-                    </h2>
-                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                      Aprende de seguridad y primeros auxilios en montaña con
-                      especialistas.
-                    </p>
-                    <p className="font-sans text-dersu-xs md:text-dersu-md">
-                      Trataremos los básicos (y algún extra) en una ruta fácil,
-                      con paradas para hablar y practicar técnicas que puedas
-                      aplicar en tu siguiente salida.
-                    </p>
-                  </div>
+          {/* Sesiones en ruta */}
+          <div className="border-dersu-black/20 border-b">
+            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
+              <div className="lg:w-6/12">
+                <div className="lg:max-w-[620px]">
+                  <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                    Sesiones en ruta
+                  </h2>
+                  <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                    Aprende de seguridad y primeros auxilios en montaña con
+                    especialistas.
+                  </p>
+                  <p className="font-sans text-dersu-xs md:text-dersu-md">
+                    Trataremos los básicos (y algún extra) en una ruta fácil,
+                    con paradas para hablar y practicar técnicas que puedas
+                    aplicar en tu siguiente salida.
+                  </p>
                 </div>
               </div>
-
-              <div className="py-11 md:py-20 border-dersu-black/20 border-b">
-                <div className="lg:w-1/2">
-                  <div className="lg:max-w-[550px]">
-                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                      con profesionales de montaña
-                    </h2>
-                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                      De qué hablaremos:
-                    </p>
-                    <ul className="font-sans text-dersu-xs md:text-dersu-md">
-                      <li className="mb-4 list-disc ml-8">
-                        Cómo planificar tus rutas y hacerlas de forma más
-                        segura.
-                      </li>
-                      <li className="mb-4 list-disc ml-8">
-                        Prepárate y reacciona ante emergencias: desde la
-                        preparación del botiquín a cómo actuar si tienes que
-                        llamar a los equipos de rescate.
-                      </li>
-                      <li className="mb-4 list-disc ml-8">
-                        Orientación y tecnología como compañeras de ruta:
-                        seguimiento y comunicaciones en entornos naturales.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              <div className="py-11 md:py-20">
-                <div className="lg:w-1/2">
-                  <div className="lg:max-w-[600px]">
-                    <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
-                      Estamos formando grupos
-                    </h2>
-                    <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
-                      Barajamos varias fechas y lugares donde hacerlo ¿cuál te
-                      vendría mejor?
-                    </p>
-                    <Button type="button">Cuéntanos y apúntate</Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Fotos */}
-            <div className="relative h-[2000px] lg:absolute lg:w-[45%] lg:right-0 lg:top-0 lg:h-full">
-              <p className="absolute right-0 top-20">
+              <div className="lg:w-5/12">
                 <Picture
                   path="/images/pages/jornadas-seguridad"
                   imageType="jpg"
@@ -152,52 +107,82 @@ const JornadasSeguridadPage = () => {
                   alt="Image"
                   imgClassName="w-full rounded-xl"
                 />
-              </p>
-              <p className="absolute left-0 top-[34%]">
+              </div>
+            </div>
+          </div>
+
+          {/* Con profesionales */}
+          <div className="border-dersu-black/20 border-b">
+            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
+              <div className="lg:w-6/12">
+                <div className="lg:max-w-[550px]">
+                  <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                    Con profesionales de montaña
+                  </h2>
+                  <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                    De qué hablaremos:
+                  </p>
+                  <ul className="font-sans text-dersu-xs md:text-dersu-md">
+                    <li className="mb-4 list-disc ml-8">
+                      Cómo planificar tus rutas y hacerlas de forma más segura.
+                    </li>
+                    <li className="mb-4 list-disc ml-8">
+                      Prepárate y reacciona ante emergencias: desde la
+                      preparación del botiquín a cómo actuar si tienes que
+                      llamar a los equipos de rescate.
+                    </li>
+                    <li className="mb-4 list-disc ml-8">
+                      Orientación y tecnología como compañeras de ruta:
+                      seguimiento y comunicaciones en entornos naturales.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="lg:w-5/12 2xl:-mr-10">
                 <Picture
                   path="/images/pages/jornadas-seguridad"
-                  imageType="jpg"
-                  imageName="photo-02"
+                  imageType="png"
+                  imageName="collage-01"
+                  webpEnabled
                   alt="Image"
-                  imgClassName="w-full rounded-xl"
+                  imgClassName="w-full lg:-mt-10"
                 />
-              </p>
-              <p className="absolute right-0 top-[39%]">
+              </div>
+            </div>
+          </div>
+
+          {/* Formando grupos */}
+          <div>
+            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
+              <div className="lg:w-1/2">
+                <div className="lg:max-w-[600px]">
+                  <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
+                    Estamos formando grupos
+                  </h2>
+                  <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                    Barajamos varias fechas y lugares donde hacerlo ¿cuál te
+                    vendría mejor?
+                  </p>
+                  <Button type="button">Cuéntanos y apúntate</Button>
+                </div>
+              </div>
+              <div className="lg:w-5/12 2xl:-mr-10">
                 <Picture
                   path="/images/pages/jornadas-seguridad"
-                  imageType="jpg"
-                  imageName="photo-03"
+                  imageType="png"
+                  imageName="collage-02"
+                  webpEnabled
                   alt="Image"
-                  imgClassName="w-full rounded-xl"
+                  imgClassName="hidden lg:block w-full lg:-mt-10"
                 />
-              </p>
-              <p className="absolute left-[30%] top-[56%]">
-                <Picture
-                  path="/images/pages/jornadas-seguridad"
-                  imageType="jpg"
-                  imageName="photo-04"
-                  alt="Image"
-                  imgClassName="w-full rounded-xl"
-                />
-              </p>
-              <p className="absolute right-0 bottom-[19%]">
-                <Picture
-                  path="/images/pages/jornadas-seguridad"
-                  imageType="jpg"
-                  imageName="photo-05"
-                  alt="Image"
-                  imgClassName="w-full rounded-xl"
-                />
-              </p>
-              <p className="absolute left-0 bottom-20">
                 <Picture
                   path="/images/pages/jornadas-seguridad"
                   imageType="jpg"
                   imageName="photo-06"
                   alt="Image"
-                  imgClassName="w-full rounded-xl"
+                  imgClassName="block lg:hidden w-full lg:-mt-10 rounded-xl"
                 />
-              </p>
+              </div>
             </div>
           </div>
         </Wrapper>
@@ -205,6 +190,7 @@ const JornadasSeguridadPage = () => {
 
       {/* Organiza y colabora */}
       <div className="pt-24 pb-1">
+        {/* Organizan */}
         <Wrapper limitedWidth>
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién organiza
@@ -265,6 +251,7 @@ const JornadasSeguridadPage = () => {
           </div>
         </Wrapper>
 
+        {/* Colaboran */}
         <Wrapper limitedWidth>
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién colabora
@@ -312,7 +299,7 @@ const JornadasSeguridadPage = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   )
 }
 
