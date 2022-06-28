@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
@@ -6,9 +7,10 @@ import Footer from '@/components/Footer'
 import Picture from '@/components/Picture'
 import Wrapper from '@/components/Wrapper'
 
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
-import { useContext } from 'react'
 import TranslationsContext from '@/contexts/TranslationsContext'
+
+import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
+import ArrowDown from '../../../public/images/pages/jornadas-seguridad/arrow-down.svg'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -25,7 +27,7 @@ const JornadasSeguridadPage = () => {
   return (
     <>
       {/* Hero */}
-      <div className="relative">
+      <div className="relative h-screen max-h-[900px] md:max-h-[700px] flex justify-center items-center">
         <header className="text-dersu-white">
           <div className="absolute top-0 left-0 w-full z-10">
             <Wrapper>
@@ -45,36 +47,35 @@ const JornadasSeguridadPage = () => {
           </div>
         </header>
 
-        {/* Hero background */}
-        <div className="absolute top-0 left-0 w-full h-full">
-          {/* <Picture
-            imageName="hero"
-            imageType="jpg"
-            path="/images/pages/jornadas-seguridad"
-            alt="Jornadas gratuitas para la seguridad en montaña"
-            imgClassName="w-full h-full object-cover"
-          /> */}
+        {/* Hero background (desktop) */}
+        <div className="absolute inset-0 w-full h-full">
           <video
             autoPlay
             muted
             loop
-            poster="/images/pages/jornadas-seguridad/hero.jpg"
+            preload="none"
+            poster="/images/pages/jornadas-seguridad/hero-poster-desktop.jpg"
             className="w-full h-full object-cover"
           >
             <source
-              src="/images/pages/jornadas-seguridad/hero.mp4"
+              src="/images/pages/jornadas-seguridad/hero-video-desktop.mp4"
               type="video/mp4"
             />
           </video>
         </div>
 
         {/* Hero content */}
-        <div className="relative px-10 py-[240px] md:py-[278px] text-center text-white">
-          <p className="font-sans text-2xl mb-4">Julio/Agosto 2022</p>
+        <div className="relative px-10 text-center text-white">
+          <p className="font-sans text-dersu-xs md:text-2xl mb-4">
+            Julio/Agosto 2022
+          </p>
           <h1 className="text-dersu-lg mb-12  md:text-dersu-4xl text-center max-w-5xl mx-auto">
             Jornadas gratuitas para la seguridad en montaña
           </h1>
           <Button type="button">Apúntate</Button>
+        </div>
+        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+          <ArrowDown />
         </div>
       </div>
 
