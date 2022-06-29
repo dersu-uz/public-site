@@ -53,7 +53,9 @@ const JornadasSeguridadPage = () => {
             autoPlay
             muted
             loop
-            preload="none"
+            playsInline
+            width="100%"
+            height="100%"
             poster="/images/pages/jornadas-seguridad/hero-poster-desktop.jpg"
             className="w-full h-full object-cover"
           >
