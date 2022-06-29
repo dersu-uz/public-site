@@ -57,6 +57,11 @@ module.exports = {
           '100%': { opacity: 1, height: '100%' },
         },
       },
+      screens: {
+        portrait: { raw: '(orientation: portrait)' },
+        landscape: { raw: '(orientation: landscape)' },
+        hoverable: { raw: '(hover: hover) and (pointer: fine)' },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
