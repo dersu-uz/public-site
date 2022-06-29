@@ -1,6 +1,6 @@
 html,
 body {
-  @apply font-serif bg-dersu-white text-dersu-black antialiased;
+  @apply font-serif bg-black text-dersu-black antialiased;
 
   letter-spacing: 0.01em;
   min-height: 100vh;
@@ -10,9 +10,21 @@ body {
 
 /* stylelint-disable-next-line selector-id-pattern */
 #__next {
-  @apply overflow-hidden;
+  @apply bg-dersu-white overflow-hidden;
 
   min-height: 100vh;
   /* stylelint-disable-next-line value-no-vendor-prefix */
   min-height: -webkit-fill-available;
 }
+
+/*
+@supports (padding: max(0px)) {
+  #__next,
+  body,
+  header,
+  footer {
+    padding-left: min(0vmin, env(safe-area-inset-left));
+    padding-right: min(0vmin, env(safe-area-inset-right));
+  }
+}
+*/

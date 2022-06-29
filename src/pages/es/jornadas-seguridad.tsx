@@ -208,8 +208,8 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Dersu, la aplicación movil que conecta a las{' '}
-                <strong>personas</strong> con las <strong>montañas</strong>.
+                Una app de montaña donde encontrar rutas creadas por guías
+                profesionales y poder aprender de montaña
               </p>
             </div>
 
@@ -221,8 +221,8 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Disfrutar de las rutas de <strong>alta montaña</strong> más
-                exigentes nunca había sido tan <strong>fácil</strong>
+                Te ayuda a organizar rutas de senderismo de alto nivel, de forma
+                autónoma o con guías profesionales
               </p>
             </div>
 
@@ -234,8 +234,8 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Leader en dispositivos que te <strong>guían</strong> y realizan
-                un <strong>seguimiento de tu ubicación</strong>
+                Líder mundial en navegación GPS en el sector náutico,
+                automoción, aviación, fitness y actividades al aire libre.
               </p>
             </div>
 
@@ -247,15 +247,15 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                IMMED de las rutas de <strong>alta montaña</strong> más
-                exigentes nunca había sido tan <strong>fácil</strong>
+                Una entidad dedicada a la investigación y formación en medicina
+                de montaña y deportiva.
               </p>
             </div>
           </div>
         </Wrapper>
 
         {/* Colaboran */}
-        <Wrapper limitedWidth>
+        <Wrapper limitedWidth className="hidden">
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién colabora
           </h2>
