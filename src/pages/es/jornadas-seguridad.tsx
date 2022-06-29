@@ -54,6 +54,7 @@ const JornadasSeguridadPage = () => {
             muted
             loop
             playsInline
+            preload="auto"
             width="100%"
             height="100%"
             poster="/images/pages/jornadas-seguridad/hero-poster-desktop.jpg"
@@ -66,6 +67,9 @@ const JornadasSeguridadPage = () => {
           </video>
         </div>
 
+        {/* Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
+
         {/* Hero content */}
         <div className="relative px-10 text-center text-white">
           <p className="font-sans text-dersu-xs md:text-2xl mb-4">
@@ -74,7 +78,13 @@ const JornadasSeguridadPage = () => {
           <h1 className="text-dersu-lg mb-12  md:text-dersu-4xl text-center max-w-5xl mx-auto">
             Jornadas gratuitas para la seguridad en montaña
           </h1>
-          <Button type="button">Apúntate</Button>
+          <a
+            href="https://docs.google.com/forms/d/1OjC3f8jtO8Oo3Lsj-bZu86qSP8H_Igno82UBTm0SKFA/viewform?edit_requested=true"
+            rel="noreferrer noopener"
+            className="font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold py-4 px-16 rounded-md whitespace-nowrap hover:bg-dersu-cream"
+          >
+            Apúntate
+          </a>
         </div>
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
           <ArrowDown />
@@ -107,6 +117,8 @@ const JornadasSeguridadPage = () => {
                   path="/images/pages/jornadas-seguridad"
                   imageType="jpg"
                   imageName="photo-01"
+                  webpEnabled
+                  densities={[1, 2]}
                   alt="Image"
                   imgClassName="w-full rounded-xl"
                 />
@@ -147,6 +159,7 @@ const JornadasSeguridadPage = () => {
                   imageType="png"
                   imageName="collage-01"
                   webpEnabled
+                  densities={[1, 2]}
                   alt="Image"
                   imgClassName="w-full lg:-mt-10"
                 />
@@ -166,7 +179,13 @@ const JornadasSeguridadPage = () => {
                     Barajamos varias fechas y lugares donde hacerlo ¿cuál te
                     vendría mejor?
                   </p>
-                  <Button type="button">Cuéntanos y apúntate</Button>
+                  <a
+                    href="https://docs.google.com/forms/d/1OjC3f8jtO8Oo3Lsj-bZu86qSP8H_Igno82UBTm0SKFA/viewform?edit_requested=true"
+                    rel="noreferrer noopener"
+                    className="font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold py-4 px-16 rounded-md whitespace-nowrap hover:bg-dersu-black hover:text-white"
+                  >
+                    Cuéntanos y apúntate
+                  </a>
                 </div>
               </div>
               <div className="lg:w-5/12 2xl:-mr-10">
@@ -175,6 +194,7 @@ const JornadasSeguridadPage = () => {
                   imageType="png"
                   imageName="collage-02"
                   webpEnabled
+                  densities={[1, 2]}
                   alt="Image"
                   imgClassName="hidden lg:block w-full lg:-mt-10"
                 />
@@ -183,6 +203,8 @@ const JornadasSeguridadPage = () => {
                   imageType="jpg"
                   imageName="photo-06"
                   alt="Image"
+                  webpEnabled
+                  densities={[1, 2]}
                   imgClassName="block lg:hidden w-full lg:-mt-10 rounded-xl"
                 />
               </div>
@@ -200,7 +222,10 @@ const JornadasSeguridadPage = () => {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
-            <div className="bg-white rounded-lg flex flex-col px-8 hover:bg-dersu-blue">
+            <a
+              href="https://dersu.uz/es/"
+              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
+            >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-dersu.svg"
@@ -208,12 +233,18 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Una app de montaña donde encontrar rutas creadas por guías
-                profesionales y poder aprender de montaña
+                Una <strong>app</strong> de montaña donde encontrar rutas
+                creadas por <strong>guías profesionales</strong> y poder{' '}
+                <strong>aprender</strong> de montaña
               </p>
-            </div>
+            </a>
 
-            <div className="bg-white rounded-lg flex flex-col px-8 hover:bg-dersu-blue">
+            <a
+              href="https://www.laaltaruta.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
+            >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-altaruta.svg"
@@ -221,12 +252,18 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Te ayuda a organizar rutas de senderismo de alto nivel, de forma
-                autónoma o con guías profesionales
+                Te ayuda a <strong>organizar rutas</strong> de senderismo de{' '}
+                <strong>alto nivel</strong>, de forma autónoma o con guías
+                profesionales
               </p>
-            </div>
+            </a>
 
-            <div className="bg-white rounded-lg flex flex-col px-8 hover:bg-dersu-blue">
+            <a
+              href="https://www.garmin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
+            >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-garmin.svg"
@@ -234,12 +271,18 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Líder mundial en navegación GPS en el sector náutico,
-                automoción, aviación, fitness y actividades al aire libre.
+                Líder mundial en <strong>navegación GPS</strong> en el sector
+                náutico, automoción, aviación, fitness y actividades al aire
+                libre.
               </p>
-            </div>
+            </a>
 
-            <div className="bg-white rounded-lg flex flex-col px-8 hover:bg-dersu-blue">
+            <a
+              href="http://www.immed.info/index.php/es/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
+            >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-immed.svg"
@@ -247,21 +290,22 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
               <p className="font-sans text-sm py-7">
-                Una entidad dedicada a la investigación y formación en medicina
-                de montaña y deportiva.
+                Una entidad dedicada a la{' '}
+                <strong>investigación y formación</strong> en medicina de
+                montaña y deportiva.
               </p>
-            </div>
+            </a>
           </div>
         </Wrapper>
 
         {/* Colaboran */}
-        <Wrapper limitedWidth className="hidden">
+        {/* <Wrapper limitedWidth>
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
             Quién colabora
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
@@ -270,7 +314,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"
@@ -279,7 +323,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
@@ -288,7 +332,7 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hover:border-dersu-blue">
+            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-fam.png"
@@ -298,7 +342,7 @@ const JornadasSeguridadPage = () => {
               </p>
             </div>
           </div>
-        </Wrapper>
+        </Wrapper> */}
       </div>
 
       <Footer />
