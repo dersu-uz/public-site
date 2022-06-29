@@ -86,16 +86,16 @@ const JornadasSeguridadPage = () => {
             Apúntate
           </a>
         </div>
-        <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-28 md:bottom-16 left-1/2 transform -translate-x-1/2">
           <ArrowDown />
         </div>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white pt-10 md:pt-20 pb-10 md:pb-20">
         <Wrapper limitedWidth>
           {/* Sesiones en ruta */}
-          <div className="border-dersu-black/20 border-b">
-            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
+          <div className="border-dersu-black/20 border-b pb-10">
+            <div className="flex flex-col justify-between gap-8 lg:flex-row">
               <div className="lg:w-6/12">
                 <div className="lg:max-w-[620px]">
                   <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
@@ -127,9 +127,9 @@ const JornadasSeguridadPage = () => {
           </div>
 
           {/* Con profesionales */}
-          <div className="border-dersu-black/20 border-b">
-            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
-              <div className="lg:w-6/12">
+          <div className="border-dersu-black/20 border-b py-10">
+            <div className="flex flex-col justify-between gap-8 lg:flex-row">
+              <div className="lg:w-6/12 md:pt-10">
                 <div className="lg:max-w-[550px]">
                   <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                     Con profesionales de montaña
@@ -138,15 +138,15 @@ const JornadasSeguridadPage = () => {
                     De qué hablaremos:
                   </p>
                   <ul className="font-sans text-dersu-xs md:text-dersu-md">
-                    <li className="mb-4 list-disc ml-8">
+                    <li className="mb-4 list-disc ml-5 md:ml-7">
                       Cómo planificar tus rutas y hacerlas de forma más segura.
                     </li>
-                    <li className="mb-4 list-disc ml-8">
+                    <li className="mb-4 list-disc ml-5 md:ml-7">
                       Prepárate y reacciona ante emergencias: desde la
                       preparación del botiquín a cómo actuar si tienes que
                       llamar a los equipos de rescate.
                     </li>
-                    <li className="mb-4 list-disc ml-8">
+                    <li className="list-disc ml-5 md:ml-7">
                       Orientación y tecnología como compañeras de ruta:
                       seguimiento y comunicaciones en entornos naturales.
                     </li>
@@ -161,16 +161,16 @@ const JornadasSeguridadPage = () => {
                   webpEnabled
                   densities={[1, 2]}
                   alt="Image"
-                  imgClassName="w-full lg:-mt-10"
+                  imgClassName="w-full"
                 />
               </div>
             </div>
           </div>
 
           {/* Formando grupos */}
-          <div>
-            <div className="py-11 md:py-20 flex flex-col justify-between gap-8 lg:flex-row">
-              <div className="lg:w-1/2">
+          <div className="py-5 md:py-10">
+            <div className="flex flex-col justify-between gap-8 lg:flex-row">
+              <div className="lg:w-1/2 pt-5 md:pt-10">
                 <div className="lg:max-w-[600px]">
                   <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                     Estamos formando grupos
@@ -196,7 +196,7 @@ const JornadasSeguridadPage = () => {
                   webpEnabled
                   densities={[1, 2]}
                   alt="Image"
-                  imgClassName="hidden lg:block w-full lg:-mt-10"
+                  imgClassName="hidden lg:block"
                 />
                 <Picture
                   path="/images/pages/jornadas-seguridad"
@@ -214,14 +214,14 @@ const JornadasSeguridadPage = () => {
       </div>
 
       {/* Organiza y colabora */}
-      <div className="pt-24 pb-1">
+      <div className="pt-10 md:pt-24 pb-1">
         {/* Organizan */}
         <Wrapper limitedWidth>
-          <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
+          <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
             Quién organiza
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-5 md:mb-10">
             <a
               href="https://dersu.uz/es/"
               className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
@@ -300,11 +300,11 @@ const JornadasSeguridadPage = () => {
 
         {/* Colaboran */}
         {/* <Wrapper limitedWidth>
-          <h2 className="text-dersu-lg md:text-dersu-4xl mb-10">
+          <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
             Quién colabora
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7">
             <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
               <p className="flex justify-center items-center h-full">
                 <img

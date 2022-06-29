@@ -16,15 +16,3 @@ body {
   /* stylelint-disable-next-line value-no-vendor-prefix */
   min-height: -webkit-fill-available;
 }
-
-/*
-@supports (padding: max(0px)) {
-  #__next,
-  body,
-  header,
-  footer {
-    padding-left: min(0vmin, env(safe-area-inset-left));
-    padding-right: min(0vmin, env(safe-area-inset-right));
-  }
-}
-*/
