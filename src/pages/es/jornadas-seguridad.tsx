@@ -171,11 +171,11 @@ const JornadasSeguridadPage = () => {
           <div className="py-5 md:py-10">
             <div className="flex flex-col justify-between gap-8 lg:flex-row">
               <div className="lg:w-1/2 pt-5 md:pt-10">
-                <div className="lg:max-w-[600px]">
+                <div className="lg:max-w-[600px] pb-4 md:pb-0">
                   <h2 className="font-sans uppercase text-dersu-3xs md:text-dersu-2xs mb-4">
                     Estamos formando grupos
                   </h2>
-                  <p className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-8">
+                  <p className="text-dersu-lg md:text-dersu-4xl mb-10">
                     Barajamos varias fechas y lugares donde hacerlo ¿cuál te
                     vendría mejor?
                   </p>
