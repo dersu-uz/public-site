@@ -49,7 +49,7 @@ const Header: FC<Props> = ({
 
   const navItemClasses = `${
     negativeColor ? 'text-dersu-white' : 'text-dersu-black'
-  } text-dersu-2xs pl-[10px] font-bold leading-5 hover:underline transition-colors cursor-pointer`
+  } text-dersu-2xs pl-[10px] font-semibold leading-5 hover:underline transition-colors cursor-pointer`
 
   return (
     <header

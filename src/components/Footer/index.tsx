@@ -14,7 +14,7 @@ const Footer: FC = () => {
 
   return (
     <footer className="Footer">
-      <Wrapper>
+      <Wrapper limitedWidth>
         <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
           <div className="md:flex md:items-center md:justify-between">
             <div className="py-10 md:order-2 flex flex-wrap gap-10 md:mr-10">

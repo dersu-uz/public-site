@@ -40,6 +40,7 @@ const HomeRouteAlerts: FC = () => {
                 path="/images/modules/home-route-alerts"
                 imageName={`picture-02-${currentLocale}`}
                 imageType="png"
+                loading="eager"
                 densities={[1, 2]}
                 imgClassName="w-[180px] sm:w-[300px] md:w-[240px]"
               />

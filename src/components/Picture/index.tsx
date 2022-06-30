@@ -43,6 +43,7 @@ type PictureProps = {
   densities?: Array<number>
   pictureClassName?: string
   imgClassName?: string
+  loading?: 'eager' | 'lazy'
 }
 
 const Picture: FC<PictureProps> = ({
@@ -54,6 +55,7 @@ const Picture: FC<PictureProps> = ({
   densities,
   imgClassName,
   pictureClassName,
+  loading = 'lazy',
 }) => {
   return (
     <picture className={pictureClassName}>
@@ -75,7 +77,7 @@ const Picture: FC<PictureProps> = ({
         src={`${path}/${imageName}.${imageType}`}
         alt={alt}
         className={imgClassName}
-        loading="lazy"
+        loading={loading}
       />
     </picture>
   )
