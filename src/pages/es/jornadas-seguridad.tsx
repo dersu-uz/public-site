@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { usePlausible } from 'next-plausible'
 
-import Button from '@/components/Button'
 import Footer from '@/components/Footer'
 import Picture from '@/components/Picture'
 import Wrapper from '@/components/Wrapper'
@@ -23,6 +23,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 const JornadasSeguridadPage = () => {
   const { currentLocale } = useContext(TranslationsContext)
+  const plausible = usePlausible()
 
   return (
     <>
@@ -81,6 +82,7 @@ const JornadasSeguridadPage = () => {
           <a
             href="https://docs.google.com/forms/d/1OjC3f8jtO8Oo3Lsj-bZu86qSP8H_Igno82UBTm0SKFA/viewform?edit_requested=true"
             rel="noreferrer noopener"
+            onClick={() => plausible('CTA Jornadas Seguridad - Formulario')}
             className="font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold py-4 px-16 rounded-md whitespace-nowrap hover:bg-dersu-cream"
           >
             Apúntate
@@ -182,6 +184,9 @@ const JornadasSeguridadPage = () => {
                   <a
                     href="https://docs.google.com/forms/d/1OjC3f8jtO8Oo3Lsj-bZu86qSP8H_Igno82UBTm0SKFA/viewform?edit_requested=true"
                     rel="noreferrer noopener"
+                    onClick={() =>
+                      plausible('CTA Jornadas Seguridad - Formulario')
+                    }
                     className="font-sans text-dersu-xs bg-dersu-blue text-dersu-brown font-semibold py-4 px-16 rounded-md whitespace-nowrap hover:bg-dersu-black hover:text-white"
                   >
                     Cuéntanos y apúntate
@@ -214,9 +219,9 @@ const JornadasSeguridadPage = () => {
       </div>
 
       {/* Organiza y colabora */}
-      <div className="pt-10 md:pt-24 pb-1">
+      <div className="pb-1">
         {/* Organizan */}
-        <Wrapper limitedWidth>
+        <Wrapper limitedWidth className="pt-10 md:pt-24">
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
             Quién organiza
           </h2>
@@ -224,6 +229,7 @@ const JornadasSeguridadPage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-5 md:mb-10">
             <a
               href="https://dersu.uz/es/"
+              onClick={() => plausible('CTA Jornadas Seguridad - Dersu')}
               className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
             >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
@@ -243,12 +249,14 @@ const JornadasSeguridadPage = () => {
               href="https://www.laaltaruta.com/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => plausible('CTA Jornadas Seguridad - Alta Ruta')}
               className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
             >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-altaruta.svg"
                   alt="Logo Alta Ruta"
+                  className="max-w-[190px]"
                 />
               </p>
               <p className="font-sans text-sm py-7">
@@ -259,15 +267,17 @@ const JornadasSeguridadPage = () => {
             </a>
 
             <a
-              href="https://www.garmin.com/"
+              href="https://www.garmin.com/es-ES/c/outdoor-recreation/handheld-hiking-gps/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => plausible('CTA Jornadas Seguridad - Garmin')}
               className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
             >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-garmin.svg"
                   alt="Logo Garmin"
+                  className="max-w-[190px]"
                 />
               </p>
               <p className="font-sans text-sm py-7">
@@ -281,12 +291,14 @@ const JornadasSeguridadPage = () => {
               href="http://www.immed.info/index.php/es/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => plausible('CTA Jornadas Seguridad - Immed')}
               className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
             >
               <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-immed.svg"
                   alt="Logo IMMED"
+                  className="max-w-[190px]"
                 />
               </p>
               <p className="font-sans text-sm py-7">
@@ -299,50 +311,48 @@ const JornadasSeguridadPage = () => {
         </Wrapper>
 
         {/* Colaboran */}
-        {/* <Wrapper limitedWidth>
+        <Wrapper limitedWidth className="pt-5 md:pt-12">
           <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
             Quién colabora
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7">
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
+            <a
+              href="https://montanasegura.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible('CTA Jornadas Seguridad - Montana Segura')
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
               <p className="flex justify-center items-center h-full">
                 <img
                   src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
                   alt="Logo Montaña Segura"
-                  className="p-8"
+                  className="p-8 max-w-[240px]"
                 />
               </p>
-            </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
+            </a>
+            <a
+              href="https://www.valledetena.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible('CTA Jornadas Seguridad - Valle de Tena')
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
               <p className="flex justify-center items-center h-full">
                 <img
-                  src="/images/pages/jornadas-seguridad/logo-fam.png"
-                  alt="Logo Federación Andaluza de Montañismo"
-                  className="p-8"
+                  src="/images/pages/jornadas-seguridad/logo-valledetena.png"
+                  alt="Logo Valle de Tena"
+                  className="p-8 max-w-[240px]"
                 />
               </p>
-            </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
-              <p className="flex justify-center items-center h-full">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
-                  alt="Logo Montaña Segura"
-                  className="p-8"
-                />
-              </p>
-            </div>
-            <div className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue">
-              <p className="flex justify-center items-center h-full">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-fam.png"
-                  alt="Logo Federación Andaluza de Montañismo"
-                  className="p-8"
-                />
-              </p>
-            </div>
+            </a>
           </div>
-        </Wrapper> */}
+        </Wrapper>
       </div>
 
       <Footer />
