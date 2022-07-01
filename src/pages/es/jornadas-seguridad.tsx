@@ -2,6 +2,9 @@ import { useContext } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 import { usePlausible } from 'next-plausible'
+import { NextSeo } from 'next-seo'
+
+import { BASE_DOMAIN_URL } from '@/constants/settings'
 
 import Footer from '@/components/Footer'
 import Picture from '@/components/Picture'
@@ -11,8 +14,6 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 import ArrowDown from '../../../public/images/pages/jornadas-seguridad/arrow-down.svg'
-import { BASE_DOMAIN_URL } from '@/constants/settings'
-import { NextSeo } from 'next-seo'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
