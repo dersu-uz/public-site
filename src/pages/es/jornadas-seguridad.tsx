@@ -11,6 +11,8 @@ import TranslationsContext from '@/contexts/TranslationsContext'
 
 import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 import ArrowDown from '../../../public/images/pages/jornadas-seguridad/arrow-down.svg'
+import { BASE_DOMAIN_URL } from '@/constants/settings'
+import { NextSeo } from 'next-seo'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -27,6 +29,27 @@ const JornadasSeguridadPage = () => {
 
   return (
     <>
+      {/* Social */}
+      <NextSeo
+        openGraph={{
+          title: 'Jornadas gratuitas para la seguridad en montaña',
+          description:
+            'Aprende de seguridad y primeros auxilios en montaña con especialistas.',
+          type: 'article',
+          images: [
+            {
+              url: `${BASE_DOMAIN_URL}/images/pages/jornadas-seguridad/open-graph-image.jpg`,
+              alt: 'Grupo de gente aprendiendo seguridad y primeros auxilios',
+            },
+          ],
+        }}
+        twitter={{
+          handle: '@dersu_uz',
+          site: '@dersu_uz',
+          cardType: 'summary_large_image',
+        }}
+      />
+
       {/* Hero */}
       <div className="relative h-screen max-h-[900px] md:max-h-[700px] flex justify-center items-center">
         <header className="text-dersu-white">
