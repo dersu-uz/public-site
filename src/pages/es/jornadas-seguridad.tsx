@@ -1,6 +1,4 @@
-import { useContext } from 'react'
 import { GetStaticProps } from 'next'
-import Link from 'next/link'
 import { usePlausible } from 'next-plausible'
 import { NextSeo } from 'next-seo'
 
@@ -10,10 +8,8 @@ import Footer from '@/components/Footer'
 import Picture from '@/components/Picture'
 import Wrapper from '@/components/Wrapper'
 
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
 import ArrowDown from '../../../public/images/pages/jornadas-seguridad/arrow-down.svg'
+import HeaderLogoLink from '@/components/HeaderLogoLink'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -25,7 +21,6 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const JornadasSeguridadPage = () => {
-  const { currentLocale } = useContext(TranslationsContext)
   const plausible = usePlausible()
 
   return (
@@ -56,14 +51,8 @@ const JornadasSeguridadPage = () => {
         <header className="text-dersu-white">
           <div className="absolute top-0 left-0 w-full z-10">
             <Wrapper>
-              <div className="flex py-10 items-center">
-                <h1 className="flex-grow">
-                  <Link href={`/${currentLocale}`}>
-                    <a title="Dersu">
-                      <DersuLogoWithText className="h-5 -mt-1.5 md:h-6 transition-colors " />
-                    </a>
-                  </Link>
-                </h1>
+              <div className="flex py-10 items-center justify-between">
+                <HeaderLogoLink negativeColor={true} />
                 <p className="font-sans text-sm font-semibold">
                   #CAMINAYAPRENDE
                 </p>

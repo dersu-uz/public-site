@@ -1,0 +1,18 @@
+.Header {
+  &[data-is-menu-open='true'] {
+    @apply fixed inset-0 w-full h-screen min-h-full z-10;
+    @apply bg-dersu-blue;
+  }
+
+  @screen md {
+    &[data-is-menu-open='true'] {
+      @apply relative h-auto min-h-0 bg-transparent;
+    }
+  }
+}
+
+.HeaderContent {
+  &[data-is-sticky='true'] {
+    @apply fixed top-0 left-0 w-full z-10;
+  }
+}
