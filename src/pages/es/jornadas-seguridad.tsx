@@ -375,6 +375,21 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </a>
+            <a
+              href="https://www.revistainua.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() => plausible('CTA Jornadas Seguridad - Revista Inua')}
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
+              <p className="flex justify-center items-center h-full">
+                <img
+                  src="/images/pages/jornadas-seguridad/logo-inua.png"
+                  alt="Logo Revista Inua"
+                  className="p-8 max-w-[240px]"
+                />
+              </p>
+            </a>
           </div>
         </Wrapper>
       </div>
