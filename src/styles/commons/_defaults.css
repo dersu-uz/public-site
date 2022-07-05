@@ -2,6 +2,7 @@ html,
 body {
   @apply font-serif bg-black text-dersu-black antialiased;
   @apply min-h-screen;
+  @apply scroll-smooth;
 
   letter-spacing: 0.01em;
 
