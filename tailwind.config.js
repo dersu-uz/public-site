@@ -21,7 +21,7 @@ module.exports = {
       fontSize: {
         'dersu-4xl': ['65px', '60px'], // [fontSize, letterSpacing]
         'dersu-3xl': ['56px', '62px'],
-        'dersu-2xl': ['42px', '48px'],
+        'dersu-2xl': ['42px', '38px'],
         'dersu-xl': ['36px', '44px'],
         'dersu-lg': ['32px', '32px'],
         'dersu-md': ['22px', '28px'],

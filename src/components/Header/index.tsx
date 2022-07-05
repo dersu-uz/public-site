@@ -1,13 +1,15 @@
-import { FC, useContext, useEffect, useRef, useState } from 'react'
-import Link from 'next/link'
-import { usePlausible } from 'next-plausible'
-import { useWindowScroll } from 'react-use'
+import { FC, useEffect, useMemo, useRef, useState } from 'react'
+import { useToggle, useWindowScroll } from 'react-use'
+import classNames from 'classnames'
 
-import TranslationsContext from '@/contexts/TranslationsContext'
-import usePreferredLocale from '@/hooks/usePreferredLocale'
+import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints'
+
+import BurgerButton from '@/components/BurgerButton'
+import HeaderLogoLink from '@/components/HeaderLogoLink'
+import HeaderMenu from '@/components/HeaderMenu'
 import Wrapper from '@/components/Wrapper'
 
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
+import styles from './styles.module.css'
 
 type Props = {
   negativeColor?: boolean
@@ -23,15 +25,12 @@ const Header: FC<Props> = ({
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
 
-  const { availableLocales, currentLocale } = useContext(TranslationsContext)
   const { y: scrollTop } = useWindowScroll()
-
-  const { changeLocale } = usePreferredLocale()
+  const { breakpoint } = useTailwindBreapoints()
 
   const [isSticky, setIsSticky] = useState(forceSticky)
   const [heightCompensation, setHeightCompensation] = useState(0)
-
-  const plausible = usePlausible()
+  const [isMenuOpen, toogleIsMenuOpen] = useToggle(false)
 
   useEffect(() => {
     const offsetTop =
@@ -46,79 +45,47 @@ const Header: FC<Props> = ({
         0
     )
   }, [scrollTop, forceSticky])
+  console.log(breakpoint)
 
-  const navItemClasses = `${
-    negativeColor ? 'text-dersu-white' : 'text-dersu-black'
-  } text-dersu-2xs pl-[10px] font-semibold leading-5 hover:underline transition-colors cursor-pointer`
+  const shouldShowMenu = useMemo(
+    () => isMenuOpen && ['none', 'sm'].includes(breakpoint),
+    [breakpoint, isMenuOpen]
+  )
 
   return (
     <header
-      className="Header"
       ref={headerRef}
+      data-is-menu-open={shouldShowMenu}
+      className={styles.Header}
       style={{
-        paddingTop: `${
-          isSticky && needsCompensation ? `${heightCompensation}` : `0`
-        }px`,
+        paddingTop:
+          isSticky && needsCompensation ? `${heightCompensation}px` : 0,
       }}
     >
       <div
         ref={headerContentRef}
-        className={`${isSticky ? 'fixed top-0 left-0 w-full z-10' : ''}`}
+        data-is-sticky={isSticky}
+        className={styles.HeaderContent}
       >
         <Wrapper>
-          <div className="flex py-10 items-center">
-            <h1 className="flex-grow">
-              <Link href={`/${currentLocale}`}>
-                <a title="Dersu">
-                  <DersuLogoWithText
-                    className={`h-5 -mt-1.5 md:h-6 transition-colors ${
-                      negativeColor ? 'text-dersu-white' : 'text-dersu-black'
-                    }`}
-                  />
-                </a>
-              </Link>
-            </h1>
-            <nav>
-              <ul className="flex font-sans">
-                <li className={navItemClasses}>
-                  <Link href={`/${currentLocale}/blog`}>
-                    <a>Blog</a>
-                  </Link>
-                </li>
-
-                <li className={navItemClasses}>
-                  <Link href="http://eepurl.com/hI63hX">
-                    <a
-                      target="_blank"
-                      onClick={() =>
-                        plausible('CTA Newsletter', {
-                          props: { method: 'Header' },
-                        })
-                      }
-                    >
-                      Newsletter
-                    </a>
-                  </Link>
-                </li>
-
-                {availableLocales.map((l, i) => {
-                  const isCurrent = l.locale === currentLocale
-                  return !isCurrent ? (
-                    <li key={i} className={navItemClasses}>
-                      <a
-                        href={`/${l.locale}/`}
-                        onClick={e => {
-                          e.preventDefault()
-                          changeLocale(l.locale)
-                        }}
-                      >
-                        {l.name}
-                      </a>
-                    </li>
-                  ) : null
-                })}
-              </ul>
-            </nav>
+          <div className="flex flex-wrap py-10 items-center justify-between">
+            <div className="order-1">
+              <HeaderLogoLink negativeColor={negativeColor || shouldShowMenu} />
+            </div>
+            <div
+              className={classNames(
+                'order-3 md:order-2 w-full md:w-auto pt-12 md:pt-0',
+                !shouldShowMenu ? 'hidden md:block' : 'block'
+              )}
+            >
+              <HeaderMenu />
+            </div>
+            <div className="order-2 md:hidden">
+              <BurgerButton
+                isOpen={shouldShowMenu}
+                onToggle={() => toogleIsMenuOpen()}
+              />
+            </div>
           </div>
         </Wrapper>
       </div>
