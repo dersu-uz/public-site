@@ -1,6 +1,8 @@
-import { FC, useEffect, useRef, useState } from 'react'
+import { FC, useEffect, useMemo, useRef, useState } from 'react'
 import { useToggle, useWindowScroll } from 'react-use'
 import classNames from 'classnames'
+
+import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints'
 
 import BurgerButton from '@/components/BurgerButton'
 import HeaderLogoLink from '@/components/HeaderLogoLink'
@@ -24,6 +26,7 @@ const Header: FC<Props> = ({
   const headerContentRef = useRef(null)
 
   const { y: scrollTop } = useWindowScroll()
+  const { breakpoint } = useTailwindBreapoints()
 
   const [isSticky, setIsSticky] = useState(forceSticky)
   const [heightCompensation, setHeightCompensation] = useState(0)
@@ -42,11 +45,17 @@ const Header: FC<Props> = ({
         0
     )
   }, [scrollTop, forceSticky])
+  console.log(breakpoint)
+
+  const shouldShowMenu = useMemo(
+    () => isMenuOpen && ['none', 'sm'].includes(breakpoint),
+    [breakpoint, isMenuOpen]
+  )
 
   return (
     <header
       ref={headerRef}
-      data-is-menu-open={isMenuOpen}
+      data-is-menu-open={shouldShowMenu}
       className={styles.Header}
       style={{
         paddingTop:
@@ -61,19 +70,19 @@ const Header: FC<Props> = ({
         <Wrapper>
           <div className="flex flex-wrap py-10 items-center justify-between">
             <div className="order-1">
-              <HeaderLogoLink negativeColor={negativeColor || isMenuOpen} />
+              <HeaderLogoLink negativeColor={negativeColor || shouldShowMenu} />
             </div>
             <div
               className={classNames(
                 'order-3 md:order-2 w-full md:w-auto pt-12 md:pt-0',
-                !isMenuOpen ? 'hidden md:block' : 'block'
+                !shouldShowMenu ? 'hidden md:block' : 'block'
               )}
             >
               <HeaderMenu />
             </div>
             <div className="order-2 md:hidden">
               <BurgerButton
-                isOpen={isMenuOpen}
+                isOpen={shouldShowMenu}
                 onToggle={() => toogleIsMenuOpen()}
               />
             </div>
