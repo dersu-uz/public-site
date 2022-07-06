@@ -340,10 +340,14 @@ const JornadasSeguridadPage = () => {
               className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
             >
               <p className="flex justify-center items-center h-full">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-montanasegura.png"
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-montanasegura"
+                  webpEnabled
+                  densities={[1, 2]}
                   alt="Logo Montaña Segura"
-                  className="p-8 max-w-[240px]"
+                  imgClassName="p-8 max-w-[240px]"
                 />
               </p>
             </a>
@@ -357,10 +361,14 @@ const JornadasSeguridadPage = () => {
               className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
             >
               <p className="flex justify-center items-center h-full">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-valledetena.png"
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-valledetena"
+                  webpEnabled
+                  densities={[1, 2]}
                   alt="Logo Valle de Tena"
-                  className="p-8 max-w-[240px]"
+                  imgClassName="p-8 max-w-[240px]"
                 />
               </p>
             </a>
@@ -372,10 +380,58 @@ const JornadasSeguridadPage = () => {
               className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
             >
               <p className="flex justify-center items-center h-full">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-inua.png"
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-inua"
+                  webpEnabled
+                  densities={[1, 2]}
                   alt="Logo Revista Inua"
-                  className="p-8 max-w-[240px]"
+                  imgClassName="p-8 max-w-[240px]"
+                />
+              </p>
+            </a>
+
+            <a
+              href="https://revistasalvaje.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible('CTA Jornadas Seguridad - Revista Salvaje')
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
+              <p className="flex justify-center items-center h-full">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-salvaje"
+                  webpEnabled
+                  densities={[1, 2]}
+                  alt="Logo Revista Salvaje"
+                  imgClassName="p-8 max-w-[240px]"
+                />
+              </p>
+            </a>
+
+            <a
+              href="https://web.huescalamagia.es/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible('CTA Jornadas Seguridad - Huesca La Magia')
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
+              <p className="flex justify-center items-center h-full">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-huescalamagia"
+                  webpEnabled
+                  densities={[1, 2]}
+                  alt="Logo Huesca La Magia"
+                  imgClassName="p-8 max-w-[240px]"
                 />
               </p>
             </a>
