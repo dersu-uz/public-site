@@ -71,6 +71,48 @@
     "subtitle": "Follow your own pace to gain autonomy and security",
     "text": "Articles, videos, training itineraries... At Dersu you will find plenty of ways to help you set off to the mountain and become more independent. If you so wish."
   },
+  "modulePricing": {
+    "title": "Suscripción",
+    "subtitle": "Elige el plan que mejor se adapta a ti",
+    "plans": {
+      "free": {
+        "title": "Gratis",
+        "subtitle": "Una ruta al mes, a ver si te gusta",
+        "description": "Encuentra rutas creadas por profesionales, aprende y mejora tu seguridad en montaña. Una al mes, siempre gratis.",
+        "whatsIncluded": {
+          "title": "Qué incluye:",
+          "features": [
+            "Planifica una salida al mes",
+            "Aviso de puntos críticos al hacerla",
+            "Configura tus niveles",
+            "Aprende con la biblioteca de montaña"
+          ]
+        }
+      },
+      "nolimits": {
+        "title": "Sin Límites",
+        "subtitle": "10€ el primer año, a petarlo",
+        "description": "Planifica, invita y trackea todas las rutas que quieras, el primer año viene con descuento. Y después 20€/año, que tampoco es una locura.",
+        "whatsIncluded": {
+          "title": "Qué incluye:",
+          "features": [
+            "Salidas hasta el infinito y más allá",
+            "Planifica y participa cuanto quieras",
+            "Importa rutas a lo loco",
+            "Aprende con la biblioteca de montaña"
+          ]
+        }
+      },
+      "futurePlans": {
+        "title": "Siempre oteando el horizonte...",
+        "description": "Pronto lanzaremos un plan para quienes queréis desarrollar vuestras habilidades físicas, técnicas y psicológicas. <strong>Estamos contando todas las novedades en la Newsletter, no te la pierdas.</strong>",
+        "subscribeButton": "Apuntate a nuestra Newsletter"
+      }
+    },
+    "downloadApp": "Descarga la App y organiza tus rutas de una manera más segura.",
+      "mountainGuideTitle": "¿Eres guía de Montaña AEGM?",
+      "mountainGuideText": "La versión Dersu Sin Límites es gratis para ti"
+  },
   "blog": {
     "workingOn": "We are working on the english version of our blog. There is the",
     "spanishVersion": "spanish version",

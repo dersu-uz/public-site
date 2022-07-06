@@ -7,7 +7,7 @@ export type LocaleInfo = {
   name: string
 }
 
-export type TranslationStrings = Record<string, Record<string, string>>
+export type TranslationStrings = typeof locales.es
 
 export const availableLocales: Array<LocaleInfo> = Object.keys(locales).map(
   locale => {

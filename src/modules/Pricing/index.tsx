@@ -13,10 +13,10 @@ const Pricing: FC = () => {
       <Wrapper>
         {/* Header */}
         <h2 className="font-sans font-bold text-dersu-2xs uppercase tracking-widest mb-5 md:text-dersu-xs">
-          Suscripción
+          {t.modulePricing.title}
         </h2>
         <p className="text-dersu-xl mb-7 md:mb-12 max-w-xl md:text-dersu-xl lg:text-dersu-4xl">
-          Elige el plan que mejor se adapta a ti
+          {t.modulePricing.subtitle}
         </p>
 
         {/* Plans */}
@@ -25,9 +25,11 @@ const Pricing: FC = () => {
             {/* Free plan */}
             <div className="bg-white rounded-3xl px-4 md:px-8 py-7 md:py-11">
               <div className="text-center">
-                <h3 className="text-dersu-lg md:mb-3">Gratis</h3>
+                <h3 className="text-dersu-lg md:mb-3">
+                  {t.modulePricing.plans.free.title}
+                </h3>
                 <p className="text-dersu-3xs font-sans uppercase">
-                  Una ruta al mes, a ver si te gusta
+                  {t.modulePricing.plans.free.subtitle}
                 </p>
                 <p className="text-center">
                   <img
@@ -37,21 +39,21 @@ const Pricing: FC = () => {
                   />
                 </p>
                 <p className="font-sans text-dersu-2xs text-dersu-light-gray">
-                  Encuentra rutas creadas por profesionales, aprende y mejora tu
-                  seguridad en montaña. Una al mes, siempre gratis.
+                  {t.modulePricing.plans.free.description}
                 </p>
               </div>
               <div className="font-sans text-dersu-sm pt-6 mt-6 border-t border-neutral-200">
-                <h4 className="font-semibold mb-4">Qué incluye:</h4>
+                <h4 className="font-semibold mb-4">
+                  {t.modulePricing.plans.free.whatsIncluded.title}
+                </h4>
                 <ul className="list-disc list-outside">
-                  <li className="ml-5 mb-1">Planifica una salida al mes</li>
-                  <li className="ml-5 mb-1">
-                    Aviso de puntos críticos al hacerla
-                  </li>
-                  <li className="ml-5 mb-1">Configura tus niveles</li>
-                  <li className="ml-5 mb-1">
-                    Aprende con la biblioteca de montaña
-                  </li>
+                  {t.modulePricing.plans.free.whatsIncluded.features.map(
+                    (item, index) => (
+                      <li key={index} className="ml-5 mb-1">
+                        {item}
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
@@ -70,9 +72,11 @@ const Pricing: FC = () => {
                 </p>
               </div>
               <div className="text-center">
-                <h3 className="text-dersu-lg md:mb-3">Sin Límites</h3>
+                <h3 className="text-dersu-lg md:mb-3">
+                  {t.modulePricing.plans.nolimits.title}
+                </h3>
                 <p className="text-dersu-3xs font-sans uppercase">
-                  10€ el primer año, a petarlo
+                  {t.modulePricing.plans.nolimits.subtitle}
                 </p>
                 <p className="text-center">
                   <img
@@ -82,24 +86,21 @@ const Pricing: FC = () => {
                   />
                 </p>
                 <p className="font-sans text-dersu-2xs text-dersu-light-gray">
-                  Planifica, invita y trackea todas las rutas que quieras, el
-                  primer año viene con descuento. Y después 20€/año, que tampoco
-                  es una locura.
+                  {t.modulePricing.plans.nolimits.description}
                 </p>
               </div>
               <div className="font-sans text-dersu-sm pt-6 mt-6 border-t border-neutral-200">
-                <h4 className="font-semibold mb-4">Qué incluye:</h4>
+                <h4 className="font-semibold mb-4">
+                  {t.modulePricing.plans.nolimits.whatsIncluded.title}
+                </h4>
                 <ul className="list-disc list-outside">
-                  <li className="ml-5 mb-1">
-                    Salidas hasta el infinito y más allá
-                  </li>
-                  <li className="ml-5 mb-1">
-                    Planifica y participa cuanto quieras
-                  </li>
-                  <li className="ml-5 mb-1">Importa rutas a lo loco</li>
-                  <li className="ml-5 mb-1">
-                    Aprende con la biblioteca de montaña
-                  </li>
+                  {t.modulePricing.plans.nolimits.whatsIncluded.features.map(
+                    (item, index) => (
+                      <li key={index} className="ml-5 mb-1">
+                        {item}
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
             </div>
@@ -108,7 +109,7 @@ const Pricing: FC = () => {
             <div className="bg-dersu-blue rounded-3xl px-4 md:px-8 py-7 md:pt-11 md:pb-7">
               <div className="text-center h-full flex flex-col justify-between">
                 <h3 className="text-dersu-lg">
-                  Siempre oteando el horizonte...
+                  {t.modulePricing.plans.futurePlans.title}
                 </h3>
                 <p className="text-center">
                   <img
@@ -117,14 +118,12 @@ const Pricing: FC = () => {
                     className="inline-block"
                   />
                 </p>
-                <p className="font-sans text-dersu-sm py-6 flex-grow">
-                  Pronto lanzaremos un plan para quienes queréis desarrollar
-                  vuestras habilidades físicas, técnicas y psicológicas.{' '}
-                  <strong>
-                    Estamos contando todas las novedades en la Newsletter, no te
-                    la pierdas.
-                  </strong>
-                </p>
+                <p
+                  className="font-sans text-dersu-sm py-6 flex-grow"
+                  dangerouslySetInnerHTML={{
+                    __html: t.modulePricing.plans.futurePlans.description,
+                  }}
+                ></p>
                 <p>
                   <a
                     href="http://eepurl.com/hI63hX"
@@ -132,7 +131,7 @@ const Pricing: FC = () => {
                     target="_blank"
                     className="rounded-md font-sans text-sm bg-white/20 flex items-center justify-center py-4 hoverable:hover:bg-black hoverable:hover:text-white"
                   >
-                    Apuntate a nuestra Newsletter
+                    {t.modulePricing.plans.futurePlans.subscribeButton}
                   </a>
                 </p>
               </div>
@@ -144,7 +143,7 @@ const Pricing: FC = () => {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/2 order-2 md:order-1">
             <h2 className="text-dersu-lg mb-4 text-center md:text-left max-w-sm mx-auto md:mx-0 md:max-w-lg">
-              Descarga la App y organiza tus rutas de una manera más segura.
+              {t.modulePricing.downloadApp}
             </h2>
             <StoreButtons />
 
@@ -161,10 +160,10 @@ const Pricing: FC = () => {
             />
             <div className="text-center md:text-left">
               <h2 className="text-dersu-lg mb-1">
-                ¿Eres guía de Montaña AEGM?
+                {t.modulePricing.mountainGuideTitle}
               </h2>
               <p className="font-sans text-lg">
-                La versión Dersu Sin Límites es gratis para ti
+                {t.modulePricing.mountainGuideText}
               </p>
             </div>
           </div>
