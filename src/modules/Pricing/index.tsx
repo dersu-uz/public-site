@@ -1,10 +1,13 @@
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 import Fade from 'react-reveal/Fade'
 
 import Wrapper from '@/components/Wrapper'
 import StoreButtons from '@/components/StoreButtons'
+import TranslationsContext from '@/contexts/TranslationsContext'
 
 const Pricing: FC = () => {
+  const { currentLocale, t } = useContext(TranslationsContext)
+
   return (
     <div id="pricing" className="py-16">
       <Wrapper>
@@ -18,9 +21,8 @@ const Pricing: FC = () => {
 
         {/* Plans */}
         <Fade bottom cascade>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mb-8 md:mb-16">
             {/* Free plan */}
-
             <div className="bg-white rounded-3xl px-4 md:px-8 py-7 md:py-11">
               <div className="text-center">
                 <h3 className="text-dersu-lg md:mb-3">Gratis</h3>
@@ -103,8 +105,8 @@ const Pricing: FC = () => {
             </div>
 
             {/* Future plans */}
-            <div className="bg-dersu-blue rounded-3xl px-4 md:px-8 py-7 md:py-11">
-              <div className="text-center">
+            <div className="bg-dersu-blue rounded-3xl px-4 md:px-8 py-7 md:pt-11 md:pb-7">
+              <div className="text-center h-full flex flex-col justify-between">
                 <h3 className="text-dersu-lg">
                   Siempre oteando el horizonte...
                 </h3>
@@ -115,13 +117,23 @@ const Pricing: FC = () => {
                     className="inline-block"
                   />
                 </p>
-                <p className="font-sans text-dersu-sm py-6">
+                <p className="font-sans text-dersu-sm py-6 flex-grow">
                   Pronto lanzaremos un plan para quienes queréis desarrollar
                   vuestras habilidades físicas, técnicas y psicológicas.{' '}
                   <strong>
                     Estamos contando todas las novedades en la Newsletter, no te
                     la pierdas.
                   </strong>
+                </p>
+                <p>
+                  <a
+                    href="http://eepurl.com/hI63hX"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="rounded-md font-sans text-sm bg-white/20 flex items-center justify-center py-4 hoverable:hover:bg-black hoverable:hover:text-white"
+                  >
+                    Apuntate a nuestra Newsletter
+                  </a>
                 </p>
               </div>
             </div>
@@ -135,6 +147,12 @@ const Pricing: FC = () => {
               Descarga la App y organiza tus rutas de una manera más segura.
             </h2>
             <StoreButtons />
+
+            {currentLocale !== 'es' && (
+              <p className="font-sans text-xs mt-4 text-center md:text-left max-w-xs mx-auto md:mx-0">
+                {t.common.appLocalesDisclaimer}
+              </p>
+            )}
           </div>
           <div className="md:w-1/2 order-1 md:order-2 border-neutral-200 border-b md:border-l md:border-b-0 pb-8 md:pl-8 flex flex-col md:flex-row gap-1 items-center md:items-start">
             <img
@@ -146,7 +164,7 @@ const Pricing: FC = () => {
                 ¿Eres guía de Montaña AEGM?
               </h2>
               <p className="font-sans text-lg">
-                La versión Dersu Sin Limites es grátis para ti
+                La versión Dersu Sin Límites es gratis para ti
               </p>
             </div>
           </div>

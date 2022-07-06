@@ -14,6 +14,7 @@ import HomeRoutePlanning from '@/modules/HomeRoutePlanning'
 import HomeRouteAlerts from '@/modules/HomeRouteAlerts'
 import HomeLearn from '@/modules/HomeLearn'
 import RelatedPosts from '@/modules/RelatedPosts'
+import Pricing from '@/modules/Pricing'
 
 export const getStaticProps: GetStaticProps = async () => {
   const latestPosts = await getLatestPosts('fr', 2)
@@ -37,6 +38,7 @@ const HomePage: FC<Props> = ({ latestPosts }) => (
     <HomeIntro />
     <HomeMountaineerProfile />
     <HomeRoutePlanning />
+    <Pricing />
     <Signup />
     <HomeRouteAlerts />
     <HomeLearn />

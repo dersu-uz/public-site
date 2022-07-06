@@ -22,13 +22,11 @@ const HeaderMenu: FC = () => {
           </Link>
         </li>
 
-        {currentLocale === 'es' && (
-          <li className={styles.HeaderMenuItem}>
-            <Link href={`/${currentLocale}/#pricing`}>
-              <a>Planes</a>
-            </Link>
-          </li>
-        )}
+        <li className={styles.HeaderMenuItem}>
+          <Link href={`/${currentLocale}/#pricing`}>
+            <a>Planes</a>
+          </Link>
+        </li>
 
         {currentLocale === 'es' && (
           <li className={styles.HeaderMenuItem}>
