@@ -4,6 +4,7 @@ subtitle: 'Llegó el día: los planes de pago'
 tag: 'La app'
 author: 'Equipo Dersu'
 date: '2022-07-06'
+showPricingModule: true
 ---
 
 Pues sí, [parece que fue ayer cuándo empezamos a probar la App](https://www.instagram.com/p/CYLp5rNqnlN/), pero ya han pasado casi 6 meses y, tal como anunciamos, ha llegado el momento de dar otro pasito con el proyecto.
@@ -27,5 +28,4 @@ Hay mucha gente trabajando aquí dentro, y entendemos que si eliges Dersu para a
 
 Dicho todo esto, queremos contar un par de cosas más…
 
-![](/images/posts/es/planes-de-pago/picture-01.png)
 

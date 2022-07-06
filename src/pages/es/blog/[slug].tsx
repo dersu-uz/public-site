@@ -18,6 +18,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Post from '@/components/Post'
 import RelatedPosts from '@/modules/RelatedPosts'
+import Pricing from '@/modules/Pricing'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getAllPostSlugs('es')
@@ -56,6 +57,7 @@ type Props = {
   tag: string
   author: string
   dateFormatted: string
+  showPricingModule: boolean
   featuredImageUrl: string
   webpFeaturedImageUrl: string
   htmlContent: string
@@ -70,6 +72,7 @@ const BlogPostPage: FC<Props> = ({
   tag,
   author,
   dateFormatted,
+  showPricingModule,
   featuredImageUrl,
   webpFeaturedImageUrl,
   htmlContent,
@@ -121,6 +124,7 @@ const BlogPostPage: FC<Props> = ({
             dateFormatted={dateFormatted}
             htmlContent={htmlContent}
           />
+          {showPricingModule && <Pricing />}
           <RelatedPosts posts={otherPosts} />
           <Footer />
         </>
