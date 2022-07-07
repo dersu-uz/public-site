@@ -28,4 +28,21 @@ Hay mucha gente trabajando aquí dentro, y entendemos que si eliges Dersu para a
 
 Dicho todo esto, queremos contar un par de cosas más…
 
+### Si eres un guía profesional asociado a la AEGM
+
+Dersu es gratis para ti. Así de sencillo. Regístrate, envíanos tu carnet y te daremos acceso ilimitado.
+Desde Dersu siempre hemos querido poner en valor la figura del guía de montaña profesional. Es la mejor garantía para realizar salidas de forma segura y adecuada a nuestro nivel y objetivos. En Dersu queremos que los guías se sientan como en casa, y por ello les vamos a ofrecer la App gratis, siempre.
+Esto forma parte de un acuerdo más amplio con la [Asociación Española de Guías de Montaña](https://www.aegm.org), del cuál daremos detalles en un post aparte
+
+### Si perteneces a un club de montaña, asociación, empresa de turismo activo o cualquier tipo de entidad relacionada con las actividades en la naturaleza (turismo, deporte, etc.)
+
+Escríbenos y charlamos. Estamos preparando acuerdos con infinidad de organizaciones, con ofertas y ventajas para sus trabajadores y usuarios.
+
+[Charlemos](mailto:support@dersu.uz), que seguro podemos preparar algo interesante.
+
+### Si perteneces al grupo Beta, ya sabes que tienes un año gratis y no tienes que hacer nada.
+
+Te escribiremos un email para recordártelo, contarte lo que va a pasar y decirte que no tienes que hacer nada más que seguir disfrutando de Dersu como lo llevas haciendo desde los inicios (incluso más, si quieres).
+
+
 
