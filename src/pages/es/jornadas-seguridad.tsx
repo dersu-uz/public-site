@@ -351,6 +351,29 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </a>
+
+            <a
+              href="https://web.huescalamagia.es/"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible('CTA Jornadas Seguridad - Huesca La Magia')
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
+              <p className="flex justify-center items-center h-full">
+                <Picture
+                  path="/images/pages/jornadas-seguridad"
+                  imageType="png"
+                  imageName="logo-huescalamagia"
+                  webpEnabled
+                  densities={[1, 2]}
+                  alt="Logo Huesca La Magia"
+                  imgClassName="p-8 max-w-[240px]"
+                />
+              </p>
+            </a>
+
             <a
               href="https://www.valledetena.com/"
               target="_blank"
@@ -372,6 +395,27 @@ const JornadasSeguridadPage = () => {
                 />
               </p>
             </a>
+
+            <a
+              href="https://desni.in/jorsegurdersu"
+              target="_blank"
+              rel="noreferrer noopener"
+              onClick={() =>
+                plausible(
+                  'CTA Jornadas Seguridad - Grandes Espacios Turismo Activo'
+                )
+              }
+              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
+            >
+              <p className="flex justify-center items-center h-full">
+                <img
+                  src="/images/pages/jornadas-seguridad/logo-geta.svg"
+                  alt="Logo Grandes Espacios Turismo Activo"
+                  className="p-8 max-w-[240px]"
+                />
+              </p>
+            </a>
+
             <a
               href="https://www.revistainua.com/"
               target="_blank"
@@ -409,28 +453,6 @@ const JornadasSeguridadPage = () => {
                   webpEnabled
                   densities={[1, 2]}
                   alt="Logo Revista Salvaje"
-                  imgClassName="p-8 max-w-[240px]"
-                />
-              </p>
-            </a>
-
-            <a
-              href="https://web.huescalamagia.es/"
-              target="_blank"
-              rel="noreferrer noopener"
-              onClick={() =>
-                plausible('CTA Jornadas Seguridad - Huesca La Magia')
-              }
-              className="bg-white rounded-lg flex flex-col border-transparent border-4 hoverable:hover:border-dersu-blue min-h-[190px]"
-            >
-              <p className="flex justify-center items-center h-full">
-                <Picture
-                  path="/images/pages/jornadas-seguridad"
-                  imageType="png"
-                  imageName="logo-huescalamagia"
-                  webpEnabled
-                  densities={[1, 2]}
-                  alt="Logo Huesca La Magia"
                   imgClassName="p-8 max-w-[240px]"
                 />
               </p>
