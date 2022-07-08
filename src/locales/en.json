@@ -2,6 +2,12 @@
   "localeMetadata": {
     "name": "English"
   },
+  "headerMenu": {
+    "blog": "Blog",
+    "plans": "Plans",
+    "newsletter": "Newsletter",
+    "safetySessions": "Safety Sessions"
+  },
   "common": {
     "slide": "Slide",
     "articles": "Articles",
@@ -72,46 +78,46 @@
     "text": "Articles, videos, training itineraries... At Dersu you will find plenty of ways to help you set off to the mountain and become more independent. If you so wish."
   },
   "modulePricing": {
-    "title": "Suscripción",
-    "subtitle": "Elige el plan que mejor se adapta a ti",
+    "title": "Subscription",
+    "subtitle": "Choose the plan that best suits you",
     "plans": {
       "free": {
-        "title": "Gratis",
-        "subtitle": "Una ruta al mes, a ver si te gusta",
-        "description": "Encuentra rutas creadas por profesionales, aprende y mejora tu seguridad en montaña. Una al mes, siempre gratis.",
+        "title": "Free",
+        "subtitle": "One route per month, see if you like it",
+        "description": "Find routes created by professionals, improve and learn how to be safer in the mountain. One route per month, always free.",
         "whatsIncluded": {
-          "title": "Qué incluye:",
+          "title": "What is included:",
           "features": [
-            "Planifica una salida al mes",
-            "Aviso de puntos críticos al hacerla",
-            "Configura tus niveles",
-            "Aprende con la biblioteca de montaña"
+            "Plan one route per month",
+            "Warning of critical points while you are on the route",
+            "Set your levels",
+            "Learn with the mountain library"
           ]
         }
       },
       "nolimits": {
-        "title": "Sin Límites",
-        "subtitle": "10€ el primer año, a petarlo",
-        "description": "Planifica, invita y trackea todas las rutas que quieras, el primer año viene con descuento. Y después 20€/año, que tampoco es una locura.",
+        "title": "No Limits",
+        "subtitle": "10€ the first year, give it all you've got!",
+        "description": "Plan, invite and track as many routes as you want, the first year comes with a discount. And then 20€/year, which is not crazy either.",
         "whatsIncluded": {
-          "title": "Qué incluye:",
+          "title": "What is included:",
           "features": [
-            "Salidas hasta el infinito y más allá",
-            "Planifica y participa cuanto quieras",
-            "Importa rutas a lo loco",
-            "Aprende con la biblioteca de montaña"
+            "Routes to infinity and beyond",
+            "Plan and participate as much as you want",
+            "Import routes like there’s no tomorrow",
+            "Learn with the mountain library"
           ]
         }
       },
       "futurePlans": {
-        "title": "Siempre oteando el horizonte...",
-        "description": "Pronto lanzaremos un plan para quienes queréis desarrollar vuestras habilidades físicas, técnicas y psicológicas. <strong>Estamos contando todas las novedades en la Newsletter, no te la pierdas.</strong>",
-        "subscribeButton": "Apuntate a nuestra Newsletter"
+        "title": "Always gazing into the horizon...",
+        "description": "Soon we will be launching a plan for those of you who want to develop your physical, technical and psychological skills. <strong>We are telling you all the news in the Newsletter, don't miss it.</strong>",
+        "subscribeButton": "Subscribe to our Newsletter"
       }
     },
-    "downloadApp": "Descarga la App y organiza tus rutas de una manera más segura.",
-      "mountainGuideTitle": "¿Eres guía de Montaña AEGM?",
-      "mountainGuideText": "La versión Dersu Sin Límites es gratis para ti"
+    "downloadApp": "Download the App and organize your routes in a safer way.",
+      "mountainGuideTitle": "Are you an AEGM Mountain Guide?",
+      "mountainGuideText": "Dersu No Limits version is free for you"
   },
   "blog": {
     "workingOn": "We are working on the english version of our blog. There is the",

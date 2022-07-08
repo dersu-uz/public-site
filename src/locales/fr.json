@@ -2,6 +2,12 @@
   "localeMetadata": {
     "name": "Français"
   },
+  "headerMenu": {
+    "blog": "Blog",
+    "plans": "Plans",
+    "newsletter": "Newsletter",
+    "safetySessions": "Safety Sessions"
+  },
   "common": {
     "slide": "Glisser",
     "articles": "Histoires",
@@ -72,46 +78,46 @@
     "text": "Articles, vidéos, itinéraires de formation... Dans Dersu, vous trouverez beaucoup de choses qui vous aideront à connâitre la montagne et à gagner en autonomie. Si tu veux"
   },
   "modulePricing": {
-    "title": "Suscripción",
-    "subtitle": "Elige el plan que mejor se adapta a ti",
+    "title": "Abonnement",
+    "subtitle": "Choisissez le plan qui vous convient le mieux",
     "plans": {
       "free": {
-        "title": "Gratis",
-        "subtitle": "Una ruta al mes, a ver si te gusta",
-        "description": "Encuentra rutas creadas por profesionales, aprende y mejora tu seguridad en montaña. Una al mes, siempre gratis.",
+        "title": "Libre",
+        "subtitle": "Un itinéraire par mois, voyons si vous l'aimez",
+        "description": "Retrouvez des itinéraires créés par des professionnels, apprenez et améliorez votre sécurité en montagne. Un par mois, toujours gratuit.",
         "whatsIncluded": {
-          "title": "Qué incluye:",
+          "title": "Qui inclus:",
           "features": [
-            "Planifica una salida al mes",
-            "Aviso de puntos críticos al hacerla",
-            "Configura tus niveles",
-            "Aprende con la biblioteca de montaña"
+            "Prévoyez une sortie par mois",
+            "Avis des points critiques lors de sa réalisation",
+            "Définissez vos niveaux",
+            "Apprendre avec la bibliothèque de montagne"
           ]
         }
       },
       "nolimits": {
-        "title": "Sin Límites",
-        "subtitle": "10€ el primer año, a petarlo",
-        "description": "Planifica, invita y trackea todas las rutas que quieras, el primer año viene con descuento. Y después 20€/año, que tampoco es una locura.",
+        "title": "No Limits",
+        "subtitle": "10 € la première année, il faut tout donner",
+        "description": "Planifiez, invitez et suivez tous les itinéraires que vous souhaitez, première année avec remise incluse.Et puis 20€/an, ce qui n'est pas fou non plus.",
         "whatsIncluded": {
-          "title": "Qué incluye:",
+          "title": "Qui inclus:",
           "features": [
-            "Salidas hasta el infinito y más allá",
-            "Planifica y participa cuanto quieras",
-            "Importa rutas a lo loco",
-            "Aprende con la biblioteca de montaña"
+            "Sorties vers l'infini et au-delà",
+            "Planifiez et participez autant que vous le souhaitez",
+            "Importez des itinéraires comme un fou",
+            "Apprendre avec la bibliothèque de montagne"
           ]
         }
       },
       "futurePlans": {
-        "title": "Siempre oteando el horizonte...",
-        "description": "Pronto lanzaremos un plan para quienes queréis desarrollar vuestras habilidades físicas, técnicas y psicológicas. <strong>Estamos contando todas las novedades en la Newsletter, no te la pierdas.</strong>",
-        "subscribeButton": "Apuntate a nuestra Newsletter"
+        "title": "Toujours regarder l'horizon...",
+        "description": "Bientôt, nous lancerons un plan pour ceux d'entre vous qui souhaitent développer leurs compétences physiques, techniques et psychologiques. <strong>On vous raconte toute l'actualité dans le newsletter ne la manquez pas.</strong>",
+        "subscribeButton": "Inscrivez-vouz à la newsletter"
       }
     },
-    "downloadApp": "Descarga la App y organiza tus rutas de una manera más segura.",
-      "mountainGuideTitle": "¿Eres guía de Montaña AEGM?",
-      "mountainGuideText": "La versión Dersu Sin Límites es gratis para ti"
+    "downloadApp": "Téléchargez l'application et organisez vos itinéraires de manière plus sûre.",
+      "mountainGuideTitle": "Vous êtes guide en Montagne AEGM?",
+      "mountainGuideText": "La version Dersu No Limits est gratuite pour vous"
   },
   "blog": {
     "workingOn": "We are working on the french version of our blog. There is the",

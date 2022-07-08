@@ -10,7 +10,7 @@ import styles from './styles.module.css'
 
 const HeaderMenu: FC = () => {
   const plausible = usePlausible()
-  const { availableLocales, currentLocale } = useContext(TranslationsContext)
+  const { availableLocales, currentLocale, t } = useContext(TranslationsContext)
   const { changeLocale } = usePreferredLocale()
 
   return (
@@ -18,20 +18,20 @@ const HeaderMenu: FC = () => {
       <ul className={styles.HeaderMenu}>
         <li className={styles.HeaderMenuItem}>
           <Link href={`/${currentLocale}/blog`}>
-            <a>Blog</a>
+            <a>{t.headerMenu.blog}</a>
           </Link>
         </li>
 
         <li className={styles.HeaderMenuItem}>
-          <Link href={`/${currentLocale}/#pricing`}>
-            <a>Planes</a>
+          <Link href={`/${currentLocale}/#plans`}>
+            <a>{t.headerMenu.plans}</a>
           </Link>
         </li>
 
         {currentLocale === 'es' && (
           <li className={styles.HeaderMenuItem}>
             <Link href={`/${currentLocale}/jornadas-seguridad`}>
-              <a>Jornadas de seguridad</a>
+              <a>{t.headerMenu.safetySessions}</a>
             </Link>
           </li>
         )}
@@ -46,7 +46,7 @@ const HeaderMenu: FC = () => {
                 })
               }
             >
-              Newsletter
+              {t.headerMenu.newsletter}
             </a>
           </Link>
         </li>

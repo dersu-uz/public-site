@@ -9,7 +9,7 @@ const Pricing: FC = () => {
   const { currentLocale, t } = useContext(TranslationsContext)
 
   return (
-    <div id="pricing" className="py-16">
+    <div id="plans" className="py-16">
       <Wrapper>
         {/* Header */}
         <h2 className="font-sans font-bold text-dersu-2xs uppercase tracking-widest mb-5 md:text-dersu-xs">

@@ -2,6 +2,12 @@
   "localeMetadata": {
     "name": "Español"
   },
+  "headerMenu": {
+    "blog": "Blog",
+    "plans": "Planes",
+    "newsletter": "Newsletter",
+    "safetySessions": "Jornadas de seguridad"
+  },
   "common": {
     "slide": "Desliza",
     "articles": "Historias",
