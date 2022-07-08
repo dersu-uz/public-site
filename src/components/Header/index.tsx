@@ -1,4 +1,5 @@
-import { FC, useEffect, useMemo, useRef, useState } from 'react'
+import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
 import { useToggle, useWindowScroll } from 'react-use'
 import classNames from 'classnames'
 
@@ -32,6 +33,23 @@ const Header: FC<Props> = ({
   const [heightCompensation, setHeightCompensation] = useState(0)
   const [isMenuOpen, toogleIsMenuOpen] = useToggle(false)
 
+  const router = useRouter()
+
+  // Force menu close when route or hash change
+  const handleRouteChange = useCallback(() => {
+    toogleIsMenuOpen(false)
+  }, [toogleIsMenuOpen])
+
+  // Subscribe to routing changes
+  useEffect(() => {
+    router.events.on('hashChangeStart', handleRouteChange)
+    router.events.on('routeChangeStart', handleRouteChange)
+    return () => {
+      router.events.off('hashChangeStart', handleRouteChange)
+      router.events.off('routeChangeStart', handleRouteChange)
+    }
+  }, [handleRouteChange, router.events])
+
   useEffect(() => {
     const offsetTop =
       (headerRef && headerRef.current && headerRef.current.offsetTop) || 0
@@ -45,7 +63,6 @@ const Header: FC<Props> = ({
         0
     )
   }, [scrollTop, forceSticky])
-  console.log(breakpoint)
 
   const shouldShowMenu = useMemo(
     () => isMenuOpen && ['none', 'sm'].includes(breakpoint),

@@ -23,17 +23,17 @@ module.exports = {
         'dersu-3xl': ['56px', '62px'],
         'dersu-2xl': ['42px', '38px'],
         'dersu-xl': ['36px', '44px'],
-        'dersu-lg': ['32px', '32px'],
+        'dersu-lg': ['32px', '38px'],
         'dersu-md': ['22px', '28px'],
-        'dersu-sm': ['18px', '26px'],
-        'dersu-xs': ['16px', '21px'],
-        'dersu-2xs': ['14px', '22px'],
+        'dersu-sm': ['18px', '24px'],
+        'dersu-xs': ['16px', '16px'],
+        'dersu-2xs': ['14px', '20px'],
         'dersu-3xs': ['12px', '18px'],
       },
       colors: {
         dersu: {
           // palette from figma
-          'light-gray': '#888888',
+          'light-gray': '#818181',
           'black': '#313131',
           'white': '#f7f2f0',
           'off-white': '#F6F2F0',

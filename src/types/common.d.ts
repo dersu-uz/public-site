@@ -8,6 +8,7 @@ type BlogPost = {
   author: string
   date: Date
   dateFormatted: string
+  showPricingModule: boolean
   coverImageUrl: string
   webpCoverImageUrl: string
   featuredImageUrl: string

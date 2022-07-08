@@ -51,6 +51,7 @@ async function _preparePost(
     author: data.author,
     date: data.date,
     dateFormatted,
+    showPricingModule: data.showPricingModule || false,
     coverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, coverImageUrl))
       ? coverImageUrl
       : null,
