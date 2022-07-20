@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 import { COLOR_SCHEMES } from '@/constants/theme'
 
@@ -11,6 +11,7 @@ type Props = {
   heroImageUrl?: string
   webpHeroImageUrl?: string
   heroColorScheme?: keyof typeof COLOR_SCHEMES
+  children: ReactNode
 }
 
 const DefaultLayout: FC<Props> = ({

@@ -26,8 +26,17 @@ const Page404: FC = props => {
           <p>No encontramos la página que buscas.</p>
           <p>We cannot find the page you are looking for.</p>
           <p>
-            <Link href="/es">Español</Link> - <Link href="/en">English</Link> -{' '}
-            <Link href="/fr">Français</Link>
+            <Link href="/" locale="es">
+              Español
+            </Link>{' '}
+            -{' '}
+            <Link href="/" locale="en">
+              English
+            </Link>{' '}
+            -{' '}
+            <Link href="/" locale="fr">
+              Français
+            </Link>
           </p>
         </MarkdownContent>
       </MainContent>

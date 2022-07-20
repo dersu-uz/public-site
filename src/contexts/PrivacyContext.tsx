@@ -1,4 +1,4 @@
-import { createContext, FC } from 'react'
+import { createContext, FC, ReactNode } from 'react'
 import { useCookie } from 'react-use'
 
 import {
@@ -14,7 +14,11 @@ type PrivacyContextType = {
 
 const PrivacyContext = createContext<PrivacyContextType>(null)
 
-const PrivacyContextProvider: FC = ({ children }) => {
+interface IProps {
+  children: ReactNode
+}
+
+const PrivacyContextProvider = (props: IProps) => {
   const [acceptCookies, updateAcceptCookies] = useCookie(COOKIES_ACCEPT_NAME)
 
   const handleUserAcceptCookies = () => {
@@ -46,7 +50,9 @@ const PrivacyContextProvider: FC = ({ children }) => {
   }
 
   return (
-    <PrivacyContext.Provider value={value}>{children}</PrivacyContext.Provider>
+    <PrivacyContext.Provider value={value}>
+      {props.children}
+    </PrivacyContext.Provider>
   )
 }
 

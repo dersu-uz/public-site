@@ -18,7 +18,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Post from '@/components/Post'
 import RelatedPosts from '@/modules/RelatedPosts'
-import Pricing from '@/modules/Pricing'
+import { LocaleShortCode } from '@/services/i18nService'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const slugs = getAllPostSlugs('es')
@@ -34,10 +34,10 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async ({ params }) => {
+export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const { slug } = params
-  const post = await getPostBySlug(slug as string, 'es')
-  const otherPosts = await getLatestPosts('es', 2)
+  const post = await getPostBySlug(slug as string, locale as LocaleShortCode)
+  const otherPosts = await getLatestPosts(locale as LocaleShortCode, 2)
   const { subtitle, htmlContent } = post
   return {
     props: {
@@ -57,7 +57,6 @@ type Props = {
   tag: string
   author: string
   dateFormatted: string
-  showPricingModule: boolean
   featuredImageUrl: string
   webpFeaturedImageUrl: string
   htmlContent: string
@@ -72,7 +71,6 @@ const BlogPostPage: FC<Props> = ({
   tag,
   author,
   dateFormatted,
-  showPricingModule,
   featuredImageUrl,
   webpFeaturedImageUrl,
   htmlContent,
@@ -124,7 +122,6 @@ const BlogPostPage: FC<Props> = ({
             dateFormatted={dateFormatted}
             htmlContent={htmlContent}
           />
-          {showPricingModule && <Pricing />}
           <RelatedPosts posts={otherPosts} />
           <Footer />
         </>

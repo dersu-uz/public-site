@@ -3,9 +3,11 @@
   @apply font-serif;
 
   @screen md {
+    & {
     @apply flex-row;
     @apply font-sans;
     @apply gap-3;
+    }
   }
 }
 
@@ -13,8 +15,10 @@
   @apply text-dersu-2xl text-white;
 
   @screen md {
-    @apply text-dersu-2xs text-dersu-black font-semibold leading-5 hover:underline;
-    @apply transition-colors;
-    @apply cursor-pointer;
+     & {
+       @apply text-dersu-2xs text-dersu-black font-semibold leading-5 hover:underline;
+       @apply transition-colors;
+       @apply cursor-pointer;
+     }
   }
 }

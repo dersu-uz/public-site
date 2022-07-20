@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react'
+import { FC, ReactNode, useContext } from 'react'
 import { NextSeo } from 'next-seo'
 import PlausibleProvider from 'next-plausible'
 
@@ -17,22 +17,19 @@ import CookieBanner from '@/components/CookieBanner'
 import DeveloperHelpers from '@/components/DeveloperHelpers'
 
 import locales from '@/locales'
+import { useRouter } from 'next/router'
 
 type Props = {
   title: string
   description: string
   canonicalUrl: string
-  locale: LocaleShortCode
+  children: ReactNode
 }
 
-const Page: FC<Props> = ({
-  title,
-  description,
-  canonicalUrl,
-  locale,
-  children,
-}) => {
+const Page: FC<Props> = ({ title, description, canonicalUrl, children }) => {
   const { acceptCookies } = useContext(PrivacyContext)
+  const router = useRouter()
+
   return (
     <PlausibleProvider
       domain={PLAUSIBLE_DOMAIN}
@@ -56,17 +53,17 @@ const Page: FC<Props> = ({
           {
             rel: 'alternate',
             type: 'application/rss+xml',
-            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.xml`,
+            href: `${BASE_DOMAIN_URL}/feed/${router.locale}/feed.xml`,
           },
           {
             rel: 'alternate',
             type: 'application/json',
-            href: `${BASE_DOMAIN_URL}/feed/${locale}/feed.json`,
+            href: `${BASE_DOMAIN_URL}/feed/${router.locale}/feed.json`,
           },
           {
             rel: 'alternate',
             type: 'application/atom+xml',
-            href: `${BASE_DOMAIN_URL}/feed/${locale}/atom.xml`,
+            href: `${BASE_DOMAIN_URL}/feed/${router.locale}/atom.xml`,
           },
         ]}
         additionalMetaTags={[

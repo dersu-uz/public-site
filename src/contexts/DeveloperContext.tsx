@@ -1,4 +1,4 @@
-import { createContext, FC } from 'react'
+import { createContext, FC, ReactNode } from 'react'
 import { useKey, useToggle } from 'react-use'
 
 type DeveloperContextType = {
@@ -8,7 +8,11 @@ type DeveloperContextType = {
 
 const DeveloperContext = createContext<DeveloperContextType>(null)
 
-const DeveloperContextProvider: FC = ({ children }) => {
+interface IProps {
+  children: ReactNode
+}
+
+const DeveloperContextProvider = (props: IProps) => {
   const [showGrid, toggleShowGrid] = useToggle(false)
   const [showBreakpoints, toggleShowBreakpoints] = useToggle(false)
 
@@ -29,7 +33,7 @@ const DeveloperContextProvider: FC = ({ children }) => {
 
   return (
     <DeveloperContext.Provider value={value}>
-      {children}
+      {props.children}
     </DeveloperContext.Provider>
   )
 }
