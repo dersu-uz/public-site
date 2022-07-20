@@ -40,8 +40,8 @@ const nextConfig = {
     Object.values(paths).forEach(pathObj => {
       ['es', 'fr'].forEach(locale => {
         rewrites.push({
-          source: pathObj[locale].replace(/\[(\w+?)\]/g, (_, path) => `:${path}`),
-          destination: pathObj.en.replace(/\[(\w+?)\]/g, (_, path) => `:${path}`),
+          source: pathObj[locale],
+          destination: pathObj.en,
         })
       })
     });

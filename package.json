@@ -20,7 +20,8 @@
     "remark": "^14.0.2",
     "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.1",
-    "remark-parse": "^10.0.1"
+    "remark-parse": "^10.0.1",
+    "urlpattern-polyfill": "^5.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.18.9",
