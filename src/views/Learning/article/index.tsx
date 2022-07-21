@@ -1,22 +1,10 @@
 import Header from '@/components/Header'
 import Picture from '@/components/Picture'
-import StoreButtons from '@/components/StoreButtons'
+import StoreButtons from '@/components/StoreButtones'
 import TranslationsContext from '@/contexts/TranslationsContext'
-import { getTranslations, LocaleShortCode } from '@/services/i18nService'
-import { GetServerSideProps } from 'next'
 import { useContext } from 'react'
 
-export const getServerSideProps: GetServerSideProps = async ctx => {
-  const t = getTranslations(ctx.locale as LocaleShortCode)
-
-  return {
-    props: {
-      title: t.articleFallback.title,
-    },
-  }
-}
-
-const ArticleFallback = () => {
+const Article = () => {
   const { t } = useContext(TranslationsContext)
 
   return (
@@ -45,4 +33,4 @@ const ArticleFallback = () => {
   )
 }
 
-export default ArticleFallback
+export default Article
