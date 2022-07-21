@@ -1,20 +1,20 @@
 version: '3.8'
 services:
-  site:
-    image: node:lts-slim
-    working_dir: /usr/src/app/dersu-site
-    entrypoint: ['sh', '-c', 'npm install --legacy-peer-deps && npm run dev']
+  site-dev:
+    build:
+      context: .
+      target: builder
     ports:
       - '4000:4000'
     volumes:
-      - ./:/usr/src/app/dersu-site
+      - ./:/app
 
-  nginx-site:
+  site-prod:
     build:
       context: .
       target: final
     ports:
-      - '4001:80'
+      - '3000:3000'
     environment:
       NEXT_PUBLIC_BASE_DOMAIN_URL: https://dersu.uz
       NEXT_PUBLIC_ENABLE_PLAUSIBLE: true

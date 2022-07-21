@@ -4,6 +4,7 @@ const paths = require('./src/constants/paths')
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
+  output: 'standalone',
   webpack5: true,
   swcMinify: true,
   trailingSlash: true,

@@ -1,8 +1,15 @@
-FROM node:lts-slim AS builder
-WORKDIR /usr/src/app/dersu-site
+FROM node:lts-alpine AS deps
+RUN apk add --no-cache libc6-compat
+WORKDIR /app
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 RUN npm install --legacy-peer-deps
+
+FROM node:lts-alpine AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY package.json package.json
+COPY package-lock.json package-lock.json
 COPY .env .env
 COPY .eslintignore .eslintignore
 COPY .eslintrc.js .eslintrc.js
@@ -18,8 +25,16 @@ COPY jest.setup.js jest.setup.js
 COPY public public
 COPY src src
 COPY _posts _posts
-RUN npm run export
+RUN npm run build
+CMD [ "npm", "run", "dev" ]
 
-FROM nginx:1.19.2-alpine AS final
-COPY default.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /usr/src/app/dersu-site/out /usr/share/nginx/html
+FROM node:lts-alpine AS final
+WORKDIR /app
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/package.json ./package.json
+ENV NODE_ENV production
+ENV PORT 3000
+EXPOSE 3000
+CMD ["node", "server.js"]
