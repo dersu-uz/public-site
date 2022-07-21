@@ -1,6 +1,5 @@
 import { getTranslations, LocaleShortCode } from '@/services/i18nService'
 import Article from '@/views/Learning'
-// import Article from '@/views/Learning/article'
 import { GetServerSideProps } from 'next'
 
 export const getServerSideProps: GetServerSideProps = async ctx => {
