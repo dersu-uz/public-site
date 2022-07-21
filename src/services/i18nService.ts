@@ -22,11 +22,8 @@ export function isLocale(localeToTest: string): boolean {
   return Object.keys(locales).some(locale => locale === localeToTest)
 }
 
-export function getTranslations(locale: LocaleShortCode): TranslationStrings {
-  if (isLocale(locale)) {
-    return locales[locale]
-  } else {
-    //throw Error(`Unknown locale "${locale}"`)
-    locales['es']
-  }
+export function getTranslations(
+  locale: string
+): TranslationStrings | undefined {
+  return locales[locale]
 }

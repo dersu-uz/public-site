@@ -11,8 +11,10 @@ import MainContent from '@/components/MainContent'
 import MarkdownContent from '@/components/MarkdownContent'
 import { getTranslations, LocaleShortCode } from '@/services/i18nService'
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
+export const getStaticProps: GetStaticProps = async ctx => {
   const t = getTranslations(ctx.locale as LocaleShortCode)
+
+  if (!t) return { notFound: true }
 
   return {
     props: {

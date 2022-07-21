@@ -16,6 +16,8 @@ import { GetStaticProps } from 'next'
 import { FC } from 'react'
 
 export const getStaticProps: GetStaticProps = async ctx => {
+  if (ctx.locale === 'default') return { notFound: true }
+
   const latestPosts = await getLatestPosts(ctx.locale as LocaleShortCode, 2)
 
   return {
@@ -32,7 +34,7 @@ type Props = {
 
 const HomePage: FC<Props> = ({ latestPosts }) => (
   <>
- <HomeHero />
+    <HomeHero />
     <Header />
     <HomeIntro />
     <HomeMountaineerProfile />

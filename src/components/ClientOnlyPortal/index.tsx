@@ -1,8 +1,9 @@
-import { useRef, useEffect, useState, FC } from 'react'
+import { useRef, useEffect, useState, FC, ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 
 type Props = {
   selector: string
+  children: ReactNode
 }
 
 const ClientOnlyPortal: FC<Props> = ({ selector, children }) => {

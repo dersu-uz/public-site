@@ -20,7 +20,7 @@ import { PrivacyContextProvider } from '@/contexts/PrivacyContext'
 const NextApp: FC<AppProps> = props => {
   const { Component, pageProps, router } = props
   const { title, description, canonicalUrl } = pageProps
-  const translations = getTranslations(router.locale as LocaleShortCode)
+  const translations = getTranslations(router.locale) ?? getTranslations('es')
   const contextValue: TranslationContextValue = {
     t: translations,
     currentLocale: router.locale as LocaleShortCode,

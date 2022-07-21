@@ -12,6 +12,8 @@ import usePreferredLocale from '@/hooks/usePreferredLocale'
 export const getStaticProps: GetStaticProps = async ctx => {
   const t = getTranslations(ctx.locale as LocaleShortCode)
 
+  if (!t) return { notFound: true }
+
   return {
     props: {
       title: t.work.title,

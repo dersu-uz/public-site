@@ -9,6 +9,8 @@ import { useContext } from 'react'
 export const getServerSideProps: GetServerSideProps = async ctx => {
   const t = getTranslations(ctx.locale as LocaleShortCode)
 
+  if (!t) return { notFound: true }
+
   return {
     props: {
       title: t.routeFallback.title,

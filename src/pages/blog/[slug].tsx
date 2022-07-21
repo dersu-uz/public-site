@@ -35,6 +35,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
+  if (locale === 'default') return { notFound: true }
+
   const { slug } = params
   const post = await getPostBySlug(slug as string, locale as LocaleShortCode)
   const otherPosts = await getLatestPosts(locale as LocaleShortCode, 2)

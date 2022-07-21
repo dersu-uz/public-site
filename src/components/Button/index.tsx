@@ -1,9 +1,10 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react'
 
 type Props = {
   type: 'button' | 'submit' | 'reset'
   disabled?: boolean
   onClick?: () => void
+  children: ReactNode
 }
 
 const Button: FC<Props> = ({ type, disabled, onClick, children }) => (

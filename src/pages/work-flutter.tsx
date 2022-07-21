@@ -1,21 +1,23 @@
-import { FC } from 'react'
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
+import { FC } from 'react'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
 
-import MarkdownContent from '@/components/MarkdownContent'
 import MainContent from '@/components/MainContent'
-import { getTranslations, LocaleShortCode } from '@/services/i18nService'
+import MarkdownContent from '@/components/MarkdownContent'
 import usePreferredLocale from '@/hooks/usePreferredLocale'
+import { getTranslations, LocaleShortCode } from '@/services/i18nService'
 
 export const getStaticProps: GetStaticProps = async ctx => {
-  const t = getTranslations(ctx.locale as LocaleShortCode)
+  const t = getTranslations(ctx.locale)
+
+  if (!t) return { notFound: true }
 
   return {
     props: {
       title: t.work.title,
-      description: t.tAndC.descriptionFlutter,
+      description: t.work.descriptionMobile,
     },
   }
 }

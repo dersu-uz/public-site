@@ -17,6 +17,8 @@ import { LocaleShortCode } from '@/services/i18nService'
 import Link from 'next/link'
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  if (locale === 'default') return { notFound: true }
+
   const latestPosts = await getLatestPosts(locale as LocaleShortCode, 100)
   generateRSSFeed(locale as LocaleShortCode)
 

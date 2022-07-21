@@ -2,7 +2,7 @@ import { FC, ReactNode } from 'react'
 
 type Props = {
   dangerouslySetInnerHTML?: { __html: string }
-  children: ReactNode
+  children?: ReactNode
 }
 
 const MarkdownContent: FC<Props> = ({ dangerouslySetInnerHTML, children }) => {

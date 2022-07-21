@@ -1,8 +1,6 @@
-import { FC, ReactNode, useContext } from 'react'
-import { NextSeo } from 'next-seo'
 import PlausibleProvider from 'next-plausible'
-
-import { LocaleShortCode } from '@/services/i18nService'
+import { NextSeo } from 'next-seo'
+import { FC, ReactNode, useContext } from 'react'
 
 import PrivacyContext from '@/contexts/PrivacyContext'
 
