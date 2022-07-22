@@ -1,15 +1,13 @@
-FROM node:lts-alpine AS deps
-RUN apk add --no-cache libc6-compat
+FROM node:lts AS builder
 WORKDIR /app
 COPY package.json package.json
-COPY package-lock.json package-lock.json
-RUN npm install --legacy-peer-deps
-
-FROM node:lts-alpine AS builder
-WORKDIR /app
-COPY --from=deps /app/node_modules ./node_modules
+COPY yarn.lock yarn.lock
 COPY package.json package.json
-COPY package-lock.json package-lock.json
+COPY .yarn/cache .yarn/cache/
+COPY .yarn/releases .yarn/releases/
+COPY .yarnrc.yml .yarnrc.yml
+COPY .pnp.cjs .pnp.cjs
+RUN yarn rebuild
 COPY .env .env
 COPY .eslintignore .eslintignore
 COPY .eslintrc.js .eslintrc.js
@@ -25,16 +23,21 @@ COPY jest.setup.js jest.setup.js
 COPY public public
 COPY src src
 COPY _posts _posts
-RUN npm run build
-CMD [ "npm", "run", "dev" ]
+RUN yarn build
+CMD ["yarn", "dev"]
 
-FROM node:lts-alpine AS final
+FROM node:lts-slim AS final
 WORKDIR /app
 COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/next.config.js ./
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/.next/static ./.next/static
+RUN rm -rf .yarn
+COPY yarn.lock yarn.lock
+COPY .yarn/cache .yarn/cache/
+COPY .yarn/releases .yarn/releases/
+COPY .yarnrc.yml .yarnrc.yml
+COPY .pnp.cjs .pnp.cjs
+RUN yarn rebuild
 ENV NODE_ENV production
 ENV PORT 3000
 EXPOSE 3000
-CMD ["node", "server.js"]
+CMD ["yarn", "node", "server.js"]
