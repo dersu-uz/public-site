@@ -33,7 +33,8 @@
     "downloadAppApple": "Download for iOS",
     "downloadAppGoogle": "Download for Android",
     "downloadTheApp": "Download the app",
-    "appLocalesDisclaimer": "Unfortunately the App is available only in Spanish right now. More languages are on the way."
+    "appLocalesDisclaimer": "Unfortunately the App is available only in Spanish right now. More languages are on the way.",
+    "moreInfo": "More Info"
   },
   "mailchimpForm": {
     "emailPlaceholder": "Enter your email...",
@@ -160,23 +161,23 @@
     "partnerMontanaSegura": "Montaña Segura",
     "aegm": {
       "abbreviation": "AEGM",
-      "summary": "Asociación Española Guías de Montaña takes care of the training and regulation of guiding.",
+      "summary": "The <strong>Asociación Española</strong> Guías de Montaña takes care of the <strong>training and regulation</strong> of guiding.",
       "details": "The Spanish Association of Mountain Guides works to improve education and professional training, as well as the recognition and regulation of the practice of the profession, representing this group before official bodies and institutions of the State and the different Autonomous Communities.",
       "collaborationDetails": "It collaborates with Dersu to raise awareness and enhance the figure of the Guide in their different specialties, as well as to facilitate access to professionals by users and support the implementation of activities aimed at improving knowledge and safety in activities carried out in the natural environment."
     },
     "altaRuta": {
-      "summary": "It helps you to organize high level hiking routes, independently or with professional guides.",
+      "summary": "It helps you to <strong>organize high level hiking routes</strong>, independently or with professional guides.",
       "details": "Alta Ruta offers technical and updated information on the state of the mountain, expedites the processing of reservations in each refuge, monitors the people on route to be able to act in case of emergency and - above all - to make all of us a group that loves and respects the mountains and the Pyrenees.",
       "collaborationDetails": "It collaborates with Dersu to improve the preparation of people who go to the mountains, both from a safety and sustainability point of view. To this end, a multitude of activities, events and contents are jointly developed."
     },
     "immed": {
       "abbreviation": "IMMED",
-      "summary": "An entity dedicated to research and training in mountain and sports medicine.",
+      "summary": "An entity dedicated to <strong>research and training</strong> in mountain and sports medicine.",
       "details": "The Institute of Mountain and Sports Medicine is an entity dedicated to training and research in mountain medicine and sports medicine. Its team includes doctors and nurses as well as high and medium mountain, climbing and canyoning sports technicians and members of rescue and rescue and rescue groups; thus creating a heterogeneous structure whose objective is to provide the student with a useful, comprehensive and effective vision of the care of the injured person in the natural environment and difficult access environments.",
       "collaborationDetails": "It collaborates with Dersu by carrying out activities to make mountaineers aware of the importance of knowledge related to first aid and the protocol in case of an accident, as well as the main safety rules in planning and decision making during the route."
     },
     "montanaSegura": {
-      "summary": "It is a campaign to prevent accidents in the natural environment with the objective of improving safety.",
+      "summary": "It is a campaign to <strong>prevent accidents</strong> in the natural environment with the objective of <strong>improving safety</strong>.",
       "details": "The Safe Mountains campaign is a campaign to prevent accidents in the natural environment as a result of a collaboration agreement between the Government of Aragon, Aramon and the Aragonese Mountaineering Federation. It was born in 1999, when it was called Montañas Para Vivirlas Seguro, and from 2005 to 2011 it was called Montañas Seguras, targeting 0 accidents.",
       "collaborationDetails": "It collaborates with Dersu to raise awareness of the inherent dangers of outdoor activities and the safety measures that can be adopted to manage them, reduce the accident rate in mountain activities, through better self-knowledge by mountaineers together with proper planning, preparation and training in mountain activities and promote an appropriate methodology for decision making in the course of such activities."
     }

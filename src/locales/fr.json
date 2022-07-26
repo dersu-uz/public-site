@@ -33,7 +33,8 @@
     "downloadAppApple": "Télécharger pour iOS",
     "downloadAppGoogle": "Télécharger pour Android",
     "downloadTheApp": "Télécharger l’application",
-    "appLocalesDisclaimer": "Actuellement, l'application n'est disponible qu'en espagnol. D'autres langues sont en route"
+    "appLocalesDisclaimer": "Actuellement, l'application n'est disponible qu'en espagnol. D'autres langues sont en route",
+    "moreInfo": "Plus d'informations"
   },
   "mailchimpForm": {
     "emailPlaceholder": "Inscrivez votre courriel...",
@@ -160,23 +161,23 @@
     "partnerMontanaSegura": "Montaña Segura",
     "aegm": {
       "abbreviation": "AEGM",
-      "summary": "L'Association espagnole des guides de montagne s'occupe de la formation et de la réglementation des guides.",
+      "summary": "<strong>L'Association espagnole</strong> des guides de montagne s'occupe de la <strong>formation et de la réglementation</strong> des guides.",
       "details": "L'Association espagnole des guides de montagne travaille à l'amélioration de l'enseignement et de la formation professionnelle, ainsi qu'à la reconnaissance et à la réglementation de l'exercice de la profession. Elle représente ce groupe devant les organismes officiels et les institutions de l'État et des différentes communautés autonomes.",
       "collaborationDetails": "Elle collabore avec le Dersu pour faire connaître et promouvoir la figure du Guide dans leurs différentes spécialités, ainsi que pour faciliter l'accès des usagers aux professionnels et soutenir la mise en œuvre d'activités visant à améliorer les connaissances et la sécurité dans les activités réalisées en milieu naturel."
     },
     "altaRuta": {
-      "summary": "Il vous aide à organiser des itinéraires de randonnée de haut niveau, de manière indépendante ou avec des guides professionnels.",
+      "summary": "Il vous aide à <strong>organiser des itinéraires</strong> de randonnée de <strong>haut niveau</strong>, de manière indépendante ou avec des guides professionnels.",
       "details": "Alta Ruta offre des informations techniques et actualisées sur l'état de la montagne, accélère le processus de réservation dans chaque refuge, surveille les personnes en route pour pouvoir agir en cas d'urgence et - surtout - pour faire de nous tous un groupe qui aime et respecte la montagne et les Pyrénées.",
       "collaborationDetails": "Elle collabore avec Dersu pour améliorer la préparation des personnes qui se rendent en montagne, tant du point de vue de la sécurité que de la durabilité. À cette fin, une multitude d'activités, d'événements et de contenus sont élaborés conjointement."
     },
     "immed": {
       "abbreviation": "IMMED",
-      "summary": "Une organisation dédiée à la recherche et à la formation dans le domaine de la médecine des montagnes et des sports.",
+      "summary": "Une organisation dédiée à la <strong>recherche et à la formation</strong> dans le domaine de la médecine des montagnes et des sports.",
       "details": "L'Institute of Mountain and Sports Medicine est une entité dédiée à la formation et à la recherche en médecine de montagne et en médecine du sport. Son équipe comprend des médecins et des infirmiers ainsi que des techniciens sportifs de haute et moyenne montagne, d'escalade et de canyoning et des membres de groupes de sauvetage et de secours, créant ainsi une structure hétérogène dont le but est de fournir aux étudiants une vision utile, complète et efficace de la prise en charge du blessé en milieu naturel et d'accès difficile.",
       "collaborationDetails": "Elle collabore avec Dersu en réalisant des activités visant à sensibiliser les alpinistes à l'importance des connaissances en matière de premiers secours et de protocole en cas d'accident, ainsi qu'aux principales règles de sécurité pour la planification et la prise de décision pendant l'itinéraire."
     },
     "montanaSegura": {
-      "summary": "Il s'agit d'une campagne de prévention des accidents dans l'environnement naturel visant à améliorer la sécurité.",
+      "summary": "Il s'agit d'une campagne de <strong>prévention des accidents</strong> dans l'environnement naturel visant à <strong>améliorer la sécurité</strong>.",
       "details": "La campagne Montagnes sûres est une campagne de prévention des accidents en milieu naturel, fruit d'un accord de collaboration entre le gouvernement d'Aragon, Aramon et la Fédération aragonaise d'alpinisme. Il a commencé en 1999, lorsqu'il s'appelait Montañas Para Vivirlas Seguro, et de 2005 à 2011, il s'appelait Montañas Seguras.",
       "collaborationDetails": "It collaborates with Dersu to raise awareness of the dangers inherent in outdoor activities and the safety measures that can be adopted to manage them, to reduce accidents in mountain activities through better self-knowledge on the part of climbers and correct planning, preparation and training in mountain activities, and to promote an appropriate methodology for decision-making in these activities."
     }

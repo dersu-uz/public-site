@@ -2,12 +2,15 @@ import { FC, ReactElement } from 'react'
 
 type Props = {
     isLinkedCard: boolean
-    hasChildren: boolean
+    hasChildren?: boolean
     imageSource: string
     imageAltText: string
-    moreInfo: boolean
+    moreInfo?: boolean
+    seeMoreInfo?: string
     partnerDescription?: ReactElement
     linkUrl?: string
+    linkTarget?: string
+    linkRel?: string
     onClick?: () => void
 }
 
@@ -19,7 +22,11 @@ const PartnerCard: FC<Props> = ({
     onClick,
     partnerDescription,
     moreInfo,
-    children 
+    seeMoreInfo,
+    linkUrl,
+    linkTarget,
+    linkRel,
+    children
 }) => (
     hasChildren ? 
         <div>
@@ -27,7 +34,10 @@ const PartnerCard: FC<Props> = ({
         </div> :
         isLinkedCard ? 
             <a
-                href=""
+                href={linkUrl}
+                target={linkTarget}
+                rel={linkRel}
+                onClick={onClick}
                 className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
             >
                 {moreInfo === true && (
@@ -40,7 +50,10 @@ const PartnerCard: FC<Props> = ({
                         </p>
                         <p className="font-sans text-sm py-0.5">{partnerDescription}</p>
                         <div className='border-black/20 border-t flex justify-center items-center'>
-                            <p>More Info</p>
+                            <div className='flex my-5 space-x-1'>
+                                <img src="/images/common/icon-more.svg" alt="See more icon" />
+                                <p>{seeMoreInfo}</p>
+                            </div>
                         </div>
                     </div>
                 )}
@@ -52,7 +65,7 @@ const PartnerCard: FC<Props> = ({
                                 alt={imageAltText}
                             />
                         </p>
-                        <p className="font-sans text-sm py-7">{partnerDescription}</p>
+                        {partnerDescription}
                     </div>
                 )}
             </a> :
@@ -69,7 +82,7 @@ const PartnerCard: FC<Props> = ({
                         <div className='border-black/20 border-t flex justify-center items-center'>
                             <div className='flex my-5 space-x-1'>
                                 <img src="/images/common/icon-more.svg" alt="See more icon" />
-                                <p>More Info</p>
+                                <p>{seeMoreInfo}</p>
                             </div>
                         </div>
                     </div>
