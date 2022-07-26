@@ -101,4 +101,9 @@ const PartnerCard: FC<Props> = ({
         </div>
 )
 
+PartnerCard.defaultProps = {
+    hasChildren: false,
+    moreInfo: false
+  }
+
 export default PartnerCard

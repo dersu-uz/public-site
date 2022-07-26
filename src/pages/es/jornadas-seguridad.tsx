@@ -246,8 +246,6 @@ const JornadasSeguridadPage = () => {
               linkTarget={"_blank"}
               linkRel={"noopener noreferrer"}
               linkUrl={"https://dersu.uz/es/"}
-              hasChildren={false}
-              moreInfo={false}
               onClick={() => plausible('CTA Jornadas Seguridad - Dersu')}
               imageSource={"/images/pages/jornadas-seguridad/logo-dersu.svg"}
               imageAltText={"Logo Dersu"}
@@ -266,8 +264,6 @@ const JornadasSeguridadPage = () => {
               linkRel={"noopener noreferrer"}
               linkUrl={"https://www.laaltaruta.com/"}
               onClick={() => plausible('CTA Jornadas Seguridad - Alta Ruta')}
-              hasChildren={false}
-              moreInfo={false}
               imageSource={"/images/pages/jornadas-seguridad/logo-altaruta.svg"}
               imageAltText={"Logo Alta Ruta"}
               partnerDescription={
@@ -284,8 +280,6 @@ const JornadasSeguridadPage = () => {
               linkTarget={"_blank"}
               linkRel={"noopener noreferrer"}
               linkUrl={"https://www.garmin.com/es-ES/c/outdoor-recreation/handheld-hiking-gps/"}
-              hasChildren={false}
-              moreInfo={false}
               onClick={() => plausible('CTA Jornadas Seguridad - Garmin')}
               imageSource={"/images/pages/jornadas-seguridad/logo-garmin.svg"}
               imageAltText={"Logo Garmin"}
@@ -303,8 +297,6 @@ const JornadasSeguridadPage = () => {
               linkTarget={"_blank"}
               linkRel={"noopener noreferrer"}
               linkUrl={"http://www.immed.info/index.php/es/"}
-              hasChildren={false}
-              moreInfo={false}
               onClick={() => plausible('CTA Jornadas Seguridad - Immed')}
               imageSource={"/images/pages/jornadas-seguridad/logo-immed.svg"}
               imageAltText={"Logo IMMED"}

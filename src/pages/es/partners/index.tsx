@@ -60,7 +60,7 @@ const Partners = () => {
   return (
     <>
       <Header />
-      <Wrapper limitedWidth className="pt-10 md:pt-10">
+      <Wrapper limitedWidth className="pt-5">
         <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
           Partners
         </h2>
@@ -71,7 +71,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-5 md:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 lg:gap-7 mb-5 md:mb-10">
           <PartnerCard
             isLinkedCard={false}
             hasChildren={false}
@@ -100,7 +100,7 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.aegm.collaborationDetails}`}
           >
-            <div className='grid w-2/3 sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
+            <div className='grid md:w-2/3 sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
               <a
                 href="http://www.aegm.org"
                 target="_blank"
