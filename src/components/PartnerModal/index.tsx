@@ -1,0 +1,85 @@
+import { FC } from 'react'
+import Modal from 'react-modal';
+
+type Props = {
+    isOpen: boolean
+    onClose: () => void
+    partnerImageSource: string
+    partnerImageAltText: string
+    partnerName: string
+    hasLinks: boolean
+    aboutPartner: string
+    aboutPartnerDetails: string
+    howWeCollaborate: string
+    collaborationDetails: string
+}
+
+const PartnerModal: FC<Props> = ({
+    isOpen,
+    onClose,
+    partnerImageSource,
+    partnerImageAltText,
+    partnerName,
+    hasLinks,
+    aboutPartner,
+    aboutPartnerDetails,
+    howWeCollaborate,
+    collaborationDetails,
+    children
+}) => (
+    <Modal
+        isOpen={isOpen}
+        onRequestClose={onClose}
+        contentLabel="More info on AEGM"
+        style={{
+          overlay: {
+            backgroundColor: 'rgba(49, 49, 49, 0.45)'
+          },
+          content: {
+            top: 100,
+            bottom: 100,
+            left: 50,
+            right: 50,
+            borderRadius: '10px'
+          }
+        }}
+      >
+        <div className='flex justify-end'>
+          <button onClick={onClose}>
+            <img src="/images/common/icon-cancel-dark.svg" alt="cancel-icon" />
+          </button>
+        </div>
+        <div className='px-8 py-3'>
+          {/* The Image, title and links */}
+          <div className='text-center md:flex md:space-x-10 items-center'>
+            <div className='flex justify-center'>
+              <img src={partnerImageSource} alt={partnerImageAltText} />
+            </div>
+            <div>
+              <p className='text-2xl mt-3 md:text-4xl sm:text-left text-center'>{partnerName}</p>
+              {hasLinks && (
+                children
+              )}
+            </div>
+          </div>
+
+          {/* The Content */}
+          <div className='grid md:grid-cols-2 mt-16 px-3 md:gap-x-10 lg:gap-x-40 gap-y-7'>
+            <div>
+              <p className='text-2xl mb-5'>
+                {aboutPartner}
+              </p>
+              <p className='text-justify'>{aboutPartnerDetails}</p>
+            </div>
+            <div>
+              <p className='text-2xl mb-5'>
+                  {howWeCollaborate}
+              </p>
+              <p className='text-justify'>{collaborationDetails}</p>
+            </div>
+          </div>
+        </div>
+      </Modal>
+)
+
+export default PartnerModal

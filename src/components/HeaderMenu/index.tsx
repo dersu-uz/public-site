@@ -51,6 +51,12 @@ const HeaderMenu: FC = () => {
           </Link>
         </li>
 
+        <li className={styles.HeaderMenuItem}>
+          <Link href={`/${currentLocale}/${t.partners.href}`}>
+            <a>{t.headerMenu.partners}</a>
+          </Link>
+        </li>
+
         {availableLocales.map((l, i) => {
           const isCurrent = l.locale === currentLocale
           return !isCurrent ? (
