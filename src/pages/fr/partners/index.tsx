@@ -8,10 +8,10 @@ import Header from '@/components/Header'
 import PartnerModal from '@/components/PartnerModal'
 
 export const getStaticProps: GetStaticProps = async () => {
-  generateRSSFeed('fr')
+  generateRSSFeed('en')
   return {
     props: {
-      locale: 'fr',
+      locale: 'en',
       title: 'Partners',
       description: '',
     },
@@ -100,7 +100,7 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.aegm.collaborationDetails}`}
           >
-            <div className='grid justify-items-center md:justify-items-start sm:w-full md:w-6/7 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 sm:divide-x-2'>
+            <div className='grid justify-items-center md:justify-items-start sm:w-full md:w-6/7 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 sm:divide-x-2 font-sans'>
               <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-1'>
                 <a
                   href="http://www.aegm.org"
@@ -159,7 +159,7 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.montanaSegura.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-4 md:grid-cols-4 sm:divide-x-2'>
+            <div className='grid sm:justify-items-start sm:grid-cols-4 md:grid-cols-4 sm:divide-x-2 font-sans'>
               <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-auto'>
                 <a
                   href="https://montanasegura.com/"
@@ -218,7 +218,7 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.immed.collaborationDetails}`}
           >
-            <div className='grid grid-cols-2 gap-x-3 sm:gap-x-0 mt-2 sm:mt-0 justify-items-center md:justify-items-start sm:grid-cols-3 lg:grid-cols-5 sm:divide-x-2'>
+            <div className='grid grid-cols-2 gap-x-3 sm:gap-x-0 mt-2 sm:mt-0 justify-items-center md:justify-items-start sm:grid-cols-3 lg:grid-cols-5 sm:divide-x-2 font-sans'>
               <div className='col-span-auto'>
                 <a
                   href="http://www.immed.info/"
@@ -268,7 +268,7 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.altaRuta.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:w-full md:w-full sm:grid-cols-3 sm:divide-x-2'>
+            <div className='grid sm:justify-items-start sm:w-full md:w-full sm:grid-cols-3 sm:divide-x-2 font-sans'>
               <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-1 md:pr-10'>
                 <a
                   href="https://www.laaltaruta.com/"

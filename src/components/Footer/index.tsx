@@ -18,7 +18,7 @@ const Footer: FC = () => {
         <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
           <div className="md:flex md:items-center md:justify-between">
             <div className="py-10 md:order-2 flex flex-wrap gap-10 md:mr-10">
-              <ul className="w-2/3 md:w-auto font-bold columns-2 gap-9 md:gap-11 leading-9">
+              <ul className='font-bold w-2/3 md:w-auto gap-9 md:gap-11 leading-6'>
                 <li>
                   <Link href={`/${currentLocale}/blog`}>Blog</Link>
                 </li>
@@ -34,6 +34,11 @@ const Footer: FC = () => {
                     >
                       Newsletter
                     </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href={`/${currentLocale}/partners`}>
+                    <a>{t.headerMenu.partners}</a>
                   </Link>
                 </li>
 
@@ -57,7 +62,9 @@ const Footer: FC = () => {
                     {t.common.terms}
                   </Link>
                 </li>
+              </ul>
 
+              <ul className='font-bold w-2/3 md:w-auto gap-9 md:gap-11 leading-6'>
                 <li>
                   <Link href="https://www.instagram.com/dersu_uz/">
                     <a
