@@ -56,7 +56,9 @@ const PartnerModal: FC<Props> = ({
               <img src={partnerImageSource} alt={partnerImageAltText} />
             </div>
             <div>
-              <p className='text-2xl mt-3 md:text-4xl sm:text-left text-center'>{partnerName}</p>
+              <div>
+                <p className='text-3xl font-semibold md:text-4xl sm:text-left sm:font-normal text-center'>{partnerName}</p>
+              </div>
               {hasLinks && (
                 children
               )}
@@ -64,18 +66,18 @@ const PartnerModal: FC<Props> = ({
           </div>
 
           {/* The Content */}
-          <div className='grid md:grid-cols-2 mt-16 px-3 md:gap-x-10 lg:gap-x-40 gap-y-7'>
+          <div className='grid md:grid-cols-2 mt-8 sm:mt-12 px-3 md:gap-x-10 lg:gap-x-40 gap-y-7'>
             <div>
-              <p className='text-2xl mb-5'>
+              <p className='text-3xl font-semibold sm:text-2xl mb-5 sm:font-normal text-center sm:text-left'>
                 {aboutPartner}
               </p>
-              <p className='text-justify'>{aboutPartnerDetails}</p>
+              <p className='text-center sm:text-justify'>{aboutPartnerDetails}</p>
             </div>
             <div>
-              <p className='text-2xl mb-5'>
+              <p className='text-3xl font-semibold sm:text-2xl mb-5 sm:font-normal text-center sm:text-left'>
                   {howWeCollaborate}
               </p>
-              <p className='text-justify'>{collaborationDetails}</p>
+              <p className='text-center sm:text-justify'>{collaborationDetails}</p>
             </div>
           </div>
         </div>

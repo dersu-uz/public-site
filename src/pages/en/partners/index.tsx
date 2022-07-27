@@ -100,15 +100,17 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.aegm.collaborationDetails}`}
           >
-            <div className='grid md:w-2/3 sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
-              <a
-                href="http://www.aegm.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>Website</p>
-              </a>
-              <div className='sm:px-6'>
+            <div className='grid sm:justify-items-start sm:grid-cols-3 md:grid-cols-4 sm:divide-x-2'>
+              <div className='sm:pr-8'>
+                <a
+                  href="http://www.aegm.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>www.aegm.org</p>
+                </a>
+              </div>
+              <div className='sm:pl-10'>
                 <a
                   href="https://www.facebook.com/aegmguias/"
                   target="_blank"
@@ -157,15 +159,17 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.montanaSegura.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
-              <a
-                href="https://montanasegura.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>Website</p>
-              </a>
-              <div className='sm:px-6'>
+            <div className='grid sm:justify-items-start sm:grid-cols-4 md:grid-cols-4 sm:divide-x-2'>
+              <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-auto'>
+                  <a
+                    href="https://montanasegura.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p>www.montanasegura.com</p>
+                  </a>
+              </div>
+              <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
                   href="https://www.facebook.com/seguridadmontana/"
                   target="_blank"
@@ -174,7 +178,7 @@ const Partners = () => {
                   <p>Facebook</p>
                 </a>
               </div>
-              <div className='sm:px-6'>
+              <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
                   href="https://www.instagram.com/montanasegurainfo/"
                   target="_blank"
