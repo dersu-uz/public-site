@@ -71,7 +71,7 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 lg:gap-7 mb-5 md:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-4 lg:gap-7 mb-5 md:mb-10">
           <PartnerCard
             isLinkedCard={false}
             hasChildren={false}
@@ -100,17 +100,17 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.aegm.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-3 md:grid-cols-4 sm:divide-x-2'>
-              <div className='sm:pr-8'>
-                  <a
-                    href="http://www.aegm.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p>www.aegm.org</p>
-                  </a>
+            <div className='grid justify-items-center md:justify-items-start sm:w-full md:w-6/7 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 sm:divide-x-2'>
+              <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-1'>
+                <a
+                  href="http://www.aegm.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>www.aegm.org</p>
+                </a>
               </div>
-              <div className='sm:pl-10'>
+              <div className='mt-3 sm:mt-0 sm:pl-4 sm:pr-6'>
                 <a
                   href="https://www.facebook.com/aegmguias/"
                   target="_blank"
@@ -119,7 +119,7 @@ const Partners = () => {
                   <p>Facebook</p>
                 </a>
               </div>
-              <div className='sm:px-6'>
+              <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
                   href="https://www.instagram.com/Aegm_oficial/"
                   target="_blank"
@@ -159,15 +159,15 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.montanaSegura.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
+            <div className='grid sm:justify-items-start sm:grid-cols-4 md:grid-cols-4 sm:divide-x-2'>
               <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-auto'>
-                  <a
-                    href="https://montanasegura.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <p>www.montanasegura.com</p>
-                  </a>
+                <a
+                  href="https://montanasegura.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>www.montanasegura.com</p>
+                </a>
               </div>
               <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
@@ -218,15 +218,17 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.immed.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-7 sm:divide-x-2'>
-              <a
-                href="http://www.immed.info/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>Website</p>
-              </a>
-              <div className='sm:pl-8'>
+            <div className='grid grid-cols-2 gap-x-3 sm:gap-x-0 mt-2 sm:mt-0 justify-items-center md:justify-items-start sm:grid-cols-3 lg:grid-cols-5 sm:divide-x-2'>
+              <div className='col-span-auto'>
+                <a
+                  href="http://www.immed.info/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>www.immed.info</p>
+                </a>
+              </div>
+              <div className='sm:pl-4 md:pl-8'>
                 <a
                   href="https://www.facebook.com/IMMED-511545288930539/"
                   target="_blank"
@@ -266,15 +268,17 @@ const Partners = () => {
             howWeCollaborate={`${t.partners.howWeCollaborate}`}
             collaborationDetails={`${t.partners.altaRuta.collaborationDetails}`}
           >
-            <div className='grid sm:justify-items-start sm:grid-cols-3 sm:divide-x-2'>
-              <a
-                href="https://www.laaltaruta.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p>Website</p>
-              </a>
-              <div className='sm:px-6'>
+            <div className='grid sm:justify-items-start sm:w-full md:w-full sm:grid-cols-3 sm:divide-x-2'>
+              <div className='mt-1 sm:mt-0 col-span-2 sm:col-span-1 md:pr-10'>
+                <a
+                  href="https://www.laaltaruta.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>www.laaltaruta.com</p>
+                </a>
+              </div>
+              <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
                   href="https://www.facebook.com/laaltaruta/"
                   target="_blank"
@@ -284,7 +288,7 @@ const Partners = () => {
                   <p>Facebook</p>
                 </a>
               </div>
-              <div className='sm:px-6'>
+              <div className='mt-3 sm:mt-0 sm:px-6'>
                 <a
                   href="https://www.instagram.com/laaltaruta/"
                   target="_blank"

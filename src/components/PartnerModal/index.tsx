@@ -38,8 +38,8 @@ const PartnerModal: FC<Props> = ({
           content: {
             top: 100,
             bottom: 100,
-            left: 50,
-            right: 50,
+            left: 30,
+            right: 30,
             borderRadius: '10px'
           }
         }}
@@ -49,15 +49,15 @@ const PartnerModal: FC<Props> = ({
             <img src="/images/common/icon-cancel-dark.svg" alt="cancel-icon" />
           </button>
         </div>
-        <div className='px-8 py-3'>
+        <div className='sm:px-8 py-3'>
           {/* The Image, title and links */}
           <div className='text-center md:flex md:space-x-10 items-center'>
             <div className='flex justify-center'>
               <img src={partnerImageSource} alt={partnerImageAltText} />
             </div>
-            <div>
+            <div className='mt-3 sm:mt-0'>
               <div>
-                <p className='text-3xl font-semibold md:text-4xl sm:text-left sm:font-normal text-center'>{partnerName}</p>
+                <p className='text-3xl font-semibold md:text-4xl md:text-left sm:font-normal text-center'>{partnerName}</p>
               </div>
               {hasLinks && (
                 children
