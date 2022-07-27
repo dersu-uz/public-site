@@ -10,6 +10,7 @@ import Wrapper from '@/components/Wrapper'
 
 import ArrowDown from '../../../public/images/pages/jornadas-seguridad/arrow-down.svg'
 import HeaderLogoLink from '@/components/HeaderLogoLink'
+import PartnerCard from '@/components/PartnerCard'
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -240,86 +241,73 @@ const JornadasSeguridadPage = () => {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-7 mb-5 md:mb-10">
-            <a
-              href="https://dersu.uz/es/"
+            <PartnerCard
+              isLinkedCard={true}
+              linkTarget={"_blank"}
+              linkRel={"noopener noreferrer"}
+              linkUrl={"https://dersu.uz/es/"}
               onClick={() => plausible('CTA Jornadas Seguridad - Dersu')}
-              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
-            >
-              <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-dersu.svg"
-                  alt="Logo Dersu"
-                />
-              </p>
-              <p className="font-sans text-sm py-7">
+              imageSource={"/images/pages/jornadas-seguridad/logo-dersu.svg"}
+              imageAltText={"Logo Dersu"}
+              partnerDescription={
+                <p className="font-sans text-sm py-7">
                 Una <strong>app</strong> de montaña donde encontrar rutas
                 creadas por <strong>guías profesionales</strong> y poder{' '}
                 <strong>aprender</strong> de montaña
               </p>
-            </a>
+              }
+            />
 
-            <a
-              href="https://www.laaltaruta.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <PartnerCard
+              isLinkedCard={true}
+              linkTarget={"_blank"}
+              linkRel={"noopener noreferrer"}
+              linkUrl={"https://www.laaltaruta.com/"}
               onClick={() => plausible('CTA Jornadas Seguridad - Alta Ruta')}
-              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
-            >
-              <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-altaruta.svg"
-                  alt="Logo Alta Ruta"
-                  className="max-w-[190px]"
-                />
-              </p>
-              <p className="font-sans text-sm py-7">
-                Te ayuda a <strong>organizar rutas</strong> de senderismo de{' '}
-                <strong>alto nivel</strong>, de forma autónoma o con guías
-                profesionales
-              </p>
-            </a>
+              imageSource={"/images/pages/jornadas-seguridad/logo-altaruta.svg"}
+              imageAltText={"Logo Alta Ruta"}
+              partnerDescription={
+                <p className="font-sans text-sm py-7">
+                  Te ayuda a <strong>organizar rutas</strong> de senderismo de{' '}
+                  <strong>alto nivel</strong>, de forma autónoma o con guías
+                  profesionales
+                </p>
+              }
+            />
 
-            <a
-              href="https://www.garmin.com/es-ES/c/outdoor-recreation/handheld-hiking-gps/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <PartnerCard
+              isLinkedCard={true}
+              linkTarget={"_blank"}
+              linkRel={"noopener noreferrer"}
+              linkUrl={"https://www.garmin.com/es-ES/c/outdoor-recreation/handheld-hiking-gps/"}
               onClick={() => plausible('CTA Jornadas Seguridad - Garmin')}
-              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
-            >
-              <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-garmin.svg"
-                  alt="Logo Garmin"
-                  className="max-w-[190px]"
-                />
-              </p>
-              <p className="font-sans text-sm py-7">
-                Líder mundial en <strong>navegación GPS</strong> en el sector
-                náutico, automoción, aviación, fitness y actividades al aire
-                libre.
-              </p>
-            </a>
+              imageSource={"/images/pages/jornadas-seguridad/logo-garmin.svg"}
+              imageAltText={"Logo Garmin"}
+              partnerDescription={
+                <p className="font-sans text-sm py-7">
+                  Líder mundial en <strong>navegación GPS</strong> en el sector
+                  náutico, automoción, aviación, fitness y actividades al aire
+                  libre.
+                </p>
+              }
+            />
 
-            <a
-              href="http://www.immed.info/index.php/es/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <PartnerCard
+              isLinkedCard={true}
+              linkTarget={"_blank"}
+              linkRel={"noopener noreferrer"}
+              linkUrl={"http://www.immed.info/index.php/es/"}
               onClick={() => plausible('CTA Jornadas Seguridad - Immed')}
-              className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
-            >
-              <p className="border-black/20 border-b h-[210px] flex justify-center items-center">
-                <img
-                  src="/images/pages/jornadas-seguridad/logo-immed.svg"
-                  alt="Logo IMMED"
-                  className="max-w-[190px]"
-                />
-              </p>
-              <p className="font-sans text-sm py-7">
-                Una entidad dedicada a la{' '}
-                <strong>investigación y formación</strong> en medicina de
-                montaña y deportiva.
-              </p>
-            </a>
+              imageSource={"/images/pages/jornadas-seguridad/logo-immed.svg"}
+              imageAltText={"Logo IMMED"}
+              partnerDescription={
+                <p className="font-sans text-sm py-7">
+                  Una entidad dedicada a la{' '}
+                  <strong>investigación y formación</strong> en medicina de
+                  montaña y deportiva.
+                </p>
+              }
+            />
           </div>
         </Wrapper>
 
