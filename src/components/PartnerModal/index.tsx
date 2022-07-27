@@ -71,13 +71,13 @@ const PartnerModal: FC<Props> = ({
               <p className='text-3xl font-semibold sm:text-2xl mb-5 sm:font-normal text-center sm:text-left'>
                 {aboutPartner}
               </p>
-              <p className='text-center sm:text-justify'>{aboutPartnerDetails}</p>
+              <p className='text-center sm:text-justify font-sans'>{aboutPartnerDetails}</p>
             </div>
             <div>
               <p className='text-3xl font-semibold sm:text-2xl mb-5 sm:font-normal text-center sm:text-left'>
                   {howWeCollaborate}
               </p>
-              <p className='text-center sm:text-justify'>{collaborationDetails}</p>
+              <p className='text-center sm:text-justify font-sans'>{collaborationDetails}</p>
             </div>
           </div>
         </div>
