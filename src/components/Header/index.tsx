@@ -16,12 +16,14 @@ type Props = {
   negativeColor?: boolean
   forceSticky?: boolean
   needsCompensation?: boolean
+  className?: string
 }
 
 const Header: FC<Props> = ({
   negativeColor,
   forceSticky,
   needsCompensation,
+  className,
 }) => {
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
@@ -73,7 +75,7 @@ const Header: FC<Props> = ({
     <header
       ref={headerRef}
       data-is-menu-open={shouldShowMenu}
-      className={styles.Header}
+      className={`${className ?? ''} ${styles.Header}`}
       style={{
         paddingTop:
           isSticky && needsCompensation ? `${heightCompensation}px` : 0,

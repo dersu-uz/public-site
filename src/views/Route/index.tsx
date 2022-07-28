@@ -2,17 +2,41 @@ import Header from '@/components/Header'
 import Picture from '@/components/Picture'
 import StoreButtons from '@/components/StoreButtones'
 import TranslationsContext from '@/contexts/TranslationsContext'
+import s from '@/styles/style-utils'
+import { css } from '@emotion/react'
 import { useContext } from 'react'
 
 const Route = () => {
   const { t } = useContext(TranslationsContext)
 
   return (
-    <div className="w-[100%] h-[100vh] bg-dersu-blue">
+    <div css={[s.bg('blue'), s.size({ h: '100vh', w: '100%' })]}>
       <Header />
-      <div className="flex flex-col md:flex-row pt-16 px-8 justify-center md:justify-between m-auto  items-center max-w-screen-2xl">
-        <div className="text-dersu-brown">
-          <p className="text-dersu-xl text-center md:text-left mb-8 mx-auto lg:text-dersu-3xl md:text-dersu-2xl md:max-w-xl">
+      <div
+        css={[
+          s.flex({ direction: 'column', justify: 'center', align: 'center' }),
+          s.padding.all(16, 8),
+          s.margin.all('auto'),
+          s.size({ maxW: 'screen2xl' }),
+          s.mq.up('md', s.flex({ direction: 'row', justify: 'space-between' })),
+        ]}
+      >
+        <div>
+          <p
+            css={[
+              s.typography({ style: 'xl', align: 'center', color: 'brown' }),
+              s.mq.up('lg', s.textStyle('3xl')),
+              s.mq.up('md', [
+                s.typography({ style: '2xl', align: 'left' }),
+                s.size({ w: 'xl' }),
+              ]),
+              css({
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                marginBottom: '2rem',
+              }),
+            ]}
+          >
             {t.routeFallback.message}
           </p>
           <StoreButtons />
