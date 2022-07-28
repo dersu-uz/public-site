@@ -16,6 +16,8 @@ import {
 
 import Page from '@/components/Page'
 import { PrivacyContextProvider } from '@/contexts/PrivacyContext'
+import { ThemeProvider } from '@emotion/react'
+import { defaultTheme } from '@/styles/theme'
 
 const NextApp: FC<AppProps> = props => {
   const { Component, pageProps, router } = props
@@ -28,19 +30,21 @@ const NextApp: FC<AppProps> = props => {
   }
 
   return (
-    <PrivacyContextProvider>
-      <TranslationsContext.Provider value={contextValue}>
-        <DeveloperContextProvider>
-          <Page
-            title={title}
-            description={description}
-            canonicalUrl={canonicalUrl}
-          >
-            <Component {...pageProps} />
-          </Page>
-        </DeveloperContextProvider>
-      </TranslationsContext.Provider>
-    </PrivacyContextProvider>
+    <ThemeProvider theme={defaultTheme}>
+      <PrivacyContextProvider>
+        <TranslationsContext.Provider value={contextValue}>
+          <DeveloperContextProvider>
+            <Page
+              title={title}
+              description={description}
+              canonicalUrl={canonicalUrl}
+            >
+              <Component {...pageProps} />
+            </Page>
+          </DeveloperContextProvider>
+        </TranslationsContext.Provider>
+      </PrivacyContextProvider>
+    </ThemeProvider>
   )
 }
 
