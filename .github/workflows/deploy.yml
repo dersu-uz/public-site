@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - 'feat/server-rendering'
+      - 'develop'
+      - 'production'
 jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
