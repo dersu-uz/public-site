@@ -8,11 +8,11 @@ import Header from '@/components/Header'
 import PartnerModal from '@/components/PartnerModal'
 
 export const getStaticProps: GetStaticProps = async () => {
-  generateRSSFeed('en')
+  generateRSSFeed('fr')
   return {
     props: {
-      locale: 'en',
-      title: 'Partners',
+      locale: 'fr',
+      title: 'Partenaires',
       description: '',
     },
   }
@@ -62,7 +62,7 @@ const Partners = () => {
       <Header />
       <Wrapper limitedWidth className="pt-5">
         <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
-          Partners
+          Partenaires
         </h2>
 
         <div className='w-full s:w-2/3 lg:w-1/2 text-xl mb-10'>

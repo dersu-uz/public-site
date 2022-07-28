@@ -12,7 +12,7 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       locale: 'es',
-      title: 'Partners',
+      title: 'Colaboradores',
       description: '',
     },
   }
@@ -62,7 +62,7 @@ const Partners = () => {
       <Header />
       <Wrapper limitedWidth className="pt-5">
         <h2 className="text-dersu-lg md:text-dersu-4xl mb-5 md:mb-10">
-          Partners
+          Colaboradores
         </h2>
 
         <div className='w-full s:w-2/3 lg:w-1/2 text-xl mb-10'>
