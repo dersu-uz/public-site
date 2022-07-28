@@ -52,7 +52,7 @@ const HeaderMenu: FC = () => {
         </li>
 
         <li className={styles.HeaderMenuItem}>
-          <Link href={`/${currentLocale}/partners`}>
+          <Link href={`/${currentLocale}/${t.partners.href}`}>
             <a>{t.headerMenu.partners}</a>
           </Link>
         </li>

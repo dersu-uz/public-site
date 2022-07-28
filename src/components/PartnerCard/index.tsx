@@ -38,7 +38,7 @@ const PartnerCard: FC<Props> = ({
                 target={linkTarget}
                 rel={linkRel}
                 onClick={onClick}
-                className="bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue"
+                className="bg-white rounded-lg flex flex-col px-8 border-transparent border-4 hoverable:hover:border-dersu-blue"
             >
                 {moreInfo === true && (
                     <div>
@@ -48,7 +48,7 @@ const PartnerCard: FC<Props> = ({
                                 alt={imageAltText}
                             />
                         </p>
-                        <p className="font-sans text-sm py-0.5">{partnerDescription}</p>
+                        <p className="text-center sm:text-left font-sans text-sm py-0.5">{partnerDescription}</p>
                         <div className='border-black/20 border-t flex justify-center items-center'>
                             <div className='flex my-5 space-x-1'>
                                 <img src="/images/common/icon-more.svg" alt="See more icon" />
@@ -69,7 +69,7 @@ const PartnerCard: FC<Props> = ({
                     </div>
                 )}
             </a> :
-            <div className="cursor-pointer bg-white rounded-lg flex flex-col px-8 hoverable:hover:bg-dersu-blue" onClick={onClick}>
+            <div className="cursor-pointer bg-white rounded-lg flex flex-col px-8 border-transparent border-4 hoverable:hover:border-dersu-blue" onClick={onClick}>
                 {moreInfo === true && (
                     <div>
                         <p className="h-[210px] flex justify-center items-center">
@@ -78,7 +78,7 @@ const PartnerCard: FC<Props> = ({
                                 alt={imageAltText}
                             />
                         </p>
-                        <p className="text-sm py-0.5">{partnerDescription}</p>
+                        <p className="text-center sm:text-left font-sans text-sm py-0.5">{partnerDescription}</p>
                         <div className='border-black/20 border-t flex justify-center items-center'>
                             <div className='flex my-5 space-x-1'>
                                 <img src="/images/common/icon-more.svg" alt="See more icon" />
