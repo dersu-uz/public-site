@@ -42,7 +42,7 @@ jobs:
         working-directory: terraform
         run: terraform init -input=false -lock=true
       - name: Terraform select OR create workspace
-        working-directory: services/terraform
+        working-directory: terraform
         run: |
           terraform workspace select ${{ steps.currentbranch.outputs.branch }} || \
           terraform workspace new ${{ steps.currentbranch.outputs.branch }}
