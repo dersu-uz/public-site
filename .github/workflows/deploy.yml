@@ -51,6 +51,6 @@ jobs:
         run: |
           terraform plan -input=false -lock=true -out=tfplan \
           -var="dersu_public_site_docker_image_tag=${{ steps.slug.outputs.sha8 }}"
-      # - name: Terraform apply
-      #   working-directory: terraform
-      #   run: terraform apply -input=false -lock=true tfplan
+      - name: Terraform apply
+        working-directory: terraform
+        run: terraform apply -input=false -lock=true tfplan

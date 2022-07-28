@@ -8,7 +8,6 @@ COPY .yarn/releases .yarn/releases/
 COPY .yarnrc.yml .yarnrc.yml
 COPY .pnp.cjs .pnp.cjs
 RUN yarn rebuild
-COPY .env .env
 COPY .eslintignore .eslintignore
 COPY .eslintrc.js .eslintrc.js
 COPY tsconfig.json tsconfig.json
