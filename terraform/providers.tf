@@ -1,5 +1,5 @@
 terraform {
-  required_version = "~> 0.14.10"
+  required_version = "1.2.6"
 
   backend "gcs" {
     bucket = "dersu-public-site--terraform-state"
