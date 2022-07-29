@@ -38,7 +38,7 @@ const Footer: FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/${currentLocale}/partners`}>
+                  <Link href={`/${currentLocale}/${t.partners.href}`}>
                       <a>{t.headerMenu.partners}</a>
                     </Link>
                   </li>
