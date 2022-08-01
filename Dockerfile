@@ -5,6 +5,7 @@ COPY yarn.lock yarn.lock
 COPY package.json package.json
 COPY .yarn/cache .yarn/cache/
 COPY .yarn/releases .yarn/releases/
+COPY .yarn/plugins .yarn/plugins/
 COPY .yarnrc.yml .yarnrc.yml
 COPY .pnp.cjs .pnp.cjs
 RUN yarn rebuild
@@ -30,12 +31,10 @@ WORKDIR /app
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
 RUN rm -rf .yarn
+COPY --from=builder /app/.yarn .yarn/
 COPY yarn.lock yarn.lock
-COPY .yarn/cache .yarn/cache/
-COPY .yarn/releases .yarn/releases/
 COPY .yarnrc.yml .yarnrc.yml
 COPY .pnp.cjs .pnp.cjs
-RUN yarn rebuild
 ENV NODE_ENV production
 ENV PORT 3000
 EXPOSE 3000
