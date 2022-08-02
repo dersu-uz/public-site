@@ -6,7 +6,8 @@
     "blog": "Blog",
     "plans": "Planes",
     "newsletter": "Newsletter",
-    "safetySessions": "Jornadas de seguridad"
+    "safetySessions": "Jornadas de seguridad",
+    "partners": "Colaboradores"
   },
   "common": {
     "slide": "Desliza",
@@ -32,7 +33,8 @@
     "downloadAppApple": "Descargar para iOS",
     "downloadAppGoogle": "Descargar para Android",
     "downloadTheApp": "Descarga la app",
-    "appLocalesDisclaimer": ""
+    "appLocalesDisclaimer": "",
+    "moreInfo": "Más info"
   },
   "mailchimpForm": {
     "emailPlaceholder": "Introduce tu email...",
@@ -146,5 +148,38 @@
   "articleFallback": {
     "title": "Articulo",
     "message": "El contenido que quieres ver por ahora solo está disponible en la app móvil. Descárgatela, es gratis."
+  },
+  "partners": {
+    "href": "colaboradores",
+    "title": "Colaboradores",
+    "message": "Trabajamos junto a otras organizaciones con las que compartimos visión y valores, para poder ayudar entre todos a crear una relación sana y duradera con la montaña y la naturaleza.",
+    "howWeCollaborate": "Cómo colaboramos",
+    "aboutPartner": "Sobre",
+    "partnerAegm": "Asociación Española Guías de Montaña",
+    "partnerAltaRuta": "Alta Ruta",
+    "partnerImmed": "Instituto de Medicina de Montaña y del Deporte",
+    "partnerMontanaSegura": "Montaña Segura",
+    "aegm": {
+      "abbreviation": "AEGM",
+      "summary": "La <strong>Asociación Española</strong> de Guías de Montaña cuida la <strong>formación</strong> y la <strong>regulación del ejercicio</strong> de guía.",
+      "details": "La Asociación Española de Guías de Montaña trabaja para mejorar la formación y la capacitación profesional, así como el reconocimiento y regulación del ejercicio de la profesión representando a este colectivo ante organismos e instituciones oficiales del Estado y de las distintas Comunidades Autónomas.",
+      "collaborationDetails": "Colabora con Dersu para dar a conocer y poner en valor la figura del Guía en sus distintas especialidades, así como para facilitar una vía de acceso a los profesionales por parte de los usuarios y apoyar la realización de actividades orientadas a mejorar el conocimiento y la seguridad en actividades realizadas en el medio natural."
+    },
+    "altaRuta": {
+      "summary": "Te ayuda a <strong>organizar rutas</strong> de senderismo de <strong>alto nivel</strong>, de forma autónoma o con guías profesionales.",
+      "details": "La Alta Ruta ofrece información técnica y actualizada del estado de la montaña, agiliza el trámite de las reservas en cada refugio, hace un seguimiento de la gente en ruta para poder actuar en caso de emergencia y – sobre todo – para hacer de todos nosotros un colectivo que ama y respeta las montañas y los Pirineos.",
+      "collaborationDetails": "Colabora con Dersu en mejorar la preparación de las personas que acuden a la montaña tanto desde un punto de vista de seguridad como de sostenibilidad. Para lo cual se desarrollan de forma conjunta multitud de actividades, eventos y contenidos."
+    },
+    "immed": {
+      "abbreviation": "IMMED",
+      "summary": "Una entidad dedicada a la <strong>investigación y formación</strong> en medicina de montaña y deportiva.",
+      "details": "El Instituto de Medicina de Montaña y del Deporte es una entidad dedicada a la formación e investigación en medicina de montaña y medicina deportiva. Su equipo humano engloba tanto a médicos/as y enfermeros/as como a técnicos/as deportivos/as de alta y media montaña, escalada, barrancos y miembros de grupos de rescate y espeleosocorro; de esta forma se crea una estructura heterogénea cuyo objetivo es brindar al alumno y alumna una visión útil, integral y eficaz de la atención a la persona accidentada en el medio natural y los entornos de difícil acceso.",
+      "collaborationDetails": "Colabora con Dersu realizando actividades para concienciar a los montañistas de la importancia de los conocimientos relativos a los primeros auxilios y el protocolo en caso de accidente, así como a las principales normas de seguridad en la planificación y toma de decisiones durante la ruta."
+    },
+    "montanaSegura": {
+      "summary": "Es una campaña de <strong>prevención de accidentes</strong> en el medio natural cuyo objetivo es <strong>mejorar la seguridad</strong>.",
+      "details": "La campaña Montaña Segura es una campaña de prevención de accidentes  en el medio natural fruto de un convenio de colaboración entre Gobierno de Aragón, Aramón y la Federación Aragonesa de Montañismo. Nace en el año 1999, cuando se llamaba Montañas Para Vivirlas Seguro, y del 2005 al 2011 se denominó Montañas Seguras, objetivo 0 accidentes.",
+      "collaborationDetails": "Colabora con Dersu para concienciar a las personas que realizan actividades en la naturaleza de los peligros inherentes a las mismas y las medidas de seguridad que puedan adoptar para gestionarlos, reducir la accidentalidad en actividades de montaña, mediante un mejor autoconocimiento por parte de los montañistas unido a una correcta planificación, preparación y formación en actividades en la montaña y promover una metodología adecuada para la toma de decisiones en el transcurso de dichas actividades."
+    }
   }
 }

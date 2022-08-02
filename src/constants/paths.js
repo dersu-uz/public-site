@@ -54,6 +54,11 @@ const paths = {
     es: '/formacion/articulo/:articleId',
     fr: '/learning/article/:articleId',
   },
+  partners: {
+    en: '/partners',
+    es: '/colaboradores',
+    fr: '/partenaires',
+  }
 }
 
 module.exports = paths
