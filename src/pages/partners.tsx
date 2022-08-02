@@ -135,7 +135,7 @@ const Partners = () => {
           <PartnerCard
             isLinkedCard={false}
             hasChildren={false}
-            imageSource={'/images/pages/partners/logo-montanase-again.png'}
+            imageSource={"/images/pages/partners/logo_montanasegura.png"}
             imageAltText={'Logo Montana Segura'}
             moreInfo={true}
             seeMoreInfo={`${t.common.moreInfo}`}
