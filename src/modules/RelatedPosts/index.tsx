@@ -1,12 +1,9 @@
-import { FC, useContext } from 'react'
-import Link from 'next/link'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import Wrapper from '@/components/Wrapper'
-
-import IconArrowRight from '../../styles/assets/icon-arrow-right.svg'
-import PostsList from '@/components/PostsList'
+import PostsList from '@/components/PostsList';
+import Wrapper from '@/components/Wrapper';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import Link from 'next/link';
+import { FC, useContext } from 'react';
+import IconArrowRight from '../../styles/assets/icon-arrow-right.svg';
 
 type Props = {
   posts: Array<BlogPost>

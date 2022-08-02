@@ -1,16 +1,15 @@
-import { FC } from 'react'
-
-import { COLOR_SCHEMES } from '@/constants/theme'
-
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import PageHero from '@/components/PageHero'
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import PageHero from '@/components/PageHero';
+import { COLOR_SCHEMES } from '@/constants/theme';
+import { FC, ReactNode } from 'react';
 
 type Props = {
   title?: string
   heroImageUrl?: string
   webpHeroImageUrl?: string
   heroColorScheme?: keyof typeof COLOR_SCHEMES
+  children: ReactNode
 }
 
 const DefaultLayout: FC<Props> = ({

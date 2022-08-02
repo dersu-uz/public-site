@@ -1,22 +1,22 @@
-import { FC } from 'react'
-
-import classNames from 'classnames'
+import classNames from 'classnames';
+import { ReactNode } from 'react';
 
 type Props = {
   className?: string
   limitedWidth?: boolean
+  children: ReactNode
 }
 
-const Wrapper: FC<Props> = ({ className, limitedWidth = false, children }) => {
+const Wrapper = (props: Props) => {
   return (
     <div
       className={classNames(
         'px-4 md:px-10',
-        limitedWidth ? 'max-w-[1440px] mx-auto' : null,
-        className
+        props.limitedWidth ? 'max-w-[1440px] mx-auto' : null,
+        props.className
       )}
     >
-      {children}
+      {props.children}
     </div>
   )
 }

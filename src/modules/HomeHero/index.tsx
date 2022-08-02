@@ -1,11 +1,8 @@
-import { FC, useContext } from 'react'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import Picture from '@/components/Picture'
-
-import styles from './styles.module.css'
-import StoreButtons from '@/components/StoreButtons'
+import Picture from '@/components/Picture';
+import StoreButtons from '@/components/StoreButtons';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { FC, useContext } from 'react';
+import styles from './styles.module.css';
 
 const HomeHero: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)

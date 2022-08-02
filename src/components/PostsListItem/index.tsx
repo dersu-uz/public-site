@@ -1,6 +1,5 @@
-import Link from 'next/link'
-
-import { FC } from 'react'
+import Link from 'next/link';
+import { FC } from 'react';
 
 type Props = {
   title: string

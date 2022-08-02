@@ -1,8 +1,7 @@
-import { FC, useContext } from 'react'
-import Fade from 'react-reveal/Fade'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-import Picture from '@/components/Picture'
+import Picture from '@/components/Picture';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { FC, useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const HomeLearn: FC = () => {
   const { t } = useContext(TranslationsContext)

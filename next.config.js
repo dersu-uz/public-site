@@ -1,17 +1,12 @@
-const path = require('path')
+const paths = require('./src/constants/paths')
 
 /**
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  webpack5: true,
+  output: 'standalone',
   swcMinify: true,
   trailingSlash: true,
-  purge: ['./src/**/*.js'],
-  // purge: false,
-  devIndicators: {
-    autoPrerender: true,
-  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
@@ -27,6 +22,26 @@ const nextConfig = {
     })
 
     return config
+  },
+  i18n: {
+    locales: ['default', 'es', 'en', 'fr'],
+    defaultLocale: 'default',
+    localeDetection: true,
+  },
+  trailingSlash: false,
+  rewrites() {
+    const rewrites = [];
+
+    Object.values(paths).forEach(pathObj => {
+      ['es', 'fr'].forEach(locale => {
+        rewrites.push({
+          source: pathObj[locale],
+          destination: pathObj.en,
+        })
+      })
+    });
+
+    return rewrites;
   },
 }
 

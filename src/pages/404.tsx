@@ -1,11 +1,9 @@
-import { FC } from 'react'
-import { GetStaticProps } from 'next'
-import Link from 'next/link'
-
-import DefaultLayout from '@/layouts/DefaultLayout'
-
-import MainContent from '@/components/MainContent'
-import MarkdownContent from '@/components/MarkdownContent'
+import MainContent from '@/components/MainContent';
+import MarkdownContent from '@/components/MarkdownContent';
+import DefaultLayout from '@/layouts/DefaultLayout';
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
+import { FC } from 'react';
 
 export const getStaticProps: GetStaticProps = () => {
   return {
@@ -26,8 +24,17 @@ const Page404: FC = props => {
           <p>No encontramos la página que buscas.</p>
           <p>We cannot find the page you are looking for.</p>
           <p>
-            <Link href="/es">Español</Link> - <Link href="/en">English</Link> -{' '}
-            <Link href="/fr">Français</Link>
+            <Link href="/" locale="es">
+              Español
+            </Link>{' '}
+            -{' '}
+            <Link href="/" locale="en">
+              English
+            </Link>{' '}
+            -{' '}
+            <Link href="/" locale="fr">
+              Français
+            </Link>
           </p>
         </MarkdownContent>
       </MainContent>

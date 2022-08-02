@@ -1,29 +1,27 @@
-import path from 'path'
-import fs from 'fs'
-import matter from 'gray-matter'
-import { isNotJunk } from 'junk'
-import { compareDesc, format, parseISO } from 'date-fns'
-import { es } from 'date-fns/locale'
-
-import { BASE_DOMAIN_URL } from '@/constants/settings'
-
-import markdownToHtml from '@/utils/markdownToHtml'
-
-import { LocaleShortCode } from '@/services/i18nService'
+import { BASE_DOMAIN_URL } from '@/constants/settings';
+import { LocaleShortCode } from '@/services/i18nService';
+import markdownToHtml from '@/utils/markdownToHtml';
+import { compareDesc, format, parseISO } from 'date-fns';
+import { es } from 'date-fns/locale';
+import fs from 'fs';
+import matter from 'gray-matter';
+import { isNotJunk } from 'junk';
+/* eslint-disable import/no-duplicates */
+import path from 'path';
 
 /* global process */
 
-const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts')
-const PUBLIC_PATH = path.join(process.cwd(), 'public')
+const CONTENT_POSTS_PATH = path.join(process.cwd(), '_posts');
+const PUBLIC_PATH = path.join(process.cwd(), 'public');
 
 function _readPostBySlug(slug: string, locale: LocaleShortCode) {
-  const fullPath = path.join(CONTENT_POSTS_PATH, locale, `${slug}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const fullPath = path.join(CONTENT_POSTS_PATH, locale, `${slug}.md`);
+  const fileContents = fs.readFileSync(fullPath, 'utf8');
   return {
     slug,
     locale,
     ...matter(fileContents),
-  }
+  };
 }
 
 async function _preparePost(
@@ -32,14 +30,14 @@ async function _preparePost(
   data,
   content
 ): Promise<BlogPost> {
-  const imagesPath = `/images/posts/${locale}/${slug}`
-  const dateFormatted = format(parseISO(data.date), 'PP', { locale: es })
-  const htmlContent = await markdownToHtml(content)
+  const imagesPath = `/images/posts/${locale}/${slug}`;
+  const dateFormatted = format(parseISO(data.date), 'PP', { locale: es });
+  const htmlContent = await markdownToHtml(content);
 
-  const coverImageUrl = `${imagesPath}/cover.jpg`
-  const webpCoverImageUrl = `${imagesPath}/cover.webp`
-  const featuredImageUrl = `${imagesPath}/featured.jpg`
-  const webpFeaturedImageUrl = `${imagesPath}/featured.webp`
+  const coverImageUrl = `${imagesPath}/cover.jpg`;
+  const webpCoverImageUrl = `${imagesPath}/cover.webp`;
+  const featuredImageUrl = `${imagesPath}/featured.jpg`;
+  const webpFeaturedImageUrl = `${imagesPath}/featured.webp`;
 
   return {
     slug: slug,
@@ -52,63 +50,46 @@ async function _preparePost(
     date: data.date,
     dateFormatted,
     showPricingModule: data.showPricingModule || false,
-    coverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, coverImageUrl))
-      ? coverImageUrl
-      : null,
+    coverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, coverImageUrl)) ? coverImageUrl : null,
     webpCoverImageUrl: fs.existsSync(path.join(PUBLIC_PATH, webpCoverImageUrl))
       ? webpCoverImageUrl
       : null,
     featuredImageUrl: fs.existsSync(path.join(PUBLIC_PATH, featuredImageUrl))
       ? featuredImageUrl
       : null,
-    webpFeaturedImageUrl: fs.existsSync(
-      path.join(PUBLIC_PATH, webpFeaturedImageUrl)
-    )
+    webpFeaturedImageUrl: fs.existsSync(path.join(PUBLIC_PATH, webpFeaturedImageUrl))
       ? webpFeaturedImageUrl
       : null,
     content,
     htmlContent,
-  }
+  };
 }
 
-export async function getPostBySlug(
-  slug: string,
-  locale: LocaleShortCode
-): Promise<BlogPost> {
-  const { data, content } = _readPostBySlug(slug, locale)
-  const post = await _preparePost(slug, locale, data, content)
-  return post
+export async function getPostBySlug(slug: string, locale: LocaleShortCode): Promise<BlogPost> {
+  const { data, content } = _readPostBySlug(slug, locale);
+  const post = await _preparePost(slug, locale, data, content);
+  return post;
 }
 
 export function getAllPostSlugs(locale: LocaleShortCode): string[] {
   const postSlugs = fs
     .readdirSync(path.join(CONTENT_POSTS_PATH, locale))
     .filter(isNotJunk)
-    .filter(f => f !== '.gitkeep')
-    .map(name => name.replace(/\.md$/, ''))
-  return postSlugs
+    .filter((f) => f !== '.gitkeep')
+    .map((name) => name.replace(/\.md$/, ''));
+  return postSlugs;
 }
 
-export async function getLatestPosts(
-  locale: LocaleShortCode,
-  limit = 10
-): Promise<BlogPost[]> {
+export async function getLatestPosts(locale: LocaleShortCode, limit = 10): Promise<BlogPost[]> {
   const posts = await Promise.all(
     getAllPostSlugs(locale)
-      .map(slug => _readPostBySlug(slug, locale))
+      .map((slug) => _readPostBySlug(slug, locale))
       // sort posts by date in descending order
-      .sort((post1, post2) =>
-        compareDesc(parseISO(post1.data.date), parseISO(post2.data.date))
-      )
+      .sort((post1, post2) => compareDesc(parseISO(post1.data.date), parseISO(post2.data.date)))
       .slice(0, limit)
-      .map(async post => {
-        return await _preparePost(
-          post.slug,
-          post.locale,
-          post.data,
-          post.content
-        )
+      .map(async (post) => {
+        return await _preparePost(post.slug, post.locale, post.data, post.content);
       })
-  )
-  return posts || ([] as BlogPost[])
+  );
+  return posts || ([] as BlogPost[]);
 }

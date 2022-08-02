@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import { colorSchemeClasses, COLOR_SCHEMES } from '@/constants/theme'
+import { COLOR_SCHEMES, colorSchemeClasses } from '@/constants/theme';
+import { FC } from 'react';
 
 type Props = {
   title: string

@@ -1,8 +1,6 @@
-import { FC } from 'react'
-
-import InputSelectDownArrow from '@/styles/assets/InputSelect-down-arrow.svg'
-
-import styles from './styles.module.css'
+import InputSelectDownArrow from '@/styles/assets/InputSelect-down-arrow.svg';
+import { FC } from 'react';
+import styles from './styles.module.css';
 
 type SelectOption = {
   label: string

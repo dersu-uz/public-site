@@ -1,46 +1,41 @@
-import '@/styles/main.css'
+import '@/styles/main.css';
+import Page from '@/components/Page';
+import { DeveloperContextProvider } from '@/contexts/DeveloperContext';
+import { PrivacyContextProvider } from '@/contexts/PrivacyContext';
+import TranslationsContext, { TranslationContextValue } from '@/contexts/TranslationsContext';
+import { availableLocales, getTranslations, LocaleShortCode } from '@/services/i18nService';
+import { defaultTheme } from '@/styles/theme';
+import { ThemeProvider } from '@emotion/react';
+import { FC } from 'react';
 
-import { FC } from 'react'
 import type { AppProps /*, AppContext */ } from 'next/app'
 
-import TranslationsContext, {
-  TranslationContextValue,
-} from '@/contexts/TranslationsContext'
-import { DeveloperContextProvider } from '@/contexts/DeveloperContext'
-
-import {
-  getTranslations,
-  availableLocales,
-  LocaleShortCode,
-} from '@/services/i18nService'
-
-import Page from '@/components/Page'
-import { PrivacyContextProvider } from '@/contexts/PrivacyContext'
-
-const NextApp: FC<AppProps> = ({ Component, pageProps }) => {
-  const { title, description, canonicalUrl, locale } = pageProps
-  const translations = getTranslations(locale)
+const NextApp: FC<AppProps> = props => {
+  const { Component, pageProps, router } = props
+  const { title, description, canonicalUrl } = pageProps
+  const translations = getTranslations(router.locale) ?? getTranslations('es')
   const contextValue: TranslationContextValue = {
     t: translations,
-    currentLocale: locale as LocaleShortCode,
+    currentLocale: router.locale as LocaleShortCode,
     availableLocales,
   }
 
   return (
-    <PrivacyContextProvider>
-      <TranslationsContext.Provider value={contextValue}>
-        <DeveloperContextProvider>
-          <Page
-            title={title}
-            description={description}
-            canonicalUrl={canonicalUrl}
-            locale={locale}
-          >
-            <Component {...pageProps} />
-          </Page>
-        </DeveloperContextProvider>
-      </TranslationsContext.Provider>
-    </PrivacyContextProvider>
+    <ThemeProvider theme={defaultTheme}>
+      <PrivacyContextProvider>
+        <TranslationsContext.Provider value={contextValue}>
+          <DeveloperContextProvider>
+            <Page
+              title={title}
+              description={description}
+              canonicalUrl={canonicalUrl}
+            >
+              <Component {...pageProps} />
+            </Page>
+          </DeveloperContextProvider>
+        </TranslationsContext.Provider>
+      </PrivacyContextProvider>
+    </ThemeProvider>
   )
 }
 

@@ -1,8 +1,7 @@
-import { FC } from 'react'
-import Link from 'next/link'
-
-import Picture from '@/components/Picture'
-import Wrapper from '@/components/Wrapper'
+import Picture from '@/components/Picture';
+import Wrapper from '@/components/Wrapper';
+import Link from 'next/link';
+import { FC } from 'react';
 
 const HomeSafetySessions: FC = () => {
   return (

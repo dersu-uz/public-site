@@ -1,9 +1,7 @@
-import { FC, useContext } from 'react'
-import Fade from 'react-reveal/Fade'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import Wrapper from '@/components/Wrapper'
+import Wrapper from '@/components/Wrapper';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { FC, useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const HomeIntro: FC = () => {
   const { t } = useContext(TranslationsContext)

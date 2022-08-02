@@ -1,24 +1,22 @@
-import path from 'path'
-import fs from 'fs'
-import { Feed } from 'feed'
-
-import { BASE_DOMAIN_URL } from '@/constants/settings'
-
-import { getLatestPosts } from '@/services/blogService'
-import { LocaleShortCode } from '@/services/i18nService'
+import { BASE_DOMAIN_URL } from '@/constants/settings';
+import { getLatestPosts } from '@/services/blogService';
+import { LocaleShortCode } from '@/services/i18nService';
+import { Feed } from 'feed';
+import fs from 'fs';
+import path from 'path';
 
 /* global process */
 
-const FEED_FOLDER = 'feed'
-const RSS_FEEDS_PATH = path.join(process.cwd(), 'public', FEED_FOLDER)
+const FEED_FOLDER = 'feed';
+const RSS_FEEDS_PATH = path.join(process.cwd(), 'public', FEED_FOLDER);
 
 export async function generateRSSFeed(locale: LocaleShortCode): Promise<void> {
-  const posts = await getLatestPosts(locale, 100)
-  const date = new Date()
+  const posts = await getLatestPosts(locale, 100);
+  const date = new Date();
   const author = {
     name: 'Dersu.uz',
     link: 'https://dersu.uz',
-  }
+  };
 
   const feed = new Feed({
     title: 'Dersu.uz Blog',
@@ -36,9 +34,9 @@ export async function generateRSSFeed(locale: LocaleShortCode): Promise<void> {
       atom: `${BASE_DOMAIN_URL}/${FEED_FOLDER}/${locale}/atom.xml`,
     },
     author,
-  })
+  });
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     feed.addItem({
       title: post.title,
       id: post.url,
@@ -48,11 +46,11 @@ export async function generateRSSFeed(locale: LocaleShortCode): Promise<void> {
       author: [author],
       contributor: [author],
       date: new Date(post.date),
-    })
-  })
+    });
+  });
 
   // Write the RSS output to a public folder
-  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'feed.xml'), feed.rss2())
-  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'feed.json'), feed.json1())
-  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'atom.xml'), feed.atom1())
+  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'feed.xml'), feed.rss2());
+  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'feed.json'), feed.json1());
+  fs.writeFileSync(path.join(RSS_FEEDS_PATH, locale, 'atom.xml'), feed.atom1());
 }

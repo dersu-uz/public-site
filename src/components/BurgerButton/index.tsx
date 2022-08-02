@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
-import styles from './styles.module.css'
+import { FC } from 'react';
+import styles from './styles.module.css';
 
 interface Props {
   isOpen: boolean

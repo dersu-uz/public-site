@@ -1,9 +1,8 @@
-import { FC, useContext } from 'react'
-import Link from 'next/link'
-import classNames from 'classnames'
-
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
-import TranslationsContext from '@/contexts/TranslationsContext'
+import TranslationsContext from '@/contexts/TranslationsContext';
+import classNames from 'classnames';
+import Link from 'next/link';
+import { FC, useContext } from 'react';
+import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg';
 
 type Props = {
   negativeColor?: boolean

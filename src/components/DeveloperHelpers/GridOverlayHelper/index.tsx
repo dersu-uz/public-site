@@ -1,7 +1,6 @@
-import { FC } from 'react'
-import Wrapper from '@/components/Wrapper'
-
-import { generateArrayOfNumbers } from '@/utils/generateArrayOfNumbers'
+import Wrapper from '@/components/Wrapper';
+import { generateArrayOfNumbers } from '@/utils/generateArrayOfNumbers';
+import { FC } from 'react';
 
 const GridOverlay: FC = () => {
   const columns = generateArrayOfNumbers(12)

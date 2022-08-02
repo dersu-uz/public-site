@@ -1,32 +1,25 @@
-import locales from '@/locales'
+import locales from '@/locales';
 
-export type LocaleShortCode = keyof typeof locales
+export type LocaleShortCode = keyof typeof locales;
 
 export type LocaleInfo = {
-  locale: LocaleShortCode
-  name: string
-}
+  locale: LocaleShortCode;
+  name: string;
+};
 
-export type TranslationStrings = typeof locales.es
+export type TranslationStrings = typeof locales.es;
 
-export const availableLocales: Array<LocaleInfo> = Object.keys(locales).map(
-  locale => {
-    return {
-      locale: locale as LocaleShortCode,
-      name: locales[locale].localeMetadata.name as string,
-    }
-  }
-)
+export const availableLocales: Array<LocaleInfo> = Object.keys(locales).map((locale) => {
+  return {
+    locale: locale as LocaleShortCode,
+    name: locales[locale].localeMetadata.name as string,
+  };
+});
 
 export function isLocale(localeToTest: string): boolean {
-  return Object.keys(locales).some(locale => locale === localeToTest)
+  return Object.keys(locales).some((locale) => locale === localeToTest);
 }
 
-export function getTranslations(locale: LocaleShortCode): TranslationStrings {
-  if (isLocale(locale)) {
-    return locales[locale]
-  } else {
-    //throw Error(`Unknown locale "${locale}"`)
-    locales['es']
-  }
+export function getTranslations(locale: string): TranslationStrings | undefined {
+  return locales[locale];
 }

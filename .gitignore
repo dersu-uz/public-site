@@ -43,3 +43,12 @@ terraform.tfstate.*
 public/feed/*/atom.xml
 public/feed/*/feed.json
 public/feed/*/feed.xml
+
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

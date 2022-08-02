@@ -1,8 +1,9 @@
-import { FC, ReactElement } from 'react'
+import { FC, ReactElement, ReactNode } from 'react';
 
 type Props = {
     isLinkedCard: boolean
     hasChildren?: boolean
+    children?: ReactNode;
     imageSource: string
     imageAltText: string
     moreInfo?: boolean
@@ -28,11 +29,11 @@ const PartnerCard: FC<Props> = ({
     linkRel,
     children
 }) => (
-    hasChildren ? 
+    hasChildren ?
         <div>
             {children}
         </div> :
-        isLinkedCard ? 
+        isLinkedCard ?
             <a
                 href={linkUrl}
                 target={linkTarget}
@@ -76,9 +77,10 @@ const PartnerCard: FC<Props> = ({
                             <img
                                 src={imageSource}
                                 alt={imageAltText}
+                                className=""
                             />
                         </p>
-                        <p className="text-center sm:text-left font-sans text-sm py-0.5">{partnerDescription}</p>
+                        {partnerDescription}
                         <div className='border-black/20 border-t flex justify-center items-center'>
                             <div className='flex my-5 space-x-1'>
                                 <img src="/images/common/icon-more.svg" alt="See more icon" />

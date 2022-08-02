@@ -2,11 +2,17 @@ name: Build, push and deploy
 on:
   push:
     branches:
-      - 'main'
+      - 'feat/server-rendering'
+      - 'develop'
+      - 'production'
 jobs:
   build-push-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Set current branch name
+        id: currentbranch
+        # run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+        run: echo "::set-output name=branch::develop"
       - name: Short commit SHA
         id: slug
         run: echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
@@ -33,10 +39,15 @@ jobs:
       - name: Set up Terraform
         uses: hashicorp/setup-terraform@v1
         with:
-          terraform_version: 0.14.10
+          terraform_version: 1.2.6
       - name: Terraform init
         working-directory: terraform
         run: terraform init -input=false -lock=true
+      - name: Terraform select OR create workspace
+        working-directory: terraform
+        run: |
+          terraform workspace select ${{ steps.currentbranch.outputs.branch }} || \
+          terraform workspace new ${{ steps.currentbranch.outputs.branch }}
       - name: Terraform plan
         working-directory: terraform
         run: |

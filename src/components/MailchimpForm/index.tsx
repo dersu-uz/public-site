@@ -1,13 +1,10 @@
-import { FC, useContext } from 'react'
-
-import { MAILCHIMP_SUBSCRIBE_URL } from '@/constants/settings'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import Button from '@/components/Button'
-import InputText from '@/components/InputText'
-import InputCheck from '@/components/InputCheck'
-import InputSelect from '@/components/InputSelect'
+import Button from '@/components/Button';
+import InputCheck from '@/components/InputCheck';
+import InputSelect from '@/components/InputSelect';
+import InputText from '@/components/InputText';
+import { MAILCHIMP_SUBSCRIBE_URL } from '@/constants/settings';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { FC, useContext } from 'react';
 
 const MailchimpForm: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)

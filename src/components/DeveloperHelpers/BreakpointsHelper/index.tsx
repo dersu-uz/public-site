@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
-import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints'
+import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints';
+import { FC } from 'react';
 
 const BreakpointsHelper: FC = () => {
   const { breakpoint, info } = useTailwindBreapoints()
