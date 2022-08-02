@@ -1,9 +1,7 @@
-import React, { FC, useState } from 'react'
-import classNames from 'classnames'
-
-import InputCheckCheckmark from '@/styles/assets/InputCheck-checkmark.svg'
-
-import styles from './styles.module.css'
+import InputCheckCheckmark from '@/styles/assets/InputCheck-checkmark.svg';
+import classNames from 'classnames';
+import React, { FC, useState } from 'react';
+import styles from './styles.module.css';
 
 type Props = {
   id: string

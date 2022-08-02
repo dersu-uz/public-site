@@ -42,4 +42,4 @@ export const colorSchemeClasses = {
     background: 'bg-dersu-brown',
     color: 'text-dersu-pink',
   },
-}
+};

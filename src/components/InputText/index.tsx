@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC } from 'react';
 
 type Props = {
   type?: 'text' | 'password' | 'email' | 'number' | 'tel'

@@ -1,27 +1,27 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 type UseIubendaContentType = {
-  content: string
-}
+  content: string;
+};
 
 const useIubendaContent = (
   title: string,
   iubendaPageUrl: string,
   iubendaApiUrl: string
 ): UseIubendaContentType => {
-  const initialContent = `<a href="${iubendaPageUrl}" title="${title}">${title}</a>`
-  const [content, setContent] = useState(initialContent)
+  const initialContent = `<a href="${iubendaPageUrl}" title="${title}">${title}</a>`;
+  const [content, setContent] = useState(initialContent);
 
   useEffect(() => {
     async function fetchContent() {
-      const newContent = (await axios.get(iubendaApiUrl)).data.content
-      setContent(newContent)
+      const newContent = (await axios.get(iubendaApiUrl)).data.content;
+      setContent(newContent);
     }
-    fetchContent()
-  }, [iubendaApiUrl])
+    fetchContent();
+  }, [iubendaApiUrl]);
 
-  return { content }
-}
+  return { content };
+};
 
-export default useIubendaContent
+export default useIubendaContent;

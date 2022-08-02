@@ -1,27 +1,26 @@
-import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { useRouter } from 'next/router'
-import { useToggle, useWindowScroll } from 'react-use'
-import classNames from 'classnames'
-
-import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints'
-
-import BurgerButton from '@/components/BurgerButton'
-import HeaderLogoLink from '@/components/HeaderLogoLink'
-import HeaderMenu from '@/components/HeaderMenu'
-import Wrapper from '@/components/Wrapper'
-
-import styles from './styles.module.css'
+import BurgerButton from '@/components/BurgerButton';
+import HeaderLogoLink from '@/components/HeaderLogoLink';
+import HeaderMenu from '@/components/HeaderMenu';
+import Wrapper from '@/components/Wrapper';
+import useTailwindBreapoints from '@/hooks/useTailwindBreakpoints';
+import classNames from 'classnames';
+import { useRouter } from 'next/router';
+import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useToggle, useWindowScroll } from 'react-use';
+import styles from './styles.module.css';
 
 type Props = {
   negativeColor?: boolean
   forceSticky?: boolean
   needsCompensation?: boolean
+  className?: string
 }
 
 const Header: FC<Props> = ({
   negativeColor,
   forceSticky,
   needsCompensation,
+  className,
 }) => {
   const headerRef = useRef(null)
   const headerContentRef = useRef(null)
@@ -73,7 +72,7 @@ const Header: FC<Props> = ({
     <header
       ref={headerRef}
       data-is-menu-open={shouldShowMenu}
-      className={styles.Header}
+      className={`${className ?? ''} ${styles.Header}`}
       style={{
         paddingTop:
           isSticky && needsCompensation ? `${heightCompensation}px` : 0,

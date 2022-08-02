@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, ReactNode } from 'react';
 import Modal from 'react-modal';
 
 type Props = {
@@ -11,7 +11,8 @@ type Props = {
     aboutPartner: string
     aboutPartnerDetails: string
     howWeCollaborate: string
-    collaborationDetails: string
+    collaborationDetails: string,
+    children?: ReactNode
 }
 
 const PartnerModal: FC<Props> = ({

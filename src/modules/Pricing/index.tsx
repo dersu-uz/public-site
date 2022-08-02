@@ -1,9 +1,8 @@
-import { FC, useContext } from 'react'
-import Fade from 'react-reveal/Fade'
-
-import Wrapper from '@/components/Wrapper'
-import StoreButtons from '@/components/StoreButtons'
-import TranslationsContext from '@/contexts/TranslationsContext'
+import StoreButtons from '@/components/StoreButtons';
+import Wrapper from '@/components/Wrapper';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { FC, useContext } from 'react';
+import Fade from 'react-reveal/Fade';
 
 const Pricing: FC = () => {
   const { currentLocale, t } = useContext(TranslationsContext)

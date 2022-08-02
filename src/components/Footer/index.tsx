@@ -1,16 +1,13 @@
-import { FC, useContext } from 'react'
-import Link from 'next/link'
-import { usePlausible } from 'next-plausible'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import Wrapper from '@/components/Wrapper'
-
-import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg'
+import Wrapper from '@/components/Wrapper';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import { usePlausible } from 'next-plausible';
+import Link from 'next/link';
+import { FC, useContext } from 'react';
+import DersuLogoWithText from '../../styles/assets/dersu-logo-with-text.svg';
 
 const Footer: FC = () => {
-  const { t, currentLocale } = useContext(TranslationsContext)
-  const plausible = usePlausible()
+  const { t, currentLocale } = useContext(TranslationsContext);
+  const plausible = usePlausible();
 
   return (
     <footer className="Footer">
@@ -18,8 +15,8 @@ const Footer: FC = () => {
         <div className="font-sans text-sm border-t border-dersu-brown border-opacity-50 pb-4 mt-10 md:pb-10">
           <div className="md:flex md:items-center md:justify-between">
             <div className="py-10 md:order-2 flex flex-wrap gap-10 md:mr-10">
-              <div className='grid grid-cols-2 gap-9 md:gap-11'>
-                <ul className='w-full md:w-auto font-bold leading-9'>
+              <div className="grid grid-cols-2 gap-9 md:gap-11">
+                <ul className="w-full md:w-auto font-bold leading-9">
                   <li>
                     <Link href={`/${currentLocale}/blog`}>Blog</Link>
                   </li>
@@ -38,16 +35,14 @@ const Footer: FC = () => {
                     </Link>
                   </li>
                   <li>
-                  <Link href={`/${currentLocale}/${t.partners.href}`}>
+                    <Link href={`/${currentLocale}/${t.partners.href}`}>
                       <a>{t.headerMenu.partners}</a>
                     </Link>
                   </li>
 
                   {(currentLocale === 'en' || currentLocale === 'es') && (
                     <li>
-                      <Link
-                        href={`/${currentLocale}/${t.common.workWithDersuSlug}`}
-                      >
+                      <Link href={`/${currentLocale}/${t.common.workWithDersuSlug}`}>
                         {t.common.workWithDersu}
                       </Link>
                     </li>
@@ -59,13 +54,11 @@ const Footer: FC = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={`/${currentLocale}/${t.common.termsSlug}`}>
-                      {t.common.terms}
-                    </Link>
+                    <Link href={`/${currentLocale}/${t.common.termsSlug}`}>{t.common.terms}</Link>
                   </li>
                 </ul>
 
-                <ul className='w-2/3 md:w-auto font-bold gap-9 md:gap-11 leading-9'>
+                <ul className="w-2/3 md:w-auto font-bold gap-9 md:gap-11 leading-9">
                   <li>
                     <Link href="https://www.instagram.com/dersu_uz/">
                       <a
@@ -80,7 +73,6 @@ const Footer: FC = () => {
                       </a>
                     </Link>
                   </li>
-
                   <li>
                     <Link href="https://www.facebook.com/DersuMendia/">
                       <a
@@ -95,7 +87,6 @@ const Footer: FC = () => {
                       </a>
                     </Link>
                   </li>
-
                   <li>
                     <Link href="https://www.linkedin.com/company/dersu">
                       <a
@@ -173,7 +164,7 @@ const Footer: FC = () => {
         </div>
       </Wrapper>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

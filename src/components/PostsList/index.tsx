@@ -1,6 +1,5 @@
-import { FC } from 'react'
-
-import PostsListItem from '../PostsListItem'
+import { FC } from 'react';
+import PostsListItem from '../PostsListItem';
 
 type Props = {
   posts: Array<BlogPost>

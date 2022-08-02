@@ -1,8 +1,7 @@
-import { FC, useContext, useEffect, useState } from 'react'
-import Link from 'next/link'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-import PrivacyContext from '@/contexts/PrivacyContext'
+import PrivacyContext from '@/contexts/PrivacyContext';
+import TranslationsContext from '@/contexts/TranslationsContext';
+import Link from 'next/link';
+import { FC, useContext, useEffect, useState } from 'react';
 
 const CookieBanner: FC = () => {
   const { t, currentLocale } = useContext(TranslationsContext)

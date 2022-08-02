@@ -1,12 +1,9 @@
-import { FC, useContext } from 'react'
-import Link from 'next/link'
-import { usePlausible } from 'next-plausible'
-
-import TranslationsContext from '@/contexts/TranslationsContext'
-
-import usePreferredLocale from '@/hooks/usePreferredLocale'
-
-import styles from './styles.module.css'
+import TranslationsContext from '@/contexts/TranslationsContext';
+import usePreferredLocale from '@/hooks/usePreferredLocale';
+import { usePlausible } from 'next-plausible';
+import Link from 'next/link';
+import { FC, useContext } from 'react';
+import styles from './styles.module.css';
 
 const HeaderMenu: FC = () => {
   const plausible = usePlausible()

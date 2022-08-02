@@ -1,7 +1,6 @@
-import { FC } from 'react'
-
-import Wrapper from '@/components/Wrapper'
-import MarkdownContent from '@/components/MarkdownContent'
+import MarkdownContent from '@/components/MarkdownContent';
+import Wrapper from '@/components/Wrapper';
+import { FC } from 'react';
 
 type Props = {
   subtitle: string

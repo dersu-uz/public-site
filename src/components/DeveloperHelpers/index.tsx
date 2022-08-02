@@ -1,15 +1,13 @@
-import { FC, useContext } from 'react'
+import BreakpointsHelper from '@/components/DeveloperHelpers/BreakpointsHelper';
+import GridOverlayHelper from '@/components/DeveloperHelpers/GridOverlayHelper';
+import DeveloperContext from '@/contexts/DeveloperContext';
+import { ReactNode, useContext } from 'react';
 
-import DeveloperContext from '@/contexts/DeveloperContext'
-
-import GridOverlayHelper from '@/components/DeveloperHelpers/GridOverlayHelper'
-import BreakpointsHelper from '@/components/DeveloperHelpers/BreakpointsHelper'
-
-const DeveloperHelpers: FC = ({ children }) => {
+const DeveloperHelpers = (props: { children?: ReactNode }) => {
   const { showGrid, showBreakpoints } = useContext(DeveloperContext)
   return (
     <div className="z-50">
-      {children}
+      {props.children}
       {showGrid && <GridOverlayHelper />}
       {showBreakpoints && <BreakpointsHelper />}
     </div>
