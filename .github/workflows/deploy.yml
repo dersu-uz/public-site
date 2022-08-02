@@ -2,7 +2,6 @@ name: Build, push and deploy
 on:
   push:
     branches:
-      - 'feat/server-rendering'
       - 'develop'
       - 'production'
 jobs:
@@ -11,8 +10,7 @@ jobs:
     steps:
       - name: Set current branch name
         id: currentbranch
-        # run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
-        run: echo "::set-output name=branch::develop"
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
       - name: Short commit SHA
         id: slug
         run: echo "::set-output name=sha8::$(echo ${GITHUB_SHA} | cut -c1-8)"
